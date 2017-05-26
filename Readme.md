@@ -52,7 +52,20 @@ dependencies {
             android:name="MI_PUSH_APP_KEY"
             android:value="\ 9889423330043400" />
 ```
-5. 初始化OnePush
+
+5. 如果OnePush使用了小米推送，需要注册小米推送权限
+```
+ <!--注意下面的必须修改   -->
+    <permission
+        android:name="com.peng.one.push.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" />
+    <!--这里com.xiaomi.mipushdemo改成你的app的包名，以build.gralde中的applicationId为准-->
+    <uses-permission android:name="com.peng.one.push.permission.MIPUSH_RECEIVE" />
+   <!--这里com.xiaomi.mipushdemo改成你的app的包名，以build.gralde中的applicationId为准-->
+
+```
+
+6. 初始化OnePush
 ```|
 //初始化的时候，回调该方法，可以根据platformCode和当前系统的类型，进行注册
 //返回true，则使用该平台的推送，否者就不使用
@@ -73,7 +86,7 @@ OnePush.init(this, new OnOnePushRegisterListener() {
             });
 ```
 
-6. 关于添加其他消息推送SDK具体操作（如果你不满足OnePush提供的小米、华为推送，可根据下面步骤，将其他厂商提供的推送，添加到OnePush里面）
+7. 关于添加其他消息推送SDK具体操作（如果你不满足OnePush提供的小米、华为推送，可根据下面步骤，将其他厂商提供的推送，添加到OnePush里面）
  * 创建XXXClient 实现IPushClient接口，并且重写对应的方法，initContext(Context),会在初始化的使用进行调用，可以在在这里进行获取第三方推送注册需要的ID，KEY或者其他操作，建议在AndroidManifest.xml中的Application标签下添加<meta/>，然后在initContext(Context)中进行获取。
 
  * 创建三方消息推送的Receiver后者IntentService，重写三方推送的的接收透传消息和通知的方法，并且使用OneOneRepeater将具体的操作反馈，透传消息，通知，通知点击事件，转发到OnePush。
