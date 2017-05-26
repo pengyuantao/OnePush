@@ -2,6 +2,7 @@
 
 消息推送，在国内，要么自己做，要么集成第三方的sdk，现在第三方推送的sdk，有很多可以选择，友盟，极光，小米等等，我们在选择消息推送的时候，肯定是需要一个能及时把消息推送给用户的sdk，那么问题来了，很多国产手机厂商都各自根据android修改的UI系统，各种的进程清理，导致消息推送的后台无法存活，特别是小米、华为的手机上，只要用户清理，基本上推送后台服务就死绝了，当然这个也不能怪人家手机厂商，主要是手机上app装的多了，都有自己的后台服务，而且有的流氓程序，还不止一个后台服务，这样就会导致用户的耗电上升，出于种种原因，部分手机厂商有了自己的消息推送服务，如果你的app集成了该厂商的消息推送sdk，那么在该厂商手机上，就属于系统的级别的服务，就算手机被一键清理掉，消息还是能准时的推送到用户的手机上。那么OnePush，就是解决根据不同的厂商手机，集成不同的推送，从而保证消息的及时送达，目前OnePush提供的小米推送，华为推送的实现，如果你还需要使用其他推送SDK，最多写两个类，就可以轻松接入OnePush。
 
+
 > 二、怎么集成和使用OnePush
 
 1. 添加依赖
@@ -72,10 +73,12 @@ OnePush.init(this, new OnOnePushRegisterListener() {
             });
 ```
 
-6. 关于添加其他消息推送SDK具体操作
+6. 关于添加其他消息推送SDK具体操作（如果你不满足OnePush提供的小米、华为推送，可根据下面步骤，将其他厂商提供的推送，添加到OnePush里面）
  * 创建XXXClient 实现IPushClient接口，并且重写对应的方法，initContext(Context),会在初始化的使用进行调用，可以在在这里进行获取第三方推送注册需要的ID，KEY或者其他操作，建议在AndroidManifest.xml中的Application标签下添加<meta/>，然后在initContext(Context)中进行获取。
 
  * 创建三方消息推送的Receiver后者IntentService，重写三方推送的的接收透传消息和通知的方法，并且使用OneOneRepeater将具体的操作反馈，透传消息，通知，通知点击事件，转发到OnePush。
+
+ * 记得在OnePush注册的时候，进行消息推送平台的选择。
 
  * 具体操作方法：详见one-push-xiaomi
 
@@ -97,7 +100,7 @@ OnePush.init(this, new OnOnePushRegisterListener() {
 |setDebug(boolean)|设置是否为debug模式|
 
 </br>
-<h6 align = "center">OneRepeater详细ap</h6>
+<h6 align = "center">OneRepeater详细api</h6>
 
 |方法名称|描述及解释|
 |---------|:-------:|
@@ -125,3 +128,6 @@ intent://com.peng.one.push/notification?title=标题&content=通知内容&extraM
 ```
 
 > 七、开源地址
+
+[OnePush源代码](https://github.com/pengyuantao/OnePush)
+[使用介绍](https://github.com/pengyuantao/OnePush/blob/master/Readme.md)
