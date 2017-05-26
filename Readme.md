@@ -59,9 +59,9 @@ dependencies {
     <permission
         android:name="com.peng.one.push.permission.MIPUSH_RECEIVE"
         android:protectionLevel="signature" />
-    <!--这里com.xiaomi.mipushdemo改成你的app的包名，以build.gralde中的applicationId为准-->
+    <!--这里com.peng.one.push改成你的app的包名，以build.gralde中的applicationId为准-->
     <uses-permission android:name="com.peng.one.push.permission.MIPUSH_RECEIVE" />
-   <!--这里com.xiaomi.mipushdemo改成你的app的包名，以build.gralde中的applicationId为准-->
+   <!--这里com.peng.one.push改成你的app的包名，以build.gralde中的applicationId为准-->
 
 ```
 
