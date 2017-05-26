@@ -1,6 +1,6 @@
 > 一、为啥会有OnePush
 
-消息推送，在国内，要么自己做，要么集成第三方的sdk，现在第三方推送的sdk，有很多可以选择，友盟，极光，小米等等，我们在选择消息推送的时候，肯定是需要一个能及时把消息推送给用户的sdk，那么问题来了，很多国产手机厂商都各自根据android修改的UI系统，各种的进程清理，导致消息推送的后台无法存活，特别是小米、华为的手机上，只要用户清理，基本上推送后台服务就死绝了，当然这个也不能怪人家手机厂商，主要是手机上app装的多了，都有自己的后台服务，而且有的流氓程序，还不止一个后台服务，这样就会导致用户的耗电上升，出于种种原因，部分手机厂商有了自己的消息推送服务，如果你的app集成了该厂商的消息推送sdk，那么在该厂商手机上，就属于系统的级别的服务，就算手机被一键清理掉，消息还是能准时的推送到用户的手机上。那么OnePush，就是解决根据不同的厂商手机，集成不同的推送，从而保证消息的及时送达，目前OnePush提供的小米推送，华为推送的实现，如果你还需要使用其他推送SDK，最多写两个类，就可以轻松接入OnePush。
+消息推送，在国内，要么自己做，要么集成第三方的sdk，现在第三方推送的sdk，有很多可以选择，友盟，极光，小米等，我们在选择消息推送的时候，肯定是需要一个能及时把消息推送给用户的sdk，那么问题来了，很多国产手机厂商都各自根据android修改的UI系统，各种的进程清理，导致消息推送的后台无法存活，特别是小米、华为的手机上，只要用户清理，基本上推送后台服务就死绝了，当然这个也不能怪人家手机厂商，主要是手机上的app，基本上每个app都有自己的后台推送服务，而且有的流氓程序，甚至还附加了很多其他的后台服务，这样就会导致用户手机耗电、卡顿，手机厂商为了解决既不耗电，也能及时收到消息通知，就推出了自己的推送SDK，比如小米，华为，魅族。如果你的app集成了该厂商的消息推送sdk，那么在该厂商手机上，就属于系统的级别的服务，就算手机被一键清理掉，消息还是能准时的推送到用户的手机上，但是在国内，生产手机的厂家不不止一个，而且每家都有自己的消息推送，如何做到快速的接入和切换推送呢？那么OnePush，就是解决根据不同的厂商手机，集成不同的推送，从而保证消息的及时送达，目前OnePush提供的小米推送，华为推送的实现，如果你还需要使用其他推送SDK，最多写两个类，就可以轻松接入OnePush。
 
 
 > 二、怎么集成和使用OnePush
@@ -84,7 +84,7 @@ OnePush.init(this, new OnOnePushRegisterListener() {
 
 > 三、相关api介绍
 
-<h6 align = "center">OnePush详细api</h6>
+<h6 align = "left">OnePush详细api</h6>
 
 |方法名称|描述及解释|
 |---------|:-------:|
@@ -100,7 +100,7 @@ OnePush.init(this, new OnOnePushRegisterListener() {
 |setDebug(boolean)|设置是否为debug模式|
 
 </br>
-<h6 align = "center">OneRepeater详细api</h6>
+<h6 align = "left">OneRepeater详细api</h6>
 
 |方法名称|描述及解释|
 |---------|:-------:|
@@ -116,7 +116,7 @@ OnePush提供一个Java服务端消息推送的示例，大家可以使用它进
 
 > 五、使用注意
 
-* BaseOnePushReceiver中的onReceiveNotification()方法，在使用的华为推送的时候，该方法不会被调用，因为华为推送提供这样的支持。
+* BaseOnePushReceiver中的onReceiveNotification()方法，在使用的华为推送的时候，该方法不会被调用，因为华为推送没有提供这样的支持。
 *  BaseOnePushReceiver中的onReceiveNotificationClick()方法，在使用华为推送的时候，虽然华为支持，但是如果app被华为一键清理掉后，收到通知，那么点击通知是不会调用华为推送的onEvent（）方法，那么如果我们这里转发，onReceiveNotificationClick（）是不会收到的。
 * 为了解决华为推送，在手机上被清理掉后，onReceiveNotificationClick（）不被调用的情况，OnePush在华为推送上，使用跳转到指定Activity的推送通知，那么服务端必须提供一个Intent序列化的uri，OnePush提供的Java服务端消息推送示例中，已经提供了服务端序列化Intent的uri的实现（详见：com.peng.one.push.service.huawei.intent.HWPushIntent）。
 * 使用OnePushService测试app的时候，需要修改Constant类的第三方推送id，否则将无法推送！当然你也可以使用第三方推送的web后台。
