@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="cloudpush_app_name">"推送服务"</string>
+    <string name="hwpush_goback">"后退"</string>
+    <string name="hwpush_forward">"前进"</string>
+    <string name="hwpush_refresh">"刷新"</string>
+    <string name="hwpush_collect">"收藏"</string>
+    <string name="hwpush_deltitle">"删除通知"</string>
+    <string name="hwpush_msg_collect">"通知收藏"</string>
+    <string name="hwpush_msg_favorites">通知收藏</string>
+    
+    <string name="hwpush_delete">"删除"</string>
+    <string name="hwpush_selectall">"全选"</string>
+    
+    <string name="hwpush_collect_tip">"点击收藏后，将在桌面自动生成一个“通知收藏”的图标，以后可从桌面直接点击查看。"</string>
+    <string name="hwpush_collect_tip_known">"知道了"</string>
+
+	<string name="hwpush_cancel">"取消"</string>
+    <plurals name="hwpush_delete_tip">
+        <!--  The example of %d is 12-->
+        <item quantity="other">"是否删除所选通知？"</item>
+    </plurals>
+	<string name="hwpush_unselectall">"取消全选"</string>
+	<string name="hwpush_no_collection">"没有通知收藏"</string>
+	<string name="hwpush_richmedia">"富媒体"</string>
+	<string name="hwpush_loading_title">"正在加载，请稍候..."</string>
+	<string name="hwpush_dialog_limit_title">"收藏已达上限"</string>
+	<string name="hwpush_dialog_limit_message">"已收藏 1000 条通知信息，需要删除部分通知才能继续收藏，是否继续？"</string>
+	<string name="hwpush_dialog_limit_ok">"继续"</string>
+    <string name="hwpush_request_provider_permission">存储消息</string>
+</resources>

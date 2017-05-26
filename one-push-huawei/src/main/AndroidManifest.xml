@@ -1,0 +1,123 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.peng.one.push.huawei">
+    <!-- 必需的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 保存富媒体消息需要,无富媒体消息则不需要 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 创建桌面快捷方式,无富媒体消息则不需要 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- 根据地理位置推送消息需要事先上报地理位置信息，需要如下权限，不上报则不需要， -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 访问Push APK provider需要的权限，SDK富媒体需要,无富媒体功能则不需要 -->
+    <uses-permission android:name="com.huawei.pushagent.permission.RICHMEDIA_PROVIDER" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <!-- 第三方相关 :接收Push消息（注册、Push消息、Push连接状态、标签，LBS上报结果）广播 -->
+        <!-- 华为 -->
+        <!-- 第三方相关 :接收Push消息（注册、Push消息、Push连接状态、标签，LBS上报结果）广播 -->
+        <receiver android:name="com.peng.one.push.huawei.HuaweiPushReceiver">
+            <intent-filter>
+
+                <!-- 必须,用于接收token -->
+                <action android:name="com.huawei.android.push.intent.REGISTRATION" />
+                <!-- 必须，用于接收消息 -->
+                <action android:name="com.huawei.android.push.intent.RECEIVE" />
+                <!-- 可选，用于点击通知栏或通知栏上的按钮后触发onEvent回调 -->
+                <action android:name="com.huawei.android.push.intent.CLICK" />
+                <!-- 可选，查看push通道是否连接，不查看则不需要 -->
+                <action android:name="com.huawei.intent.action.PUSH_STATE" />
+                <!-- 可选，标签、地理位置上报回应，不上报则不需要 -->
+                <action android:name="com.huawei.android.push.plugin.RESPONSE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="CS_cloud_ablitity"
+                android:value="@string/hwpush_ability_value" />
+        </receiver>
+
+        <!-- PushSDK:PushSDK接收外部请求事件入口 -->
+        <receiver
+            android:name="com.huawei.android.pushagent.PushEventReceiver"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REFRESH_PUSH_CHANNEL" />
+                <action android:name="com.huawei.intent.action.PUSH" />
+                <action android:name="com.huawei.intent.action.PUSH_ON" />
+                <action android:name="com.huawei.android.push.PLUGIN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.huawei.android.pushagent.PushBootReceiver"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTER" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="CS_cloud_version"
+                android:value="\u0032\u0037\u0030\u0035" />
+        </receiver>
+
+        <!-- PushSDK:Push服务 -->
+        <service
+            android:name="com.huawei.android.pushagent.PushService"
+            android:process=":pushservice"/>
+
+        <!-- PushSDK:富媒体呈现页面，用于呈现服务器下发的富媒体消息 -->
+        <!-- locale|layoutDirection 切换语言后不重新创建activity -->
+        <activity
+            android:name="com.huawei.android.pushselfshow.richpush.RichPushActivity"
+            android:process=":pushservice"
+            android:theme="@style/hwpush_NoActionBar"
+            android:configChanges="orientation|screenSize|locale|layoutDirection"
+            android:screenOrientation="portrait">
+            <meta-data android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui"/>
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.RICHPUSH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.huawei.android.pushselfshow.permission.RequestPermissionsActivity"
+            android:configChanges="orientation|screenSize|locale|layoutDirection"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"/>
+
+        <!--接收点击的Activity,注意这个需要配合服务端uri生成工具，否则无法调用通知栏点击调用的fagnf-->
+        <activity
+            android:name="com.peng.one.push.huawei.NotificationClickActivity"
+            android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.peng.one.push"
+                    android:path="/notification"
+                    android:scheme="OnePush" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

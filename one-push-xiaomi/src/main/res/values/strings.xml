@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">xm-push</string>
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+    <string name="set_alias">设置别名</string>
+    <string name="unset_alias">撤销别名</string>
+    <string name="set_account">设置帐号</string>
+    <string name="unset_account">撤销帐号</string>
+    <string name="subscribe_topic">订阅标签</string>
+    <string name="unsubscribe_topic">撤销标签</string>
+    <string name="set_accept_time">设置时间</string>
+    <string name="pause_push">暂停推送</string>
+    <string name="resume_push">恢复推送</string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="register_success">Register push success.</string>
+    <string name="register_fail">Register push fail.</string>
+    <string name="recv_passthrough_message"> Receive a passthrough message. Content is \"%1$s\"</string>
+    <string name="click_notification_message"> Clicked a notification message. Content is \"%1$s\"</string>
+    <string name="arrive_notification_message"> Arrived a notification message. Content is \"%1$s\"</string>
+    <string name="set_alias_success"> Set alias \"%1$s\" success.</string>
+    <string name="set_alias_fail"> Set alias fail for %1$s.</string>
+    <string name="unset_alias_success"> Unset alias \"%1$s\" success.</string>
+    <string name="unset_alias_fail"> Unset alias fail for %1$s.</string>
+    <string name="set_account_success"> Set account \"%1$s\" success.</string>
+    <string name="set_account_fail"> Set account fail for %1$s.</string>
+    <string name="unset_account_success"> Unset account \"%1$s\" success.</string>
+    <string name="unset_account_fail"> Unset account fail for %1$s.</string>
+    <string name="subscribe_topic_success"> Subscribe topic \"%1$s\" success.</string>
+    <string name="subscribe_topic_fail"> Subscribe topic fail for %1$s.</string>
+    <string name="unsubscribe_topic_success"> Unsubscribe topic \"%1$s\" success.</string>
+    <string name="unsubscribe_topic_fail"> Unsubscribe topic fail for %1$s.</string>
+    <string name="set_accept_time_success"> Set accept time %1$s - %2$s success.</string>
+    <string name="set_accept_time_fail"> Set accept time fail for %1$s.</string>
+</resources>

@@ -1,0 +1,72 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.peng.one.push.xiaomi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+<!--    <permission android:name="com.xiaomi.mipushdemo.permission.MIPUSH_RECEIVE" android:protectionLevel="signature" />
+    &lt;!&ndash;这里com.xiaomi.mipushdemo改成app的包名&ndash;&gt;
+    <uses-permission android:name="com.xiaomi.mipushdemo.permission.MIPUSH_RECEIVE" />
+    &lt;!&ndash;这里com.xiaomi.mipushdemo改成app的包名&ndash;&gt;-->
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <receiver
+            android:exported="true"
+            android:name="com.peng.one.push.xiaomi.XiaomiPushReceiver">
+            <!--这里com.xiaomi.mipushdemo.DemoMessageRreceiver改成app中定义的完整类名-->
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:enabled="true"
+            android:process=":pushservice"
+            android:name="com.xiaomi.push.service.XMPushService"/>
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":pushservice" />
+        <!--注：此service必须在3.0.1版本以后（包括3.0.1版本）加入-->
+        <service
+            android:enabled="true"
+            android:exported="true"
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler" />
+        <service android:enabled="true"
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService" />
+        <!--注：此service必须在2.2.5版本以后（包括2.2.5版本）加入-->
+        <receiver
+            android:exported="true"
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:exported="false"
+            android:process=":pushservice"
+            android:name="com.xiaomi.push.service.receivers.PingReceiver" >
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

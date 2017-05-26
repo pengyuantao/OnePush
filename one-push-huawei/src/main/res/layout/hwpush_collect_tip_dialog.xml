@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingStart="15dp"
+    android:paddingRight="15dp"
+    android:paddingEnd="15dp">
+    
+    <RelativeLayout
+            android:id="@+id/hwpush_collect_tip_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/hwpush_bt_collect_tip_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:clickable="false"
+                android:contentDescription="@string/hwpush_msg_favorites"
+                android:src="@drawable/hwpush_main_icon" />
+
+            <TextView
+                android:id="@+id/hwpush_bt_selectall_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hwpush_bt_collect_tip_img"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:text="@string/hwpush_msg_favorites"
+                android:textColor="@color/hwpush_text_color_snapshot_title"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="18dp"
+        android:textSize="13sp"
+        android:textColor="@color/hwpush_text_color_snapshot_title"
+        android:text="@string/hwpush_collect_tip"/>
+    
+</LinearLayout>

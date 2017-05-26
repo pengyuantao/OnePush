@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/menu_clear_log"
+        android:enabled="true"
+        android:title="清理日志"
+        android:visible="true"
+        app:actionLayout="@layout/switch_item" />
+
+</menu>

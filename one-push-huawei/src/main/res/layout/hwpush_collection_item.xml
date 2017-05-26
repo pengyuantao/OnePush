@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="64dip"
+    android:orientation="vertical"
+    android:padding="8dip"
+    >
+
+    <ImageView
+        android:id="@+id/hwpush_favicon"
+        android:scaleType="centerCrop"
+        android:layout_height="32dip"
+        android:layout_width="32dip"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:focusable="false"
+        android:visibility="visible"
+        android:layout_marginLeft="6dip"
+        android:layout_marginStart="6dip"
+        />
+    
+    <CheckBox android:id="@+id/hwpush_delCheck"
+        android:layout_width="32dip"
+        android:layout_height="32dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="8dip"
+        android:layout_marginStart="8dip"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:visibility="invisible"
+        android:clickable="false"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/hwpush_selfshowmsg_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dip"
+        android:paddingStart="14dip"
+        android:paddingRight="8dip"
+        android:paddingEnd="8dip"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/hwpush_favicon"
+        android:layout_toEndOf="@id/hwpush_favicon"
+        android:layout_toLeftOf="@id/hwpush_delCheck"
+        android:layout_toStartOf="@id/hwpush_delCheck">
+        
+        <TextView android:id="@+id/hwpush_selfshowmsg_title"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+            android:layout_marginTop="6dip"
+	        android:singleLine="true"
+	        android:ellipsize="end"
+	        android:typeface="sans"
+	        android:textSize="14sp"
+	        android:textColor="@color/hwpush_text_color_snapshot_title"
+	        android:focusable="false"
+	        />
+        
+	    <TextView android:id="@+id/hwpush_selfshowmsg_content"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:layout_marginBottom="6dip"
+	        android:maxLines="1"
+	        android:singleLine="true"
+	        android:ellipsize="end"
+	        android:typeface="sans"
+	        android:textSize="11sp"
+	        android:textColor="@color/hwpush_text_color_history_url"
+	        android:focusable="false"
+	        />
+        
+    </LinearLayout>
+    
+</RelativeLayout>

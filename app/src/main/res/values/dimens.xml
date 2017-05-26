@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="set_padding">7dp</dimen>
+    <dimen name="text_btn_size">16sp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="margin_button">30dp</dimen>
+
+</resources>

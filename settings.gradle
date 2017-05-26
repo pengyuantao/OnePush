@@ -1,0 +1,1 @@
+include ':app', ':one-push-core', ':one-push-xiaomi', ':one-push-huawei'

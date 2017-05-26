@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listview_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/hwpush_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:paddingLeft="37dip"
+        android:paddingStart="37dip"
+        android:paddingRight="37dip"
+        android:paddingEnd="37dip"
+        android:background="@drawable/hwpush_ab_bottom_emui"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+        <!-- back -->
+
+        <RelativeLayout
+            android:id="@+id/hwpush_bottombar_backward_layout"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/hwpush_bt_back_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:contentDescription="@string/hwpush_goback"
+                android:src="@drawable/hwpush_ic_toolbar_back" />
+
+            <TextView
+                android:id="@+id/hwpush_bt_back_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hwpush_bt_back_img"
+                android:layout_marginTop="1dip"
+                android:gravity="center"
+                android:text="@string/hwpush_goback"
+                android:textColor="@color/hwpush_text_color_history_url"
+                android:textSize="9sp" />
+        </RelativeLayout>
+        <!-- forward -->
+
+        <RelativeLayout
+            android:id="@+id/hwpush_bottombar_forward_layout"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dip"
+            android:layout_marginStart="2dip"
+            android:gravity="center" >
+            <ImageView
+                android:id="@+id/hwpush_bt_forward_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:contentDescription="@string/hwpush_forward"
+                android:src="@drawable/hwpush_ic_toolbar_advance" />
+
+            <TextView
+                android:id="@+id/hwpush_bt_forward_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hwpush_bt_forward_img"
+                android:layout_marginTop="1dip"
+                android:gravity="center"
+                android:text="@string/hwpush_forward"
+                android:textColor="@color/hwpush_text_color_history_url"
+                android:textSize="9sp" />
+        </RelativeLayout>
+        <!-- refresh -->
+
+        <RelativeLayout
+            android:id="@+id/hwpush_bottombar_refresh_layout"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dip"
+            android:layout_marginStart="2dip"
+            android:gravity="center" >
+            <ImageView
+                android:id="@+id/hwpush_bt_refresh_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:contentDescription="@string/hwpush_refresh"
+                android:src="@drawable/hwpush_ic_toolbar_refresh" />
+
+            <TextView
+                android:id="@+id/hwpush_bt_refresh_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hwpush_bt_refresh_img"
+                android:layout_marginTop="1dip"
+                android:gravity="center"
+                android:text="@string/hwpush_refresh"
+                android:textColor="@color/hwpush_text_color_history_url"
+                android:textSize="9sp" />
+        </RelativeLayout>
+        <!-- collect -->
+
+        <RelativeLayout
+            android:id="@+id/hwpush_bottombar_collect_layout"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dip"
+            android:layout_marginStart="2dip"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/hwpush_bt_collect_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:contentDescription="@string/hwpush_collect"
+                android:src="@drawable/hwpush_ic_toolbar_collect" />
+
+            <TextView
+                android:id="@+id/hwpush_bt_collect_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hwpush_bt_collect_img"
+                android:layout_marginTop="1dip"
+                android:gravity="center"
+                android:text="@string/hwpush_collect"
+                android:textColor="@color/hwpush_text_color_history_url"
+                android:textSize="9sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.huawei.android.pushselfshow.utils.RelativeLayoutForBckgColor
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:paddingLeft="12dp"
+        android:paddingStart="12dp"
+        android:paddingRight="12dp"
+        android:paddingEnd="12dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/hwpush_titlebar">
+
+        <TextView
+        	android:id="@+id/hwpush_msg_title"
+           	android:layout_height="match_parent"
+           	android:layout_width="match_parent"
+           	android:textColor="@color/hwpush_white"
+            android:text="@string/hwpush_richmedia"
+           	android:gravity="center"
+	        android:singleLine="true"
+	        android:ellipsize="end"
+           	android:textSize="14sp" />
+    </com.huawei.android.pushselfshow.utils.RelativeLayoutForBckgColor>
+
+    <View
+        android:id="@+id/hwpush_title_bar_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/hwpush_titlebar"
+        android:alpha="0.2"
+        android:background="@color/hwpush_black_color"
+        android:visibility="gone" />
+
+    <com.huawei.android.pushselfshow.richpush.html.PageProgressView
+        android:id="@+id/hwpush_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_below="@id/hwpush_title_bar_bottom_line"
+        android:src="@drawable/hwpush_progress"
+        android:layout_marginTop="-11dip"
+        android:visibility="invisible" />
+    <WebView
+        android:id="@+id/hwpush_msg_show_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-9dip"
+        android:layout_above="@id/hwpush_bottom_bar"
+        android:layout_below="@id/hwpush_progressbar"
+        android:layout_gravity="center_horizontal"
+        android:scrollbarStyle="outsideOverlay" 
+        android:background="@drawable/hwpush_list_activated_emui">
+    </WebView>
+
+</RelativeLayout>

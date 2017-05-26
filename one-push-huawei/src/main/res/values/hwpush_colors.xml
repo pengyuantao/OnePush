@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hwpush_white">#ffffffff</color>
+    <color name="hwpush_black">#ff000000</color>
+    <color name="hwpush_text_color_snapshot_title">#FF000000</color><!-- 所有85%（0xD8000000/0xD9000000）黑色颜色值的字体修改成100%（0xFF000000）黑色颜色值；-->
+    <color name="hwpush_text_color_history_url">#80000000</color><!-- 所有65%（0xA5000000/0xA6000000）黑色颜色值的字体修改成50%（0x80000000）黑色颜色值； -->
+    <color name="hwpush_bt_txt_nor">#65000000</color>
+    <color name="hwpush_bgcolor">#2c9195</color>
+    <color name="hwpush_select_color">#00bcd5</color>
+    <color name="hwpush_black_color">#000000</color>
+</resources>
