@@ -42,7 +42,7 @@ dependencies {
  *  android:value    这个是继承IPushClient实现类，全类名路径。
 
 4. 添加第三方AppKey和AppSecret
-如果使用了one-push-xiaomi,那么需要在AndroidManifest.xml添加小米的AppKey和AppSecret
+如果使用了one-push-xiaomi,那么需要在AndroidManifest.xml添加小米的AppKey和AppSecret（注意下面的“\ ”必须加上，否则获取到的是float而不是String，就会导致id和key获取不到正确的数据）
 ```
   <meta-data
             android:name="MI_PUSH_APP_ID"
@@ -149,6 +149,6 @@ intent://com.peng.one.push/notification?title=标题&content=通知内容&extraM
 > 八、附点图吧，前面太多文字看着太累
 
 
-![device-2017-05-27-103600.png](http://upload-images.jianshu.io/upload_images/1460021-6de9fa71cd0a1404.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![小米推送.png](http://upload-images.jianshu.io/upload_images/1460021-b84daf61d5b52ad6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![device-2017-05-27-103821.png](http://upload-images.jianshu.io/upload_images/1460021-cabca941b7c7335e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![华为推送.png](http://upload-images.jianshu.io/upload_images/1460021-b99dc8a580ca5aeb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
