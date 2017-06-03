@@ -27,7 +27,7 @@ public class OnePushContext {
     //the meta_data split symbol
     public static final String METE_DATA_SPLIT_SYMBOL = "_";
 
-    private IPushClient mIPushState;
+    private IPushClient mIPushClient;
 
     private int mPlatformCode;
 
@@ -95,7 +95,7 @@ public class OnePushContext {
                     //create object with no params
                     IPushClient iPushClient = (IPushClient) currentClz.newInstance();
                     if (listener.onRegisterPush(platformCode, platformName)) {
-                        mIPushState = iPushClient;
+                        this.mIPushClient = iPushClient;
                         this.mPlatformCode = platformCode;
                         this.mPlatformName = platformName;
                         //invoke IPushClient initContext method
@@ -120,27 +120,27 @@ public class OnePushContext {
     }
 
     public void register() {
-        mIPushState.register();
+        mIPushClient.register();
     }
 
     public void unRegister() {
-        mIPushState.unRegister();
+        mIPushClient.unRegister();
     }
 
     public void bindAlias(String alias) {
-        mIPushState.bindAlias(alias);
+        mIPushClient.bindAlias(alias);
     }
 
     public void unBindAlias(String alias) {
-        mIPushState.unBindAlias(alias);
+        mIPushClient.unBindAlias(alias);
     }
 
     public void addTag(String tag) {
-        mIPushState.addTag(tag);
+        mIPushClient.addTag(tag);
     }
 
     public void deleteTag(String tag) {
-        mIPushState.deleteTag(tag);
+        mIPushClient.deleteTag(tag);
     }
 
     public int getPushPlatFormCode() {
