@@ -1,14 +1,9 @@
-package com.peng.onepush.demo;
+package com.peng.one.push;
 
 import android.app.ActivityManager;
 import android.app.Application;
 import android.content.Context;
 import android.os.Process;
-import android.util.Log;
-
-import com.peng.demo.BuildConfig;
-import com.peng.one.push.OnePush;
-import com.peng.one.push.core.OnOnePushRegisterListener;
 
 import java.util.List;
 
@@ -23,24 +18,25 @@ public class PushApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        //只在主进程中注册
-        if (BuildConfig.APPLICATION_ID.equals(getCurrentProcessName())) {
-            OnePush.init(this, new OnOnePushRegisterListener() {
-                @Override
-                public boolean onRegisterPush(int platformCode, String platformName) {
-                    if (RomUtils.isHuaweiRom() && platformCode == 102) {
-                        Log.i(TAG, "onRegisterPush: 华为推送");
-                        return true;
-                    } else if (platformCode == 101) {
-                        Log.i(TAG, "onRegisterPush: 小米推送");
-                        return true;
-                    }
-                    return false;
+
+        String currentProcessName = getCurrentProcessName();
+        //只在主进程中注册(注意：umeng推送，除了在主进程中注册，还需要在channel中注册)
+        if (BuildConfig.APPLICATION_ID.equals(currentProcessName) || BuildConfig.APPLICATION_ID.concat(":channel").equals(currentProcessName)) {
+            OnePush.init(this, ((platformCode, platformName) -> {
+                //platformCode和platformName就是在<meta/>标签中，对应的"平台标识码"和平台名称
+                if (platformCode == 102 && RomUtils.isHuaweiRom()) {//华为
+                    return true;
+                } else if (platformCode == 101 && RomUtils.isMiuiRom()) {//小米
+                    return true;
+                } else if (platformCode == 103) {//友盟
+                    return true;
                 }
-            });
+                return false;
+            }));
             OnePush.register();
         }
     }
+
 
 
     /**

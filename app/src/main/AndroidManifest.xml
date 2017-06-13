@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.peng.demo">
+    package="com.peng.one.push">
    <!--注意下面的必须修改   -->
     <permission
         android:name="com.peng.one.push.permission.MIPUSH_RECEIVE"
@@ -10,7 +10,7 @@
     <!--这里com.peng.one.push改成app的包名-->
 
     <application
-        android:name="com.peng.onepush.demo.PushApplication"
+        android:name="com.peng.one.push.PushApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -19,12 +19,25 @@
         android:theme="@style/AppTheme">
 
         <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="593e2640b27b0a0852000014"/>
+
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="b765e337eedd391603550eb6f922f81b"/>
+
+        <meta-data
             android:name="MI_PUSH_APP_ID"
             android:value="\ 2882303761517577233" />
 
         <meta-data
             android:name="MI_PUSH_APP_KEY"
             android:value="\ 5701757717233" />
+
+        <!--如果引入了one-push-umeng类库-->
+        <meta-data
+            android:name="OnePush_UMENG_103"
+            android:value="com.peng.one.push.umeng.UMengPushClient" />
 
         <!--如果引入了one-push-huawei类库-->
         <meta-data
@@ -36,7 +49,7 @@
             android:name="OnePush_XiaoMi_101"
             android:value="com.peng.one.push.xiaomi.XiaomiPushClient" />
 
-        <activity android:name="com.peng.onepush.demo.MainActivity">
+        <activity android:name="com.peng.one.push.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,7 +57,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name="com.peng.onepush.demo.TestPushReceiver">
+        <receiver android:name="com.peng.one.push.TestPushReceiver">
             <intent-filter>
                 <action android:name="com.peng.one.push.ACTION_RECEIVE_NOTIFICATION" />
                 <action android:name="com.peng.one.push.ACTION_RECEIVE_NOTIFICATION_CLICK" />

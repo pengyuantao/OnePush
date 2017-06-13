@@ -1,4 +1,4 @@
-package com.peng.onepush.demo;
+package com.peng.one.push;
 
 import android.os.Build;
 import android.text.TextUtils;

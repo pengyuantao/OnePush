@@ -1,4 +1,4 @@
-package com.peng.onepush.demo;
+package com.peng.one.push;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -38,6 +38,11 @@ public class TestPushReceiver extends BaseOnePushReceiver {
 
     @Override
     public void onCommandResult(Context context, OnePushCommand command) {
+        //注册消息推送失败，再次注册
+        if (command.getType() == OnePush.TYPE_REGISTER && command.getResultCode() == OnePush.RESULT_ERROR) {
+            OnePush.register();
+        }
+
         Log.i(TAG, "onCommandResult: " + command.toString());
         MainActivity.sendLogBroadcast(context, generateLogByOnePushCommand(command));
     }

@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
 
 android {
     compileSdkVersion 25
@@ -21,17 +22,17 @@ android {
 
     signingConfigs {
         debug {
-            storeFile file("../release.keystore")
-            storePassword "123456"
-            keyAlias "benguo"
-            keyPassword "123456"
+            storeFile file("../onepush_keystore.jks")
+            storePassword "onepush"
+            keyAlias "onepush"
+            keyPassword "onepush"
         }
 
         release {
-            storeFile file("../release.keystore")
-            storePassword "123456"
-            keyAlias "benguo"
-            keyPassword "123456"
+            storeFile file("../onepush_keystore.jks")
+            storePassword "onepush"
+            keyAlias "onepush"
+            keyPassword "onepush"
         }
     }
 
@@ -40,6 +41,11 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
@@ -51,37 +57,37 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
-    compile project(':one-push-core')
-    compile project(':one-push-huawei')
-    compile project(':one-push-xiaomi')
+    compile 'com.peng.library:one-push-huawei:1.0.1'
+    compile 'com.peng.library:one-push-xiaomi:1.0.1'
+    compile 'com.peng.library:one-push-umeng:1.0.1'
+    compile 'com.peng.library:one-push-core:1.0.1'
+//    compile project(':one-push-core')
+//    compile project(':one-push-huawei')
+//    compile project(':one-push-xiaomi')
+//    compile project(':one-push-umeng')
+
+
+    /*权限处理*/
+    compile('com.github.hotchemi:permissionsdispatcher:2.4.0') {
+        // if you don't use android.app.Fragment you can exclude support for them
+        exclude module: "support-v13"
+    }
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
 }
 
-
-/**
- keytool -list -v -keystore release.keystore
- 输入密钥库口令:
-
- 密钥库类型: JKS
- 密钥库提供方: SUN
-
- 您的密钥库包含 1 个条目
-
- 别名: benguo
- 创建日期: 2014-1-20
+/* 别名: onepush
  条目类型: PrivateKeyEntry
  证书链长度: 1
  证书[1]:
- 所有者: CN=benguo
- 发布者: CN=benguo
- 序列号: 52dce380
- 有效期开始日期: Mon Jan 20 16:51:12 CST 2014, 截止日期: Sun Jan 15 16:51:12 CST
- 2034
+ 所有者: CN=onepush, OU=onepush, O=onepush, L=China, ST=Beijing, C=086
+ 发布者: CN=onepush, OU=onepush, O=onepush, L=China, ST=Beijing, C=086
+ 序列号: 7948f5e4
+ 有效期开始日期: Tue Jun 13 10:09:00 CST 2017, 截止日期: Thu May 20 10:09:00 CST 2117
  证书指纹:
- MD5: 45:82:54:45:2A:34:6E:6F:39:19:D1:57:61:D7:ED:F5
- SHA1: 8C:D7:17:6C:04:BC:81:49:8B:9F:E9:97:B8:62:31:7C:8B:00:63:27
- SHA256: 53:8E:97:F0:69:C5:69:09:1F:51:F1:44:00:B4:F2:3D:7D:CA:3A:73:36:
- 89:27:D5:8C:99:BD:D2:61:0E:22:A7
- 签名算法名称: SHA1withRSA
- 版本: 3
+ MD5: F3:5F:24:9B:48:EE:B6:C0:28:02:F8:30:20:D1:B6:CB
+ SHA1: 23:A4:1A:82:4B:3F:48:C7:07:B5:F6:AC:F1:29:93:AA:ED:D3:17:7C
+ SHA256: 07:48:40:20:EA:55:79:75:66:12:A4:AA:F7:F1:0E:49:D0:94:35:00:FA:B5:0F:D8:F6:73:B7:A7:3F:A3:D4:8D
+ 签名算法名称: SHA256withRSA
+ 版本: 3*/
 
- */
+

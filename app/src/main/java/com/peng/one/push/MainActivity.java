@@ -1,21 +1,30 @@
-package com.peng.onepush.demo;
+package com.peng.one.push;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.peng.demo.R;
-import com.peng.one.push.OnePush;
+import permissions.dispatcher.NeedsPermission;
+import permissions.dispatcher.OnNeverAskAgain;
+import permissions.dispatcher.OnPermissionDenied;
+import permissions.dispatcher.OnShowRationale;
+import permissions.dispatcher.PermissionRequest;
+import permissions.dispatcher.RuntimePermissions;
 
+@RuntimePermissions
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = "MainActivity";
@@ -46,6 +55,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initView();
         initEvent();
         initCurrentPushData(getIntent());
+        MainActivityPermissionsDispatcher.requestAllPermissionWithCheck(this);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        requestAllPermission();
     }
 
     private void initTitle() {
@@ -135,9 +151,41 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         unregisterReceiver(mLogReceiver);
     }
 
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         tvLog.setText("");
         return false;
+    }
+
+    @NeedsPermission(value = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_PHONE_STATE, Manifest.permission.ACCESS_FINE_LOCATION})
+    public void requestAllPermission() {
+
+    }
+
+    @OnShowRationale(value = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_PHONE_STATE, Manifest.permission.ACCESS_FINE_LOCATION})
+    void showRationale(final PermissionRequest request) {
+        new AlertDialog.Builder(this)
+                .setMessage("请同意app权限，否则app，将不能使用")
+                .setPositiveButton("继续", (dialog, button) -> request.proceed())
+                .setNegativeButton("取消", (dialog, button) -> request.cancel())
+                .show();
+    }
+
+    @OnPermissionDenied(value = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_PHONE_STATE, Manifest.permission.ACCESS_FINE_LOCATION})
+    void showDenied() {
+        Toast.makeText(this, "拒绝，需要到系统设置，自己设定，否者有可能导致消息推送不成功！", Toast.LENGTH_SHORT).show();
+    }
+
+    @OnNeverAskAgain(value = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_PHONE_STATE, Manifest.permission.ACCESS_FINE_LOCATION})
+    void showNeverAskAgain() {
+
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        // NOTE: delegate the permission handling to generated method
+        MainActivityPermissionsDispatcher.onRequestPermissionsResult(this, requestCode, grantResults);
     }
 }

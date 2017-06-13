@@ -1,1 +1,1 @@
-include ':app', ':one-push-core', ':one-push-xiaomi', ':one-push-huawei'
+include ':app', ':one-push-core', ':one-push-xiaomi', ':one-push-huawei', ':one-push-umeng'
