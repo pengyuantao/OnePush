@@ -41,7 +41,7 @@ dependencies {
 dependencies {
       compile 'com.peng.library:one-push-huawei:1.0.1'
       compile 'com.peng.library:one-push-xiaomi:1.0.1'
-      compile 'com.peng.library:one-push-umeng:1.0.1'
+      compile 'com.peng.library:one-push-umeng:1.0.2'
 }
 ```
 
@@ -129,8 +129,76 @@ dependencies {
             }));
             OnePush.register();
 ```
-8. 说明：
+8. 后台推送动作说明：
  * 注册友盟推送除了在主进程中，还需要在channel进程中进行注册，具体操作见DEMO（UMeng官方推送就是这样要求的）
  * 友盟推送：后台配置后续动作，为"自定义行为"。
  * 小米推送：后台配置点击后续动作，为"由应用客户端自定义"。
  * 华为推送：后台配置后续行为，为"自定义动作"，具体内容，可由OnePushService包：com.peng.one.push.service.huawei.intent.HWPushIntent生成，如果后台不是java开发的，参照HWPushIntent重新写。
+
+9. 集成  **友盟推送** 的童鞋注意啦
+ * OnePush拓展的友盟推送是[版本v3.1.1a](http://dev.umeng.com/push/android/sdk-download)，是带有透传消息的。
+ * 关于utdid重复引入的问题，可以通过下面的方案解决
+```
+//如果utdid和你工程项目里面发生冲突了，请修改成这个依赖
+ compile ('com.peng.library:one-push-umeng:1.0.2' ){
+        exclude group: 'com.peng.library',module:'one-push-umeng-utdid4all'
+    }
+```
+ * 关于友盟推送so文件处理，OnePush拓展的友盟推送，默认将所有的so文件引入了，这样就导致友盟推送aar文件大小达到2.25M左右，所以下面提供一个裁剪so文件的方法
+第一步：在工程根目录的gradle.properties文件中，添加 android.useDeprecatedNdk=true
+第二步：在项目（app）的build.gradle节点defaultConfig下添加 
+```
+ ndk {
+            // 设置支持的SO库
+            abiFilters 'armeabi'//,'armeabi-v7a', 'x86', 'x86_64', 'arm64-v8a','mips','mips64'
+        }
+```
+根据自己工程的需要，配置不同的so编译，然后Rebuild Project。
+
+ * 最后啰嗦几句，其实只要添加armeabi，就可以了，armeabi在每个平台都是可以用的，俗称万能油。只是在其他CPU平台上，使用armeabi，效率不是很高而已，其实微信也是只使用了armeabi，只不过它为了提高效率，他将v7a也放在了armeabi里面，最后根据具体安装的手机CPU，动态加载而已。
+
+10. 集成  **华为推送**  的童鞋注意啦
+ * BaseOnePushReceiver中的onReceiveNotification()方法，在使用的华为推送的时候，该方法不会被调用，因为华为推送没有提供这样的支持。
+ *  BaseOnePushReceiver中的onReceiveNotificationClick()方法，在使用华为推送的时候，虽然华为支持，但是如果app被华为一键清理掉后，收到通知，那么点击通知是不会调用华为推送的onEvent（）方法，那么如果我们这里转发，onReceiveNotificationClick（）是不会收到的。
+ * 为了解决华为推送，在手机上被清理掉后，onReceiveNotificationClick（）不被调用的情况，OnePush在华为推送上，使用跳转到指定Activity的推送通知，那么服务端必须提供一个Intent序列化的uri，OnePush提供的Java服务端消息推送示例中，已经提供了服务端序列化Intent的uri的实现（详见：com.peng.one.push.service.huawei.intent.HWPushIntent）。
+
+10. 关于将来拓展其他平台消息推送说明
+  * 个人感觉，除了厂商的推送，其他的第三方推送只需要集成一个就可以了，假如你想使用OnePush，但是目前OnePush拓展的消息推送平台，没有你目前使用的怎么办呢，可以参照OnePush拓展详细说明，进行集成。
+ * 如果你已经拓展其他平台的消息推送，并且测试通过，可以将代码Push过来，我检查过后，合并进来，这样可以方便大家。
+
+11. 拓展其他平台说明
+关于添加其他消息推送SDK具体操作（如果你不满足OnePush提供的小米、华为推送，可根据下面步骤，将其他厂商提供的推送，添加到OnePush里面）
+ * 创建XXXClient 实现IPushClient接口，并且重写对应的方法，initContext(Context),会在初始化的使用进行调用，可以在这里进行获取第三方推送注册需要的ID，KEY或者其他操作，第三方推送ID、KEY，建议在AndroidManifest.xml中的Application标签下添加<meta/>，然后在initContext(Context)中进行获取。
+
+ * 创建和重写三方消息推送的Receiver或者IntentService（一般第三方会让你继承他的receiver，这里指的就是他），重写三方推送的的接收透传消息和通知的方法，调用OneRepeater的transmitXXX方法，将通知、透传消息、通知点击事件、以及其他事件，转发到OnePush。
+
+ * 记得在OnePush注册的时候，进行消息推送平台的选择。
+
+ * 具体操作方法：详见one-push-xiaomi
+
+> 三、相关api介绍
+
+<h6 align = "left">OnePush详细api</h6>
+
+|方法名称|描述及解释|
+|---------|:-------:|
+|init(Context , OnOnePushRegisterListener)|初始化OnePush，建议在Application中onCreate()方法|
+|register()|注册消息推送|
+|unregister()|取消注册消息推送|
+|bindAlias(String)|绑定别名|
+|unBindAlias(String)|取消绑定别名|
+|addTag(String)|添加标签|
+|deleteTag(String)|删除标签|
+|getPushPlatFormCode()|获取推送平台code(AndroidManifest.xml中<meta/>注册)|
+|getPushPlatFormName()|获取推送平台name(AndroidManifest.xml中<meta/>注册)|
+|setDebug(boolean)|设置是否为debug模式|
+
+</br>
+<h6 align = "left">OneRepeater详细api</h6>
+
+|方法名称|描述及解释|
+|---------|:-------:|
+|transmitCommandResult(Context,int,int,String,String,String)|转发操作反馈（具体type在OnePush.TYPE_XXX）|
+|transmitMessage(Context,String,String,Map<String,String>)|转发透传消息|
+|transmitNotification(Context,int,String,String,Sting,Map<String,String>)|转发通知|
+|transmitNotificationClick(Context,int,String,String,Sting,Map<String,String>)|转发通知点击事件|

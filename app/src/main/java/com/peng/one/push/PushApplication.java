@@ -18,12 +18,16 @@ public class PushApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
         String currentProcessName = getCurrentProcessName();
         //只在主进程中注册(注意：umeng推送，除了在主进程中注册，还需要在channel中注册)
         if (BuildConfig.APPLICATION_ID.equals(currentProcessName) || BuildConfig.APPLICATION_ID.concat(":channel").equals(currentProcessName)) {
             OnePush.init(this, ((platformCode, platformName) -> {
                 //platformCode和platformName就是在<meta/>标签中，对应的"平台标识码"和平台名称
+
+//                if (platformCode == 103) {
+//                    return true;
+//                }
+
                 if (platformCode == 102 && RomUtils.isHuaweiRom()) {//华为
                     return true;
                 } else if (platformCode == 101 && RomUtils.isMiuiRom()) {//小米

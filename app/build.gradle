@@ -18,6 +18,10 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            // 设置支持的SO库
+            abiFilters 'armeabi'//,'armeabi-v7a', 'x86', 'x86_64', 'arm64-v8a','mips','mips64'
+        }
     }
 
     signingConfigs {
@@ -57,22 +61,23 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
+    compile 'com.peng.library:one-push-core:1.0.1'
     compile 'com.peng.library:one-push-huawei:1.0.1'
     compile 'com.peng.library:one-push-xiaomi:1.0.1'
-    compile 'com.peng.library:one-push-umeng:1.0.1'
-    compile 'com.peng.library:one-push-core:1.0.1'
-//    compile project(':one-push-core')
-//    compile project(':one-push-huawei')
-//    compile project(':one-push-xiaomi')
-//    compile project(':one-push-umeng')
-
-
+    compile ('com.peng.library:one-push-umeng:1.0.2' ){
+        exclude group: 'com.peng.library',module:'one-push-umeng-utdid4all'
+    }
     /*权限处理*/
     compile('com.github.hotchemi:permissionsdispatcher:2.4.0') {
         // if you don't use android.app.Fragment you can exclude support for them
         exclude module: "support-v13"
     }
     annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
+//    compile project(':one-push-umeng')
+//    compile project(':one-push-huawei')
+//    compile project(':one-push-xiaomi')
+//    compile project(':one-push-umeng-utdid4all')
+//    compile project(':one-push-core')
 }
 
 /* 别名: onepush
