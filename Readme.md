@@ -1,4 +1,5 @@
-![logo](http://upload-images.jianshu.io/upload_images/1460021-ac600dbd1d991fa1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![更新日志](http://upload-images.jianshu.io/upload_images/1460021-a026f75b819ab8aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![logo](http://upload-images.jianshu.io/upload_images/1460021-ac600dbd1d991fa1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![更新日志](http://upload-images.jianshu.io/upload_images/1460021-a026f75b819ab8aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ##### 想看吐槽的点链接：
 *****************************
