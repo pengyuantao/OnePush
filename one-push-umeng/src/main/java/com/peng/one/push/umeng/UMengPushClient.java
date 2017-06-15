@@ -30,6 +30,7 @@ public class UMengPushClient implements IPushClient {
         this.mPushAgent = PushAgent.getInstance(context);
         this.mPushAgent.setNotificationClickHandler(new OnePushNotificationClickHandler());
         this.mPushAgent.setMessageHandler(new OnePushMessageHandler());
+        this.mPushAgent.setDisplayNotificationNumber(0);
     }
 
     @Override

@@ -27,6 +27,34 @@
 此外，由于应用的“日活”数据对开发者和投资人非常重要，一些开发者会利用透传消息，在用户不知情的情况下激活应用，造成耗电和资源浪费，因此，透传消息激活应用的做法也会被限制。
 ```
 
+### 更新日志
+one-push-core
+***
+[1] 1.0.1 init
+
+<br/>
+
+one-push-huawei
+*** 
+[1] 1.0.1 init
+
+<br/>
+
+one-push-xiaomi
+*** 
+[1] 1.0.1 init
+
+<br/>
+
+one-push-umeng
+*** 
+[1] 1.0.1 init
+[2] 1.0.2 支持so裁剪，动态依赖utdid
+[3] 1.0.3 去除友盟合并通知栏通知
+
+<br/>
+
+
 
 ### 快速集成指南
 
@@ -41,7 +69,7 @@ dependencies {
 dependencies {
       compile 'com.peng.library:one-push-huawei:1.0.1'
       compile 'com.peng.library:one-push-xiaomi:1.0.1'
-      compile 'com.peng.library:one-push-umeng:1.0.2'
+      compile 'com.peng.library:one-push-umeng:1.0.3'
 }
 ```
 
@@ -140,7 +168,7 @@ dependencies {
  * 关于utdid重复引入的问题，可以通过下面的方案解决
 ```
 //如果utdid和你工程项目里面发生冲突了，请修改成这个依赖
- compile ('com.peng.library:one-push-umeng:1.0.2' ){
+ compile ('com.peng.library:one-push-umeng:1.0.3' ){
         exclude group: 'com.peng.library',module:'one-push-umeng-utdid4all'
     }
 ```
