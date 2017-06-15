@@ -30,13 +30,13 @@
 
 ### 快速集成指南
 
-1. 添加OnePush主要依赖（必须添加）
+######  1. 添加OnePush主要依赖（必须添加）
 ```
 dependencies {
       compile 'com.peng.library:one-push-core:1.0.1'
 }
 ```
-2. 添加第三方推送依赖（根据自己的需求进行添加，当然也可以全部添加）
+######  2. 添加第三方推送依赖（根据自己的需求进行添加，当然也可以全部添加）
 ```
 dependencies {
       compile 'com.peng.library:one-push-huawei:1.0.1'
@@ -45,7 +45,7 @@ dependencies {
 }
 ```
 
-3.  继承BaseOnePushReceiver重写里面的方法，并在AndroidManifest.xml中注册
+######  3.  继承BaseOnePushReceiver重写里面的方法，并在AndroidManifest.xml中注册
 ```
 <receiver android:name="com.peng.openpush.TestPushReceiver">
             <intent-filter>
@@ -56,7 +56,7 @@ dependencies {
             </intent-filter>
 </receiver>
 ```
-4. 在AndroidManifest.xml的application标签下，添加第三方推送实现类
+######  4. 在AndroidManifest.xml的application标签下，添加第三方推送实现类
 ```
  <!--如果引入了one-push-huawei类库-->
         <meta-data
@@ -77,7 +77,7 @@ dependencies {
  * android:name    必须是以“ OnePush ”开头，并且以"\_"进行分割(OnePush_平台名称_平台标识码)，在初始化OnePush 的时候，根据标识码和当前手机系统，动态的使用不同平台消息推送。
  *  android:value    这个是继承IPushClient实现类，全类名路径。
 
-5. 添加第三方AppKey和AppSecret
+######  5. 添加第三方AppKey和AppSecret
 如果使用了one-push-xiaomi,那么需要在AndroidManifest.xml添加小米的AppKey和AppSecret（注意下面的“\ ”必须加上，否则获取到的是float而不是String，就会导致id和key获取不到正确的数据）
 ```
  <!--xiaomi_push需要进行下面的配置-->
@@ -101,7 +101,7 @@ dependencies {
  <!--huawei_push，在app上不需要配置appkey和secret，需要在华为开发者平台，申请华为推送，并配置包名和证书指纹-->
 ```
 
-6. 如果OnePush使用了小米推送，需要注册小米推送权限
+######  6. 如果OnePush使用了小米推送，需要注册小米推送权限
 ```
  <!--注意下面的必须修改   -->
     <permission
@@ -112,7 +112,7 @@ dependencies {
    <!--这里com.peng.one.push改成你的app的包名，以build.gralde中的applicationId为准-->
 ```
 
-7. 初始化OnePush
+######  7. 初始化OnePush
 ```|
 //初始化的时候，回调该方法，可以根据platformCode和当前系统的类型，进行注册
 //返回true，则使用该平台的推送，否者就不使用
@@ -129,13 +129,13 @@ dependencies {
             }));
             OnePush.register();
 ```
-8. 后台推送动作说明：
+######  8. 后台推送动作说明：
  * 注册友盟推送除了在主进程中，还需要在channel进程中进行注册，具体操作见DEMO（UMeng官方推送就是这样要求的）
  * 友盟推送：后台配置后续动作，为"自定义行为"。
  * 小米推送：后台配置点击后续动作，为"由应用客户端自定义"。
  * 华为推送：后台配置后续行为，为"自定义动作"，具体内容，可由OnePushService包：com.peng.one.push.service.huawei.intent.HWPushIntent生成，如果后台不是java开发的，参照HWPushIntent重新写。
 
-9. 集成  **友盟推送** 的童鞋注意啦
+######  9. 集成  **友盟推送** 的童鞋注意啦
  * OnePush拓展的友盟推送是[版本v3.1.1a](http://dev.umeng.com/push/android/sdk-download)，是带有透传消息的。
  * 关于utdid重复引入的问题，可以通过下面的方案解决
 ```
@@ -157,16 +157,16 @@ dependencies {
 
  * 最后啰嗦几句，其实只要添加armeabi，就可以了，armeabi在每个平台都是可以用的，俗称万能油。只是在其他CPU平台上，使用armeabi，效率不是很高而已，其实微信也是只使用了armeabi，只不过它为了提高效率，他将v7a也放在了armeabi里面，最后根据具体安装的手机CPU，动态加载而已。
 
-10. 集成  **华为推送**  的童鞋注意啦
+######  10. 集成  **华为推送**  的童鞋注意啦
  * BaseOnePushReceiver中的onReceiveNotification()方法，在使用的华为推送的时候，该方法不会被调用，因为华为推送没有提供这样的支持。
  *  BaseOnePushReceiver中的onReceiveNotificationClick()方法，在使用华为推送的时候，虽然华为支持，但是如果app被华为一键清理掉后，收到通知，那么点击通知是不会调用华为推送的onEvent（）方法，那么如果我们这里转发，onReceiveNotificationClick（）是不会收到的。
  * 为了解决华为推送，在手机上被清理掉后，onReceiveNotificationClick（）不被调用的情况，OnePush在华为推送上，使用跳转到指定Activity的推送通知，那么服务端必须提供一个Intent序列化的uri，OnePush提供的Java服务端消息推送示例中，已经提供了服务端序列化Intent的uri的实现（详见：com.peng.one.push.service.huawei.intent.HWPushIntent）。
 
-10. 关于将来拓展其他平台消息推送说明
+######  11. 关于将来拓展其他平台消息推送说明
   * 个人感觉，除了厂商的推送，其他的第三方推送只需要集成一个就可以了，假如你想使用OnePush，但是目前OnePush拓展的消息推送平台，没有你目前使用的怎么办呢，可以参照OnePush拓展详细说明，进行集成。
  * 如果你已经拓展其他平台的消息推送，并且测试通过，可以将代码Push过来，我检查过后，合并进来，这样可以方便大家。
 
-11. 拓展其他平台说明
+######  12. 拓展其他平台说明
 关于添加其他消息推送SDK具体操作（如果你不满足OnePush提供的小米、华为推送，可根据下面步骤，将其他厂商提供的推送，添加到OnePush里面）
  * 创建XXXClient 实现IPushClient接口，并且重写对应的方法，initContext(Context),会在初始化的使用进行调用，可以在这里进行获取第三方推送注册需要的ID，KEY或者其他操作，第三方推送ID、KEY，建议在AndroidManifest.xml中的Application标签下添加<meta/>，然后在initContext(Context)中进行获取。
 
