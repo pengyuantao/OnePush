@@ -136,7 +136,7 @@ dependencies {
  * 华为推送：后台配置后续行为，为"自定义动作"，具体内容，可由OnePushService包：com.peng.one.push.service.huawei.intent.HWPushIntent生成，如果后台不是java开发的，参照HWPushIntent重新写。
 
 #### 9. 集成  **友盟推送** 的童鞋注意啦
- * OnePush拓展的友盟推送是[版本v3.1.1a](http://dev.umeng.com/push/android/sdk-download)，是带有透传消息的。
+ * OnePush拓展的友盟推送是[版本v3.1.1a](http://dev.umeng.com/push/android/sdk-download)。
  * 关于utdid重复引入的问题，可以通过下面的方案解决
 ```
 //如果utdid和你工程项目里面发生冲突了，请修改成这个依赖
