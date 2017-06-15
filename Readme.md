@@ -27,34 +27,8 @@
 此外，由于应用的“日活”数据对开发者和投资人非常重要，一些开发者会利用透传消息，在用户不知情的情况下激活应用，造成耗电和资源浪费，因此，透传消息激活应用的做法也会被限制。
 ```
 
-### 更新日志
-one-push-core
-***
-[1] 1.0.1 init
 
-<br/>
-
-one-push-huawei
-*** 
-[1] 1.0.1 init
-
-<br/>
-
-one-push-xiaomi
-*** 
-[1] 1.0.1 init
-
-<br/>
-
-one-push-umeng
-*** 
-[1] 1.0.1 init
-[2] 1.0.2 支持so裁剪，动态依赖utdid
-[3] 1.0.3 去除友盟合并通知栏通知
-
-<br/>
-
-
+![图片.png](http://upload-images.jianshu.io/upload_images/1460021-a026f75b819ab8aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 快速集成指南
 
