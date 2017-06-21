@@ -1,6 +1,9 @@
 package com.peng.one.push.umeng;
 
+import android.app.Activity;
+import android.app.Application;
 import android.content.Context;
+import android.os.Bundle;
 
 import com.peng.one.push.OnePush;
 import com.peng.one.push.OneRepeater;
@@ -19,14 +22,58 @@ import com.umeng.message.tag.TagManager;
 
 public class UMengPushClient implements IPushClient {
 
+
     public static final String ONE_PUSH_ALIAS = "ONE_PUSH";
-    private Context context;
     private PushAgent mPushAgent;
     private String deviceToken;
+    private Application app;
+    private Context context;
+    private Application.ActivityLifecycleCallbacks lifecycleCallbacks = new Application.ActivityLifecycleCallbacks() {
+        @Override
+        public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
+            mPushAgent.onAppStart();
+        }
+
+        @Override
+        public void onActivityStarted(Activity activity) {
+
+        }
+
+        @Override
+        public void onActivityResumed(Activity activity) {
+
+        }
+
+        @Override
+        public void onActivityPaused(Activity activity) {
+
+        }
+
+        @Override
+        public void onActivityStopped(Activity activity) {
+
+        }
+
+        @Override
+        public void onActivitySaveInstanceState(Activity activity, Bundle outState) {
+
+        }
+
+        @Override
+        public void onActivityDestroyed(Activity activity) {
+
+        }
+    };
 
     @Override
     public void initContext(Context context) {
-        this.context = context.getApplicationContext();
+        if (context instanceof Application) {
+            //app添加的兼容的属性
+            this.app = (Application) context;
+            this.context = context.getApplicationContext();
+        } else {
+            throw new IllegalArgumentException("UMengPush must init by Application,you can call OnePush.init() method at Application onCreate that you custom application class!");
+        }
         this.mPushAgent = PushAgent.getInstance(context);
         this.mPushAgent.setNotificationClickHandler(new OnePushNotificationClickHandler());
         this.mPushAgent.setMessageHandler(new OnePushMessageHandler());
@@ -35,6 +82,7 @@ public class UMengPushClient implements IPushClient {
 
     @Override
     public void register() {
+        this.app.registerActivityLifecycleCallbacks(lifecycleCallbacks);
         new Thread() {
             @Override
             public void run() {
@@ -60,6 +108,7 @@ public class UMengPushClient implements IPushClient {
 
     @Override
     public void unRegister() {
+        this.app.unregisterActivityLifecycleCallbacks(lifecycleCallbacks);
         mPushAgent.disable(new IUmengCallback() {
             @Override
             public void onSuccess() {

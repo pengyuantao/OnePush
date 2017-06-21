@@ -61,10 +61,10 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
-    compile 'com.peng.library:one-push-core:1.0.1'
+    compile 'com.peng.library:one-push-core:1.0.2'
     compile 'com.peng.library:one-push-huawei:1.0.1'
     compile 'com.peng.library:one-push-xiaomi:1.0.1'
-    compile ('com.peng.library:one-push-umeng:1.0.2' ){
+    compile ('com.peng.library:one-push-umeng:1.0.4' ){
         exclude group: 'com.peng.library',module:'one-push-umeng-utdid4all'
     }
     /*权限处理*/
