@@ -1,6 +1,6 @@
 package com.peng.one.push;
 
-import android.content.Context;
+import android.app.Application;
 
 import com.peng.one.push.core.OnOnePushRegisterListener;
 import com.peng.one.push.core.OnePushCode;
@@ -16,11 +16,11 @@ public class OnePush implements OnePushCode{
 
     /**
      *Initialize One Push
-     * @param context
+     * @param application
      * @param listener
      */
-    public static void init(Context context,OnOnePushRegisterListener listener){
-        OnePushContext.getInstance().init(context, listener);
+    public static void init(Application application, OnOnePushRegisterListener listener){
+        OnePushContext.getInstance().init(application, listener);
     }
 
     /**

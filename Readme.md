@@ -1,5 +1,5 @@
 ![logo](http://upload-images.jianshu.io/upload_images/1460021-ac600dbd1d991fa1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![更新日志](http://upload-images.jianshu.io/upload_images/1460021-a026f75b819ab8aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![更新日志](http://upload-images.jianshu.io/upload_images/1460021-05409b84390d55d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ##### 想看吐槽的点链接：
 *****************************
@@ -33,18 +33,20 @@
 
 ### 快速集成指南
 
+> 所有的lastVersion对应的是上面表格的最新的版本号，集成的时候，需要进行替换。
+
 #### 1. 添加OnePush主要依赖（必须添加）
 ```
 dependencies {
-      compile 'com.peng.library:one-push-core:1.0.1'
+      compile 'com.peng.library:one-push-core:lastVersion'
 }
 ```
 #### 2. 添加第三方推送依赖（根据自己的需求进行添加，当然也可以全部添加）
 ```
 dependencies {
-      compile 'com.peng.library:one-push-huawei:1.0.1'
-      compile 'com.peng.library:one-push-xiaomi:1.0.1'
-      compile 'com.peng.library:one-push-umeng:1.0.3'
+      compile 'com.peng.library:one-push-huawei:lastVersion'
+      compile 'com.peng.library:one-push-xiaomi:lastVersion'
+      compile 'com.peng.library:one-push-umeng:lastVersion'
 }
 ```
 
@@ -143,7 +145,7 @@ dependencies {
  * 关于utdid重复引入的问题，可以通过下面的方案解决
 ```
 //如果utdid和你工程项目里面发生冲突了，请修改成这个依赖
- compile ('com.peng.library:one-push-umeng:1.0.3' ){
+ compile ('com.peng.library:one-push-umeng:lastVersion' ){
         exclude group: 'com.peng.library',module:'one-push-umeng-utdid4all'
     }
 ```

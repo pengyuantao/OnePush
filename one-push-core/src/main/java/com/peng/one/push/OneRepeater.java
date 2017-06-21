@@ -24,10 +24,20 @@ public class OneRepeater {
     /**
      * Repeater instructions operating results
      * @param context
+     *
      * @param type
-     * @see OnePush#TYPE_ADD_TAG,OnePush#TYPE_AND_OR_DEL_TAG...
+     * @see OnePush#TYPE_ADD_TAG
+     * @see OnePush#TYPE_DEL_TAG
+     * @see OnePush#TYPE_AND_OR_DEL_TAG
+     * @see OnePush#TYPE_REGISTER
+     * @see OnePush#TYPE_UNREGISTER
+     * @see OnePush#TYPE_BIND_ALIAS
+     * @see OnePush#TYPE_UNBIND_ALIAS
+     *
      * @param resultCode
-     * @see OnePush#RESULT_ERROR,OnePush#RESULT_OK
+     * @see OnePush#RESULT_ERROR
+     * @see OnePush#RESULT_OK
+     *
      * @param extraMsg 额外信息
      * @param error 错误信息
      */

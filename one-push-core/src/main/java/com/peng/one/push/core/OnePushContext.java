@@ -1,5 +1,6 @@
 package com.peng.one.push.core;
 
+import android.app.Application;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -33,8 +34,6 @@ public class OnePushContext {
 
     private String mPlatformName;
 
-    private Context mContext;
-
     //all support push platform map
     private LinkedHashMap<String, String> mAllSupportPushPlatformMap = new LinkedHashMap<>();
 
@@ -51,11 +50,11 @@ public class OnePushContext {
 
     }
 
-    public void init(Context context, OnOnePushRegisterListener listener) {
-        this.mContext = context.getApplicationContext();
+    public void init(Application application, OnOnePushRegisterListener listener) {
+        Context context = application.getApplicationContext();
         try {
             //find all support push platform
-            Bundle metaData = mContext.getPackageManager().getApplicationInfo(context.getPackageName(), PackageManager.GET_META_DATA).metaData;
+            Bundle metaData = context.getPackageManager().getApplicationInfo(context.getPackageName(), PackageManager.GET_META_DATA).metaData;
             if (metaData != null) {
                 Set<String> allKeys = metaData.keySet();
                 if (allKeys != null && !allKeys.isEmpty()) {
@@ -100,7 +99,7 @@ public class OnePushContext {
                         this.mPlatformName = platformName;
                         //invoke IPushClient initContext method
                         OneLog.i(TAG, "current register platform is "+metaPlatformName);
-                        iPushClient.initContext(mContext);
+                        iPushClient.initContext(application);
                         break;
                     }
                 } else {
