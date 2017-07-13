@@ -30,6 +30,7 @@
 -dontwarn org.apache.thrift.**
 -dontwarn com.xiaomi.**
 -dontwarn com.huawei.**
+-dontwarn com.peng.one.push.**
 
 -keepattributes *Annotation*
 
@@ -56,3 +57,6 @@
    public static *** i(...);
    public static *** w(...);
  }
+
+ # OnePush的混淆
+-keep class * extends com.peng.one.push.core.IPushClient{*;}

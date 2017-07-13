@@ -1,20 +1,24 @@
-![logo](http://upload-images.jianshu.io/upload_images/1460021-ac600dbd1d991fa1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![更新日志](http://upload-images.jianshu.io/upload_images/1460021-05409b84390d55d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+## 消息推送用OnePush，就够了！
+****
+|模块|one-push-core|one-push-huawei|one-push-xiaomi|one-push-umeng|
+|:-------:|:-------:|:-------:|
+|![lastVersion](https://api.bintray.com/packages/pengyuantao/maven/one-push-core/images/download.svg)|![lastVersion](https://api.bintray.com/packages/pengyuantao/maven/one-push-huawei/images/download.svg)|![lastVersion](https://api.bintray.com/packages/pengyuantao/maven/one-push-xiaomi/images/download.svg)|![lastVersion](https://api.bintray.com/packages/pengyuantao/maven/one-push-umeng/images/download.svg)|
 
-##### 想看吐槽的点链接：
-*****************************
+
+### 传送门
+
 [一步步走来的消息推送](http://www.jianshu.com/p/1ff15a072fdf)
 
-[详细集成指南，请点这里！](http://www.jianshu.com/p/91adbbde31e0)
-
-##### android消息推送的好消息：
-*******************
 [安卓统一推送标准 已取得阶段性成果](http://mp.weixin.qq.com/s/qMfUm2fsOS6EHHaa1nbdpw)
 
 [实验室开展基于安卓操作系统统一推送工作的相关Q&A](http://mp.weixin.qq.com/s/Gni8zu75nJMPKAo3gfTeJQ)
-**********
 
-|小米推送|华为推送|友盟推送
+[一步步走来的消息推送](http://www.jianshu.com/p/1ff15a072fdf)
+
+[更新日志](https://github.com/pengyuantao/OnePush/blob/master/updateLog.md)
+
+
+|小米推送|华为推送|友盟推送|
 |:-------:|:-------:|:-------:|
 |![](http://upload-images.jianshu.io/upload_images/1460021-b84daf61d5b52ad6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|![](http://upload-images.jianshu.io/upload_images/1460021-b99dc8a580ca5aeb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|![](http://upload-images.jianshu.io/upload_images/1460021-5dc28971978853fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|
 
