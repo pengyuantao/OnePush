@@ -17,8 +17,6 @@
 
 [实验室开展基于安卓操作系统统一推送工作的相关Q&A](http://mp.weixin.qq.com/s/Gni8zu75nJMPKAo3gfTeJQ)
 
-[一步步走来的消息推送](http://www.jianshu.com/p/1ff15a072fdf)
-
 [更新日志](https://github.com/pengyuantao/OnePush/blob/master/updateLog.md)
 
 ### 前言
@@ -124,18 +122,20 @@ dependencies {
 ```|
 //初始化的时候，回调该方法，可以根据platformCode和当前系统的类型，进行注册
 //返回true，则使用该平台的推送，否者就不使用
- OnePush.init(this, ((platformCode, platformName) -> {
+//只在主进程中注册(注意：umeng推送，除了在主进程中注册，还需要在channel中注册)
+        if (BuildConfig.APPLICATION_ID.equals(currentProcessName) || BuildConfig.APPLICATION_ID.concat(":channel").equals(currentProcessName)) {
+            OnePush.init(this, ((platformCode, platformName) -> {
                 //platformCode和platformName就是在<meta/>标签中，对应的"平台标识码"和平台名称
-                if (platformCode == 102 && RomUtils.isHuaweiRom()) {//华为
-                    return true;
-                } else if (platformCode == 101 && RomUtils.isMiuiRom()) {//小米
-                    return true;
-                } else if (platformCode == 103) {//友盟
-                    return true;
+                if (RomUtils.isMiuiRom()) {
+                    return platformCode == 101;
+                } else if (RomUtils.isHuaweiRom()) {
+                    return platformCode == 102;
+                } else {
+                    return platformCode == 103;
                 }
-                return false;
             }));
             OnePush.register();
+}
 ```
 #### 8. 后台推送动作说明：
  * 注册友盟推送除了在主进程中，还需要在channel进程中进行注册，具体操作见DEMO（UMeng官方推送就是这样要求的）
