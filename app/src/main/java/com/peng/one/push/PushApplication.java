@@ -24,14 +24,13 @@ public class PushApplication extends Application {
         if (BuildConfig.APPLICATION_ID.equals(currentProcessName) || BuildConfig.APPLICATION_ID.concat(":channel").equals(currentProcessName)) {
             OnePush.init(this, ((platformCode, platformName) -> {
                 //platformCode和platformName就是在<meta/>标签中，对应的"平台标识码"和平台名称
-                if (platformCode == 102 && RomUtils.isHuaweiRom()) {//华为
-                    return true;
-                } else if (platformCode == 101 && RomUtils.isMiuiRom()) {//小米
-                    return true;
-                } else if (platformCode == 103) {//友盟
-                    return true;
+                if (RomUtils.isMiuiRom()) {
+                    return platformCode == 101;
+                } else if (RomUtils.isHuaweiRom()) {
+                    return platformCode == 102;
+                } else {
+                    return platformCode == 103;
                 }
-                return false;
             }));
             OnePush.register();
         }

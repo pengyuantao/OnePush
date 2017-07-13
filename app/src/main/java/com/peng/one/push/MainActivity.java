@@ -6,6 +6,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
@@ -65,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initTitle() {
-        getSupportActionBar().setTitle("当前使用平台:" + OnePush.getPushPlatFormName());
+        getSupportActionBar().setTitle("平台:" + OnePush.getPushPlatFormName() + "-" + Build.MANUFACTURER );
     }
 
     private void initView() {
