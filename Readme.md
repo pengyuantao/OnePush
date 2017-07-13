@@ -1,9 +1,13 @@
 ## 消息推送用OnePush，就够了！
-****
-|模块|one-push-core|one-push-huawei|one-push-xiaomi|one-push-umeng|
-|:-------:|:-------:|:-------:|
-|![lastVersion](https://api.bintray.com/packages/pengyuantao/maven/one-push-core/images/download.svg)|![lastVersion](https://api.bintray.com/packages/pengyuantao/maven/one-push-huawei/images/download.svg)|![lastVersion](https://api.bintray.com/packages/pengyuantao/maven/one-push-xiaomi/images/download.svg)|![lastVersion](https://api.bintray.com/packages/pengyuantao/maven/one-push-umeng/images/download.svg)|
 
+|模块|one-push-core|one-push-huawei|one-push-xiaomi|one-push-umeng|
+|-------|-------|-------|-------|-------|
+|lastVersion|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-core/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-huawei/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-xiaomi/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-umeng/images/download.svg)|
+
+
+|小米推送|华为推送|友盟推送|
+|:-------:|:-------:|:-------:|
+|![](http://upload-images.jianshu.io/upload_images/1460021-b84daf61d5b52ad6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|![](http://upload-images.jianshu.io/upload_images/1460021-b99dc8a580ca5aeb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|![](http://upload-images.jianshu.io/upload_images/1460021-5dc28971978853fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|
 
 ### 传送门
 
@@ -16,11 +20,6 @@
 [一步步走来的消息推送](http://www.jianshu.com/p/1ff15a072fdf)
 
 [更新日志](https://github.com/pengyuantao/OnePush/blob/master/updateLog.md)
-
-
-|小米推送|华为推送|友盟推送|
-|:-------:|:-------:|:-------:|
-|![](http://upload-images.jianshu.io/upload_images/1460021-b84daf61d5b52ad6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|![](http://upload-images.jianshu.io/upload_images/1460021-b99dc8a580ca5aeb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|![](http://upload-images.jianshu.io/upload_images/1460021-5dc28971978853fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|
 
 ### 前言
 看了 " 泰尔终端实验室 "说要统一android的消息推送了，差点激动的掉眼泪！
