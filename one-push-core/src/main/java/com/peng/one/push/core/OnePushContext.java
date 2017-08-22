@@ -98,7 +98,7 @@ public class OnePushContext {
                         this.mPlatformCode = platformCode;
                         this.mPlatformName = platformName;
                         //invoke IPushClient initContext method
-                        OneLog.i(TAG, "current register platform is "+metaPlatformName);
+                        OneLog.i("current register platform is "+metaPlatformName);
                         iPushClient.initContext(application);
                         break;
                     }
@@ -119,26 +119,32 @@ public class OnePushContext {
     }
 
     public void register() {
+        OneLog.i( String.format("%s--%s", getPushPlatFormName(), "register()"));
         mIPushClient.register();
     }
 
     public void unRegister() {
+        OneLog.i( String.format("%s--%s", getPushPlatFormName(), "unRegister()"));
         mIPushClient.unRegister();
     }
 
     public void bindAlias(String alias) {
+        OneLog.i( String.format("%s--%s", getPushPlatFormName(), "bindAlias("+alias+")"));
         mIPushClient.bindAlias(alias);
     }
 
     public void unBindAlias(String alias) {
+        OneLog.i( String.format("%s--%s", getPushPlatFormName(), "unBindAlias("+alias+")"));
         mIPushClient.unBindAlias(alias);
     }
 
     public void addTag(String tag) {
+        OneLog.i(String.format("%s--%s", getPushPlatFormName(), "addTag("+tag+")"));
         mIPushClient.addTag(tag);
     }
 
     public void deleteTag(String tag) {
+        OneLog.i(String.format("%s--%s", getPushPlatFormName(), "deleteTag("+tag+")"));
         mIPushClient.deleteTag(tag);
     }
 

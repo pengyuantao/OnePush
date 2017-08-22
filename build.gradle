@@ -23,6 +23,7 @@ allprojects {
         jcenter()
         maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }
         maven { url 'https://jitpack.io' }
+        maven { url "http://mvn.gt.igexin.com/nexus/content/repositories/releases/" }
     }
 }
 

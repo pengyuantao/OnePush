@@ -10,15 +10,17 @@ public class OneLog {
 
     private static boolean sDebug = true;
 
-    public static void i(String tag, String log) {
+    public static final String TAG = "OneLog";
+
+    public static void i(String log) {
         if (sDebug) {
-            Log.i(tag,log);
+            Log.i(TAG,log);
         }
     }
 
-    public static void e(String tag, String log) {
+    public static void e( String log) {
         if (sDebug) {
-            Log.e(tag,log);
+            Log.e(TAG,log);
         }
     }
 

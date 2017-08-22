@@ -48,7 +48,13 @@
             android:name="OnePush_XiaoMi_101"
             android:value="com.peng.one.push.xiaomi.XiaomiPushClient" />
 
-        <activity android:name="com.peng.one.push.MainActivity">
+        <!--如果引入了one-push-getui库-->
+        <meta-data
+            android:name="OnePush_GeTui_104"
+            android:value="com.peng.one.push.getui.GeTuiPushClient" />
+
+        <activity android:name="com.peng.one.push.MainActivity"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -29,7 +29,7 @@ public class PushApplication extends Application {
                 } else if (RomUtils.isHuaweiRom()) {
                     return platformCode == 102;
                 } else {
-                    return platformCode == 103;
+                    return platformCode == 104;
                 }
             }));
             OnePush.register();

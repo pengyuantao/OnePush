@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.peng.one.push.getui">
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <service android:name="com.peng.one.push.getui.GeTuiPushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice"
+            />
+
+        <service android:name="com.peng.one.push.getui.GeTuiReceiverService" />
+    </application>
+
+</manifest>

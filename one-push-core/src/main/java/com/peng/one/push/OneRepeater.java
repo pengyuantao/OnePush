@@ -95,7 +95,6 @@ public class OneRepeater {
      * @param data
      */
     private static void transmit(Context context, String action, Parcelable data) {
-        OneLog.i(TAG, "transmit() called with: context = [" + context + "], action = [" + action + "], data = [" + data + "]");
         TransmitDataManager.sendPushData(context, action, data);
     }
 

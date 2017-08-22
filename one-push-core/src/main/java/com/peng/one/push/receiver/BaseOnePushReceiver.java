@@ -3,11 +3,13 @@ package com.peng.one.push.receiver;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Parcelable;
 
 import com.peng.one.push.core.IPushReceiver;
 import com.peng.one.push.core.OnePushCode;
 import com.peng.one.push.entity.OnePushCommand;
 import com.peng.one.push.entity.OnePushMsg;
+import com.peng.one.push.log.OneLog;
 
 
 /**
@@ -20,19 +22,17 @@ public abstract class BaseOnePushReceiver extends BroadcastReceiver implements I
     @Override
     public final void onReceive(Context context, Intent intent) {
         String action = intent.getAction();
+        Parcelable parcelable = TransmitDataManager.parsePushData(intent);
         if (OnePushAction.RECEIVE_COMMAND_RESULT.equals(action)) {
-            OnePushCommand onePushCommand = TransmitDataManager.parsePushData(intent);
-            onCommandResult(context, onePushCommand);
+            onCommandResult(context, (OnePushCommand) parcelable);
         } else if (OnePushAction.RECEIVE_NOTIFICATION.equals(action)) {
-            OnePushMsg onePushMsg = TransmitDataManager.parsePushData(intent);
-            onReceiveNotification(context, onePushMsg);
+            onReceiveNotification(context, (OnePushMsg) parcelable);
         } else if (OnePushAction.RECEIVE_NOTIFICATION_CLICK.equals(action)) {
-            OnePushMsg onePushMsg = TransmitDataManager.parsePushData(intent);
-            onReceiveNotificationClick(context, onePushMsg);
+            onReceiveNotificationClick(context,  (OnePushMsg) parcelable);
         } else if (OnePushAction.RECEIVE_MESSAGE.equals(action)) {
-            OnePushMsg onePushMsg = TransmitDataManager.parsePushData(intent);
-            onReceiveMessage(context, onePushMsg);
+            onReceiveMessage(context, (OnePushMsg) parcelable);
         }
+        OneLog.i(String.format("%s--%s", action, String.valueOf(parcelable)));
     }
 
     @Override

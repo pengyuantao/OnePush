@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">one-push-getui</string>
+    <string name="bind_alias_fail">绑定别名失败</string>
+    <string name="bind_alias_success">绑定别名成功</string>
+
+    <string name="unbind_alias_fail">解绑别名失败</string>
+    <string name="unbind_alias_success">解绑别名成功</string>
+</resources>

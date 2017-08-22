@@ -32,6 +32,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     testCompile 'junit:junit:4.12'
+
     provided 'com.peng.library:one-push-core:1.0.1'
 }
 
