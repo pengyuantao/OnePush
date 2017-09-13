@@ -210,3 +210,46 @@ dependencies {
 |transmitMessage(Context,String,String,Map<String,String>)|转发透传消息|
 |transmitNotification(Context,int,String,String,Sting,Map<String,String>)|转发通知|
 |transmitNotificationClick(Context,int,String,String,Sting,Map<String,String>)|转发通知点击事件|
+
+```
+-dontwarn com.taobao.**
+-dontwarn anet.channel.**
+-dontwarn anetwork.channel.**
+-dontwarn org.android.**
+-dontwarn org.apache.thrift.**
+-dontwarn com.xiaomi.**
+-dontwarn com.huawei.**
+-dontwarn com.peng.one.push.**
+-dontwarn com.igexin.**
+-keepattributes *Annotation*
+
+-keep class com.taobao.** {*;}
+-keep class org.android.** {*;}
+-keep class anet.channel.** {*;}
+-keep class com.umeng.** {*;}
+-keep class com.xiaomi.** {*;}
+-keep class com.huawei.** {*;}
+-keep class org.apache.thrift.** {*;}
+-keep class com.igexin.** { *; }
+-keep class org.json.** { *; }
+-keep class com.alibaba.sdk.android.**{*;}
+-keep class com.ut.**{*;}
+-keep class com.ta.**{*;}
+
+-keep public class **.R$*{
+   public static final int *;
+}
+
+#（可选）避免Log打印输出
+-assumenosideeffects class android.util.Log {
+   public static *** v(...);
+   public static *** d(...);
+   public static *** i(...);
+   public static *** w(...);
+ }
+
+ # OnePush的混淆
+-keep class * extends com.peng.one.push.core.IPushClient{*;}
+
+
+```
