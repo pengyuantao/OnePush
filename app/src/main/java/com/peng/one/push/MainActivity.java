@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initTitle() {
-        getSupportActionBar().setTitle("平台:" + OnePush.getPushPlatFormName() + "-" + Build.MANUFACTURER );
+        getSupportActionBar().setTitle("Push:" + OnePush.getPushPlatFormName() + "--Rom:" + Build.MANUFACTURER );
     }
 
     private void initView() {

@@ -17,6 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <!--友盟推送静态注册-->
         <meta-data
             android:name="UMENG_APPKEY"
             android:value="593e2640b27b0a0852000014"/>
@@ -25,6 +26,7 @@
             android:name="UMENG_MESSAGE_SECRET"
             android:value="b765e337eedd391603550eb6f922f81b"/>
 
+        <!--小米推送静态注册-->
         <meta-data
             android:name="MI_PUSH_APP_ID"
             android:value="\ 2882303761517577233" />
@@ -33,10 +35,19 @@
             android:name="MI_PUSH_APP_KEY"
             android:value="\ 5701757717233" />
 
-        <!--如果引入了one-push-umeng类库-->
+        <!--华为推送不需要静态注册-->
+
+        <!--个推推送静态注册-->
         <meta-data
-            android:name="OnePush_UMENG_103"
-            android:value="com.peng.one.push.umeng.UMengPushClient" />
+            android:name="PUSH_APPID"
+            android:value="biFrGOdkOq58YE55rdMPz2" />
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="C3vnzVMWB29o2mDJPDKdQ4" />
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="gz3fTngzFEAfyMEoZTJCOA" />
+
 
         <!--如果引入了one-push-huawei类库-->
         <meta-data
@@ -48,11 +59,16 @@
             android:name="OnePush_XiaoMi_101"
             android:value="com.peng.one.push.xiaomi.XiaomiPushClient" />
 
-        <!--如果引入了one-push-getui库-->
+        <!--如果引入了one-push-umeng类库-->
         <meta-data
+            android:name="OnePush_UMENG_103"
+            android:value="com.peng.one.push.umeng.UMengPushClient" />
+
+        <!--如果引入了one-push-getui库-->
+   <!--     <meta-data
             android:name="OnePush_GeTui_104"
             android:value="com.peng.one.push.getui.GeTuiPushClient" />
-
+-->
         <activity android:name="com.peng.one.push.MainActivity"
             android:launchMode="singleTop">
             <intent-filter>

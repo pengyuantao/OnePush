@@ -41,20 +41,20 @@ public class XiaomiPushReceiver extends PushMessageReceiver {
 
     @Override
     public void onReceivePassThroughMessage(Context context, MiPushMessage message) {
-        OneLog.i(TAG, "onReceivePassThroughMessage() called with: context = [" + context + "], message = [" + message + "]");
+        OneLog.i("onReceivePassThroughMessage() called with: context = [" + context + "], message = [" + message + "]");
         OneRepeater.transmitMessage(context, message.getContent(), message.getDescription(), message.getExtra());
     }
 
     @Override
     public void onNotificationMessageClicked(Context context, MiPushMessage message) {
-        OneLog.i(TAG, "onNotificationMessageClicked() called with: context = [" + context + "], message = [" + message + "]");
+        OneLog.i("onNotificationMessageClicked() called with: context = [" + context + "], message = [" + message + "]");
         // 这个动作可以在activity的onResume也能监听，请看第3点相关内容
         OneRepeater.transmitNotificationClick(context,message.getNotifyId(),message.getTitle(),message.getDescription(),message.getContent(), message.getExtra());
     }
 
     @Override
     public void onNotificationMessageArrived(Context context, MiPushMessage message) {
-        OneLog.i(TAG, "onNotificationMessageArrived() called with: context = [" + context + "], message = [" + message + "]");
+        OneLog.i("onNotificationMessageArrived() called with: context = [" + context + "], message = [" + message + "]");
         OneRepeater.transmitNotification(context,message.getNotifyId(),message.getTitle(),message.getDescription(),message.getContent(), message.getExtra());
     }
 
@@ -141,8 +141,7 @@ public class XiaomiPushReceiver extends PushMessageReceiver {
                     message.getResultCode() == ErrorCode.SUCCESS ? OnePush.RESULT_OK : OnePush.RESULT_ERROR,
                     null, cmdArg1, message.getReason());
         }
-        OneLog.i(TAG,
-                "onCommandResult is called. " + message.toString() + " reason:" + log);
+        OneLog.i("onCommandResult is called. " + message.toString() + " reason:" + log);
     }
 
     @Override
@@ -167,8 +166,7 @@ public class XiaomiPushReceiver extends PushMessageReceiver {
         } else {
             log = message.getReason();
         }
-        Log.d(TAG,
-                "onReceiveRegisterResult is called. " + " reason:" + log);
+        OneLog.i("onReceiveRegisterResult is called. " + " reason:" + log);
     }
 
 

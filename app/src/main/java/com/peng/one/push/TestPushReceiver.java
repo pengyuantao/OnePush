@@ -15,7 +15,7 @@ public class TestPushReceiver extends BaseOnePushReceiver {
 
     private static final String TAG = "TestPushReceiver";
 
-    public static final String LOG_LINE = "-----------------%s-----------------";
+    public static final String LOG_LINE = "-------%s-------";
 
     @Override
     public void onReceiveNotification(Context context, OnePushMsg msg) {
@@ -42,7 +42,6 @@ public class TestPushReceiver extends BaseOnePushReceiver {
         if (command.getType() == OnePush.TYPE_REGISTER && command.getResultCode() == OnePush.RESULT_ERROR) {
             OnePush.register();
         }
-
         Log.i(TAG, "onCommandResult: " + command.toString());
         MainActivity.sendLogBroadcast(context, generateLogByOnePushCommand(command));
     }

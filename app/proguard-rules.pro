@@ -23,6 +23,7 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
 -dontwarn com.taobao.**
 -dontwarn anet.channel.**
 -dontwarn anetwork.channel.**
@@ -31,7 +32,7 @@
 -dontwarn com.xiaomi.**
 -dontwarn com.huawei.**
 -dontwarn com.peng.one.push.**
-
+-dontwarn com.igexin.**
 -keepattributes *Annotation*
 
 -keep class com.taobao.** {*;}
@@ -41,7 +42,8 @@
 -keep class com.xiaomi.** {*;}
 -keep class com.huawei.** {*;}
 -keep class org.apache.thrift.** {*;}
-
+-keep class com.igexin.** { *; }
+-keep class org.json.** { *; }
 -keep class com.alibaba.sdk.android.**{*;}
 -keep class com.ut.**{*;}
 -keep class com.ta.**{*;}
@@ -60,3 +62,5 @@
 
  # OnePush的混淆
 -keep class * extends com.peng.one.push.core.IPushClient{*;}
+
+

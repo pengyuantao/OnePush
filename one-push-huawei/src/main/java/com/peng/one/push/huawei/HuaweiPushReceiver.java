@@ -24,7 +24,7 @@ public class HuaweiPushReceiver extends PushReceiver {
     @Override
     public void onToken(Context context, String token,Bundle bundle) {
         super.onToken(context, token);
-        OneLog.i(TAG, "onToken() called with: context = [" + context + "], token = [" + token + "], bundle = [" + bundle + "]");
+        OneLog.i( "onToken() called with: context = [" + context + "], token = [" + token + "], bundle = [" + bundle + "]");
         //save token when you call unregister method
         OnePushCache.putToken(context, token);
         OneRepeater.transmitCommandResult(context, OnePush.TYPE_REGISTER,OnePush.RESULT_OK,token,null,null);
@@ -34,7 +34,7 @@ public class HuaweiPushReceiver extends PushReceiver {
     @Override
     public void onPushMsg(Context context, byte[] bytes, String s) {
         super.onPushMsg(context, bytes, s);
-        OneLog.i(TAG, "onPushMsg() called with: context = [" + context + "], bytes = [" + bytes + "], s = [" + s + "]");
+        OneLog.i("onPushMsg() called with: context = [" + context + "], bytes = [" + bytes + "], s = [" + s + "]");
         OneRepeater.transmitMessage(context, new String(bytes, Charset.forName("UTF-8")), null, null);
     }
 
@@ -70,7 +70,7 @@ public class HuaweiPushReceiver extends PushReceiver {
         }
 
         //EMUI4.0 and EMUI5.0 is not use
-        OneLog.i(TAG, "onEvent() called with: context = [" + context + "], event = [" + event + "], bundle = [" + bundle + "]");
+        OneLog.i( "onEvent() called with: context = [" + context + "], event = [" + event + "], bundle = [" + bundle + "]");
 
     }
 }

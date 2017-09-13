@@ -3,7 +3,7 @@ apply plugin: 'me.tatarka.retrolambda'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "25.0.3"
     lintOptions {
         checkReleaseBuilds false
         // Or, if you prefer, you can continue to check for errors in release builds,
@@ -18,10 +18,6 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        ndk {
-            // 设置支持的SO库
-            abiFilters 'armeabi'//,'armeabi-v7a', 'x86', 'x86_64', 'arm64-v8a','mips','mips64'
-        }
 
         manifestPlaceholders = [
                 GETUI_APP_ID : "biFrGOdkOq58YE55rdMPz2",
@@ -29,6 +25,10 @@ android {
                 GETUI_APP_SECRET : "gz3fTngzFEAfyMEoZTJCOA"
         ]
 
+        ndk {
+            // 设置支持的SO库
+            abiFilters 'armeabi','armeabi-v7a', 'x86', 'x86_64', 'arm64-v8a','mips','mips64'//
+        }
     }
 
     signingConfigs {
@@ -68,30 +68,28 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    testCompile 'junit:junit:4.12'
-//    compile 'com.peng.library:one-push-core:1.0.2'
-    compile 'com.peng.library:one-push-huawei:1.0.1'
-    compile 'com.peng.library:one-push-xiaomi:1.0.1'
-    compile('com.peng.library:one-push-umeng:1.0.4') {
-        exclude group: 'com.peng.library', module: 'one-push-umeng-utdid4all'
-    }
     /*权限处理*/
     compile('com.github.hotchemi:permissionsdispatcher:2.4.0') {
         // if you don't use android.app.Fragment you can exclude support for them
         exclude module: "support-v13"
     }
     annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
-    //    compile project(':one-push-umeng')
-    //    compile project(':one-push-huawei')
-    //    compile project(':one-push-xiaomi')
-    //    compile project(':one-push-umeng-utdid4all')
-        compile project(':one-push-core')
-    compile project(':one-push-getui')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    compile 'com.peng.library:one-push-core:1.0.3'
+    compile 'com.peng.library:one-push-huawei:1.0.2'
+    compile 'com.peng.library:one-push-xiaomi:1.0.2'
+    compile('com.peng.library:one-push-umeng:1.0.5') {
+       //如果你使用了其他工程的utdid4all的jar，导致和OnePush冲突的话，请把下面加上
+        //exclude group: 'com.peng.library', module: 'one-push-umeng-utdid4all'
+    }
+//        compile project(':one-push-umeng')
+//        compile project(':one-push-huawei')
+//        compile project(':one-push-xiaomi')
+//        compile project(':one-push-umeng-utdid4all')
+//        compile project(':one-push-core')
+//        compile project(':one-push-getui')
 }
 
 /* 别名: onepush
