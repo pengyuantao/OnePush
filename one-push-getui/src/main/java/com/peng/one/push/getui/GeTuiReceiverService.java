@@ -45,17 +45,16 @@ public class GeTuiReceiverService extends GTIntentService {
      *         "key2":"value2",
      *         "key3":"value3"
      *     }
-     *
      * }
-     *
-     *
      * @param context
      * @param msg
      */
 
     @Override
     public void onReceiveMessageData(Context context, GTTransmitMessage msg) {
+        Log.i(TAG, "onReceiveMessageData() called with: context = [" + context + "], msg = [" + msg.getPayload() + "]");
         String json = new String(msg.getPayload(), Charset.forName("utf-8"));
+        Log.i(TAG, "onReceiveMessageData: "+json);
         try {
             JSONObject jsonObject = new JSONObject(json);
             boolean onePush = jsonObject.getBoolean("onePush");
@@ -64,13 +63,13 @@ public class GeTuiReceiverService extends GTIntentService {
                 String content = jsonObject.getString("content");
                 String extraMsg = jsonObject.getString("extraMsg");
                 JSONObject keyValue = jsonObject.getJSONObject("keyValue");
+                Log.i(TAG, "title:" + title + "  content:" + content + "  extraMsg:" + extraMsg + " keyValue:" + keyValue);
                 OneRepeater.transmitNotificationClick(context, 0, title, content, extraMsg, JsonUtils.toMap(keyValue));
             }
         } catch (JSONException e) {
+            e.printStackTrace();
             OneRepeater.transmitMessage(context,json,null,null);
         }
-
-
     }
 
     @Override
