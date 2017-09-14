@@ -1,13 +1,15 @@
 ## 消息推送用OnePush，就够了！
 
-|模块|one-push-core|one-push-huawei|one-push-xiaomi|one-push-umeng|
-|-------|-------|-------|-------|-------|
-|lastVersion|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-core/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-huawei/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-xiaomi/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-umeng/images/download.svg)|
+|模块|one-push-core|one-push-huawei|one-push-xiaomi|one-push-umeng|one-push-getui|
+|-------|-------|-------|-------|-------|------|
+|lastVersion|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-core/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-huawei/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-xiaomi/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-umeng/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-getui/images/download.svg)|
 
 
-|小米推送|华为推送|友盟推送|
-|:-------:|:-------:|:-------:|
-|![](http://upload-images.jianshu.io/upload_images/1460021-b84daf61d5b52ad6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|![](http://upload-images.jianshu.io/upload_images/1460021-b99dc8a580ca5aeb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|![](http://upload-images.jianshu.io/upload_images/1460021-5dc28971978853fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|
+|小米推送|华为推送|友盟推送|个推推送|
+|:-------:|:-------:|:-------:|:-----:|
+|![](http://upload-images.jianshu.io/upload_images/1460021-b84daf61d5b52ad6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|![](http://upload-images.jianshu.io/upload_images/1460021-b99dc8a580ca5aeb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|![](http://upload-images.jianshu.io/upload_images/1460021-5dc28971978853fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|![](http://upload-images.jianshu.io/upload_images/1460021-638ce19c5df35038.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+|
+
 
 ### 传送门
 
@@ -48,6 +50,7 @@ dependencies {
       compile 'com.peng.library:one-push-huawei:lastVersion'
       compile 'com.peng.library:one-push-xiaomi:lastVersion'
       compile 'com.peng.library:one-push-umeng:lastVersion'
+      compile 'com.peng.library:one-push-getui:lastVersion'
 }
 ```
 
@@ -78,6 +81,12 @@ dependencies {
         <meta-data
             android:name="OnePush_UMENG_103"
             android:value="com.peng.one.push.umeng.UMengPushClient" />
+
+    <!--如果引入了one-push-getui库-->
+        <meta-data
+            android:name="OnePush_GeTui_104"
+            android:value="com.peng.one.push.getui.GeTuiPushClient" />
+
 ```
 关于<meta-data/>标签书写规则：
  * android:name    必须是以“ OnePush ”开头，并且以"\_"进行分割(OnePush_平台名称_平台标识码)，在初始化OnePush 的时候，根据标识码和当前手机系统，动态的使用不同平台消息推送。
@@ -103,6 +112,18 @@ dependencies {
         <meta-data
             android:name="UMENG_MESSAGE_SECRET"
             android:value="b765e337eedd391603550eb6f922f81b"/>
+
+<!--getui_push需要进行下面配置-->
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="biFrGOdkOq58YE55rdMPz2" />
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="C3vnzVMWB29o2mDJPDKdQ4" />
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="gz3fTngzFEAfyMEoZTJCOA" />
+
 
  <!--huawei_push，在app上不需要配置appkey和secret，需要在华为开发者平台，申请华为推送，并配置包名和证书指纹-->
 ```
@@ -141,6 +162,22 @@ dependencies {
  * 注册友盟推送除了在主进程中，还需要在channel进程中进行注册，具体操作见DEMO（UMeng官方推送就是这样要求的）
  * 友盟推送：后台配置后续动作，为"自定义行为"。
  * 小米推送：后台配置点击后续动作，为"由应用客户端自定义"。
+* 个推推送：后台配置后续动作为打开应用，如果你发送的通知，为了保证你点击通知栏能收到在NotificationClick的回调，每一个通知必须都带有one-push规定格式的透传消息，如果你只发送透传，那就不必按照下面的格式。
+```
+个推通知中透传消息json:
+    {
+        "onePush":true,
+         "title":"通知标题",
+         "content":"通知内容",
+         "extraMsg":"额外信息",
+         "keyValue":{
+            "key1":"value1",
+            "key2":"value2",
+            "key3":"value3"
+           }
+      }
+
+```
  * 华为推送：后台配置后续行为，为"自定义动作"，具体内容，可由OnePushService包：com.peng.one.push.service.huawei.intent.HWPushIntent生成，如果后台不是java开发的，参照HWPushIntent重新写。
 
 #### 9. 集成  **友盟推送** 的童鞋注意啦
@@ -184,32 +221,7 @@ dependencies {
 
  * 具体操作方法：详见one-push-xiaomi
 
-> 三、相关api介绍
-
-<h6 align = "left">OnePush详细api</h6>
-
-|方法名称|描述及解释|
-|---------|:-------:|
-|init(Context , OnOnePushRegisterListener)|初始化OnePush，建议在Application中onCreate()方法|
-|register()|注册消息推送|
-|unregister()|取消注册消息推送|
-|bindAlias(String)|绑定别名|
-|unBindAlias(String)|取消绑定别名|
-|addTag(String)|添加标签|
-|deleteTag(String)|删除标签|
-|getPushPlatFormCode()|获取推送平台code(AndroidManifest.xml中<meta/>注册)|
-|getPushPlatFormName()|获取推送平台name(AndroidManifest.xml中<meta/>注册)|
-|setDebug(boolean)|设置是否为debug模式|
-
-</br>
-<h6 align = "left">OneRepeater详细api</h6>
-
-|方法名称|描述及解释|
-|---------|:-------:|
-|transmitCommandResult(Context,int,int,String,String,String)|转发操作反馈（具体type在OnePush.TYPE_XXX）|
-|transmitMessage(Context,String,String,Map<String,String>)|转发透传消息|
-|transmitNotification(Context,int,String,String,Sting,Map<String,String>)|转发通知|
-|transmitNotificationClick(Context,int,String,String,Sting,Map<String,String>)|转发通知点击事件|
+#### 13. 代码混淆
 
 ```
 -dontwarn com.taobao.**
@@ -250,6 +262,32 @@ dependencies {
 
  # OnePush的混淆
 -keep class * extends com.peng.one.push.core.IPushClient{*;}
-
-
 ```
+
+
+> 三、相关api介绍
+
+<h6 align = "left">OnePush详细api</h6>
+
+|方法名称|描述及解释|
+|---------|:-------:|
+|init(Context , OnOnePushRegisterListener)|初始化OnePush，建议在Application中onCreate()方法|
+|register()|注册消息推送|
+|unregister()|取消注册消息推送|
+|bindAlias(String)|绑定别名|
+|unBindAlias(String)|取消绑定别名|
+|addTag(String)|添加标签|
+|deleteTag(String)|删除标签|
+|getPushPlatFormCode()|获取推送平台code(AndroidManifest.xml中<meta/>注册)|
+|getPushPlatFormName()|获取推送平台name(AndroidManifest.xml中<meta/>注册)|
+|setDebug(boolean)|设置是否为debug模式|
+
+</br>
+<h6 align = "left">OneRepeater详细api</h6>
+
+|方法名称|描述及解释|
+|---------|:-------:|
+|transmitCommandResult(Context,int,int,String,String,String)|转发操作反馈（具体type在OnePush.TYPE_XXX）|
+|transmitMessage(Context,String,String,Map<String,String>)|转发透传消息|
+|transmitNotification(Context,int,String,String,Sting,Map<String,String>)|转发通知|
+|transmitNotificationClick(Context,int,String,String,Sting,Map<String,String>)|转发通知点击事件|

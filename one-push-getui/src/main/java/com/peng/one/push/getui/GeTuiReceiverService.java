@@ -34,19 +34,21 @@ public class GeTuiReceiverService extends GTIntentService {
     public void onReceiveServicePid(Context context, int pid) {
     }
 
+
+
+//    {
+//        "onePush":true,
+//         "title":"通知标题",
+//         "content":"通知内容",
+//         "extraMsg":"额外信息",
+//         "keyValue":{
+//            "key1":"value1",
+//            "key2":"value2",
+//            "key3":"value3"
+//           }
+//      }
     /**
-     * {
-     *     "onePush":true,
-     *     "title":"通知标题",
-     *     "content":"通知内容",
-     *     "extraMsg":"额外信息",
-     *     "keyValue":{
-     *         "key1":"value1",
-     *         "key2":"value2",
-     *         "key3":"value3"
-     *     }
-     * }
-     * @param context
+     * 当收到消息透传
      * @param msg
      */
 
