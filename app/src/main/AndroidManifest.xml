@@ -65,10 +65,10 @@
             android:value="com.peng.one.push.umeng.UMengPushClient" />
 
         <!--如果引入了one-push-getui库-->
-   <!--     <meta-data
+        <meta-data
             android:name="OnePush_GeTui_104"
             android:value="com.peng.one.push.getui.GeTuiPushClient" />
--->
+
         <activity android:name="com.peng.one.push.MainActivity"
             android:launchMode="singleTop">
             <intent-filter>

@@ -1,6 +1,7 @@
 package com.peng.one.push.getui;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 
 import com.igexin.sdk.PushConsts;
 import com.igexin.sdk.PushManager;
@@ -8,6 +9,10 @@ import com.igexin.sdk.Tag;
 import com.peng.one.push.OnePush;
 import com.peng.one.push.OneRepeater;
 import com.peng.one.push.core.IPushClient;
+import com.peng.one.push.log.OneLog;
+
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * 个推
@@ -15,11 +20,26 @@ import com.peng.one.push.core.IPushClient;
  */
 public class GeTuiPushClient implements IPushClient {
 
+    //个推的标记
+    public static final String FILE_GETUI_NAME = "getui_tags";
+
+    //个推标签列表
+    public static final String KEY_TAGS = "key_tags";
+
+    //清空个推所有标签的替换标签
+    public static final String TAG_ONE_PUSH_CLEAR = "one-push-clear";
+
     private Context context;
+
+    //默认排重
+    private Set<String> tags;
+
 
     @Override
     public void initContext(Context context) {
         this.context = context.getApplicationContext();
+        SharedPreferences sharedPreferences = this.context.getSharedPreferences(FILE_GETUI_NAME, Context.MODE_PRIVATE);
+        tags = sharedPreferences.getStringSet(KEY_TAGS, new HashSet<String>());
     }
 
     @Override
@@ -51,23 +71,64 @@ public class GeTuiPushClient implements IPushClient {
                 isSuccess?context.getString(R.string.unbind_alias_success): context.getString(R.string.unbind_alias_fail));
     }
 
+    /**
+     * 个推设置标签和删除标签说明
+     * 咨询官方客服：
+     * setTag()方法是一个全量覆盖的方法，
+     * 后面一次的setTag(),后面会覆盖前面的setTag
+     */
+
     @Override
     public void addTag(String tag) {
-        Tag tag1 = new Tag();
-        tag1.setName(tag);
-        int i = PushManager.getInstance().setTag(context, new Tag[]{tag1}, tag);
-        sendAddTagEvent(tag,i);
+        this.tags.add(tag);
+        setTag(true,tag);
+        OneLog.i("addTag-->当前标签：" + this.tags);
     }
 
     @Override
     public void deleteTag(String tag) {
+        this.tags.remove(tag);
+        setTag(false,tag);
+        OneLog.i("deleteTag-->当前标签：" + this.tags);
+    }
+
+    /**
+     * 刷新本地tag
+     */
+    private void refreshLocalTag(){
+        SharedPreferences sharedPreferences = this.context.getSharedPreferences(FILE_GETUI_NAME, Context.MODE_PRIVATE);
+        sharedPreferences.edit().putStringSet(KEY_TAGS, tags).apply();
+    }
+
+    /**
+     * 设置标签
+     */
+    private void setTag(boolean isAdd, String tag) {
+        int size = tags.size();
+        Tag[] tagArray = null;
+        if (size == 0) {
+            tagArray = new Tag[1];
+            tagArray[0] = new Tag();
+            tagArray[0].setName(TAG_ONE_PUSH_CLEAR);
+        } else {
+            tagArray = new Tag[size];
+            String[] tagNameArray = new String[size];
+            this.tags.toArray(tagNameArray);
+            for (int i = 0; i < tagNameArray.length; i++) {
+                tagArray[i] = new Tag();
+                tagArray[i].setName(tagNameArray[i]);
+            }
+        }
+        int i = PushManager.getInstance().setTag(context, tagArray, tag);
+        sendAddTagEvent(isAdd,tag, i);
     }
 
 
-    private void sendAddTagEvent(String tag,int eventType) {
+    private void sendAddTagEvent(boolean isAdd, String tag, int eventType) {
         String text = null;
         switch (eventType) {
             case PushConsts.SETTAG_SUCCESS:
+                refreshLocalTag();
                 text = "设置标签成功";
                 break;
 
@@ -110,7 +171,7 @@ public class GeTuiPushClient implements IPushClient {
             default:
                 break;
         }
-        OneRepeater.transmitCommandResult(context, OnePush.TYPE_ADD_TAG, eventType, null, tag, text);
+        OneRepeater.transmitCommandResult(context, isAdd?OnePush.TYPE_ADD_TAG:OnePush.TYPE_DEL_TAG, eventType, null, tag, text);
     }
 
 }

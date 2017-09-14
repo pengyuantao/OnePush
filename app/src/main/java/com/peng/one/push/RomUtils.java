@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
+ * 系统标识
  * Created by pyt on 2017/3/27.
  */
 

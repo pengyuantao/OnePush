@@ -4,6 +4,7 @@ import android.app.ActivityManager;
 import android.app.Application;
 import android.content.Context;
 import android.os.Process;
+import android.util.Log;
 
 import java.util.List;
 
@@ -24,19 +25,20 @@ public class PushApplication extends Application {
         if (BuildConfig.APPLICATION_ID.equals(currentProcessName) || BuildConfig.APPLICATION_ID.concat(":channel").equals(currentProcessName)) {
             OnePush.init(this, ((platformCode, platformName) -> {
                 //platformCode和platformName就是在<meta/>标签中，对应的"平台标识码"和平台名称
+                boolean result = false;
                 if (RomUtils.isMiuiRom()) {
-                    return platformCode == 101;
+                    result=  platformCode == 101;
                 } else if (RomUtils.isHuaweiRom()) {
-                    return platformCode == 102;
+                    result= platformCode == 102;
                 } else {
-                    return platformCode == 103;
+                    result= platformCode == 104;
                 }
+                Log.i(TAG, "Register-> code: "+platformCode+" name: "+platformName+" result: "+result);
+                return result;
             }));
             OnePush.register();
         }
     }
-
-
 
     /**
      * 获取当前进程名称
