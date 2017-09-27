@@ -1,92 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.peng.one.push">
-   <!--注意下面的必须修改   -->
-    <permission
-        android:name="com.peng.one.push.permission.MIPUSH_RECEIVE"
-        android:protectionLevel="signature" />
-    <!--这里com.peng.one.push改成app的包名-->
-    <uses-permission android:name="com.peng.one.push.permission.MIPUSH_RECEIVE" />
-    <!--这里com.peng.one.push改成app的包名-->
+    package="com.peng.one.push1">
 
-    <application
-        android:name="com.peng.one.push.PushApplication"
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+  <!--注意下面的必须修改  start -->
+  <permission
+      android:name="com.peng.one.push1.permission.MIPUSH_RECEIVE"
+      android:protectionLevel="signature"/>
+  <!--这里com.peng.one.push改成app的包名-->
+  <uses-permission android:name="com.peng.one.push1.permission.MIPUSH_RECEIVE"/>
+  <!--这里com.peng.one.push改成app的包名-->
 
-        <!--友盟推送静态注册-->
-        <meta-data
-            android:name="UMENG_APPKEY"
-            android:value="593e2640b27b0a0852000014"/>
+  <permission
+      android:name="com.peng.one.push1.push.permission.MESSAGE"
+      android:protectionLevel="signature"/>
+  <uses-permission android:name="com.peng.one.push1.push.permission.MESSAGE"></uses-permission>
+  <permission
+      android:name="com.peng.one.push1.permission.C2D_MESSAGE"
+      android:protectionLevel="signature"></permission>
+  <uses-permission android:name="com.peng.one.push1.permission.C2D_MESSAGE"/>
+  <!--注意上面的必须修改  end -->
 
-        <meta-data
-            android:name="UMENG_MESSAGE_SECRET"
-            android:value="b765e337eedd391603550eb6f922f81b"/>
+  <application
+      android:name="com.peng.one.push1.PushApplication"
+      android:allowBackup="true"
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/app_name"
+      android:supportsRtl="true"
+      android:theme="@style/AppTheme">
 
-        <!--小米推送静态注册-->
-        <meta-data
-            android:name="MI_PUSH_APP_ID"
-            android:value="\ 2882303761517577233" />
+    <!--********************************OnePush各家推送的appid注册地方*******************start*******************-->
+    <!--友盟推送静态注册-->
+    <meta-data
+        android:name="UMENG_APPKEY"
+        android:value="59c87440734be47b6700001b"/>
 
-        <meta-data
-            android:name="MI_PUSH_APP_KEY"
-            android:value="\ 5701757717233" />
+    <meta-data
+        android:name="UMENG_MESSAGE_SECRET"
+        android:value="b856987f2ca836a784698e150d36ff2a"/>
 
-        <!--华为推送不需要静态注册-->
+    <!--小米推送静态注册-->
+    <meta-data
+        android:name="MI_PUSH_APP_ID"
+        android:value="\ 2882303761517577233"/>
 
-        <!--个推推送静态注册-->
-        <meta-data
-            android:name="PUSH_APPID"
-            android:value="biFrGOdkOq58YE55rdMPz2" />
-        <meta-data
-            android:name="PUSH_APPKEY"
-            android:value="C3vnzVMWB29o2mDJPDKdQ4" />
-        <meta-data
-            android:name="PUSH_APPSECRET"
-            android:value="gz3fTngzFEAfyMEoZTJCOA" />
+    <meta-data
+        android:name="MI_PUSH_APP_KEY"
+        android:value="\ 5701757717233"/>
+
+    <!--个推推送静态注册-->
+    <meta-data
+        android:name="PUSH_APPID"
+        android:value="edX56uUoQ7ASr4ru4c3rVA"/>
+    <meta-data
+        android:name="PUSH_APPKEY"
+        android:value="Crl1UEA5Fd8tooEDmS5aA3"/>
+    <meta-data
+        android:name="PUSH_APPSECRET"
+        android:value="D9hcD0r6Ec5ANGSLY92XP3"/>
+
+    <!--小米推送静态注册-->
+    <meta-data
+        android:name="MEIZU_PUSH_APP_ID"
+        android:value="111338"/>
+
+    <meta-data
+        android:name="MEIZU_PUSH_APP_KEY"
+        android:value="db1659369a85459abe5384814123ab5a"/>
+    <!--华为推送不需要静态注册-->
+    <!--********************************OnePush各家推送的appid注册地方****************end**********************-->
+
+    <!--如果引入了one-push-huawei类库-->
+    <meta-data
+        android:name="OnePush_HuaWei_102"
+        android:value="com.peng.one.push.huawei.HuaweiPushClient"/>
+
+    <!--如果引入了one-push-xiaomi库-->
+    <meta-data
+        android:name="OnePush_XiaoMi_101"
+        android:value="com.peng.one.push.xiaomi.XiaomiPushClient"/>
+
+    <!--如果引入了one-push-umeng类库-->
+    <meta-data
+        android:name="OnePush_UMENG_103"
+        android:value="com.peng.one.push.umeng.UMengPushClient"/>
+
+    <!--如果引入了one-push-getui库-->
+    <meta-data
+        android:name="OnePush_GeTui_104"
+        android:value="com.peng.one.push.getui.GeTuiPushClient"/>
+
+    <!--如果引入了one-push-meizu库-->
+    <meta-data
+        android:name="OnePush_MeiZu_105"
+        android:value="com.peng.one.push.meizu.MeizuPushClient"/>
+
+    <activity
+        android:name="com.peng.one.push1.MainActivity"
+        android:launchMode="singleTop">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+
+    <receiver android:name="com.peng.one.push1.TestPushReceiver">
+      <intent-filter>
+        <action android:name="com.peng.one.push.ACTION_RECEIVE_NOTIFICATION"/>
+        <action android:name="com.peng.one.push.ACTION_RECEIVE_NOTIFICATION_CLICK"/>
+        <action android:name="com.peng.one.push.ACTION_RECEIVE_MESSAGE"/>
+        <action android:name="com.peng.one.push.ACTION_RECEIVE_COMMAND_RESULT"/>
+      </intent-filter>
+    </receiver>
 
 
-        <!--如果引入了one-push-huawei类库-->
-        <meta-data
-            android:name="OnePush_HuaWei_102"
-            android:value="com.peng.one.push.huawei.HuaweiPushClient" />
-
-        <!--如果引入了one-push-xiaomi库-->
-        <meta-data
-            android:name="OnePush_XiaoMi_101"
-            android:value="com.peng.one.push.xiaomi.XiaomiPushClient" />
-
-        <!--如果引入了one-push-umeng类库-->
-        <meta-data
-            android:name="OnePush_UMENG_103"
-            android:value="com.peng.one.push.umeng.UMengPushClient" />
-
-        <!--如果引入了one-push-getui库-->
-        <meta-data
-            android:name="OnePush_GeTui_104"
-            android:value="com.peng.one.push.getui.GeTuiPushClient" />
-
-        <activity android:name="com.peng.one.push.MainActivity"
-            android:launchMode="singleTop">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <receiver android:name="com.peng.one.push.TestPushReceiver">
-            <intent-filter>
-                <action android:name="com.peng.one.push.ACTION_RECEIVE_NOTIFICATION" />
-                <action android:name="com.peng.one.push.ACTION_RECEIVE_NOTIFICATION_CLICK" />
-                <action android:name="com.peng.one.push.ACTION_RECEIVE_MESSAGE" />
-                <action android:name="com.peng.one.push.ACTION_RECEIVE_COMMAND_RESULT" />
-            </intent-filter>
-        </receiver>
-
-    </application>
+    <!-- push应用定义消息receiver声明 -->
+    <receiver android:name="com.peng.one.push.meizu.MeizuPushReceiver">
+      <intent-filter>
+        <!-- 接收push消息 -->
+        <action android:name="com.meizu.flyme.push.intent.MESSAGE"/>
+        <!-- 接收register消息-->
+        <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK"/>
+        <!-- 接收unregister消息-->
+        <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK"/>
+        <action android:name="com.peng.one.push.FLAG_OPERATE_TYPE"/>
+        <action android:name="com.meizu.c2dm.intent.REGISTRATION"/>
+        <action android:name="com.meizu.c2dm.intent.RECEIVE"/>
+        <category android:name="com.peng.one.push1"></category>
+      </intent-filter>
+    </receiver>
+  </application>
 
 </manifest>

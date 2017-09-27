@@ -12,7 +12,8 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.peng.one.push"
+        //由于com.peng.one.push包名在魅族推送平台被OnePush其他使用者占用，现在修改为com.peng.one.push1
+        applicationId "com.peng.one.push1"
         minSdkVersion 14
         targetSdkVersion 25
         versionCode 1
@@ -20,6 +21,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         manifestPlaceholders = [
+                PACKAGE_NAME:applicationId,
                 GETUI_APP_ID : "biFrGOdkOq58YE55rdMPz2",
                 GETUI_APP_KEY : "C3vnzVMWB29o2mDJPDKdQ4",
                 GETUI_APP_SECRET : "gz3fTngzFEAfyMEoZTJCOA"
@@ -76,21 +78,21 @@ dependencies {
     annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-
     compile 'com.peng.library:one-push-core:1.0.3'
     compile 'com.peng.library:one-push-getui:1.0.2'
     compile 'com.peng.library:one-push-huawei:1.0.2'
     compile 'com.peng.library:one-push-xiaomi:1.0.2'
     compile('com.peng.library:one-push-umeng:1.0.5') {
-       //如果你使用了其他工程的utdid4all的jar，导致和OnePush冲突的话，请把下面加上
+        //如果你使用了其他工程的utdid4all的jar，导致和OnePush冲突的话，请把下面加上
         //exclude group: 'com.peng.library', module: 'one-push-umeng-utdid4all'
     }
-//        compile project(':one-push-umeng')
-//        compile project(':one-push-huawei')
-//        compile project(':one-push-xiaomi')
-//        compile project(':one-push-umeng-utdid4all')
-//        compile project(':one-push-core')
-//        compile project(':one-push-getui')
+    //        compile project(':one-push-umeng')
+    //        compile project(':one-push-huawei')
+    //        compile project(':one-push-xiaomi')
+    //        compile project(':one-push-umeng-utdid4all')
+    //        compile project(':one-push-core')
+    //        compile project(':one-push-getui')
+    compile project(':one-push-meizu')
 }
 
 /* 别名: onepush

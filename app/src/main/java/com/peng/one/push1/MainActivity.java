@@ -1,4 +1,4 @@
-package com.peng.one.push;
+package com.peng.one.push1;
 
 import android.Manifest;
 import android.app.Activity;
@@ -18,6 +18,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.peng.one.push.OnePush;
+import com.peng.one.push1.R;
 import permissions.dispatcher.NeedsPermission;
 import permissions.dispatcher.OnNeverAskAgain;
 import permissions.dispatcher.OnPermissionDenied;
@@ -36,7 +38,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView tvLog;
 
 
-    private int[] resId = new int[]{R.id.btn_register_push, R.id.btn_unregister_push, R.id.btn_set_tag,
+    private int[] resId = new int[]{
+        R.id.btn_register_push, R.id.btn_unregister_push, R.id.btn_set_tag,
             R.id.btn_unset_tag, R.id.btn_bind_alias, R.id.btn_unbind_alias};
 
     private BroadcastReceiver mLogReceiver = new BroadcastReceiver() {

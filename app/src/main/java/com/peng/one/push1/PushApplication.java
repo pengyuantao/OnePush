@@ -1,4 +1,4 @@
-package com.peng.one.push;
+package com.peng.one.push1;
 
 import android.app.ActivityManager;
 import android.app.Application;
@@ -6,6 +6,8 @@ import android.content.Context;
 import android.os.Process;
 import android.util.Log;
 
+import com.peng.one.push1.BuildConfig;
+import com.peng.one.push.OnePush;
 import java.util.List;
 
 /**
@@ -23,21 +25,25 @@ public class PushApplication extends Application {
         String currentProcessName = getCurrentProcessName();
         //只在主进程中注册(注意：umeng推送，除了在主进程中注册，还需要在channel中注册)
         if (BuildConfig.APPLICATION_ID.equals(currentProcessName) || BuildConfig.APPLICATION_ID.concat(":channel").equals(currentProcessName)) {
+            //platformCode和platformName就是在<meta/>标签中，对应的"平台标识码"和平台名称
             OnePush.init(this, ((platformCode, platformName) -> {
-                //platformCode和platformName就是在<meta/>标签中，对应的"平台标识码"和平台名称
                 boolean result = false;
                 if (RomUtils.isMiuiRom()) {
                     result=  platformCode == 101;
                 } else if (RomUtils.isHuaweiRom()) {
                     result= platformCode == 102;
+                } else if(RomUtils.isFlymeRom()){
+                    result = platformCode == 105;
                 } else {
                     result= platformCode == 104;
                 }
                 Log.i(TAG, "Register-> code: "+platformCode+" name: "+platformName+" result: "+result);
                 return result;
+                //return platformCode == 105;
             }));
             OnePush.register();
         }
+      Log.i(TAG, "onCreate: isFlymeRom:"+RomUtils.isFlymeRom());
     }
 
     /**

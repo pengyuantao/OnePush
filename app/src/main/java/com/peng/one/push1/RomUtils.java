@@ -1,4 +1,4 @@
-package com.peng.one.push;
+package com.peng.one.push1;
 
 import android.os.Build;
 import android.text.TextUtils;
@@ -42,7 +42,7 @@ public class RomUtils {
 
 
     /**
-     * 判断是否为华为系统
+     * 判断是否为华为UI
      */
     public static boolean isHuaweiRom() {
         String manufacturer = Build.MANUFACTURER;
@@ -50,11 +50,26 @@ public class RomUtils {
     }
 
     /**
-     * 判断是否为小米系统
+     * 判断是否为小米UI
      */
     public static boolean isMiuiRom() {
         return !TextUtils.isEmpty(getSystemProperty("ro.miui.ui.version.name"));
     }
 
+
+    /**
+     *
+     * "ro.build.user" -> "flyme"
+     * "persist.sys.use.flyme.icon" -> "true"
+     * "ro.flyme.published" -> "true"
+     * "ro.build.display.id" -> "Flyme OS 5.1.2.0U"
+     * "ro.meizu.setupwizard.flyme" -> "true"
+     *
+     * 判断是否为魅族UI
+     * @return
+     */
+    public static boolean isFlymeRom(){
+        return "flyme".equalsIgnoreCase(getSystemProperty("ro.build.user"));
+    }
 
 }

@@ -1,9 +1,10 @@
-package com.peng.one.push;
+package com.peng.one.push1;
 
 import android.content.Context;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.peng.one.push.OnePush;
 import com.peng.one.push.entity.OnePushCommand;
 import com.peng.one.push.entity.OnePushMsg;
 import com.peng.one.push.receiver.BaseOnePushReceiver;
