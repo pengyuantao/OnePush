@@ -7,6 +7,7 @@ import android.text.TextUtils;
 
 import com.peng.one.push.cache.OnePushCache;
 import com.peng.one.push.core.IPushClient;
+import com.peng.one.push.log.OneLog;
 import com.xiaomi.mipush.sdk.MiPushClient;
 
 /**
@@ -32,6 +33,7 @@ public class XiaomiPushClient implements IPushClient {
             mAppKey = metaData.getString(MI_PUSH_APP_KEY);
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
+            OneLog.i("can't find MI_PUSH_APP_ID or MI_PUSH_APP_KEY in AndroidManifest.xml");
         }
     }
 

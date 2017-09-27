@@ -79,7 +79,7 @@ dependencies {
   compile 'com.peng.library:one-push-core:1.0.3'
   compile 'com.peng.library:one-push-getui:1.0.2'
   compile 'com.peng.library:one-push-huawei:1.0.2'
-  compile 'com.peng.library:one-push-xiaomi:1.0.2'
+  compile 'com.peng.library:one-push-xiaomi:1.0.3'
   compile 'com.peng.library:one-push-meizu:1.0.1'
   compile('com.peng.library:one-push-umeng:1.0.5') {
     //如果你使用了其他工程的utdid4all的jar，导致和OnePush冲突的话，请把下面加上
