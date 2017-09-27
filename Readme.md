@@ -1,16 +1,21 @@
 ## 消息推送用OnePush，就够了！
 
-|模块|one-push-core|one-push-huawei|one-push-xiaomi|one-push-umeng|one-push-getui|
-|-------|-------|-------|-------|-------|------|
-|lastVersion|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-core/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-huawei/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-xiaomi/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-umeng/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-getui/images/download.svg)|
+|模块|one-push-core|one-push-huawei|one-push-xiaomi|one-push-umeng|one-push-getui|one-push-meizu|
+|-------|-------|-------|-------|-------|------|------|
+|lastVersion|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-core/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-huawei/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-xiaomi/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-umeng/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-getui/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-meizu/images/download.svg)|
+##### QQ交流群
+[![QQ群:459480065](http://upload-images.jianshu.io/upload_images/1460021-56c575cd47406c51.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+](http://shang.qq.com/wpa/qunwpa?idkey=09286469a726bda9ab1a79be3330542a9468689626432a1312882f9567265b06)
 
+##### 手机系统级推送
+|小米推送|华为推送|魅族推送|
+|:-------:|:-------:|:-------:|
+|![](http://upload-images.jianshu.io/upload_images/1460021-b84daf61d5b52ad6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|![](http://upload-images.jianshu.io/upload_images/1460021-b99dc8a580ca5aeb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|![](http://upload-images.jianshu.io/upload_images/1460021-0ab4b8f97fd166a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|
 
-|小米推送|华为推送|友盟推送|个推推送|
-|:-------:|:-------:|:-------:|:-----:|
-|![](http://upload-images.jianshu.io/upload_images/1460021-b84daf61d5b52ad6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|![](http://upload-images.jianshu.io/upload_images/1460021-b99dc8a580ca5aeb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|![](http://upload-images.jianshu.io/upload_images/1460021-5dc28971978853fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|![](http://upload-images.jianshu.io/upload_images/1460021-638ce19c5df35038.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-|
-
-
+##### 第三方平台推送
+|友盟推送|个推推送|
+|:-------:|:-----:|
+|![](http://upload-images.jianshu.io/upload_images/1460021-5dc28971978853fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|![](http://upload-images.jianshu.io/upload_images/1460021-638ce19c5df35038.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|
 ### 传送门
 
 [一步步走来的消息推送](http://www.jianshu.com/p/1ff15a072fdf)
@@ -39,6 +44,20 @@
 > 所有的lastVersion对应的是上面表格的最新的版本号，集成的时候，需要进行替换。
 
 #### 1. 添加OnePush主要依赖（必须添加）
+项目project的build.gradle
+```
+allprojects {
+    repositories {
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        //由于魅族个推等第三方库使用了不同的仓库，需要加上这个
+        maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }
+        maven { url "http://mvn.gt.igexin.com/nexus/content/repositories/releases/" }
+    }
+}
+
+```
+工程module的build.gradle
 ```
 dependencies {
       compile 'com.peng.library:one-push-core:lastVersion'
@@ -51,6 +70,7 @@ dependencies {
       compile 'com.peng.library:one-push-xiaomi:lastVersion'
       compile 'com.peng.library:one-push-umeng:lastVersion'
       compile 'com.peng.library:one-push-getui:lastVersion'
+      compile 'com.peng.library:one-push-meizu:lastVersion'
 }
 ```
 
@@ -86,6 +106,11 @@ dependencies {
         <meta-data
             android:name="OnePush_GeTui_104"
             android:value="com.peng.one.push.getui.GeTuiPushClient" />
+
+    <!--如果引入了one-push-meizu库-->
+    <meta-data
+        android:name="OnePush_MeiZu_105"
+        android:value="com.peng.one.push.meizu.MeizuPushClient"/>
 
 ```
 关于<meta-data/>标签书写规则：
@@ -124,6 +149,14 @@ dependencies {
             android:name="PUSH_APPSECRET"
             android:value="gz3fTngzFEAfyMEoZTJCOA" />
 
+<!--魅族推送静态注册-->
+    <meta-data
+        android:name="MEIZU_PUSH_APP_ID"
+        android:value="111338"/>
+
+    <meta-data
+        android:name="MEIZU_PUSH_APP_KEY"
+        android:value="db1659369a85459abe5384814123ab5a"/>
 
  <!--huawei_push，在app上不需要配置appkey和secret，需要在华为开发者平台，申请华为推送，并配置包名和证书指纹-->
 ```
@@ -138,8 +171,45 @@ dependencies {
     <uses-permission android:name="com.peng.one.push.permission.MIPUSH_RECEIVE" />
    <!--这里com.peng.one.push改成你的app的包名，以build.gralde中的applicationId为准-->
 ```
+#### 7.如果OnePush使用魅族推送，需要进行下面配置：
+```
+<!--魅族推送权限的配置-->
+  <!--这里com.peng.one.push改成你的app的包名-->
+  <permission
+      android:name="com.peng.one.push.push.permission.MESSAGE"
+      android:protectionLevel="signature"/>
 
-#### 7. 初始化OnePush
+  <!--这里com.peng.one.push改成你的app的包名-->
+  <uses-permission android:name="com.peng.one.push.push.permission.MESSAGE"></uses-permission>
+
+  <!--这里com.peng.one.push改成你的app的包名-->
+  <permission
+      android:name="com.peng.one.push.permission.C2D_MESSAGE"
+      android:protectionLevel="signature"></permission>
+  <uses-permission android:name="com.peng.one.push.permission.C2D_MESSAGE"/>
+
+
+    <!-- 魅族推送的广播直接器配置 -->
+    <receiver android:name="com.peng.one.push.meizu.MeizuPushReceiver">
+      <intent-filter>
+        <!-- 接收push消息 -->
+        <action android:name="com.meizu.flyme.push.intent.MESSAGE"/>
+        <!-- 接收register消息-->
+        <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK"/>
+        <!-- 接收unregister消息-->
+        <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK"/>
+        <action android:name="com.peng.one.push.FLAG_OPERATE_TYPE"/>
+        <action android:name="com.meizu.c2dm.intent.REGISTRATION"/>
+        <action android:name="com.meizu.c2dm.intent.RECEIVE"/>
+
+        <!--这里com.peng.one.push改成你的app的包名-->
+        <category android:name="com.peng.one.push1"></category>
+      </intent-filter>
+    </receiver>
+
+```
+
+#### 8. 初始化OnePush
 ```|
 //初始化的时候，回调该方法，可以根据platformCode和当前系统的类型，进行注册
 //返回true，则使用该平台的推送，否者就不使用
@@ -151,17 +221,20 @@ dependencies {
                     return platformCode == 101;
                 } else if (RomUtils.isHuaweiRom()) {
                     return platformCode == 102;
-                } else {
-                    return platformCode == 103;
+                } else if (RomUtils.isFlymeRom()) {
+                    return platformCode == 105;
+                }else {
+                    return platformCode == 104;
                 }
             }));
             OnePush.register();
 }
 ```
-#### 8. 后台推送动作说明：
+#### 9. 后台推送动作说明：
  * 注册友盟推送除了在主进程中，还需要在channel进程中进行注册，具体操作见DEMO（UMeng官方推送就是这样要求的）
  * 友盟推送：后台配置后续动作，为"自定义行为"。
  * 小米推送：后台配置点击后续动作，为"由应用客户端自定义"。
+ * 魅族推送：后台配置点击动作，为"应用客户端自定义"
 * 个推推送：后台配置后续动作为打开应用，如果你发送的通知，为了保证你点击通知栏能收到在NotificationClick的回调，每一个通知必须都带有one-push规定格式的透传消息，如果你只发送透传，那就不必按照下面的格式。
 ```
 个推通知中透传消息json:
@@ -180,7 +253,7 @@ dependencies {
 ```
  * 华为推送：后台配置后续行为，为"自定义动作"，具体内容，可由OnePushService包：com.peng.one.push.service.huawei.intent.HWPushIntent生成，如果后台不是java开发的，参照HWPushIntent重新写。
 
-#### 9. 集成  **友盟推送** 的童鞋注意啦
+#### 10. 集成  **友盟推送** 的童鞋注意啦
  * OnePush拓展的友盟推送是[版本v3.1.1a](http://dev.umeng.com/push/android/sdk-download)。
  * 关于utdid重复引入的问题，可以通过下面的方案解决
 ```
@@ -202,16 +275,16 @@ dependencies {
 
  * 最后啰嗦几句，其实只要添加armeabi，就可以了，armeabi在每个平台都是可以用的，俗称万能油。只是在其他CPU平台上，使用armeabi，效率不是很高而已，其实微信也是只使用了armeabi，只不过它为了提高效率，他将v7a也放在了armeabi里面，最后根据具体安装的手机CPU，动态加载而已。
 
-#### 10. 集成  **华为推送**  的童鞋注意啦
+#### 11. 集成  **华为推送**  的童鞋注意啦
  * BaseOnePushReceiver中的onReceiveNotification()方法，在使用的华为推送的时候，该方法不会被调用，因为华为推送没有提供这样的支持。
  *  BaseOnePushReceiver中的onReceiveNotificationClick()方法，在使用华为推送的时候，虽然华为支持，但是如果app被华为一键清理掉后，收到通知，那么点击通知是不会调用华为推送的onEvent（）方法，那么如果我们这里转发，onReceiveNotificationClick（）是不会收到的。
  * 为了解决华为推送，在手机上被清理掉后，onReceiveNotificationClick（）不被调用的情况，OnePush在华为推送上，使用跳转到指定Activity的推送通知，那么服务端必须提供一个Intent序列化的uri，OnePush提供的Java服务端消息推送示例中，已经提供了服务端序列化Intent的uri的实现（详见：com.peng.one.push.service.huawei.intent.HWPushIntent）。
 
-#### 11. 关于将来拓展其他平台消息推送说明
+#### 12. 关于将来拓展其他平台消息推送说明
   * 个人感觉，除了厂商的推送，其他的第三方推送只需要集成一个就可以了，假如你想使用OnePush，但是目前OnePush拓展的消息推送平台，没有你目前使用的怎么办呢，可以参照OnePush拓展详细说明，进行集成。
  * 如果你已经拓展其他平台的消息推送，并且测试通过，可以将代码Push过来，我检查过后，合并进来，这样可以方便大家。
 
-#### 12. 拓展其他平台说明
+#### 13. 拓展其他平台说明
 关于添加其他消息推送SDK具体操作（如果你不满足OnePush提供的小米、华为推送，可根据下面步骤，将其他厂商提供的推送，添加到OnePush里面）
  * 创建XXXClient 实现IPushClient接口，并且重写对应的方法，initContext(Context),会在初始化的使用进行调用，可以在这里进行获取第三方推送注册需要的ID，KEY或者其他操作，第三方推送ID、KEY，建议在AndroidManifest.xml中的Application标签下添加<meta/>，然后在initContext(Context)中进行获取。
 
@@ -221,7 +294,7 @@ dependencies {
 
  * 具体操作方法：详见one-push-xiaomi
 
-#### 13. 代码混淆
+#### 14. 代码混淆
 
 ```
 -dontwarn com.taobao.**
@@ -241,6 +314,7 @@ dependencies {
 -keep class com.umeng.** {*;}
 -keep class com.xiaomi.** {*;}
 -keep class com.huawei.** {*;}
+-keep class com.meizu.cloud.**{*;}
 -keep class org.apache.thrift.** {*;}
 -keep class com.igexin.** { *; }
 -keep class org.json.** { *; }
