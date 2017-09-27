@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.peng.one.push.meizu">
+
+  <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE"></uses-permission>
+  <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE"/>
+
+  <application>
+
+<!--    &lt;!&ndash; push应用定义消息receiver声明 &ndash;&gt;
+    <receiver android:name="com.peng.one.push.meizu.MeizuPushReceiver">
+      <intent-filter>
+        &lt;!&ndash; 接收push消息 &ndash;&gt;
+        <action android:name="com.meizu.flyme.push.intent.MESSAGE"/>
+        &lt;!&ndash; 接收register消息&ndash;&gt;
+        <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK"/>
+        &lt;!&ndash; 接收unregister消息&ndash;&gt;
+        <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK"/>
+        <action android:name="com.meizu.c2dm.intent.REGISTRATION"/>
+        <action android:name="com.meizu.c2dm.intent.RECEIVE"/>
+        <category android:name="${PACKAGE_NAME}"></category>
+      </intent-filter>
+    </receiver>-->
+
+  </application>
+</manifest>

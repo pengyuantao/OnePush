@@ -2,97 +2,96 @@ apply plugin: 'com.android.application'
 apply plugin: 'me.tatarka.retrolambda'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
-    lintOptions {
-        checkReleaseBuilds false
-        // Or, if you prefer, you can continue to check for errors in release builds,
-        // but continue the build even when errors are found:
-        abortOnError false
+  compileSdkVersion 25
+  buildToolsVersion "25.0.3"
+  lintOptions {
+    checkReleaseBuilds false
+    // Or, if you prefer, you can continue to check for errors in release builds,
+    // but continue the build even when errors are found:
+    abortOnError false
+  }
+
+  defaultConfig {
+    //由于com.peng.one.push包名在魅族推送平台被OnePush其他使用者占用，现在修改为com.peng.one.push1
+    applicationId "com.peng.one.push1"
+    minSdkVersion 14
+    targetSdkVersion 25
+    versionCode 1
+    versionName "1.0"
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    manifestPlaceholders = [PACKAGE_NAME    : applicationId,
+                            GETUI_APP_ID    : "biFrGOdkOq58YE55rdMPz2",
+                            GETUI_APP_KEY   : "C3vnzVMWB29o2mDJPDKdQ4",
+                            GETUI_APP_SECRET: "gz3fTngzFEAfyMEoZTJCOA"]
+
+    ndk {
+      // 设置支持的SO库
+      abiFilters 'armeabi', 'armeabi-v7a', 'x86', 'x86_64', 'arm64-v8a', 'mips', 'mips64' //
+    }
+  }
+
+  signingConfigs {
+    debug {
+      storeFile file("../onepush_keystore.jks")
+      storePassword "onepush"
+      keyAlias "onepush"
+      keyPassword "onepush"
     }
 
-    defaultConfig {
-        //由于com.peng.one.push包名在魅族推送平台被OnePush其他使用者占用，现在修改为com.peng.one.push1
-        applicationId "com.peng.one.push1"
-        minSdkVersion 14
-        targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
-        manifestPlaceholders = [
-                PACKAGE_NAME:applicationId,
-                GETUI_APP_ID : "biFrGOdkOq58YE55rdMPz2",
-                GETUI_APP_KEY : "C3vnzVMWB29o2mDJPDKdQ4",
-                GETUI_APP_SECRET : "gz3fTngzFEAfyMEoZTJCOA"
-        ]
-
-        ndk {
-            // 设置支持的SO库
-            abiFilters 'armeabi','armeabi-v7a', 'x86', 'x86_64', 'arm64-v8a','mips','mips64'//
-        }
+    release {
+      storeFile file("../onepush_keystore.jks")
+      storePassword "onepush"
+      keyAlias "onepush"
+      keyPassword "onepush"
     }
+  }
 
-    signingConfigs {
-        debug {
-            storeFile file("../onepush_keystore.jks")
-            storePassword "onepush"
-            keyAlias "onepush"
-            keyPassword "onepush"
-        }
-
-        release {
-            storeFile file("../onepush_keystore.jks")
-            storePassword "onepush"
-            keyAlias "onepush"
-            keyPassword "onepush"
-        }
+  buildTypes {
+    release {
+      minifyEnabled true
+      zipAlignEnabled true
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+      signingConfig signingConfigs.release
     }
-
-    buildTypes {
-        release {
-            minifyEnabled true
-            zipAlignEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
-        }
-        debug {
-            minifyEnabled false
-            signingConfig signingConfigs.debug
-        }
+    debug {
+      minifyEnabled false
+      signingConfig signingConfigs.debug
     }
+  }
 
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    /*权限处理*/
-    compile('com.github.hotchemi:permissionsdispatcher:2.4.0') {
-        // if you don't use android.app.Fragment you can exclude support for them
-        exclude module: "support-v13"
-    }
-    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.peng.library:one-push-core:1.0.3'
-    compile 'com.peng.library:one-push-getui:1.0.2'
-    compile 'com.peng.library:one-push-huawei:1.0.2'
-    compile 'com.peng.library:one-push-xiaomi:1.0.2'
-    compile('com.peng.library:one-push-umeng:1.0.5') {
-        //如果你使用了其他工程的utdid4all的jar，导致和OnePush冲突的话，请把下面加上
-        //exclude group: 'com.peng.library', module: 'one-push-umeng-utdid4all'
-    }
-    //        compile project(':one-push-umeng')
-    //        compile project(':one-push-huawei')
-    //        compile project(':one-push-xiaomi')
-    //        compile project(':one-push-umeng-utdid4all')
-    //        compile project(':one-push-core')
-    //        compile project(':one-push-getui')
-    compile project(':one-push-meizu')
+  compile fileTree(include: ['*.jar'], dir: 'libs')
+  /*权限处理*/
+  compile('com.github.hotchemi:permissionsdispatcher:2.4.0') {
+    // if you don't use android.app.Fragment you can exclude support for them
+    exclude module: "support-v13"
+  }
+  annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
+  compile 'com.android.support:appcompat-v7:25.3.1'
+  compile 'com.android.support.constraint:constraint-layout:1.0.2'
+  compile 'com.peng.library:one-push-core:1.0.3'
+  compile 'com.peng.library:one-push-getui:1.0.2'
+  compile 'com.peng.library:one-push-huawei:1.0.2'
+  compile 'com.peng.library:one-push-xiaomi:1.0.2'
+  compile 'com.peng.library:one-push-meizu:1.0.1'
+  compile('com.peng.library:one-push-umeng:1.0.5') {
+    //如果你使用了其他工程的utdid4all的jar，导致和OnePush冲突的话，请把下面加上
+    //exclude group: 'com.peng.library', module: 'one-push-umeng-utdid4all'
+  }
+  //    compile project(':one-push-umeng')
+  //    compile project(':one-push-huawei')
+  //    compile project(':one-push-xiaomi')
+  //    compile project(':one-push-umeng-utdid4all')
+  //    compile project(':one-push-core')
+  //    compile project(':one-push-getui')
+  //    compile project(':one-push-meizu')
 }
 
 /* 别名: onepush
