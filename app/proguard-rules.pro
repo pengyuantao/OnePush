@@ -41,6 +41,7 @@
 -keep class com.umeng.** {*;}
 -keep class com.xiaomi.** {*;}
 -keep class com.huawei.** {*;}
+-keep class com.meizu.cloud.**{*;}
 -keep class org.apache.thrift.** {*;}
 -keep class com.igexin.** { *; }
 -keep class org.json.** { *; }

@@ -58,7 +58,7 @@
         android:name="PUSH_APPSECRET"
         android:value="D9hcD0r6Ec5ANGSLY92XP3"/>
 
-    <!--小米推送静态注册-->
+    <!--魅族推送静态注册-->
     <meta-data
         android:name="MEIZU_PUSH_APP_ID"
         android:value="111338"/>
