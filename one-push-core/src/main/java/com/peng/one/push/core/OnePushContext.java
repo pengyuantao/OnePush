@@ -116,6 +116,9 @@ public class OnePushContext {
 
         }
 
+        if (mIPushClient == null) {
+            throw new IllegalStateException("onRegisterPush must at least one of them returns to true");
+        }
     }
 
     public void register() {

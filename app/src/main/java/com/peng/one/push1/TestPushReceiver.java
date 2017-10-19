@@ -18,6 +18,7 @@ public class TestPushReceiver extends BaseOnePushReceiver {
 
     public static final String LOG_LINE = "-------%s-------";
 
+    @Deprecated
     @Override
     public void onReceiveNotification(Context context, OnePushMsg msg) {
         super.onReceiveNotification(context, msg);

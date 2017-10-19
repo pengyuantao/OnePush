@@ -35,6 +35,7 @@ public abstract class BaseOnePushReceiver extends BroadcastReceiver implements I
         OneLog.i(String.format("%s--%s", action, String.valueOf(parcelable)));
     }
 
+    @Deprecated
     @Override
     public void onReceiveNotification(Context context, OnePushMsg msg) {
         //this is method is not always invoke,if you application is dead ,when you click
