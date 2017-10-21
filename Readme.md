@@ -2,7 +2,7 @@
 
 |模块|one-push-core|one-push-huawei|one-push-xiaomi|one-push-umeng|one-push-getui|one-push-meizu|
 |-------|-------|-------|-------|-------|------|------|
-|lastVersion|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-core/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-huawei/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-xiaomi/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-umeng/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-getui/images/download.svg)|![](https://api.bintray.com/packages/pengyuantao/maven/one-push-meizu/images/download.svg)|
+|lastVersion|1.0.4|1.0.2|1.0.3|1.0.5|1.0.2|1.0.1|
 ##### QQ交流群
 [![QQ群:459480065](http://upload-images.jianshu.io/upload_images/1460021-56c575cd47406c51.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ](http://shang.qq.com/wpa/qunwpa?idkey=09286469a726bda9ab1a79be3330542a9468689626432a1312882f9567265b06)
