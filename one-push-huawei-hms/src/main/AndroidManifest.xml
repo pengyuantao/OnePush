@@ -47,7 +47,19 @@
                 <action android:name="com.huawei.intent.action.PUSH" />
             </intent-filter>
         </receiver>
-
+        <!--接收点击的Activity,注意这个需要配合服务端uri生成工具，否则无法调用通知栏点击调用的fagnf-->
+        <activity
+            android:name="com.peng.one.push.huawei.hms.NotificationClickActivity"
+            android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.peng.one.push"
+                    android:path="/notification"
+                    android:scheme="OnePush" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
