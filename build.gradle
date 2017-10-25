@@ -25,6 +25,7 @@ allprojects {
         //由于魅族个推等第三方库使用了不同的仓库，需要加上这个
         maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }
         maven { url "http://mvn.gt.igexin.com/nexus/content/repositories/releases/" }
+        maven { url 'http://developer.huawei.com/repo/' }
     }
 }
 

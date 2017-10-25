@@ -11,3 +11,7 @@ gradle.properties
 /gradlew
 /gradlew.bat
 /release.keystore
+.gradle/
+build/
+out/
+.idea/
