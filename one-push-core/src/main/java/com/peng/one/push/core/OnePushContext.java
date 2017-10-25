@@ -113,9 +113,9 @@ public class OnePushContext {
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
             }
-
         }
-
+        //clear cache client
+        mAllSupportPushPlatformMap.clear();
         if (mIPushClient == null) {
             throw new IllegalStateException("onRegisterPush must at least one of them returns to true");
         }
