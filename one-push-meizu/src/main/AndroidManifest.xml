@@ -5,13 +5,13 @@
   <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE"/>
 
   <permission
-      android:name="{applicationId}.push.permission.MESSAGE"
+      android:name="${applicationId}.push.permission.MESSAGE"
       android:protectionLevel="signature"/>
   <uses-permission android:name="com.peng.one.push1.push.permission.MESSAGE"/>
   <permission
-      android:name="{applicationId}.permission.C2D_MESSAGE"
+      android:name="${applicationId}.permission.C2D_MESSAGE"
       android:protectionLevel="signature"/>
-  <uses-permission android:name="{applicationId}.permission.C2D_MESSAGE"/>
+  <uses-permission android:name="${applicationId}.permission.C2D_MESSAGE"/>
   <!--注意上面的必须修改  end -->
 
   <application>
@@ -29,7 +29,7 @@
         <action android:name="com.meizu.c2dm.intent.REGISTRATION"/>
         <action android:name="com.meizu.c2dm.intent.RECEIVE"/>
 
-        <category android:name="{applicationId}"></category>
+        <category android:name="${applicationId}"></category>
       </intent-filter>
     </receiver>
   </application>

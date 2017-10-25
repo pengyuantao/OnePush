@@ -33,8 +33,8 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     testCompile 'junit:junit:4.12'
-    provided 'com.peng.library:one-push-core:1.0.3'
-//    compile project(':one-push-core')
+//    provided 'com.peng.library:one-push-core:1.0.3'
+    compile project(':one-push-core')
 }
 
 apply plugin: 'com.novoda.bintray-release'

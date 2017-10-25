@@ -63,9 +63,7 @@ public class HuaweiPushClient implements IPushClient {
         if (TextUtils.isEmpty(tag)) {
             return;
         }
-        HashMap<String, String> tagsMap = new HashMap<>(1);
-        tagsMap.put(tag, tag);
-        PushManager.setTags(mContext, tagsMap);
+        PushManager.setTags(mContext, Collections.singletonMap(tag,tag));
     }
 
     @Override

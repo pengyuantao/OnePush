@@ -28,4 +28,8 @@ public class OneLog {
         sDebug = isDebug;
     }
 
+    public static boolean isDebug(){
+        return sDebug;
+    }
+
 }

@@ -49,6 +49,13 @@
     <meta-data
         android:name="MEIZU_PUSH_APP_KEY"
         android:value="db1659369a85459abe5384814123ab5a"/>
+
+    <!--极光推送静态注册-->
+    <meta-data android:name="JPUSH_CHANNEL" android:value="developer"/>
+    <meta-data android:name="JPUSH_APPKEY" android:value="41bb9f84d2158a7be9de3b47" />
+
+
+
     <!--华为推送不需要静态注册-->
     <!--********************************OnePush各家推送的appid注册地方****************end**********************-->
 
