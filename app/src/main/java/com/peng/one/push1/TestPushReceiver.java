@@ -103,7 +103,7 @@ public class TestPushReceiver extends BaseOnePushReceiver {
         if (!TextUtils.isEmpty(onePushCommand.getExtraMsg())) {
             builder.append("额外信息(tag/alias)：").append(onePushCommand.getExtraMsg()).append("\n");
         }
-        builder.append("操作结果：").append(onePushCommand.getResultCode() == OnePushCommand.RESULT_OK ? "成功" : onePushCommand.getError());
+        builder.append("操作结果：").append(onePushCommand.getResultCode() == OnePushCommand.RESULT_OK ? "成功" : "code: "+onePushCommand.getResultCode()+" msg:失败");
         return builder.toString();
     }
 

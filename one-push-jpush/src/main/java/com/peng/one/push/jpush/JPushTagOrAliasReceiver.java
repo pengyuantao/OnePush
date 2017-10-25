@@ -1,10 +1,12 @@
 package com.peng.one.push.jpush;
 
 import android.content.Context;
+import android.util.Log;
 import cn.jpush.android.api.JPushMessage;
 import cn.jpush.android.service.JPushMessageReceiver;
 import com.peng.one.push.OnePush;
 import com.peng.one.push.OneRepeater;
+import java.util.Iterator;
 import java.util.Set;
 
 /**
@@ -13,19 +15,27 @@ import java.util.Set;
 
 public class JPushTagOrAliasReceiver extends JPushMessageReceiver {
 
+  private static final String TAG = "JPushTagOrAliasReceiver";
+
   @Override
   public void onAliasOperatorResult(Context context, JPushMessage jPushMessage) {
-    OneRepeater.transmitCommandResult(context, jPushMessage.getSequence(), OnePush.RESULT_OK, null, jPushMessage.getAlias(), null);
+    Log.e(TAG, jPushMessage.toString());
+    OneRepeater.transmitCommandResult(context, jPushMessage.getSequence(), jPushMessage.getErrorCode()==0?OnePush.RESULT_OK:jPushMessage.getErrorCode(), null, jPushMessage.getAlias(), null);
   }
 
   @Override
   public void onTagOperatorResult(Context context, JPushMessage jPushMessage) {
+    Log.e(TAG, jPushMessage.toString());
     Set<String> tagSet = jPushMessage.getTags();
-    String tag = null;
-    if (!tagSet.isEmpty()){
-      tag = tagSet.iterator().next();
+    Iterator<String> iterator = tagSet.iterator();
+    StringBuilder builder = new StringBuilder();
+    while (iterator.hasNext()) {
+      builder.append(iterator.next()).append(",");
     }
-    OneRepeater.transmitCommandResult(context, jPushMessage.getSequence(), OnePush.RESULT_OK, null, tag, null);
+    if (builder.length() > 0) {
+      builder.deleteCharAt(builder.length() - 1);
+    }
+    OneRepeater.transmitCommandResult(context, jPushMessage.getSequence(), jPushMessage.getErrorCode()==0?OnePush.RESULT_OK:jPushMessage.getErrorCode(), null, builder.toString(), null);
   }
 
   @Override

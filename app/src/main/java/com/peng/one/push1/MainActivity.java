@@ -100,6 +100,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_set_tag:
                 OnePush.addTag("test");
+                OnePush.addTag("kkkk");
+                OnePush.addTag("1233");
+                OnePush.addTag("1111");
+                OnePush.addTag("2222");
                 break;
             case R.id.btn_unset_tag:
                 OnePush.deleteTag("test");

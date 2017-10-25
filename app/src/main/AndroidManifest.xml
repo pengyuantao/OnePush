@@ -51,38 +51,47 @@
         android:value="db1659369a85459abe5384814123ab5a"/>
 
     <!--极光推送静态注册-->
-    <meta-data android:name="JPUSH_CHANNEL" android:value="developer"/>
-    <meta-data android:name="JPUSH_APPKEY" android:value="41bb9f84d2158a7be9de3b47" />
-
+    <meta-data
+        android:name="JPUSH_CHANNEL"
+        android:value="developer"/>
+    <meta-data
+        android:name="JPUSH_APPKEY"
+        android:value="41bb9f84d2158a7be9de3b47"/>
 
 
     <!--华为推送不需要静态注册-->
     <!--********************************OnePush各家推送的appid注册地方****************end**********************-->
-
-    <!--如果引入了one-push-huawei类库-->
-    <meta-data
-        android:name="OnePush_HuaWei_102"
-        android:value="com.peng.one.push.huawei.HuaweiPushClient"/>
 
     <!--如果引入了one-push-xiaomi库-->
     <meta-data
         android:name="OnePush_XiaoMi_101"
         android:value="com.peng.one.push.xiaomi.XiaomiPushClient"/>
 
+
+    <!--如果引入了one-push-huawei类库-->
+    <meta-data
+        android:name="OnePush_HuaWei_102"
+        android:value="com.peng.one.push.huawei.HuaweiPushClient"/>
+
+    <!--如果引入了one-push-meizu库-->
+    <meta-data
+        android:name="OnePush_MeiZu_103"
+        android:value="com.peng.one.push.meizu.MeizuPushClient"/>
+
     <!--如果引入了one-push-umeng类库-->
     <meta-data
-        android:name="OnePush_UMENG_103"
+        android:name="OnePush_UMENG_104"
         android:value="com.peng.one.push.umeng.UMengPushClient"/>
 
     <!--如果引入了one-push-getui库-->
     <meta-data
-        android:name="OnePush_GeTui_104"
+        android:name="OnePush_GeTui_105"
         android:value="com.peng.one.push.getui.GeTuiPushClient"/>
 
-    <!--如果引入了one-push-meizu库-->
+    <!--如果引入了one-push-getui库-->
     <meta-data
-        android:name="OnePush_MeiZu_105"
-        android:value="com.peng.one.push.meizu.MeizuPushClient"/>
+        android:name="OnePush_JPush_106"
+        android:value="com.peng.one.push.jpush.JPushClient"/>
 
     <activity
         android:name="com.peng.one.push1.MainActivity"
