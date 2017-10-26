@@ -24,6 +24,8 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
+-dontoptimize
+-dontpreverify
 -dontwarn com.taobao.**
 -dontwarn anet.channel.**
 -dontwarn anetwork.channel.**
@@ -33,14 +35,20 @@
 -dontwarn com.huawei.**
 -dontwarn com.peng.one.push.**
 -dontwarn com.igexin.**
+-dontwarn cn.jpush.**
+-dontwarn cn.jiguang.**
 -keepattributes *Annotation*
 
+-keep class cn.jpush.** { *; }
+-keep class * extends cn.jpush.android.helpers.JPushMessageReceiver { *; }
+-keep class cn.jiguang.** { *; }
 -keep class com.taobao.** {*;}
 -keep class org.android.** {*;}
 -keep class anet.channel.** {*;}
 -keep class com.umeng.** {*;}
 -keep class com.xiaomi.** {*;}
 -keep class com.huawei.** {*;}
+-keep class com.hianalytics.android.** {*;}
 -keep class com.meizu.cloud.**{*;}
 -keep class org.apache.thrift.** {*;}
 -keep class com.igexin.** { *; }
