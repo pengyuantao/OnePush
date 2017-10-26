@@ -7,7 +7,8 @@
   <permission
       android:name="${applicationId}.push.permission.MESSAGE"
       android:protectionLevel="signature"/>
-  <uses-permission android:name="com.peng.one.push1.push.permission.MESSAGE"/>
+  <uses-permission android:name="${applicationId}.push.permission.MESSAGE"/>
+
   <permission
       android:name="${applicationId}.permission.C2D_MESSAGE"
       android:protectionLevel="signature"/>
@@ -20,17 +21,20 @@
     <receiver android:name="com.peng.one.push.meizu.MeizuPushReceiver">
       <intent-filter>
         <!-- 接收push消息 -->
-        <action android:name="com.meizu.flyme.push.intent.MESSAGE"/>
+        <action android:name="com.meizu.flyme.push.intent.MESSAGE" />
         <!-- 接收register消息-->
         <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK"/>
         <!-- 接收unregister消息-->
         <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK"/>
-        <action android:name="com.peng.one.push.FLAG_OPERATE_TYPE"/>
-        <action android:name="com.meizu.c2dm.intent.REGISTRATION"/>
-        <action android:name="com.meizu.c2dm.intent.RECEIVE"/>
+
+        <action android:name="com.meizu.c2dm.intent.REGISTRATION" />
+        <action android:name="com.meizu.c2dm.intent.RECEIVE" />
 
         <category android:name="${applicationId}"></category>
       </intent-filter>
     </receiver>
+
+
+
   </application>
 </manifest>
