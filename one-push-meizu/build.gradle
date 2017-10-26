@@ -8,7 +8,7 @@ android {
     minSdkVersion 14
     targetSdkVersion 25
     versionCode 1
-    versionName "1.0.1"
+    versionName "1.2.1"
 
     testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
   }
@@ -28,7 +28,7 @@ dependencies {
   compile 'com.android.support:appcompat-v7:25.3.1'
   compile 'com.meizu.flyme.internet:push-internal:3.4.2@aar'
   //    provided project(':one-push-core')
-  provided 'com.peng.library:one-push-core:1.0.3'
+  provided 'com.peng.library:one-push-core:1.2.1'
   testCompile 'junit:junit:4.12'
 }
 

@@ -39,7 +39,7 @@ public class PushApplication extends Application {
                 //}
                 //Log.i(TAG, "Register-> code: "+platformCode+" name: "+platformName+" result: "+result);
                 //return result;
-                return platformCode == 107;
+                return platformCode == 106;
             }));
             OnePush.register();
         }

@@ -8,7 +8,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 25
         versionCode 1
-        versionName "1.0.5"
+        versionName "1.2.1"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -36,7 +36,7 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
-    provided 'com.peng.library:one-push-core:1.0.3'
+    provided 'com.peng.library:one-push-core:1.2.1'
 //    compile project(':one-push-core')
     compile 'com.peng.library:one-push-umeng-utdid4all:1.0.1'
 }
