@@ -21,110 +21,111 @@ import java.util.Collections;
 
 public class HMSPushClient implements IPushClient {
 
-    private static final String TAG = "HMSPushClient";
+  private static final String TAG = "HMSPushClient";
 
-    private Context context;
-    private HuaweiApiClient huaweiApiClient;
+  private Context context;
+  private HuaweiApiClient huaweiApiClient;
 
-    @Override
-    public void initContext(Context context) {
-        this.context = context.getApplicationContext();
-        huaweiApiClient = new HuaweiApiClient.Builder(context)
-            .addApi(HuaweiPush.PUSH_API)
-            .addConnectionCallbacks(new HuaweiApiClient.ConnectionCallbacks() {
-                @Override
-                public void onConnected() {
-                    //华为移动服务client连接成功，在这边处理业务自己的事件
-                    OneLog.i("HMS connect success!");
-                    getToken();
-                    new Thread(new Runnable() {
-                        @Override
-                        public void run() {
-                            HuaweiPush.HuaweiPushApi.enableReceiveNormalMsg(huaweiApiClient, true);
-                            HuaweiPush.HuaweiPushApi.enableReceiveNotifyMsg(huaweiApiClient, true);
-                        }
-                    }).start();
-                }
+  @Override
+  public void initContext(Context context) {
+    this.context = context.getApplicationContext();
+    huaweiApiClient = new HuaweiApiClient.Builder(context).addApi(HuaweiPush.PUSH_API)
+        .addConnectionCallbacks(new HuaweiApiClient.ConnectionCallbacks() {
+          @Override
+          public void onConnected() {
+            //华为移动服务client连接成功，在这边处理业务自己的事件
+            OneLog.i("HMS connect success!");
+            getToken();
+            new Thread(new Runnable() {
+              @Override
+              public void run() {
+                HuaweiPush.HuaweiPushApi.enableReceiveNormalMsg(huaweiApiClient, true);
+                HuaweiPush.HuaweiPushApi.enableReceiveNotifyMsg(huaweiApiClient, true);
+              }
+            }).start();
+          }
 
-                @Override
-                public void onConnectionSuspended(int i) {
-                    if (huaweiApiClient != null) {
-                        huaweiApiClient.connect();
-                    }
-                    OneLog.i("HMS disconnect,retry.");
-                }
-            })
-            .addOnConnectionFailedListener(new HuaweiApiClient.OnConnectionFailedListener() {
-                @Override
-                public void onConnectionFailed(ConnectionResult connectionResult) {
-                    OneLog.i("HuaweiApiClient连接失败，错误码：" + connectionResult.getErrorCode());
-                    OneRepeater.transmitCommandResult(HMSPushClient.this.context, OnePush.TYPE_REGISTER, OnePush.RESULT_ERROR,
-                        null, String.valueOf(connectionResult.getErrorCode()), null);
-                }
-            })
-            .build();
-    }
-
-    private void  getToken(){
-        HuaweiPush.HuaweiPushApi.getToken(huaweiApiClient).setResultCallback(new ResultCallback<TokenResult>() {
-            @Override
-            public void onResult(TokenResult tokenResult) {
-                OneLog.i("token " + tokenResult.getTokenRes().getToken());
-                OneRepeater.transmitCommandResult(HMSPushClient.this.context,
-                    OnePush.TYPE_REGISTER, OnePush.RESULT_OK,
-                    tokenResult.getTokenRes().getToken(), null, null);
+          @Override
+          public void onConnectionSuspended(int i) {
+            if (huaweiApiClient != null) {
+              huaweiApiClient.connect();
             }
+            OneLog.i("HMS disconnect,retry.");
+          }
+        })
+        .addOnConnectionFailedListener(new HuaweiApiClient.OnConnectionFailedListener() {
+          @Override
+          public void onConnectionFailed(ConnectionResult connectionResult) {
+            OneRepeater.transmitCommandResult(HMSPushClient.this.context, OnePush.TYPE_REGISTER,
+                OnePush.RESULT_ERROR, null, String.valueOf(connectionResult.getErrorCode()), null);
+          }
+        })
+        .build();
+  }
+
+  private void getToken() {
+    HuaweiPush.HuaweiPushApi.getToken(huaweiApiClient)
+        .setResultCallback(new ResultCallback<TokenResult>() {
+          @Override
+          public void onResult(TokenResult tokenResult) {
+            OneLog.i("token " + tokenResult.getTokenRes());
+            if (tokenResult.getTokenRes() != null && !TextUtils.isEmpty(
+                tokenResult.getTokenRes().getToken())) {
+              OneRepeater.transmitCommandResult(HMSPushClient.this.context, OnePush.TYPE_REGISTER,
+                  OnePush.RESULT_OK, tokenResult.getTokenRes().getToken(), null, null);
+            }
+          }
         });
-    }
+  }
 
-    @Override
-    public void register() {
-        if (!huaweiApiClient.isConnected()) {
-            huaweiApiClient.connect();
+  @Override
+  public void register() {
+    if (!huaweiApiClient.isConnected()) {
+      huaweiApiClient.connect();
+    }
+    getToken();
+  }
+
+  @Override
+  public void unRegister() {
+    //        huaweiApiClient.disconnect();
+    final String token = OnePushCache.getToken(context);
+    if (!TextUtils.isEmpty(token)) {
+      new Thread() {
+        @Override
+        public void run() {
+          super.run();
+          HuaweiPush.HuaweiPushApi.deleteToken(huaweiApiClient, token);
+          HuaweiPush.HuaweiPushApi.enableReceiveNormalMsg(huaweiApiClient, false);
+          HuaweiPush.HuaweiPushApi.enableReceiveNotifyMsg(huaweiApiClient, false);
         }
-        getToken();
+      }.start();
     }
+  }
 
-    @Override
-    public void unRegister() {
-//        huaweiApiClient.disconnect();
-        final String token = OnePushCache.getToken(context);
-        if (!TextUtils.isEmpty(token)) {
-            new Thread() {
-                @Override
-                public void run() {
-                    super.run();
-                    HuaweiPush.HuaweiPushApi.deleteToken(huaweiApiClient, token);
-                    HuaweiPush.HuaweiPushApi.enableReceiveNormalMsg(huaweiApiClient, false);
-                    HuaweiPush.HuaweiPushApi.enableReceiveNotifyMsg(huaweiApiClient, false);
-                }
-            }.start();
-        }
-    }
+  @Override
+  public void bindAlias(String alias) {
+    //hua wei push is not support bind account
+  }
 
-    @Override
-    public void bindAlias(String alias) {
-        //hua wei push is not support bind account
-    }
+  @Override
+  public void unBindAlias(String alias) {
+    //hua wei push is not support unbind account
+  }
 
-    @Override
-    public void unBindAlias(String alias) {
-        //hua wei push is not support unbind account
+  @Override
+  public void addTag(String tag) {
+    if (TextUtils.isEmpty(tag)) {
+      return;
     }
+    HuaweiPush.HuaweiPushApi.setTags(huaweiApiClient, Collections.singletonMap(tag, tag));
+  }
 
-    @Override
-    public void addTag(String tag) {
-        if (TextUtils.isEmpty(tag)) {
-            return;
-        }
-        HuaweiPush.HuaweiPushApi.setTags(huaweiApiClient, Collections.singletonMap(tag,tag));
+  @Override
+  public void deleteTag(String tag) {
+    if (TextUtils.isEmpty(tag)) {
+      return;
     }
-
-    @Override
-    public void deleteTag(String tag) {
-        if (TextUtils.isEmpty(tag)) {
-            return;
-        }
-        HuaweiPush.HuaweiPushApi.deleteTags(huaweiApiClient, Collections.singletonList(tag));
-    }
+    HuaweiPush.HuaweiPushApi.deleteTags(huaweiApiClient, Collections.singletonList(tag));
+  }
 }

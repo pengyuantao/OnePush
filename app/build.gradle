@@ -86,7 +86,8 @@ dependencies {
 //    //exclude group: 'com.peng.library', module: 'one-push-umeng-utdid4all'
 //  }
       compile project(':one-push-umeng')
-      compile project(':one-push-huawei')
+//      compile project(':one-push-huawei')
+      compile project(':one-push-huawei-hms')
       compile project(':one-push-xiaomi')
       compile project(':one-push-umeng-utdid4all')
       compile project(':one-push-core')

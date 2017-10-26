@@ -58,6 +58,11 @@
         android:name="JPUSH_APPKEY"
         android:value="41bb9f84d2158a7be9de3b47"/>
 
+    <!--华为推送静态注册-->
+    <meta-data
+        android:name="com.huawei.hms.client.appid"
+        android:value="100099491"/>
+
 
     <!--华为推送不需要静态注册-->
     <!--********************************OnePush各家推送的appid注册地方****************end**********************-->
@@ -69,9 +74,9 @@
 
 
     <!--如果引入了one-push-huawei类库-->
-    <meta-data
-        android:name="OnePush_HuaWei_102"
-        android:value="com.peng.one.push.huawei.HuaweiPushClient"/>
+<!--        <meta-data
+            android:name="OnePush_HuaWei_102"
+            android:value="com.peng.one.push.huawei.HuaweiPushClient"/>-->
 
     <!--如果引入了one-push-meizu库-->
     <meta-data
@@ -92,6 +97,10 @@
     <meta-data
         android:name="OnePush_JPush_106"
         android:value="com.peng.one.push.jpush.JPushClient"/>
+
+    <meta-data
+        android:name="OnePush_HMSPush_107"
+        android:value="com.peng.one.push.huawei.hms.HMSPushClient"/>
 
     <activity
         android:name="com.peng.one.push1.MainActivity"
