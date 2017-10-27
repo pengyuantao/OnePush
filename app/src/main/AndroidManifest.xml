@@ -2,18 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.peng.one.push1">
 
-  <!--魅族推送权限的配置-->
-  <!-- 兼容flyme5.0以下版本，魅族内部集成pushSDK必填，不然无法收到消息-->
-  <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE"></uses-permission>
-  <permission android:name="${applicationId}.push.permission.MESSAGE" android:protectionLevel="signature"/>
-  <uses-permission android:name="${applicationId}.push.permission.MESSAGE"></uses-permission>
-
-  <!--  兼容flyme3.0配置权限-->
-  <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE" />
-  <permission android:name="${applicationId}.permission.C2D_MESSAGE"
-      android:protectionLevel="signature"></permission>
-  <uses-permission android:name="${applicationId}.permission.C2D_MESSAGE"/>
-
 
   <application
       android:name="com.peng.one.push1.PushApplication"
@@ -134,21 +122,6 @@
       </intent-filter>
     </receiver>
 
-    <!-- 魅族推送的广播直接器配置 -->
-    <receiver android:name="com.peng.one.push.meizu.MeizuPushReceiver">
-      <intent-filter>
-        <!-- 接收push消息 -->
-        <action android:name="com.meizu.flyme.push.intent.MESSAGE" />
-        <!-- 接收register消息 -->
-        <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
-        <!-- 接收unregister消息-->
-        <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK"/>
-        <!-- 兼容低版本Flyme3推送服务配置 -->
-        <action android:name="com.meizu.c2dm.intent.REGISTRATION" />
-        <action android:name="com.meizu.c2dm.intent.RECEIVE" />
-        <category android:name="${applicationId}"></category>
-      </intent-filter>
-    </receiver>
   </application>
 
 </manifest>

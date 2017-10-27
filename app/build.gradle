@@ -83,13 +83,13 @@ dependencies {
   compile 'com.peng.library:one-push-xiaomi:1.2.1'
   compile 'com.peng.library:one-push-meizu:1.2.2'
   compile 'com.peng.library:one-push-jpush:1.2.1'
-  compile('com.peng.library:one-push-umeng:1.2.1') {
-    //如果你使用了其他工程的utdid4all的jar，导致和OnePush冲突的话，请把下面加上
-    //exclude group: 'com.peng.library', module: 'one-push-umeng-utdid4all'
-  }
+//  compile('com.peng.library:one-push-umeng:1.2.1') {
+//    //如果你使用了其他工程的utdid4all的jar，导致和OnePush冲突的话，请把下面加上
+//    //exclude group: 'com.peng.library', module: 'one-push-umeng-utdid4all'
+//  }
 
 
-//      compile project(':one-push-umeng')
+      compile project(':one-push-umeng')
 ////      compile project(':one-push-huawei')
 //      compile project(':one-push-huawei-hms')
 //      compile project(':one-push-xiaomi')
