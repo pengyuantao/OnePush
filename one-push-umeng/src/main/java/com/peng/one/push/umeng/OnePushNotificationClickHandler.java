@@ -16,4 +16,7 @@ public class OnePushNotificationClickHandler extends UmengNotificationClickHandl
     public void dealWithCustomAction(Context context, UMessage uMessage) {
         OneRepeater.transmitNotificationClick(context, 0, uMessage.title, uMessage.text, uMessage.custom, uMessage.extra);
     }
+
+
+
 }
