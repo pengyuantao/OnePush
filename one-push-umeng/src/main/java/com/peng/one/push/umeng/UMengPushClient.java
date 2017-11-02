@@ -8,6 +8,7 @@ import android.os.Bundle;
 import com.peng.one.push.OnePush;
 import com.peng.one.push.OneRepeater;
 import com.peng.one.push.core.IPushClient;
+import com.peng.one.push.log.OneLog;
 import com.umeng.message.IUmengCallback;
 import com.umeng.message.IUmengRegisterCallback;
 import com.umeng.message.PushAgent;
@@ -77,6 +78,7 @@ public class UMengPushClient implements IPushClient {
         this.mPushAgent = PushAgent.getInstance(context);
         this.mPushAgent.setNotificationClickHandler(new OnePushNotificationClickHandler());
         this.mPushAgent.setMessageHandler(new OnePushMessageHandler());
+        this.mPushAgent.setDebugMode(OneLog.isDebug());
         this.mPushAgent.setDisplayNotificationNumber(0);
     }
 
@@ -150,7 +152,7 @@ public class UMengPushClient implements IPushClient {
             @Override
             public void onMessage(final boolean isSuccess, final ITagManager.Result result) {
                 //isSuccess表示操作是否成功
-                OneRepeater.transmitCommandResult(UMengPushClient.this.context, OnePush.TYPE_ADD_TAG, isSuccess ? OnePush.RESULT_OK : OnePush.RESULT_ERROR, null, tag, result.errors);
+                OneRepeater.transmitCommandResult(UMengPushClient.this.context, OnePush.TYPE_ADD_TAG, isSuccess ? OnePush.RESULT_OK : OnePush.RESULT_ERROR, null, tag, result==null?"":result.errors);
             }
         }, tag);
     }
@@ -161,7 +163,7 @@ public class UMengPushClient implements IPushClient {
             @Override
             public void onMessage(final boolean isSuccess, final ITagManager.Result result) {
                 //isSuccess表示操作是否成功
-                OneRepeater.transmitCommandResult(UMengPushClient.this.context, OnePush.TYPE_DEL_TAG, isSuccess ? OnePush.RESULT_OK : OnePush.RESULT_ERROR, null, tag, result.errors);
+                OneRepeater.transmitCommandResult(UMengPushClient.this.context, OnePush.TYPE_DEL_TAG, isSuccess ? OnePush.RESULT_OK : OnePush.RESULT_ERROR, null, tag, result==null?"":result.errors);
             }
         }, tag);
 
