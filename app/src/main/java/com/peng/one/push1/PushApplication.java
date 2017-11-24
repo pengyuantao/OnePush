@@ -31,7 +31,7 @@ public class PushApplication extends Application {
                 if (RomUtils.isMiuiRom()) {
                     result=  platformCode == 101;
                 } else if (RomUtils.isHuaweiRom()) {
-                    result= platformCode == 102;
+                    result= platformCode == 107;
                 } else if(RomUtils.isFlymeRom()){
                     result = platformCode == 103;
                 } else {
