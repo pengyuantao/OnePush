@@ -107,7 +107,7 @@ dependencies {
         android:name="OnePush_GeTui_105"
         android:value="com.peng.one.push.getui.GeTuiPushClient"/>
 
-    <!--如果引入了one-push-getui库-->
+    <!--如果引入了one-push-库-->
     <meta-data
         android:name="OnePush_JPush_106"
         android:value="com.peng.one.push.jpush.JPushClient"/>
