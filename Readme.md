@@ -344,7 +344,22 @@ dependencies {
 |transmitMessage(Context,String,String,Map<String,String>)|转发透传消息|
 |transmitNotification(Context,int,String,String,Sting,Map<String,String>)|转发通知|
 |transmitNotificationClick(Context,int,String,String,Sting,Map<String,String>)|转发通知点击事件|
+#### License
+```
+   Copyright 2017 pengyuantao
 
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+```
 
 ### 传送门
 [一步步走来的消息推送](http://www.jianshu.com/p/1ff15a072fdf)
@@ -353,3 +368,4 @@ dependencies {
 [更新日志](https://github.com/pengyuantao/OnePush/blob/master/updateLog.md)
 ### 感谢
 [Youzh](https://github.com/youmu178)    提供one-push-huawei-hms拓展
+
