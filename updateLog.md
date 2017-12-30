@@ -1,5 +1,5 @@
-## 更新日志
-#### one-push-core
+# 更新日志
+## one-push-core
 ##### 1.0.1
  * 初始化创建
 ##### 1.0.2
@@ -9,27 +9,27 @@
 ##### 1.2.2
  * 修复多App广播多次发送的bug
  
-#### one-push-huawei
+## one-push-huawei
 ##### 1.0.1
  * 初始化创建
 ##### 1.2.1
  * 统一版本号，隐藏对applicationId的引用
  
-#### one-push-huawei-hms
+## one-push-huawei-hms
 ##### 1.2.1
  * 统一版本号，隐藏对applicationId的引用
  
-#### one-push-xiaomi
+## one-push-xiaomi
 ##### 1.0.1
  * 初始化创建
 ##### 1.2.1
  * 统一版本号，隐藏对applicationId的引用
  
-#### one-push-meizu
+## one-push-meizu
 ##### 1.2.1
  * 统一版本号，隐藏对applicationId的引用
  
-#### one-push-umeng
+## one-push-umeng
 ##### 1.0.1
  * 初始化创建
 ##### 1.0.2
@@ -41,10 +41,10 @@
 ##### 1.2.1
  * 统一版本号，隐藏对applicationId的引用
  
-#### one-push-getui
+## one-push-getui
 ##### 1.2.1
  * 统一版本号，隐藏对applicationId的引用
 
-#### one-push-jpush
+## one-push-jpush
 ##### 1.2.1
  * 统一版本号，隐藏对applicationId的引用
