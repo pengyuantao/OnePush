@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         for (int i : resId) {
             findViewById(i).setOnClickListener(this);
         }
+        this.mLogFilter.addCategory(getPackageName());
         registerReceiver(mLogReceiver, mLogFilter);
     }
 
@@ -150,6 +151,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public static void sendLogBroadcast(Context context, String log) {
         Intent intent = new Intent(ACTION_LOG);
         intent.putExtra(PUSH_DATA, log);
+        intent.addCategory(context.getPackageName());
         context.sendBroadcast(intent);
     }
 

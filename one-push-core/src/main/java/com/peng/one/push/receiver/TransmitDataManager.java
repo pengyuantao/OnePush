@@ -24,6 +24,7 @@ public class TransmitDataManager {
     public static void sendPushData(Context context, String action, Parcelable data) {
         Intent intent = new Intent(action);
         intent.putExtra(INTENT_DATA_PUSH, data);
+        intent.addCategory(context.getPackageName());
         context.sendBroadcast(intent);
     }
 

@@ -72,10 +72,12 @@ dependencies {
 ```
 <receiver android:name="com.peng.openpush.TestPushReceiver">
             <intent-filter>
-                 <action android:name="com.peng.one.push.ACTION_RECEIVE_NOTIFICATION" />
+                <action android:name="com.peng.one.push.ACTION_RECEIVE_NOTIFICATION" />
                 <action android:name="com.peng.one.push.ACTION_RECEIVE_NOTIFICATION_CLICK" />
                 <action android:name="com.peng.one.push.ACTION_RECEIVE_MESSAGE" />
                 <action android:name="com.peng.one.push.ACTION_RECEIVE_COMMAND_RESULT" />
+
+                <category android:name="${applicationId}" />
             </intent-filter>
 </receiver>
 ```
