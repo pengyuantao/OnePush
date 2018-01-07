@@ -31,6 +31,7 @@ OnePush从诞生到目前600多的star，由当初的不知名到现在很多朋
 > 如果集成的是1.0版本的OnePush建议升级到1.2版本。
 > [1.0版本集成文档](https://github.com/pengyuantao/OnePush/blob/master/Readme_10.md)
 > 所有的lastVersion对应的是上面表格的最新的版本号，集成的时候，需要进行替换。
+> 设置Deubg模式：OneLog.setDebug(),该方法需要在OnePush.init()方法前调用。
 
 #### 1. 添加OnePush主要依赖（必须添加）
 项目project的build.gradle
