@@ -57,7 +57,7 @@ public class HMSPushClient implements IPushClient {
           @Override
           public void onConnectionFailed(ConnectionResult connectionResult) {
             OneRepeater.transmitCommandResult(HMSPushClient.this.context, OnePush.TYPE_REGISTER,
-                OnePush.RESULT_ERROR, null, String.valueOf(connectionResult.getErrorCode()), null);
+                    OnePush.RESULT_ERROR, null, String.valueOf(connectionResult.getErrorCode()), "huawei-hms register error code : "+connectionResult.getErrorCode());
           }
         })
         .build();

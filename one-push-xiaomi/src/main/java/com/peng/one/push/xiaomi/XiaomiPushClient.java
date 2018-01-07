@@ -5,9 +5,12 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.text.TextUtils;
 
+import com.peng.one.push.OnePush;
 import com.peng.one.push.cache.OnePushCache;
 import com.peng.one.push.core.IPushClient;
 import com.peng.one.push.log.OneLog;
+import com.xiaomi.channel.commonutils.logger.LoggerInterface;
+import com.xiaomi.mipush.sdk.Logger;
 import com.xiaomi.mipush.sdk.MiPushClient;
 
 /**
@@ -25,6 +28,21 @@ public class XiaomiPushClient implements IPushClient {
 
     @Override
     public void initContext(Context context) {
+        if (OneLog.isDebug()) {
+            Logger.setLogger(context, new LoggerInterface() {
+                @Override
+                public void setTag(String s) {
+                }
+                @Override
+                public void log(String s) {
+                    OneLog.i(s);
+                }
+                @Override
+                public void log(String s, Throwable throwable) {
+                    OneLog.e(s, throwable);
+                }
+            });
+        }
         this.mContext = context.getApplicationContext();
         //读取小米对应的appId和appSecret
         try {
@@ -75,4 +93,5 @@ public class XiaomiPushClient implements IPushClient {
     public void deleteTag(String tag) {
         MiPushClient.unsubscribe(mContext, tag, null);
     }
+
 }

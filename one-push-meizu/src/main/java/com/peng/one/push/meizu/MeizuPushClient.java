@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+
+import com.meizu.cloud.pushinternal.DebugLogger;
 import com.meizu.cloud.pushsdk.PushManager;
 import com.peng.one.push.OnePush;
 import com.peng.one.push.core.IPushClient;
@@ -29,6 +31,7 @@ public class MeizuPushClient implements IPushClient {
   @Override
   public void initContext(Context context) {
     this.context = context;
+    DebugLogger.switchDebug(OneLog.isDebug());
     try {
       Bundle metaData = context.getPackageManager()
           .getApplicationInfo(context.getPackageName(), PackageManager.GET_META_DATA).metaData;

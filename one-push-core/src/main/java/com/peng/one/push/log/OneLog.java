@@ -24,6 +24,12 @@ public class OneLog {
         }
     }
 
+    public static void e(String log, Throwable throwable) {
+        if (sDebug) {
+            Log.e(TAG, log, throwable);
+        }
+    }
+
     public static void setDebug(boolean isDebug) {
         sDebug = isDebug;
     }
