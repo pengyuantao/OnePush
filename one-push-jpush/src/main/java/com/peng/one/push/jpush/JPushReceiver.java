@@ -4,6 +4,8 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
+
 import cn.jpush.android.api.JPushInterface;
 import com.peng.one.push.OnePush;
 import com.peng.one.push.OneRepeater;
@@ -24,9 +26,15 @@ public class JPushReceiver extends BroadcastReceiver {
   public void onReceive(Context context, Intent intent) {
     String action = intent.getAction();
     Bundle bundle = intent.getExtras();
+    //防止下面的bundle为null
+    if (bundle == null) {
+      bundle = new Bundle();
+    }
     if (JPushInterface.ACTION_REGISTRATION_ID.equals(action)) {
-      OneRepeater.transmitCommandResult(context, OnePush.TYPE_REGISTER, OnePush.RESULT_OK,
-          bundle.getString(JPushInterface.EXTRA_REGISTRATION_ID), null, null);
+      String token =bundle.getString(JPushInterface.EXTRA_REGISTRATION_ID);
+      OneRepeater.transmitCommandResult(context, OnePush.TYPE_REGISTER,
+              TextUtils.isEmpty(token)?OnePush.RESULT_ERROR:OnePush.RESULT_OK,
+              token, null, null);
     } else if (JPushInterface.ACTION_MESSAGE_RECEIVED.equals(action)) {
       String title = bundle.getString(JPushInterface.EXTRA_TITLE);
       String message = bundle.getString(JPushInterface.EXTRA_MESSAGE);
