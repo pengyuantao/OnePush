@@ -47,9 +47,12 @@ public class XiaomiPushClient implements IPushClient {
         //读取小米对应的appId和appSecret
         try {
             Bundle metaData = context.getPackageManager().getApplicationInfo(context.getPackageName(), PackageManager.GET_META_DATA).metaData;
-            mAppId = metaData.getString(MI_PUSH_APP_ID);
-            mAppKey = metaData.getString(MI_PUSH_APP_KEY);
+            mAppId = metaData.getString(MI_PUSH_APP_ID).trim();
+            mAppKey = metaData.getString(MI_PUSH_APP_KEY).trim();
         } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+            OneLog.i("can't find MI_PUSH_APP_ID or MI_PUSH_APP_KEY in AndroidManifest.xml");
+        } catch (NullPointerException e) {
             e.printStackTrace();
             OneLog.i("can't find MI_PUSH_APP_ID or MI_PUSH_APP_KEY in AndroidManifest.xml");
         }
