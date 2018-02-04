@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Kan inte ansluta till server. Försök igen senare."</string>
+    <string name="getting_message_fail_prompt_toast">"Kan inte hämta information. Försök igen senare."</string>
+    <string name="hms_abort">"Stoppa"</string>
+    <string name="hms_abort_message">"Vill du stoppa hämtningen?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s kan inte använda Huaweis mobila tjänster. Starta Phone Manager eller gå till Inställningar, aktivera alla behörigheter för %2$s (inklusive autostart och sekundär start) och försök igen."</string>
+    <string name="hms_cancel">"Avbryt"</string>
+    <string name="hms_check_failure">"Det gick inte att söka efter uppdateringar."</string>
+    <string name="hms_check_no_update">"Du använder redan den senaste versionen."</string>
+    <string name="hms_checking">"Söker efter uppdateringar..."</string>
+    <string name="hms_confirm">"OK"</string>
+    <string name="hms_download_failure">"Det gick inte att hämta Huawei Mobile Services-paketet."</string>
+    <string name="hms_download_no_space">"Inte tillräckligt med ledigt utrymme. Hämtningen kan inte genomföras."</string>
+    <string name="hms_download_retry">"Hämtningen misslyckades. Vill du försöka igen?"</string>
+    <string name="hms_downloading">"Hämtar Huawei Mobile Services | status: %d%%"</string>
+    <string name="hms_downloading_loading">"Laddar ned"</string>
+    <string name="hms_downloading_new">"Laddar ned HMS"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Installera"</string>
+    <string name="hms_install_message">"Huawei Mobile Services måste vara installerad för att använda den här funktionen. Installera?"</string>
+    <string name="hms_retry">"Försök igen"</string>
+    <string name="hms_update">"Uppdatera"</string>
+    <string name="hms_update_message">"Uppdatera till den senaste versionen av Huawei Mobile Services om du vill använda den här funktionen. Vill du uppdatera nu?"</string>
+    <string name="hms_update_message_new">"Denna tjänst kräver den senaste versionen av följande app:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Mobile Services"</string>
+    <string name="no_available_network_prompt_toast">"Ingen internetanslutning. Kontrollera dina nätverksinställningar."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Avbryta installationen?"</string>
+    <string name="third_app_dl_install_failed">"Installationen misslyckades."</string>
+    <string name="third_app_dl_sure_cancel_download">"Ja"</string>
+    <string name="upsdk_app_dl_installing">"Laddar ned HiApp"</string>
+    <string name="upsdk_app_download_info_new">"Installera"</string>
+    <string name="upsdk_app_size">"Storlek"</string>
+    <string name="upsdk_app_version">"Version"</string>
+    <string name="upsdk_cancel">"Avbryt"</string>
+    <string name="upsdk_checking_update_prompt">"Söker efter uppdateringar…"</string>
+    <string name="upsdk_choice_update">"Uppdatering tillgänglig. Ladda ned och installera den senaste versionen."</string>
+    <string name="upsdk_detail">"Detaljer"</string>
+    <string name="upsdk_install">"Installera HiApp för att uppdatera. Installera nu?"</string>
+    <string name="upsdk_ota_app_name">"App"</string>
+    <string name="upsdk_ota_cancel">"Senare"</string>
+    <string name="upsdk_ota_force_cancel_new">"Lämna"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Uppdatera"</string>
+    <string name="upsdk_ota_title">"Ny version"</string>
+    <string name="upsdk_update_check_no_new_version">"Du använder redan den senaste versionen."</string>
+    <string name="upsdk_updating">"Uppdaterar"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Aktivera sekundär lansering av HiGame i Phone Manager eller inställningar och försök igen."</string>
+    <string name="hms_game_login_notice">"Välkommen %1$s"</string>
+</resources>

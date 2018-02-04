@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"സെർവറിലേക്ക് കണക്റ്റ് ചെയ്യാനാവില്ല. പിന്നീട് വീണ്ടും ശ്രമിക്കുക."</string>
+    <string name="getting_message_fail_prompt_toast">"വിവരങ്ങൾ വീണ്ടെടുക്കാനാവുന്നില്ല. പിന്നീട് വീണ്ടും ശ്രമിക്കുക."</string>
+    <string name="hms_abort">"നിർത്തുക"</string>
+    <string name="hms_abort_message">"ഡൗൺലോഡ് ചെയ്യൽ നിർത്തണോ?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s Huawei Mobile Services ഉപയോഗിക്കാനാവില്ല. ഫോൺ മാനേജർ സമാരംഭിക്കുക അല്ലെങ്കിൽ ക്രമീകരണത്തിലേക്ക് പോവുക, %2$s എന്നതിനുള്ള എല്ലാ അനുമതികളും പ്രവർത്തനസജ്ജമാക്കി (സ്വയമേവ സമാരംഭിക്കുക, സെക്കൻഡറി ലോഞ്ച് എന്നിവ ഉൾപ്പെടെ) വീണ്ടും ശ്രമിക്കുക."</string>
+    <string name="hms_cancel">"റദ്ദാക്കുക"</string>
+    <string name="hms_check_failure">"അപ്ഡേറ്റുകൾക്കായി പരിശോധിക്കുന്നത് പരാജയപ്പെട്ടു."</string>
+    <string name="hms_check_no_update">"ഏറ്റവും പുതിയ പതിപ്പാണ് നിങ്ങൾ നേരത്തേതന്നെ ഉപയോഗിക്കുന്നത്."</string>
+    <string name="hms_checking">"അപ്ഡേറ്റുകൾക്കായി പരിശോധിക്കുന്നു…"</string>
+    <string name="hms_confirm">"ശരി"</string>
+    <string name="hms_download_failure">"Huawei Mobile Services പാക്കേജ് ഡൗൺലോഡ് ചെയ്യുന്നത് പരാജയപ്പെട്ടു."</string>
+    <string name="hms_download_no_space">"സ്വതന്ത്ര സ്ഥലം വേണ്ടത്രയില്ല. ഡൗൺലോഡ് പൂർത്തിയാക്കാനാവില്ല."</string>
+    <string name="hms_download_retry">"ഡൗൺലോഡ് പരാജയപ്പെട്ടു. വീണ്ടും ശ്രമിക്കണോ?"</string>
+    <string name="hms_downloading">"Huawei Mobile Services ഡൗൺലോഡ് ചെയ്യുന്നു\nപുരോഗതി: %d%%"</string>
+    <string name="hms_downloading_loading">"ഡൗൺലോഡ് ചെയ്യുന്നു"</string>
+    <string name="hms_downloading_new">"HMS ഡൗൺലോഡ് ചെയ്യുന്നു"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"ഇൻസ്റ്റാൾ ചെയ്യുക"</string>
+    <string name="hms_install_message">"ഈ സവിശേഷത ഉപയോഗിക്കാൻ Huawei Mobile Services ഇൻസ്റ്റാൾ ചെയ്തിരിക്കണം. ഇൻസ്റ്റാൾ ചെയ്യണോ?"</string>
+    <string name="hms_retry">"വീണ്ടും ശ്രമിക്കുക"</string>
+    <string name="hms_update">"അപ്‌ഡേറ്റ് ചെയ്യുക"</string>
+    <string name="hms_update_message">"ഈ സവിശേഷത ഉപയോഗിക്കാൻ ഏറ്റവും പുതിയ Huawei Mobile Services പതിപ്പിലേക്ക് അപ്‌ഡേറ്റ് ചെയ്യുക. ഇപ്പോൾ അപ്‌ഡേറ്റ് ചെയ്യണോ?"</string>
+    <string name="hms_update_message_new">"ഇനിപ്പറയുന്ന ആപ്പിന്‍റെ ഏറ്റവും പുതിയ പതിപ്പ് ഈ സേവനത്തിനാവശ്യമാണ്:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Mobile Services"</string>
+    <string name="no_available_network_prompt_toast">"ഇന്‍റർനെറ്റ് കണക്ഷൻ ഇല്ല. നിങ്ങളുടെ നെറ്റ്‌വർക്ക് ക്രമീകരണം പരിശോധിക്കുക."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"ഇൻസ്റ്റാളേഷൻ റദ്ദാക്കണോ?"</string>
+    <string name="third_app_dl_install_failed">"ഇൻസ്റ്റാളേഷൻ പരാജയപ്പെട്ടു."</string>
+    <string name="third_app_dl_sure_cancel_download">"ഉണ്ട്"</string>
+    <string name="upsdk_app_dl_installing">"HiApp ഡൗൺലോഡ് ചെയ്യുന്നു"</string>
+    <string name="upsdk_app_download_info_new">"ഇൻസ്റ്റാൾ ചെയ്യുക"</string>
+    <string name="upsdk_app_size">"വലുപ്പം"</string>
+    <string name="upsdk_app_version">"പതിപ്പ്"</string>
+    <string name="upsdk_cancel">"റദ്ദാക്കുക"</string>
+    <string name="upsdk_checking_update_prompt">"അപ്ഡേറ്റുകൾക്കായി പരിശോധിക്കുന്നു…"</string>
+    <string name="upsdk_choice_update">"അപ്ഡേറ്റ് ലഭ്യം. ഏറ്റവും പുതിയ പതിപ്പ് ഡൗൺലോഡ് ചെയ്ത് ഇൻസ്റ്റാൾ ചെയ്യുക."</string>
+    <string name="upsdk_detail">"വിശദാംശങ്ങൾ"</string>
+    <string name="upsdk_install">"അപ്ഡേറ്റ് ചെയ്യുന്നതിന് HiApp ഇൻസ്റ്റാൾ ചെയ്യുക. ഇപ്പോൾ ഇൻ‌സ്റ്റാൾ ചെയ്യണോ?"</string>
+    <string name="upsdk_ota_app_name">"ആപ്പ്"</string>
+    <string name="upsdk_ota_cancel">"പിന്നീട്"</string>
+    <string name="upsdk_ota_force_cancel_new">"എക്സിറ്റ് ചെയ്യുക"</string>
+    <string name="upsdk_ota_notify_updatebtn">"അപ്‌ഡേറ്റ് ചെയ്യുക"</string>
+    <string name="upsdk_ota_title">"പുതിയ പതിപ്പ്"</string>
+    <string name="upsdk_update_check_no_new_version">"ഏറ്റവും പുതിയ പതിപ്പാണ് നിങ്ങൾ നേരത്തേതന്നെ ഉപയോഗിക്കുന്നത്."</string>
+    <string name="upsdk_updating">"അപ്‌ഡേറ്റ് ചെയ്യുന്നു"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"ഫോൺ മാനേജറിലെ അല്ലെങ്കിൽ ക്രമീകരണത്തിലെ HiGame-യ്ക്കായി സെക്കൻഡറി ലോഞ്ച് പ്രവർത്തനസജ്ജമാക്കുക."</string>
+    <string name="hms_game_login_notice">"സ്വാഗതം %1$s"</string>
+</resources>

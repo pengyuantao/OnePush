@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Não é possível conectar ao servidor. Tente novamente mais tarde."</string>
+    <string name="getting_message_fail_prompt_toast">"Não é possível recuperar informações. Tente novamente mais tarde."</string>
+    <string name="hms_abort">"Parar"</string>
+    <string name="hms_abort_message">"Parar o download?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s não pode usar o Huawei Mobile Services. Inicie o Gerenciador do telefone ou vá para Configurações, ative todas as permissões para %2$s (incluindo início automático e início secundário) e tente novamente."</string>
+    <string name="hms_cancel">"Cancelar"</string>
+    <string name="hms_check_failure">"Falha ao verificar atualizações."</string>
+    <string name="hms_check_no_update">"Você já está usando a versão mais recente."</string>
+    <string name="hms_checking">"Verificando atualizações..."</string>
+    <string name="hms_confirm">"OK"</string>
+    <string name="hms_download_failure">"Falha no download do pacote de serviços móveis da Huawei."</string>
+    <string name="hms_download_no_space">"Não há espaço livre suficiente. O download não pode ser concluído."</string>
+    <string name="hms_download_retry">"Falha no download. Tentar novamente?"</string>
+    <string name="hms_downloading">"Fazendo o download dos serviços móveis da Huawei | progresso: %d%%"</string>
+    <string name="hms_downloading_loading">"Baixando"</string>
+    <string name="hms_downloading_new">"Baixando HMS"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Instalar"</string>
+    <string name="hms_install_message">"Os serviços móveis da Huawei deve ser instalados para usar este recurso. Instalar?"</string>
+    <string name="hms_retry">"Tentar novamente"</string>
+    <string name="hms_update">"Atualizar"</string>
+    <string name="hms_update_message">"Para usar este recurso, faça a atualização para a versão mais recente dos serviços móveis da Huawei. Atualizar agora?"</string>
+    <string name="hms_update_message_new">"Este serviço requer a última versão do seguinte aplicativo:\n\n%1$s"</string>
+    <string name="hms_update_title">"Serviços móveis da Huawei"</string>
+    <string name="no_available_network_prompt_toast">"S/ con Int. Erro de rede. Verif.config.rede."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Cancelar a instalação?"</string>
+    <string name="third_app_dl_install_failed">"Falha na instalação."</string>
+    <string name="third_app_dl_sure_cancel_download">"Sim"</string>
+    <string name="upsdk_app_dl_installing">"Download do HiApp em execução"</string>
+    <string name="upsdk_app_download_info_new">"Instalar"</string>
+    <string name="upsdk_app_size">"Tamanho"</string>
+    <string name="upsdk_app_version">"Versão"</string>
+    <string name="upsdk_cancel">"Cancelar"</string>
+    <string name="upsdk_checking_update_prompt">"Verificando atualizações..."</string>
+    <string name="upsdk_choice_update">"Atualização disponível. Faça download e instale a versão mais recente."</string>
+    <string name="upsdk_detail">"Detalhes"</string>
+    <string name="upsdk_install">"Instale o HiApp para atualizar. Instalar agora?"</string>
+    <string name="upsdk_ota_app_name">"Aplicativo"</string>
+    <string name="upsdk_ota_cancel">"Depois"</string>
+    <string name="upsdk_ota_force_cancel_new">"Sair"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Atualizar"</string>
+    <string name="upsdk_ota_title">"Nova versão"</string>
+    <string name="upsdk_update_check_no_new_version">"Está usando vers recente."</string>
+    <string name="upsdk_updating">"Atualiz."</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Ative a Inicialização secundária para o HiGame no Gerenciamento do telefone ou em Configurações e tente novamente."</string>
+    <string name="hms_game_login_notice">"Bem-vindo(a), %1$s"</string>
+</resources>

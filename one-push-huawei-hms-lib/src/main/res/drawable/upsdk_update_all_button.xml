@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:state_enabled="true">
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+               <shape>
+                   <corners android:radius="40dp" />
+                   <solid android:color="@color/upsdk_category_button_select_pressed" />
+               </shape>
+           </item>
+           <item android:drawable="@drawable/upsdk_btn_emphasis_normal_layer"></item>
+        </layer-list>
+    </item>
+    
+    <item android:state_pressed="false" android:state_enabled="true">
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item >
+               <shape>
+                   <corners android:radius="40dp" />
+                   <solid android:color="@color/upsdk_blue_text_007dff" />
+               </shape>
+            </item>
+            <item android:drawable="@drawable/upsdk_btn_emphasis_normal_layer"></item>
+        </layer-list>
+    </item>
+    
+</selector>

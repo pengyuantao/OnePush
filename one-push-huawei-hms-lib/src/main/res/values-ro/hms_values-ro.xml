@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Nu se poate conecta la server. Încercați din nou mai târziu."</string>
+    <string name="getting_message_fail_prompt_toast">"Nu se pot regăsi informații. Încercați din nou mai târziu."</string>
+    <string name="hms_abort">"Oprire"</string>
+    <string name="hms_abort_message">"Opriți descărcarea?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s nu poate utiliza serviciile mobile Huawei. Lansați Manager telefon sau mergeți la Setări, activați toate permisiunile pentru %2$s (inclusiv cele de lansare automată și lansare secundară), și încercați din nou."</string>
+    <string name="hms_cancel">"Anulare"</string>
+    <string name="hms_check_failure">"Nu s-au putut verifica actualizările."</string>
+    <string name="hms_check_no_update">"Utilizați deja cea mai recentă versiune."</string>
+    <string name="hms_checking">"Se caută actualizări..."</string>
+    <string name="hms_confirm">"OK"</string>
+    <string name="hms_download_failure">"Descărcarea pachetului Huawei Mobile Services eșuată."</string>
+    <string name="hms_download_no_space">"Nu există suficient spațiu liber. Descărcarea nu poate fi finalizată."</string>
+    <string name="hms_download_retry">"Descărcare eșuată. Încercați din nou?"</string>
+    <string name="hms_downloading">"Se descarcă Huawei Mobile Services | progres: %d%%"</string>
+    <string name="hms_downloading_loading">"Descărcare"</string>
+    <string name="hms_downloading_new">"Descărcare HMS"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Instalați"</string>
+    <string name="hms_install_message">"Trebuie să instalați Serviciile Mobile Huawei pentru a utiliza această funcție. Instalați?"</string>
+    <string name="hms_retry">"Reîncercare"</string>
+    <string name="hms_update">"Actualizare"</string>
+    <string name="hms_update_message">"Pentru a utiliza această funcție, actualizați Huawei Mobile Services la cea mai recentă versiune. Actualizați acum?"</string>
+    <string name="hms_update_message_new">"Acest serviciu solicită cea mai recentă versiune a următoarei aplicații:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Mobile Services"</string>
+    <string name="no_available_network_prompt_toast">"Fără conexiune la internet. Verificați setările de rețea."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Anulați instalarea?"</string>
+    <string name="third_app_dl_install_failed">"Instalarea a eșuat."</string>
+    <string name="third_app_dl_sure_cancel_download">"Da"</string>
+    <string name="upsdk_app_dl_installing">"Se descarcă HiApp"</string>
+    <string name="upsdk_app_download_info_new">"Instalare"</string>
+    <string name="upsdk_app_size">"Dimensiune"</string>
+    <string name="upsdk_app_version">"Versiune"</string>
+    <string name="upsdk_cancel">"Anulați"</string>
+    <string name="upsdk_checking_update_prompt">"Se caută actualizări..."</string>
+    <string name="upsdk_choice_update">"Actualizare disponibilă. Descărcaţi şi instalaţi cea mai recentă versiune."</string>
+    <string name="upsdk_detail">"Detalii"</string>
+    <string name="upsdk_install">"Instalați HiApp pentru a actualiza. Instalați acum?"</string>
+    <string name="upsdk_ota_app_name">"Aplicație"</string>
+    <string name="upsdk_ota_cancel">"Mai târziu"</string>
+    <string name="upsdk_ota_force_cancel_new">"Ieșire"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Actualizare"</string>
+    <string name="upsdk_ota_title">"Versiune nouă"</string>
+    <string name="upsdk_update_check_no_new_version">"Utilizați deja cea mai recentă versiune."</string>
+    <string name="upsdk_updating">"Se actualizează"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Activați Lansare secundară pentru HiGame în Manager telefon sau Setări și încercați din nou."</string>
+    <string name="hms_game_login_notice">"Bun venit %1$s"</string>
+</resources>

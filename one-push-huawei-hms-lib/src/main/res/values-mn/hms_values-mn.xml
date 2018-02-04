@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Серверт холбогдох боломжгүй байна. Дараа дахин оролдоно уу."</string>
+    <string name="getting_message_fail_prompt_toast">"Мэдээлэл авах боломжгүй байна. Дараа дахин оролдоно уу."</string>
+    <string name="hms_abort">"Зогсоох"</string>
+    <string name="hms_abort_message">"Татан авалтыг зогсоох уу?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s нь Huawei Mobile Services-г ашиглах боломжгүй байна. Утасны менежерийг ажиллуул эсвэл Тохиргоо руу орж, %2$s-н (автоматаар ажиллуулах болон нэмэлтээр ажиллуулах гэх мэт) бүх зөвшөөрлийг идэвхжүүлээд, дахин оролдоно уу."</string>
+    <string name="hms_cancel">"Цуцлах"</string>
+    <string name="hms_check_failure">"Шинэчлэл шалгах үед алдаа гарлаа."</string>
+    <string name="hms_check_no_update">"Таны программ хамгийн шинэ хувилбар байна."</string>
+    <string name="hms_checking">"Шинэчлэл шалгаж байна…"</string>
+    <string name="hms_confirm">"OK"</string>
+    <string name="hms_download_failure">"Huawei Mobile Services багцыг татаж авахад алдаа гарлаа."</string>
+    <string name="hms_download_no_space">"Хангалттай зай алга. Татан авалтыг гүйцээх боломжгүй."</string>
+    <string name="hms_download_retry">"Татан авалт амжилтгүй. Дахин оролдох уу?"</string>
+    <string name="hms_downloading">"Huawei Mobile Services-г татаж авч байна\nявц: %d%%"</string>
+    <string name="hms_downloading_loading">"Татаж байна"</string>
+    <string name="hms_downloading_new">"HMS-ийг татаж байна"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Суулгах"</string>
+    <string name="hms_install_message">"Энэ үйлдлийг ашиглахын тулд Huawei Mobile Services-г суулгасан байх ёстой. Суулгах уу?"</string>
+    <string name="hms_retry">"Дахин оролдох"</string>
+    <string name="hms_update">"Шинэчлэх"</string>
+    <string name="hms_update_message">"Энэ үйлдлийг ашиглахын тулд Huawei Mobile Services-н хамгийн сүүлийн хувилбар болгож шинэчил. Одоо шинэчлэх үү?"</string>
+    <string name="hms_update_message_new">"Энэхүү үйлчилгээг ажиллуулахын тулд доорх программуудын хамгийн сүүлийн хувилбар шаардлагатай:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Мобайл Үйлчилгээ"</string>
+    <string name="no_available_network_prompt_toast">"Интернэт холболт алга. Сүлжээний тохиргоогоо шалгана уу."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Суулгалтыг цуцлах уу?"</string>
+    <string name="third_app_dl_install_failed">"Суурилуулалт амжилтгүй."</string>
+    <string name="third_app_dl_sure_cancel_download">"Тийм"</string>
+    <string name="upsdk_app_dl_installing">"HiApp татаж авч байна"</string>
+    <string name="upsdk_app_download_info_new">"Суулгах"</string>
+    <string name="upsdk_app_size">"Хэмжээ"</string>
+    <string name="upsdk_app_version">"Хувилбар"</string>
+    <string name="upsdk_cancel">"Цуцлах"</string>
+    <string name="upsdk_checking_update_prompt">"Шинэчлэл шалгаж байна…"</string>
+    <string name="upsdk_choice_update">"Шинэчлэлт бэлэн байна. Хамгийн сүүлийн хувилбарыг татаж авч, суулгана уу."</string>
+    <string name="upsdk_detail">"Дэлгэрэнгүй"</string>
+    <string name="upsdk_install">"Шинэчлэхийн тулд HiApp суулгана уу. Одоо суулгах уу?"</string>
+    <string name="upsdk_ota_app_name">"Аппликэйшн"</string>
+    <string name="upsdk_ota_cancel">"Дараа"</string>
+    <string name="upsdk_ota_force_cancel_new">"Гарах"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Шинэчлэх"</string>
+    <string name="upsdk_ota_title">"Шинэ хувилбар"</string>
+    <string name="upsdk_update_check_no_new_version">"Таны программ хамгийн шинэ хувилбар байна."</string>
+    <string name="upsdk_updating">"Шинэчилж байна"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Утасны Менежер буюу Тохиргоонд HiGame -н Хоёрдогч нээлтийг идэвхжүүлээд дахин оролд."</string>
+    <string name="hms_game_login_notice">"%1$s-д тавтай морил"</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Hindi makakonekta sa server. Pakisubukang muli sa ibang pagkakataon."</string>
+    <string name="getting_message_fail_prompt_toast">"Hindi makuha ang impormasyon. Pakisubukang muli sa ibang pagkakataon."</string>
+    <string name="hms_abort">"Ihinto"</string>
+    <string name="hms_abort_message">"Ihinto ang pag-download?"</string>
+    <string name="hms_bindfaildlg_message">"Hindi magamit ng %1$s ang Mga Serbisyo ng Huawei Mobile. Pakilunsad ang Phone Manager o pumunta sa Mga Setting, i-enable ang lahat ng pahintulot para sa %2$s (kabilang ang awtomatikong paglunsad at ikalawang paglunsad), at subukang muli."</string>
+    <string name="hms_cancel">"Kanselahin"</string>
+    <string name="hms_check_failure">"Hindi nagawang tumingin ng mga update."</string>
+    <string name="hms_check_no_update">"Pinakabagong bersyon na ang ginagamit mo."</string>
+    <string name="hms_checking">"Tumitingin ng mga update…"</string>
+    <string name="hms_confirm">"OK"</string>
+    <string name="hms_download_failure">"Hindi na-download ang package ng Mga Serbisyo sa Mobile ng Huawei."</string>
+    <string name="hms_download_no_space">"Walang sapat na bakanteng espasyo. Hindi makumpleto ang pag-download."</string>
+    <string name="hms_download_retry">"Hindi na-download. Subukang muli?"</string>
+    <string name="hms_downloading">"Dina-download ang Mga Serbisyo sa Mobile ng Huawei | progreso: %d%%"</string>
+    <string name="hms_downloading_loading">"Nagda-download"</string>
+    <string name="hms_downloading_new">"Dina-download ang HMS"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"I-install"</string>
+    <string name="hms_install_message">"Dapat i-install ang Huawei Mobile Services para magamit ang feature na ito. I-install?"</string>
+    <string name="hms_retry">"Subukang muli"</string>
+    <string name="hms_update">"I-update"</string>
+    <string name="hms_update_message">"Mag-update sa pinakabagong bersyon ng Mga Serbisyo sa Mobile ng Huawei upang magamit ang feature na ito. I-update na?"</string>
+    <string name="hms_update_message_new">"Kinakailangan ng serbisyong ito ang pinakabagong bersyon ng sumusunod na app:\n\n%1$s"</string>
+    <string name="hms_update_title">"Mga Serbisyo sa Mobile ng Huawei"</string>
+    <string name="no_available_network_prompt_toast">"No Internet connection. Please check your network settings."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Kanselahin ang pag-install?"</string>
+    <string name="third_app_dl_install_failed">"Hindi ma-install."</string>
+    <string name="third_app_dl_sure_cancel_download">"Oo"</string>
+    <string name="upsdk_app_dl_installing">"Dina-download ang HiApp"</string>
+    <string name="upsdk_app_download_info_new">"Install"</string>
+    <string name="upsdk_app_size">"Size"</string>
+    <string name="upsdk_app_version">"Version"</string>
+    <string name="upsdk_cancel">"Kanselahin"</string>
+    <string name="upsdk_checking_update_prompt">"Tumitingin ng mga update…"</string>
+    <string name="upsdk_choice_update">"Available na update. Mangyaring i-download at i-install ang pinakabagong bersyon."</string>
+    <string name="upsdk_detail">"Details"</string>
+    <string name="upsdk_install">"I-install ang HiApp para i-update. I-install ngayon?"</string>
+    <string name="upsdk_ota_app_name">"App"</string>
+    <string name="upsdk_ota_cancel">"Later"</string>
+    <string name="upsdk_ota_force_cancel_new">"Lumabas"</string>
+    <string name="upsdk_ota_notify_updatebtn">"I-update"</string>
+    <string name="upsdk_ota_title">"New version"</string>
+    <string name="upsdk_update_check_no_new_version">"You are already using the latest version."</string>
+    <string name="upsdk_updating">"Updating"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"I-enable ang Secondary launch para sa HiGame sa Phone Manager o Mga Setting at subukang muli."</string>
+    <string name="hms_game_login_notice">"Welcome %1$s"</string>
+</resources>

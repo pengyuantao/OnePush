@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"No se puede conectar con el servidor. Vuelva a intentarlo más tarde."</string>
+    <string name="getting_message_fail_prompt_toast">"No se puede recuperar la información. Vuelva a intentarlo más tarde."</string>
+    <string name="hms_abort">"Detener"</string>
+    <string name="hms_abort_message">"¿Detener la descarga?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s no puede usar los servicios móviles de Huawei. Abra el Gestor o acceda a Ajustes, habilite todos los permisos para %2$s (incluso el acceso automático y el secundario) y vuelva a intentarlo."</string>
+    <string name="hms_cancel">"Cancelar"</string>
+    <string name="hms_check_failure">"Error al buscar actualizaciones."</string>
+    <string name="hms_check_no_update">"Ya está usando la última versión."</string>
+    <string name="hms_checking">"Buscando actualizaciones..."</string>
+    <string name="hms_confirm">"Aceptar"</string>
+    <string name="hms_download_failure">"Error al descargar el paquete de Servicios móviles de Huawei."</string>
+    <string name="hms_download_no_space">"Espacio insuficiente. No se puede completar la descarga."</string>
+    <string name="hms_download_retry">"Error al descargar. ¿Reintentar?"</string>
+    <string name="hms_downloading">"Descargando Servicios móviles de Huawei | Progreso: %d %%"</string>
+    <string name="hms_downloading_loading">"Descargando…"</string>
+    <string name="hms_downloading_new">"Descargando HMS"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Instalar"</string>
+    <string name="hms_install_message">"Para utilizar esta función, es necesario instalar los Servicios móviles de Huawei. ¿Instalar?"</string>
+    <string name="hms_retry">"Reintentar"</string>
+    <string name="hms_update">"Actualizar"</string>
+    <string name="hms_update_message">"Actualice la versión de Servicios móviles de Huawei para utilizar esta función. ¿Actualizar ahora?"</string>
+    <string name="hms_update_message_new">"Este servicio requiere la instalación de la última versión de la siguiente aplicación:\n\n%1$s"</string>
+    <string name="hms_update_title">"Servicios móviles de Huawei"</string>
+    <string name="no_available_network_prompt_toast">"Sin conexión a Internet. Verifique los ajustes de red."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"¿Cancelar la instalación?"</string>
+    <string name="third_app_dl_install_failed">"Error al instalar"</string>
+    <string name="third_app_dl_sure_cancel_download">"Sí"</string>
+    <string name="upsdk_app_dl_installing">"Descargando HiApp"</string>
+    <string name="upsdk_app_download_info_new">"Instalar"</string>
+    <string name="upsdk_app_size">"Tamaño:"</string>
+    <string name="upsdk_app_version">"Versión:"</string>
+    <string name="upsdk_cancel">"NO"</string>
+    <string name="upsdk_checking_update_prompt">"Buscando actualizaciones..."</string>
+    <string name="upsdk_choice_update">"Actualización disponible. Descargue e instale la última versión."</string>
+    <string name="upsdk_detail">"Detalles"</string>
+    <string name="upsdk_install">"Instale HiApp para actualizar. ¿Instalar ahora?"</string>
+    <string name="upsdk_ota_app_name">"Aplicación:"</string>
+    <string name="upsdk_ota_cancel">"Más tarde"</string>
+    <string name="upsdk_ota_force_cancel_new">"Salir"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Actualizar"</string>
+    <string name="upsdk_ota_title">"Versión nueva"</string>
+    <string name="upsdk_update_check_no_new_version">"Ya está usando la última versión."</string>
+    <string name="upsdk_updating">"Actualizando"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Habilite Inicio secundario para HiGame desde el Gestor o desde Ajustes y vuelva a intentarlo."</string>
+    <string name="hms_game_login_notice">"Bienvenido, %1$s"</string>
+</resources>

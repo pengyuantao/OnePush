@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"ਸਰਵਰ ਨਾਲ ਕਨੈਕਟ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ। ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"</string>
+    <string name="getting_message_fail_prompt_toast">"ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ। ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"</string>
+    <string name="hms_abort">"ਰੋਕੋ"</string>
+    <string name="hms_abort_message">"ਕੀ ਡਾਊਨਲੋਡ ਕਰਨਾ ਰੋਕਣਾ ਹੈ?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s Huawei Mobile Services ਦੀ ਵਰਤੋਂ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਫ਼ੋਨ ਮੈਨੇਜਰ ਨੂੰ ਲਾਂਚ ਕਰੋ ਜਾਂ ਸੈਟਿੰਗਾਂ \’ਤੇ ਜਾਓ, %2$s ਲਈ ਸਾਰੀਆਂ ਇਜਾਜ਼ਤਾਂ ਨੂੰ ਸਮਰੱਥ ਕਰੋ (ਜਿਸ ਵਿੱਚ ਸਵੈ-ਲਾਂਚ ਅਤੇ ਸੈਕੰਡਰੀ ਲਾਂਚ ਸ਼ਾਮਲ ਹੈ), ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"</string>
+    <string name="hms_cancel">"ਰੱਦ ਕਰੋ"</string>
+    <string name="hms_check_failure">"ਅੱਪਡੇਟਾਂ ਲਈ ਖੋਜ ਕਰਨ ਵਿੱਚ ਅਸਫਲ।"</string>
+    <string name="hms_check_no_update">"ਤੁਸੀਂ ਪਹਿਲਾਂ ਹੀ ਨਵੀਨਤਮ ਸੰਸਕਰਣ ਵਰਤ ਰਹੇ ਹੋ।"</string>
+    <string name="hms_checking">"ਅੱਪਡੇਟਾਂ ਲਈ ਜਾਂਚ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ…"</string>
+    <string name="hms_confirm">"ਠੀਕ"</string>
+    <string name="hms_download_failure">"Huawei Mobile Services ਪੈਕੇਜ ਨੂੰ ਡਾਊਨਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ।"</string>
+    <string name="hms_download_no_space">"ਉੱਚਿਤ ਮਾਤਰਾ ਵਿੱਚ ਖਾਲੀ ਥਾਂ ਉਪਲਬਧ ਨਹੀਂ ਹੈ। ਡਾਊਨਲੋਡ ਪੂਰਾ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।"</string>
+    <string name="hms_download_retry">"ਡਾਊਨਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ। ਕੀ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰਨੀ ਹੈ?"</string>
+    <string name="hms_downloading">"Huawei Mobile Services ਨੂੰ ਡਾਊਨਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ\nਪ੍ਰਗਤੀ: %d%%"</string>
+    <string name="hms_downloading_loading">"ਡਾਊਨਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"</string>
+    <string name="hms_downloading_new">"HMS ਨੂੰ ਡਾਊਨਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"ਇੰਸਟਾਲ ਕਰੋ"</string>
+    <string name="hms_install_message">"ਇਸ ਵਿਸ਼ੇਸ਼ਤਾ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ Huawei Mobile Services ਨੂੰ ਇੰਸਟਾਲ ਕਰਨਾ ਜ਼ਰੂਰੀ ਹੈ। ਕੀ ਇੰਸਟਾਲ ਕਰਨਾ ਹੈ?"</string>
+    <string name="hms_retry">"ਮੁੜ-ਕੋਸ਼ਿਸ਼ ਕਰੋ"</string>
+    <string name="hms_update">"ਅੱਪਡੇਟ ਕਰੋ"</string>
+    <string name="hms_update_message">"ਇਸ ਵਿਸ਼ੇਸ਼ਤਾ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ Huawei Mobile Services ਦੇ ਨਵੀਨਤਮ ਸੰਸਕਰਣ \’ਤੇ ਅੱਪਡੇਟ ਕਰੋ। ਕੀ ਹੁਣੇ ਅੱਪਡੇਟ ਕਰਨਾ ਹੈ?"</string>
+    <string name="hms_update_message_new">"ਇਸ ਸੇਵਾ ਨੂੰ ਨਿਮਨਲਿਖਤ ਐਪ ਦੇ ਨਵੀਨਤਮ ਸੰਸਕਰਣ ਦੀ ਲੋੜ ਹੈ:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Mobile Services"</string>
+    <string name="no_available_network_prompt_toast">"ਕੋਈ ਇੰਟਰਨੈੱਟ ਕਨੈਕਸ਼ਨ ਨਹੀਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀਆਂ ਨੈੱਟਵਰਕ ਸੈਟਿੰਗਾਂ ਦੀਆਂ ਜਾਂਚ ਕਰੋ।"</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"ਕੀ ਇੰਸਟਾਲੇਸ਼ਨ ਨੂੰ ਰੱਦ ਕਰਨਾ ਹੈ?"</string>
+    <string name="third_app_dl_install_failed">"ਇੰਸਟਾਲੇਸ਼ਨ ਅਸਫਲ ਹੋਇਆ।"</string>
+    <string name="third_app_dl_sure_cancel_download">"ਹਾਂ"</string>
+    <string name="upsdk_app_dl_installing">"HiApp ਨੂੰ ਡਾਊਨਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"</string>
+    <string name="upsdk_app_download_info_new">"ਇੰਸਟਾਲ ਕਰੋ"</string>
+    <string name="upsdk_app_size">"ਆਕਾਰ"</string>
+    <string name="upsdk_app_version">"ਸੰਸਕਰਣ"</string>
+    <string name="upsdk_cancel">"ਰੱਦ ਕਰੋ"</string>
+    <string name="upsdk_checking_update_prompt">"ਅੱਪਡੇਟਾਂ ਲਈ ਜਾਂਚ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ…"</string>
+    <string name="upsdk_choice_update">"ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਨਵੀਨਤਮ ਸੰਸਕਰਣ ਡਾਊਨਲੋਡ ਅਤੇ ਇੰਸਟਾਲ ਕਰੋ।"</string>
+    <string name="upsdk_detail">"ਵੇਰਵੇ"</string>
+    <string name="upsdk_install">"ਅੱਪਡੇਟ ਕਰਨ ਲਈ HiApp ਇੰਸਟਾਲ ਕਰੋ। ਕੀ ਹੁਣੇ ਇੰਸਟਾਲ ਕਰਨਾ ਹੈ?"</string>
+    <string name="upsdk_ota_app_name">"ਐਪ"</string>
+    <string name="upsdk_ota_cancel">"ਬਾਅਦ ਵਿੱਚ"</string>
+    <string name="upsdk_ota_force_cancel_new">"ਬਾਹਰ ਜਾਓ"</string>
+    <string name="upsdk_ota_notify_updatebtn">"ਅੱਪਡੇਟ ਕਰੋ"</string>
+    <string name="upsdk_ota_title">"ਨਵਾਂ ਸੰਸਕਰਣ"</string>
+    <string name="upsdk_update_check_no_new_version">"ਤੁਸੀਂ ਪਹਿਲਾਂ ਹੀ ਨਵੀਨਤਮ ਸੰਸਕਰਣ ਵਰਤ ਰਹੇ ਹੋ।"</string>
+    <string name="upsdk_updating">"ਅੱਪਡੇਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"ਫ਼ੋਨ ਪ੍ਰਬੰਧਕ ਜਾਂ ਸੈਟਿੰਗਾਂ ਵਿੱਚ HiGame ਲਈ ਸੈਕੰਡਰੀ ਲਾਂਚ ਨੂੰ ਸਮਰੱਥ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"</string>
+    <string name="hms_game_login_notice">"ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ %1$s"</string>
+</resources>

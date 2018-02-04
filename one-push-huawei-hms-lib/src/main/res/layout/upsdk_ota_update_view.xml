@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+                <LinearLayout
+                    android:id="@+id/name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/upsdk_black"
+                        android:alpha="0.5"
+                        android:textSize="@dimen/upsdk_dialog_content_size"
+                        android:text="@string/upsdk_ota_app_name"
+                        android:fontFamily="HwChinese-medium" />
+
+                    <TextView
+                        android:id="@+id/name_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/upsdk_black"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="@dimen/upsdk_dialog_content_size"
+                        android:fontFamily="HwChinese-medium"  />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/version_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/upsdk_black"
+                        android:alpha="0.5"
+                        android:textSize="@dimen/upsdk_dialog_content_size"
+                        android:text="@string/upsdk_app_version"
+                        android:fontFamily="HwChinese-medium" />
+
+                    <TextView
+                        android:id="@+id/version_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/upsdk_black"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="@dimen/upsdk_dialog_content_size"
+                        android:fontFamily="HwChinese-medium"  />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/size_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/upsdk_black"
+                        android:alpha="0.5"
+                        android:text="@string/upsdk_app_size"
+                        android:textSize="@dimen/upsdk_dialog_content_size"
+                        android:fontFamily="HwChinese-medium" />
+
+                    <TextView
+                        android:id="@+id/appsize_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/upsdk_black"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="@dimen/upsdk_dialog_content_size"
+                        android:fontFamily="HwChinese-medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/content_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/upsdk_black"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/upsdk_detail"
+                        android:textSize="@dimen/upsdk_dialog_content_size"
+                        android:fontFamily="HwChinese-medium" />
+
+                    <TextView
+                        android:id="@+id/content_textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/upsdk_black"
+                        android:alpha="0.5"
+                        android:layout_marginTop="8dp"
+                        android:textSize="@dimen/upsdk_dialog_subtitle_size"
+                        android:lineSpacingMultiplier="1.1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

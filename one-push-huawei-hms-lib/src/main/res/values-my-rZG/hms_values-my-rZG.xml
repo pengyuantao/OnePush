@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"ဆာဗာႏွင့္ ခ်ိတ္ဆက္၍ မရႏိုင္ပါ။ ေက်းဇူးျပဳ၍ ေနာက္မွ ထပ္မံႀကိဳးစားပါ။"</string>
+    <string name="getting_message_fail_prompt_toast">"အခ်က္အလက္မ်ားကို ျပန္လည္ရယူ၍ ရႏိုင္မည္ မဟုတ္ပါ။ ေက်းဇူးျပဳ၍ ေနာက္မွ ထပ္မံႀကိဳးစားပါ။"</string>
+    <string name="hms_abort">"ရပ္"</string>
+    <string name="hms_abort_message">"ေဒါင္းလုဒ္ကိုရပ္မည္လား?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s သည္ Huawei မိုဘိုင္း ဝန္ေဆာင္မႈမ်ားကို သုံး၍ မရႏိုင္ပါ။ ဖုန္းမန္ေနဂ်ာအား ဖြင့္ပါ သို႔မဟုတ္ ဆက္တင္သို႔ သြားပါ၊ ထို႔ေနာက္ %2$s အတြက္ ခြင့္ျပဳခ်က္မ်ား (အလိုအေလ်ာက္ ဖြင့္ျခင္းႏွင့္ အရန္ ဖြင့္ျခင္းမ်ား အပါအဝင္) အားလုံးကို ဖြင့္ေပးျပီး ထပ္မံ ၾကိဳးစားၾကည့္ပါ။"</string>
+    <string name="hms_cancel">"ဖ်က္သိမ္းမည္"</string>
+    <string name="hms_check_failure">"အသစ္မြမ္းမံမႈမ်ားကို စစ္ေဆးျခင္း မေအာင္ျမင္ခဲ့ပါ။"</string>
+    <string name="hms_check_no_update">"သင္သည္ေနာက္ဆံုးဗား႐ွင္းကို အသံုးျပဳေနၿပီးျဖစ္သည္။"</string>
+    <string name="hms_checking">"အပ္ဒိတ္မ်ားအတြက္ စစ္ေနပါသည္…"</string>
+    <string name="hms_confirm">"အိုေက"</string>
+    <string name="hms_download_failure">"Huawei မိုဘုိင္းဝန္ေဆာင္မႈမ်ားပက္ေက့ခ်္ကို ေဒါင္းလုဒ္ဆြဲျခင္း မေအာင္ျမင္ခဲ့ပါ။"</string>
+    <string name="hms_download_no_space">"ေနရာလြတ္ မေလာက္ပါ။ ေဒါင္းလုဒ္မၿပီးစီးႏုိင္ပါ။"</string>
+    <string name="hms_download_retry">"ေဒါင္းလုဒ္ဆြဲျခင္း မေအာင္ျမင္ခဲ့ပါ။ ထပ္ႀကိဳးစားမည္လား?"</string>
+    <string name="hms_downloading">"Huawei မိုဘုိင္းဝန္ေဆာင္မႈမ်ားကို ေဒါင္းလုဒ္ဆြဲေနသည္ | တိုးတက္မႈ- %d%%"</string>
+    <string name="hms_downloading_loading">"ေဒါင္းလုဒ္လုပ္ေနဆဲ"</string>
+    <string name="hms_downloading_new">"HMS အား ေဒါင္းလုဒ္ဆြဲေနပါသည္"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"ထည့္သြင္းမည္"</string>
+    <string name="hms_install_message">"ဤအဂၤါရပ္ကိုသံုးရန္ Huawei မိုဘိုင္းဝန္ေဆာင္မႈမ်ားကို ထည့္သြင္းထားရမည္။ ထည့္သြင္းမည္လား။"</string>
+    <string name="hms_retry">"ျပန္ႀကိဳးစား"</string>
+    <string name="hms_update">"အပ္ဒိတ္"</string>
+    <string name="hms_update_message">"ဤအဂၤါရပ္ကိုအသံုးျပဳရန္ Huawei မိုဘုိင္းဝန္ေဆာင္မႈမ်ား၏ ေနာက္ဆံုးထြက္ဗား႐ွင္းသို႔ အသစ္မြမ္းမံပါ။ ယခုအသစ္မြမ္းမံမည္လား။"</string>
+    <string name="hms_update_message_new">"ဤဝန္ေဆာင္မႈသည္ ေဖာ္ျပပါ အက္ပ္၏ ေနာက္ဆုံး ဗားရွင္းကို လိုအပ္ပါသည္ - \n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei မိုဘုိင္းဝန္ေဆာင္မႈမ်ား"</string>
+    <string name="no_available_network_prompt_toast">"အင္တာနက္ ခ်ိတ္ဆက္မႈ မရွိပါ။ ေက်းဇူးျပဳ၍ သင့္ကြန္ရက္ဆက္တင္ကို စစ္ေဆးပါ။"</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"ထည့္သြင္းမႈအား ပယ္ဖ်က္မည္လား။"</string>
+    <string name="third_app_dl_install_failed">"ထည့္သြင္းမႈ မေအာင္ျမင္ခဲ့ပါ။"</string>
+    <string name="third_app_dl_sure_cancel_download">"ပယ္ဖ်က္မည္"</string>
+    <string name="upsdk_app_dl_installing">"HiApp အား ေဒါင္းလုဒ္ဆြဲေနပါသည္"</string>
+    <string name="upsdk_app_download_info_new">"ထည့္သြင္းမည္"</string>
+    <string name="upsdk_app_size">"အရြယ္အစား"</string>
+    <string name="upsdk_app_version">"ဗားရွင္း"</string>
+    <string name="upsdk_cancel">"မပယ္ဖ်က္ပါ"</string>
+    <string name="upsdk_checking_update_prompt">"အပ္ဒိတ္အတြက္ စစ္ေဆးေနဆဲ..."</string>
+    <string name="upsdk_choice_update">"အပ္ဒိတ္ ရရွိႏိုင္ပါျပီ။ ေနာက္ဆုံး ဗားရွင္းအား ေဒါင္းလုဒ္ဆြဲျပီး ထည့္သြင္းေပးပါ။"</string>
+    <string name="upsdk_detail">"အေသးစိတ္ အခ်က္အလက္မ်ား"</string>
+    <string name="upsdk_install">"အပ္ဒိတ္လုပ္ရန္ HiApp ကို ထည့္သြင္းပါ။ ယခု ထည့္သြင္းမည္လား။"</string>
+    <string name="upsdk_ota_app_name">"အက္ပ္"</string>
+    <string name="upsdk_ota_cancel">"ေနာက္မွ"</string>
+    <string name="upsdk_ota_force_cancel_new">"ထြက္မည္"</string>
+    <string name="upsdk_ota_notify_updatebtn">"အပ္ဒိတ္"</string>
+    <string name="upsdk_ota_title">"ဗား႐ွင္းအသစ္"</string>
+    <string name="upsdk_update_check_no_new_version">"သင္သည္ ေနာက္ဆုံးဗားရွင္းကို အသုံးျပဳေနျပီးသား ျဖစ္ပါသည္။"</string>
+    <string name="upsdk_updating">"အပ္ဒိတ္လုပ္ေနဆဲ"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"ဖုန္းမန္ေနဂ်ာ သို႔မဟုတ္ ဆက္တင္တြင္ HiGame အတြက္ ဆင့္ပြား ဖြင့္မႈအား ဖြင့္ျပီး ထပ္ၾကိဳးစားၾကည့္ပါ။"</string>
+    <string name="hms_game_login_notice">"Welcome %1$s"</string>
+</resources>

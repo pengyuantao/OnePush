@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"ছাৰ্ভাৰলৈ সংযোগ কৰাত অক্ষম। অনুগ্ৰহ কৰি পিছত পুনঃচেষ্টা কৰক।"</string>
+    <string name="getting_message_fail_prompt_toast">"তথ্য পুনৰুদ্ধাৰ কৰাত বিফল হৈছে। অনুগ্ৰহ কৰি পিছত পুনঃচেষ্টা কৰক।"</string>
+    <string name="hms_abort">"বন্ধ কৰক"</string>
+    <string name="hms_abort_message">"ডাউনলোড কৰা বন্ধ কৰিবনে?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s-এ Huawei ম\'বাইল সেৱাসমূহ ব্যৱহাৰ কৰাত অক্ষম। অনুগ্ৰহ কৰি ফোন মেনেজাৰ প্ৰাৰম্ভ কৰক বা ছেটিংচলৈ যাওক, %2$s-ৰ বাবে সকলো অনুমতি সক্ষম কৰক (স্বয়ং-প্ৰাৰম্ভ আৰু প্ৰাথমিক প্ৰাৰম্ভক অন্তৰ্ভুক্ত কৰি) আৰু পুনঃচেষ্টা কৰক।"</string>
+    <string name="hms_cancel">"বাতিল কৰক"</string>
+    <string name="hms_check_failure">"উন্নীতৰ বাবে পৰীক্ষা কৰাত বিফল হৈছে।"</string>
+    <string name="hms_check_no_update">"আপুনি ইতিমধ্যে শেহতীয়া সংস্কৰণটো ব্যৱহাৰ কৰি আছে।"</string>
+    <string name="hms_checking">"উন্নীতৰ বাবে পৰীক্ষা কৰি আছে..."</string>
+    <string name="hms_confirm">"ঠিক"</string>
+    <string name="hms_download_failure">"Huawei ম\'বাইল সেৱা পেকেজ ডাউনলোড কৰাত বিফল।"</string>
+    <string name="hms_download_no_space">"পৰ্যাপ্ত মুক্ত স্থান নাই। ডাউনলোড সম্পূৰ্ণ কৰিব নোৱাৰি।"</string>
+    <string name="hms_download_retry">"ডাউনলোড বিফল হৈছে। পুনঃচেষ্টা কৰিবনে?"</string>
+    <string name="hms_downloading">"Huawei ম\'বাইল সেৱাসমূহ ডাউনলোড কৰি আছে\nপ্ৰগতি: %d%%"</string>
+    <string name="hms_downloading_loading">"ডাউনলোড কৰি আছে"</string>
+    <string name="hms_downloading_new">"HMS ডাউনলোড কৰি আছে"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"ইনষ্টল কৰক"</string>
+    <string name="hms_install_message">"এই ফিচাৰ ব্যৱহাৰ কৰিবলৈ Huawei ম\'বাইল সেৱাসমূহ ডাউনলোড কৰিবই লাগিব। ইনষ্টল কৰিবনে?"</string>
+    <string name="hms_retry">"পুনঃচেষ্টা কৰক"</string>
+    <string name="hms_update">"উন্নীত কৰক"</string>
+    <string name="hms_update_message">"এই ফিচাৰ ব্যৱহাৰ কৰিবলৈ Huawei ম\'বাইল সেৱাসমূহৰ শেহতীয়া সংস্কৰণলৈ উন্নীত কৰক। এতিয়া উন্নীত কৰিবনে?"</string>
+    <string name="hms_update_message_new">"এই সেৱাক নিম্নোক্ত এপ্প্‌ৰ শেহতীয়া সংস্কৰণটোৰ আৱশ্যক:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei ম\'বাইল সেৱাসমূহ"</string>
+    <string name="no_available_network_prompt_toast">"কোনো ইণ্টাৰনেট সংযোগ নাই। অনুগ্ৰহ কৰি আপোনাৰ নেটৱৰ্ক ছেটিংচ পৰীক্ষা কৰক।"</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"ইনষ্টলেশ্বন বাতিল কৰিবনে?"</string>
+    <string name="third_app_dl_install_failed">"ইনষ্টলেশ্বন বিফল হৈছে।"</string>
+    <string name="third_app_dl_sure_cancel_download">"হয়"</string>
+    <string name="upsdk_app_dl_installing">"HiApp ডাউনলোড কৰি আছে"</string>
+    <string name="upsdk_app_download_info_new">"ইনষ্টল কৰক"</string>
+    <string name="upsdk_app_size">"আকাৰ"</string>
+    <string name="upsdk_app_version">"সংস্কৰণ"</string>
+    <string name="upsdk_cancel">"বাতিল কৰক"</string>
+    <string name="upsdk_checking_update_prompt">"উন্নীতৰ বাবে পৰীক্ষা কৰি আছে..."</string>
+    <string name="upsdk_choice_update">"উন্নীত উপলব্ধ। অনুগ্ৰহ কৰি শেহতীয়া সংস্কৰণটো ডাউনলোড আৰু ইনষ্টল কৰক।"</string>
+    <string name="upsdk_detail">"বিৱৰণ"</string>
+    <string name="upsdk_install">"উন্নীত কৰিবলৈ HiApp ইনষ্টল কৰক। এতিয়া ইনষ্টল কৰিবনে?"</string>
+    <string name="upsdk_ota_app_name">"এপ্প্‌"</string>
+    <string name="upsdk_ota_cancel">"পাছত"</string>
+    <string name="upsdk_ota_force_cancel_new">"প্ৰস্থান"</string>
+    <string name="upsdk_ota_notify_updatebtn">"উন্নীত কৰক"</string>
+    <string name="upsdk_ota_title">"নতুন সংস্কৰণ"</string>
+    <string name="upsdk_update_check_no_new_version">"আপুনি ইতিমধ্যে শেহতীয়া সংস্কৰণটো ব্যৱহাৰ কৰি আছে।"</string>
+    <string name="upsdk_updating">"উন্নীত কৰি আছে"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"ফোন মেনেজাৰ বা ছেটিংচত HiGame-ৰ বাবে মাধ্যমিক প্ৰাৰম্ভ সক্ষম কৰক আৰু পুনঃচেষ্টা কৰক।"</string>
+    <string name="hms_game_login_notice">"স্বাগতম %1$s"</string>
+</resources>

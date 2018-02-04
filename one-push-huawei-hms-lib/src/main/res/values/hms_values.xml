@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="upsdk_black">#000000</color>
+    <color name="upsdk_blue_text_007dff">#007dff</color>
+    <color name="upsdk_category_button_select_pressed">#0076f2</color>
+    <color name="upsdk_category_button_select_stroke">#4C007dff</color>
+    <color name="upsdk_white">#FFFFFFFF</color>
+    <dimen name="upsdk_dialog_content_size">15sp</dimen>
+    <dimen name="upsdk_dialog_subtitle_size">13sp</dimen>
+    <string name="connect_server_fail_prompt_toast">Unable to connect to server. Please try again later.</string>
+    <string name="getting_message_fail_prompt_toast">Unable to retrieve information. Please try again later.</string>
+    <string name="hms_abort">Stop</string>
+    <string name="hms_abort_message">Stop downloading?</string>
+    <string name="hms_bindfaildlg_message">%1$s is unable to use Huawei Mobile Services. Please launch Phone Manager or go to Settings, enable all permissions for %2$s (including auto-launch and secondary launch), and try again.</string>
+    <string name="hms_bindfaildlg_title">@string/hms_update_title</string>
+    <string name="hms_cancel">Cancel</string>
+    <string name="hms_check_failure">Failed to check for updates.</string>
+    <string name="hms_check_no_update">You are already using the latest version.</string>
+    <string name="hms_checking">Checking for updates…</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Failed to download Huawei Mobile Services package.</string>
+    <string name="hms_download_no_space">Not enough free space. Download cannot be completed.</string>
+    <string name="hms_download_retry">Download failed. Try again?</string>
+    <string name="hms_downloading">Downloading Huawei Mobile Services\nprogress: %d%%</string>
+    <string name="hms_downloading_loading">Downloading</string>
+    <string name="hms_downloading_new">Downloading HMS</string>
+    <string name="hms_gamebox_name" priority="translator">HiGame</string>
+    <string name="hms_install">Install</string>
+    <string name="hms_install_message">Huawei Mobile Services must be installed to use this feature. Install?</string>
+    <string name="hms_retry">Retry</string>
+    <string name="hms_update">Update</string>
+    <string name="hms_update_message">Update to the latest version of Huawei Mobile Services to use this feature. Update now?</string>
+    <string name="hms_update_message_new">This service requires the latest version of the following app:\n\n%1$s</string>
+    <string name="hms_update_title">Huawei Mobile Services</string>
+    <string name="no_available_network_prompt_toast">No Internet connection. Please check your network settings.</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">Cancel the installation?</string>
+    <string name="third_app_dl_install_failed">Installation failed.</string>
+    <string name="third_app_dl_sure_cancel_download">Yes</string>
+    <string name="upsdk_app_dl_installing">Downloading HiApp</string>
+    <string name="upsdk_app_download_info_new">Install</string>
+    <string name="upsdk_app_size">Size</string>
+    <string name="upsdk_app_version">Version</string>
+    <string name="upsdk_cancel">Cancel</string>
+    <string name="upsdk_checking_update_prompt">Checking for updates…</string>
+    <string name="upsdk_choice_update">Update available. Please download and install the latest version.</string>
+    <string name="upsdk_detail">Details</string>
+    <string name="upsdk_install">Install HiApp to update. Install now?</string>
+    <string name="upsdk_ota_app_name">App</string>
+    <string name="upsdk_ota_cancel">Later</string>
+    <string name="upsdk_ota_force_cancel_new">Exit</string>
+    <string name="upsdk_ota_notify_updatebtn">Update</string>
+    <string name="upsdk_ota_title">New version</string>
+    <string name="upsdk_update_check_no_new_version">You are already using the latest version.</string>
+    <string name="upsdk_updating">Updating</string>
+    <style name="upsdkDlDialog" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">Enable Secondary launch for HiGame in Phone Manager or Settings and try again.</string>
+    <string name="hms_game_login_notice">Welcome %1$s</string>
+</resources>

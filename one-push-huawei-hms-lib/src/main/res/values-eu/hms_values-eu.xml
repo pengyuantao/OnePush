@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Ezin da zerbitzarira konektatu. Saiatu berriro geroago."</string>
+    <string name="getting_message_fail_prompt_toast">"Ezin izan da berreskuratu informaziorik. Saiatu berriro geroago."</string>
+    <string name="hms_abort">"Gelditu"</string>
+    <string name="hms_abort_message">"Deskarga gelditu?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s gailuak ezin izan ditu erabili Huawei-ren Zerbitzu mugikorrak. Abiarazi Telefono-kudeatzailea edo joan ezarpenetara, gaitu %2$s gailuen baimen guztiak (abiarazte automatikoa eta bigarren mailako abiaraztea barne) eta saiatu berriro."</string>
+    <string name="hms_cancel">"Utzi"</string>
+    <string name="hms_check_failure">"Ezin izan da begiratu eguneratzerik baden."</string>
+    <string name="hms_check_no_update">"Dagoeneko bertsio berriena erabiltzen ari zara."</string>
+    <string name="hms_checking">"Eguneratzerik baden begiratzen…"</string>
+    <string name="hms_confirm">"Ados"</string>
+    <string name="hms_download_failure">"Ezin izan da deskargatu Huawei-ren Zerbitzu mugikorrak paketea."</string>
+    <string name="hms_download_no_space">"Ez dago nahikoa toki. Ezin da deskarga amaitu."</string>
+    <string name="hms_download_retry">"Ezin izan da deskargatu. Berriro saiatu?"</string>
+    <string name="hms_downloading">"Huawei-ren Zerbitzu mugikorrak deskargatzen | progresioa: %% %d"</string>
+    <string name="hms_downloading_loading">"Deskargatzen"</string>
+    <string name="hms_downloading_new">"HMS deskargatzen"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Instalatu"</string>
+    <string name="hms_install_message">"Eginbidea erabiltzeko, Huawei-ren Zerbitzu mugikorrek instalatuta egon behar dute. Instalatu?"</string>
+    <string name="hms_retry">"Saiatu berriro"</string>
+    <string name="hms_update">"Eguneratu"</string>
+    <string name="hms_update_message">"Eginbidea erabiltzeko, eguneratu Huawei-ren Zerbitzu mugikorrak paketearen azken bertsiora. Orain eguneratu?"</string>
+    <string name="hms_update_message_new">"Zerbitzu honek aplikazio honen azken bertsioa behar du:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei-ren Zerbitzu mugikorrak"</string>
+    <string name="no_available_network_prompt_toast">"Ez dago Interneteko konexiorik. Egiaztatu sarearen ezarpenak."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Instalazioa bertan behera utzi?"</string>
+    <string name="third_app_dl_install_failed">"Ezin izan da instalatu."</string>
+    <string name="third_app_dl_sure_cancel_download">"Bai"</string>
+    <string name="upsdk_app_dl_installing">"HiApp deskargatzen"</string>
+    <string name="upsdk_app_download_info_new">"Instalatu"</string>
+    <string name="upsdk_app_size">"Tamaina"</string>
+    <string name="upsdk_app_version">"Bertsioa"</string>
+    <string name="upsdk_cancel">"Utzi"</string>
+    <string name="upsdk_checking_update_prompt">"Eguneratzerik baden begiratzen..."</string>
+    <string name="upsdk_choice_update">"Eguneratzea erabilgarri. Deskargatu eta instalatu azken bertsioa."</string>
+    <string name="upsdk_detail">"Xehetasunak"</string>
+    <string name="upsdk_install">"Instalatu HiApp eguneratzeko. Orain instalatu?"</string>
+    <string name="upsdk_ota_app_name">"Aplikazioa"</string>
+    <string name="upsdk_ota_cancel">"Geroago"</string>
+    <string name="upsdk_ota_force_cancel_new">"Irten"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Eguneratu"</string>
+    <string name="upsdk_ota_title">"Bertsio berria"</string>
+    <string name="upsdk_update_check_no_new_version">"Dagoeneko bertsio berriena erabiltzen ari zara."</string>
+    <string name="upsdk_updating">"Eguneratzen"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Gaitu HiGame aplikazioaren Bigarren mailako abioa telefono-kudeatzailean edo ezarpenetan, eta saiatu berriro."</string>
+    <string name="hms_game_login_notice">"Ongi etorri, %1$s"</string>
+</resources>

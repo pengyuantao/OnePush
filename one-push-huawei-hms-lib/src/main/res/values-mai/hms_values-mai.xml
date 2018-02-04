@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"सर्वरसँ जोड़वामे असमर्थ। कृपया फेर स बाद में प्रयास करब।"</string>
+    <string name="getting_message_fail_prompt_toast">"जानकारी ढूँढयमे असमर्थ अछि। कृपया फेर स बाद में प्रयास करब।"</string>
+    <string name="hms_abort">"रोकू"</string>
+    <string name="hms_abort_message">"डाउनलोड करब रोकू?"</string>
+    <string name="hms_bindfaildlg_message">"Huawei मोबाइल सेवा सभक उपयोग करबामे %1$s असफल भय गेल। कृपाकय फोन प्रबंधक शुरू करू वा सेटिंग्समे जाउ, %2$s क लेल सभटा अनुमति सक्षम करू (स्वतः प्रारंभ आ द्वितीयक प्रारंभ सहित), आ पुनः प्रयास करू।"</string>
+    <string name="hms_cancel">"रद्द करू"</string>
+    <string name="hms_check_failure">"अपडेटक लेल जाँच करबामे असमर्थ।"</string>
+    <string name="hms_check_no_update">"अहाँ पहिनेसँ नवीनतम संस्करणक उपयोग कय रहल छी।"</string>
+    <string name="hms_checking">"नवीनतमक लेल जाँच करैत अछि…"</string>
+    <string name="hms_confirm">"ठीक"</string>
+    <string name="hms_download_failure">"Huawei मोबाइल सेवा पैकेज डाउनलोड करबामे असफल भय गेल।"</string>
+    <string name="hms_download_no_space">"पर्याप्त खाली जगह नहि। डाउनलोड पूरा नहि भय सकत।"</string>
+    <string name="hms_download_retry">"डाउनलोड असफल भय गेल। पुनः प्रयास करू?"</string>
+    <string name="hms_downloading">"Huawei मोबाइल सेवा सभक\nप्रगति डाउनलोड करैत: %d%%"</string>
+    <string name="hms_downloading_loading">"डाउनलोड भ रहल अछि"</string>
+    <string name="hms_downloading_new">"HMS डाउनलोड कय रहल अछि"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"स्थापित करू"</string>
+    <string name="hms_install_message">"एहि सुविधाक उपयोग करबाक लेल Huawei मोबाइल सेवाके स्थापना आवश्यक अछि। स्थापित करू?"</string>
+    <string name="hms_retry">"पुन:प्रयास करू"</string>
+    <string name="hms_update">"अपडेट करू"</string>
+    <string name="hms_update_message">"एहि सुविधाक उपयोग करबाक लेल Huawei मोबाइल सेवा कय नवीनतम संस्करणमे बदलू। एखन अपडेट करू?"</string>
+    <string name="hms_update_message_new">"एहि सेवा केर निम्न एप केर नवीनतम संस्करण चाही:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei मोबाइल सेवा"</string>
+    <string name="no_available_network_prompt_toast">"कोनो इंटरनेट सम्पर्क नहि। कृपाकय अपन नेटवर्क सेटिंग्स केर जाँच करू।"</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"स्थापना रद्द करू?"</string>
+    <string name="third_app_dl_install_failed">"स्थापना करबामे असफल भेल।"</string>
+    <string name="third_app_dl_sure_cancel_download">"हँ"</string>
+    <string name="upsdk_app_dl_installing">"HiApp डाउनलोड कय रहल अछि"</string>
+    <string name="upsdk_app_download_info_new">"स्थापित करू"</string>
+    <string name="upsdk_app_size">"आकार"</string>
+    <string name="upsdk_app_version">"संस्करण"</string>
+    <string name="upsdk_cancel">"रद्द करू"</string>
+    <string name="upsdk_checking_update_prompt">"नवीनतमक लेल जाँच करैत अछि…"</string>
+    <string name="upsdk_choice_update">"अपडेट उपलब्ध अछि। कृपाकय डाउनलोड करू आ नवीनतम संस्करण स्थापित करू।"</string>
+    <string name="upsdk_detail">"विवरण सब"</string>
+    <string name="upsdk_install">"अपडेट करबाक लेल HiApp स्थापित करू। एखन स्थापना करू?"</string>
+    <string name="upsdk_ota_app_name">"एप"</string>
+    <string name="upsdk_ota_cancel">"बादमे"</string>
+    <string name="upsdk_ota_force_cancel_new">"बाहर जाउ"</string>
+    <string name="upsdk_ota_notify_updatebtn">"अपडेट करू"</string>
+    <string name="upsdk_ota_title">"नवीन संस्करण"</string>
+    <string name="upsdk_update_check_no_new_version">"अहाँ पहिनेसँ नवीनतम संस्करणक उपयोग कय रहल छी।"</string>
+    <string name="upsdk_updating">"अपडेट कय रहल"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"फोन प्रबंधक वा सेटिंग सबमे HiGame केर लेल द्वितीयक लांच केर समर्थ करू आ पुनः प्रयास करू।"</string>
+    <string name="hms_game_login_notice">"%1$s स्वागत अछि"</string>
+</resources>

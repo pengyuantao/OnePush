@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Připojení k serveru se nezdařilo. Zkuste to znovu později."</string>
+    <string name="getting_message_fail_prompt_toast">"Nelze načíst informace. Zkuste to znovu později."</string>
+    <string name="hms_abort">"Zastavit"</string>
+    <string name="hms_abort_message">"Zastavit stahování?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s nemůže využívat funkci Mobilní služby Huawei. Zapněte aplikaci Správce telefonu nebo přejděte do nabídky Nastavení a povolte oprávnění pro %2$s (včetně automatického a sekundárního spuštění). Poté opakujte akci."</string>
+    <string name="hms_cancel">"Zrušit"</string>
+    <string name="hms_check_failure">"Nepodařilo se zkontrolovat dostupnost aktualizací."</string>
+    <string name="hms_check_no_update">"Používáte nejnovější verzi."</string>
+    <string name="hms_checking">"Vyhledávání aktualizací…"</string>
+    <string name="hms_confirm">"OK"</string>
+    <string name="hms_download_failure">"Stahování balíčku Mobilní služby Huawei se nezdařilo."</string>
+    <string name="hms_download_no_space">"Nedostatek volného prostoru. Stažení nelze dokončit."</string>
+    <string name="hms_download_retry">"Stahování se nezdařilo. Zkusit znovu?"</string>
+    <string name="hms_downloading">"Stahování Mobilní služby Huawei | průběh: %d %%"</string>
+    <string name="hms_downloading_loading">"Stahování"</string>
+    <string name="hms_downloading_new">"Stahování HMS"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Instalovat"</string>
+    <string name="hms_install_message">"Pro využívání této funkce musí být nainstalovány Mobilní služby Huawei. Přejete si je nainstalovat?"</string>
+    <string name="hms_retry">"Zkusit znovu"</string>
+    <string name="hms_update">"Aktualizovat"</string>
+    <string name="hms_update_message">"Pro používání této funkce proveďte aktualizaci Mobilní služby Huawei na nejnovější verzi. Aktualizovat nyní?"</string>
+    <string name="hms_update_message_new">"Tato služba vyžaduje nejnovější verzi následující aplikace:\n\n%1$s"</string>
+    <string name="hms_update_title">"Mobilní služby Huawei"</string>
+    <string name="no_available_network_prompt_toast">"Připojení k internetu není k dispozici. Zkontrolujte nastavení sítě."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Zrušit instalaci?"</string>
+    <string name="third_app_dl_install_failed">"Instalace se nezdařila."</string>
+    <string name="third_app_dl_sure_cancel_download">"Ano"</string>
+    <string name="upsdk_app_dl_installing">"Probíhá stahování aplikace HiApp"</string>
+    <string name="upsdk_app_download_info_new">"Instalovat"</string>
+    <string name="upsdk_app_size">"Velikost"</string>
+    <string name="upsdk_app_version">"Verze"</string>
+    <string name="upsdk_cancel">"Zrušit"</string>
+    <string name="upsdk_checking_update_prompt">"Probíhá kontrola aktualizací…"</string>
+    <string name="upsdk_choice_update">"K dispozici je aktualizace. Stáhněte a nainstalujte nejnovější verzi."</string>
+    <string name="upsdk_detail">"Podrobnosti"</string>
+    <string name="upsdk_install">"Nainstalujte aplikaci HiApp pro aktualizaci. Instalovat?"</string>
+    <string name="upsdk_ota_app_name">"Aplikace"</string>
+    <string name="upsdk_ota_cancel">"Později"</string>
+    <string name="upsdk_ota_force_cancel_new">"Ukončit"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Aktualizovat"</string>
+    <string name="upsdk_ota_title">"Nová verze"</string>
+    <string name="upsdk_update_check_no_new_version">"Používáte nejnovější verzi."</string>
+    <string name="upsdk_updating">"Aktualizace"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Zapněte pro aplikaci HiGame ve Správci telefonu nebo Nastavení sekundární spuštění a zkuste to znovu."</string>
+    <string name="hms_game_login_notice">"Vítejte %1$s"</string>
+</resources>

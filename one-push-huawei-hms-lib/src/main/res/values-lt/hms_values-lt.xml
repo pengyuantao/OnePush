@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Nepavyksta prisijungti prie serverio. Bandykite vėliau dar kartą."</string>
+    <string name="getting_message_fail_prompt_toast">"Nepavyksta gauti informacijos. Bandykite vėliau dar kartą."</string>
+    <string name="hms_abort">"Sustabdyti"</string>
+    <string name="hms_abort_message">"Ar stabdyti atsisiuntimą?"</string>
+    <string name="hms_bindfaildlg_message">"„%1$s“ negali naudoti „Huawei Mobile Services“. Paleiskite Telefono tvarkytuvę arba eikite į Nuostatas, įjunkite visus „%2$s“ leidimus (įskaitant automatinio paleidimo ir antrinio paleidimo), tada bandykite dar kartą."</string>
+    <string name="hms_cancel">"Atšaukti"</string>
+    <string name="hms_check_failure">"Nepavyko patikrinti, ar yra naujinių."</string>
+    <string name="hms_check_no_update">"Jūs jau naudojate naujausią versiją."</string>
+    <string name="hms_checking">"Tikrinama, ar yra naujinių..."</string>
+    <string name="hms_confirm">"Gerai"</string>
+    <string name="hms_download_failure">"Nepavyko atnaujinti „Huawei“ mobiliųjų paslaugų paketo."</string>
+    <string name="hms_download_no_space">"Neužtenka laisvos vietos. Negalima atsisiųsti."</string>
+    <string name="hms_download_retry">"Atsisiųsti nepavyko. Bandyti dar kartą?"</string>
+    <string name="hms_downloading">"Atsisiunčiamos „Huawei“ mobiliosios paslaugos | eiga: %d%%"</string>
+    <string name="hms_downloading_loading">"Atsisiunčiama"</string>
+    <string name="hms_downloading_new">"Atsisiunčiama HMS"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Įdiegti"</string>
+    <string name="hms_install_message">"Norint naudotis šia funkcija, turi būti įdiegta „Huawei Mobile Services“. Ar įdiegti?"</string>
+    <string name="hms_retry">"Bandyti dar kartą"</string>
+    <string name="hms_update">"Naujinti"</string>
+    <string name="hms_update_message">"Atnaujinkite į naujausią „Huawei“ mobiliųjų paslaugų versiją, kad galėtumėte naudotis šia funkcija. Naujinti dabar?"</string>
+    <string name="hms_update_message_new">"Šiai tarnybai reikia naujausios toliau nurodytos programėlės versijos:\n\n%1$s"</string>
+    <string name="hms_update_title">"„Huawei“ mobiliosios paslaugos"</string>
+    <string name="no_available_network_prompt_toast">"Nėra interneto ryšio. Pasitikrinkite tinklo nuostatas."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Ar atšaukti diegimą?"</string>
+    <string name="third_app_dl_install_failed">"Įdiegti nepavyko."</string>
+    <string name="third_app_dl_sure_cancel_download">"Taip"</string>
+    <string name="upsdk_app_dl_installing">"Atsisiunčiama „HiApp“"</string>
+    <string name="upsdk_app_download_info_new">"Įdiegti"</string>
+    <string name="upsdk_app_size">"Dydis"</string>
+    <string name="upsdk_app_version">"Versija"</string>
+    <string name="upsdk_cancel">"Atšaukti"</string>
+    <string name="upsdk_checking_update_prompt">"Ieškoma naujinių…"</string>
+    <string name="upsdk_choice_update">"Išleistas naujinys. Atsisiųskite ir įdiekite naujausią versiją."</string>
+    <string name="upsdk_detail">"Išsami informacija"</string>
+    <string name="upsdk_install">"Įdiekite „HiApp“, kad atnaujintumėte. Ar įdiegti dabar?"</string>
+    <string name="upsdk_ota_app_name">"Programėlė"</string>
+    <string name="upsdk_ota_cancel">"Vėliau"</string>
+    <string name="upsdk_ota_force_cancel_new">"Išeiti"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Naujinti"</string>
+    <string name="upsdk_ota_title">"Nauja versija"</string>
+    <string name="upsdk_update_check_no_new_version">"Jau naudojate naujausią versiją."</string>
+    <string name="upsdk_updating">"Naujinama"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Įjunkite pagalbinį „HiGame“ paleidimą telefono tvarkyklėje ar nustatymuose ir bandykite dar kartą."</string>
+    <string name="hms_game_login_notice">"Sveiki! Čia %1$s"</string>
+</resources>

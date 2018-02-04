@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Nije moguće povezati se s poslužiteljem. Pokušajte ponovno kasnije."</string>
+    <string name="getting_message_fail_prompt_toast">"Nije moguće dohvatiti informacije. Pokušajte ponovno kasnije."</string>
+    <string name="hms_abort">"Zaustavi"</string>
+    <string name="hms_abort_message">"Prekinuti preuzimanje?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s ne može koristiti mobilne usluge tvrtke Huawei. Pokrenite Upravitelj telefona ili idite na Postavke, omogućite sve dozvole za %2$s (uključujući automatsko pokretanje i sekundarno pokretanje) i pokušajte ponovno."</string>
+    <string name="hms_cancel">"Odustani"</string>
+    <string name="hms_check_failure">"Provjera ažuriranja nije uspjela."</string>
+    <string name="hms_check_no_update">"Već rabite najnoviju verziju."</string>
+    <string name="hms_checking">"U tijeku je provjera ažuriranja…"</string>
+    <string name="hms_confirm">"U redu"</string>
+    <string name="hms_download_failure">"Preuzimanje paketa Huawei Mobilne usluge nije uspjelo."</string>
+    <string name="hms_download_no_space">"Nema dovoljno slobodnog prostora. Nije moguće dovršiti preuzimanje."</string>
+    <string name="hms_download_retry">"Preuzimanje nije uspjelo. Pokušati ponovno?"</string>
+    <string name="hms_downloading">"Preuzimanje Huawei Mobilnih usluga | napredak: %d%%"</string>
+    <string name="hms_downloading_loading">"Preuzimanje"</string>
+    <string name="hms_downloading_new">"Preuzimanje HMS-a"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Instaliraj"</string>
+    <string name="hms_install_message">"Da biste mogli koristiti ovu značajku Huawei mobilne usluge moraju biti instalirane. Instalirati?"</string>
+    <string name="hms_retry">"Pokušaj opet"</string>
+    <string name="hms_update">"Ažuriraj"</string>
+    <string name="hms_update_message">"Ažurirajte na najnoviju verziju Huawei Mobilnih usluga kako biste mogli koristiti ovu značajku. Ažurirati sada?"</string>
+    <string name="hms_update_message_new">"Za ovu je uslugu neophodna najnovija verzija sljedeće aplikacije:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Mobilne usluge"</string>
+    <string name="no_available_network_prompt_toast">"Nema internetske veze. Provjerite svoje mrežne postavke."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Odustati od instalacije?"</string>
+    <string name="third_app_dl_install_failed">"Instalacija nije uspjela."</string>
+    <string name="third_app_dl_sure_cancel_download">"Da"</string>
+    <string name="upsdk_app_dl_installing">"Preuzimanje aplikacije HiApp"</string>
+    <string name="upsdk_app_download_info_new">"Instaliraj"</string>
+    <string name="upsdk_app_size">"Veličina"</string>
+    <string name="upsdk_app_version">"Verzija"</string>
+    <string name="upsdk_cancel">"Odustani"</string>
+    <string name="upsdk_checking_update_prompt">"U tijeku je provjera ažuriranja"</string>
+    <string name="upsdk_choice_update">"Ažuriranje dostupno. Preuzmite i instalirajte najnoviju verziju."</string>
+    <string name="upsdk_detail">"Pojedinosti"</string>
+    <string name="upsdk_install">"Za ažuriranje instalirajte HiApp. Instalirati sada?"</string>
+    <string name="upsdk_ota_app_name">"Aplikacija"</string>
+    <string name="upsdk_ota_cancel">"Kasnije"</string>
+    <string name="upsdk_ota_force_cancel_new">"Izlaz"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Ažuriraj"</string>
+    <string name="upsdk_ota_title">"Nova verzija"</string>
+    <string name="upsdk_update_check_no_new_version">"Već upotrebljavate najnoviju verziju."</string>
+    <string name="upsdk_updating">"Ažuriranje"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Omogućite Sekundarno pokretanje za HiGame u Upravitelju telefona ili Postavkama i pokušajte ponovno."</string>
+    <string name="hms_game_login_notice">"Dobro došli %1$s"</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"सर्वर से कनेक्ट करने में असमर्थ। कृपया बाद में पुनः प्रयास करें।"</string>
+    <string name="getting_message_fail_prompt_toast">"जानकारी पुनः प्राप्त करने में असमर्थ। कृपया बाद में पुनः प्रयास करें।"</string>
+    <string name="hms_abort">"बंद करें"</string>
+    <string name="hms_abort_message">"डाउनलोड बंद करें?"</string>
+    <string name="hms_bindfaildlg_message">"हुअवी मोबाइल सेवाओं का उपयोग करने के लिए %1$s अक्षम है। कृपया फोन प्रबंधक को लांच करें या सेटिंग्स पर जाएं, %2$s के लिए सभी अनुमतियों को सक्षम करें (स्वतः-लांच तथा सहायक लांच सहित), और फिर कोशिश करें।"</string>
+    <string name="hms_cancel">"रद्द करें"</string>
+    <string name="hms_check_failure">"अद्यतन की जाँच करने में विफल रहा।"</string>
+    <string name="hms_check_no_update">"आप पहले से ही नवीनतम संस्करण का उपयोग कर रहे हैं।"</string>
+    <string name="hms_checking">"अद्यतन की जाँच कर रहा है…"</string>
+    <string name="hms_confirm">"ठीक"</string>
+    <string name="hms_download_failure">"हुअवी मोबाइल सेवाएँ पैकेज डाउनलोड करने में विफल रहा।"</string>
+    <string name="hms_download_no_space">"रिक्त स्थान पर्याप्त नहीं है। डाउनलोड पूर्ण नहीं किया जा सकता।"</string>
+    <string name="hms_download_retry">"डाउनलोड विफल रहा। पुन: प्रयास करें?"</string>
+    <string name="hms_downloading">"हुअवी मोबाइल सेवाएँ डाउनलोड की जा रही हैं | प्रगति: %d%%"</string>
+    <string name="hms_downloading_loading">"डाउनलोड हो रहा है"</string>
+    <string name="hms_downloading_new">"HMS डाउनलोड कर रहा है"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"स्थापित करें"</string>
+    <string name="hms_install_message">"इस सुविधा का उपयोग करने के लिए हुअवी मोबाइल सेवाएँ स्थापित होनी चाहिए। स्थापित करें?"</string>
+    <string name="hms_retry">"पुनः प्रयास करें"</string>
+    <string name="hms_update">"अद्यतन करें"</string>
+    <string name="hms_update_message">"इस सुविधा का उपयोग करने के लिए हुअवी मोबाइल सेवाओं के नवीनतम संस्करण पर अद्यतन करें। अभी अद्यतन करें?"</string>
+    <string name="hms_update_message_new">"इस सेवा को निम्नलिखित ऐप के नवीनतम संस्करण की आवश्यकता है:\n\n%1$s"</string>
+    <string name="hms_update_title">"हुअवी मोबाइल सेवाएँ"</string>
+    <string name="no_available_network_prompt_toast">"कोई इंटरनेट कनेक्शन नहीं है। कृपया अपनी नेटवर्क सेटिंग्स जाँचें।"</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"स्थापना रद्द करें?"</string>
+    <string name="third_app_dl_install_failed">"स्थापना विफल रही।"</string>
+    <string name="third_app_dl_sure_cancel_download">"हाँ"</string>
+    <string name="upsdk_app_dl_installing">"HiApp डाउनलोड कर रहा है"</string>
+    <string name="upsdk_app_download_info_new">"स्थापित करें"</string>
+    <string name="upsdk_app_size">"आकार"</string>
+    <string name="upsdk_app_version">"संस्करण"</string>
+    <string name="upsdk_cancel">"रद्द करें"</string>
+    <string name="upsdk_checking_update_prompt">"अद्यतन की जाँच कर रहा है…"</string>
+    <string name="upsdk_choice_update">"अद्यतन उपलब्ध है। कृपया नवीनतम संस्करण डाउनलोड करके स्थापित करें।"</string>
+    <string name="upsdk_detail">"विवरण"</string>
+    <string name="upsdk_install">"अद्यतन करने के लिए HiApp स्थापित करें। अभी स्थापित करें?"</string>
+    <string name="upsdk_ota_app_name">"ऐप"</string>
+    <string name="upsdk_ota_cancel">"बाद में"</string>
+    <string name="upsdk_ota_force_cancel_new">"बाहर निकलें"</string>
+    <string name="upsdk_ota_notify_updatebtn">"अद्यतन करें"</string>
+    <string name="upsdk_ota_title">"नया संस्करण"</string>
+    <string name="upsdk_update_check_no_new_version">"आप पहले से ही नवीनतम संस्करण का उपयोग कर रहे हैं।"</string>
+    <string name="upsdk_updating">"अद्यतन कर रहा है"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"फ़ोन प्रबंधक या सेटिंग्स में HiGame के लिए द्वितीयक लॉन्च सक्षम करें और पुनः प्रयास करें।"</string>
+    <string name="hms_game_login_notice">"%1$s में आपका स्वागत है"</string>
+</resources>

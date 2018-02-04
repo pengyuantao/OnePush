@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Imeshindwa kuunganisha na seva. Tafadhali jaribu tena baadaye."</string>
+    <string name="getting_message_fail_prompt_toast">"Imeshindwa kurejesha maelezo. Tafadhali jaribu tena baadaye."</string>
+    <string name="hms_abort">"Sitisha"</string>
+    <string name="hms_abort_message">"Ungependa kusitisha kupakua?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s imeshindwa kutumia Huduma za Simu za Huawei. Tafadhali anzisha Kidhibiti cha Simu au uende kwenye Mipangilio, uwezeshe vibali vyote vya %2$s (ikijumuisha kuwasha otomatiki na kuanzisha mara ya pili), kisha ujaribu tena."</string>
+    <string name="hms_cancel">"Ghairi"</string>
+    <string name="hms_check_failure">"Imeshindwa kuangalia masasisho."</string>
+    <string name="hms_check_no_update">"Tayari unatumia toleo jipya zaidi."</string>
+    <string name="hms_checking">"Inakagua uwepo wa sasisho…"</string>
+    <string name="hms_confirm">"Sawa"</string>
+    <string name="hms_download_failure">"Imeshindwa kupakua kifurushi cha Huduma za Simu za Huawei."</string>
+    <string name="hms_download_no_space">"Hakuna nafasi ya kutosha. Kupakua hakuwezi kukamilishwa"</string>
+    <string name="hms_download_retry">"Upakuaji umeshindikana. Jaribu tena?"</string>
+    <string name="hms_downloading">".Inapakua Huduma za Simu za Huawei\nmaendeleo: %d%%"</string>
+    <string name="hms_downloading_loading">"Inapakua"</string>
+    <string name="hms_downloading_new">"HMS Inapakuliwa"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Sakinisha"</string>
+    <string name="hms_install_message">"Huduma za Simu za Huawei lazima zisakinishwe ili utumie kipengele hiki. Ungependa kusakinisha?"</string>
+    <string name="hms_retry">"Jaribu tena"</string>
+    <string name="hms_update">"Sasisha"</string>
+    <string name="hms_update_message">"Sasisha upate toleo jipya zaidi la Huduma za Simu za Huawei ili utumie kipengele hiki. Ungependa kusasisha sasa hivi?"</string>
+    <string name="hms_update_message_new">"Huduma hii inahitaji uwe na toleo jipa zaidi la programu ifuatayo:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huduma za Simu za Huawei"</string>
+    <string name="no_available_network_prompt_toast">"Hamna muunganisho wa mtandao. Tafadhali kagua mipangilio ya mtandao wako."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Ungependa kughairi usakinishaji huu?"</string>
+    <string name="third_app_dl_install_failed">"Usakinishaji umeshindikana."</string>
+    <string name="third_app_dl_sure_cancel_download">"Ndiyo"</string>
+    <string name="upsdk_app_dl_installing">"Inapakua HiApp"</string>
+    <string name="upsdk_app_download_info_new">"Sakinisha"</string>
+    <string name="upsdk_app_size">"Ukubwa"</string>
+    <string name="upsdk_app_version">"Toleo"</string>
+    <string name="upsdk_cancel">"Ghairi"</string>
+    <string name="upsdk_checking_update_prompt">"Inakagua uwepo wa sasisho…"</string>
+    <string name="upsdk_choice_update">"Sasisho linapatikana. Tafadhali pakua na usakinishe toleo jipya."</string>
+    <string name="upsdk_detail">"Maelezo"</string>
+    <string name="upsdk_install">"Sakinisha HiApp ili usasishe. Sakinisha sasa?"</string>
+    <string name="upsdk_ota_app_name">"Programu"</string>
+    <string name="upsdk_ota_cancel">"Baadaye"</string>
+    <string name="upsdk_ota_force_cancel_new">"Toka"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Sasisha"</string>
+    <string name="upsdk_ota_title">"Toleo jipya"</string>
+    <string name="upsdk_update_check_no_new_version">"Tayari unatumia toleo jipya zaidi."</string>
+    <string name="upsdk_updating">"Inasasisha"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Wezesha uzindizi wa ziada wa HiGame katika Kidhibiti cha Simu au Mipangilio kisha ujaribu tena."</string>
+    <string name="hms_game_login_notice">"Karibu %1$s"</string>
+</resources>

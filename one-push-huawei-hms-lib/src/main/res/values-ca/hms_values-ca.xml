@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"No es pot connectar al servidor. Torneu a provar-ho més tard."</string>
+    <string name="getting_message_fail_prompt_toast">"No s\'ha pogut recuperar la informació. Torneu a provar-ho més tard."</string>
+    <string name="hms_abort">"Aturar"</string>
+    <string name="hms_abort_message">"Voleu aturar la baixada?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s no pot utilitzar Huawei Mobile Services. Inicieu l\'Administrador del Telèfon o aneu a Configuració, habiliteu tots els permisos per a %2$s (incloent-hi l\'inici automàtic i l\'inici secundari) i torneu a provar-ho."</string>
+    <string name="hms_cancel">"Cancel·lar"</string>
+    <string name="hms_check_failure">"No s\'ha pogut comprovar si hi ha actualitzacions."</string>
+    <string name="hms_check_no_update">"Ja esteu utilitzant la darrera versió."</string>
+    <string name="hms_checking">"S\'estan cercant actualitzacions…"</string>
+    <string name="hms_confirm">"D\'acord"</string>
+    <string name="hms_download_failure">"No s\'ha pogut baixar el paquet de Huawei Mobile Services."</string>
+    <string name="hms_download_no_space">"No hi ha prou espai lliure. La baixada no es pot efectuar."</string>
+    <string name="hms_download_retry">"Ha fallat la baixada. Voleu tornar-ho a provar?"</string>
+    <string name="hms_downloading">"S\'està baixant Huawei Mobile Services | progrés: %d%%"</string>
+    <string name="hms_downloading_loading">"Baixant"</string>
+    <string name="hms_downloading_new">"S\'està descarregant l\'HMS"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Instal·lar"</string>
+    <string name="hms_install_message">"Cal tenir instal·lat Huawei Mobile Services per utilitzar aquesta funció. Voleu instal·lar-lo?"</string>
+    <string name="hms_retry">"Tornar-hi"</string>
+    <string name="hms_update">"Actualitzar"</string>
+    <string name="hms_update_message">"Per utilitzar aquesta funció, actualitzeu a la darrera versió de Huawei Mobile Services. Voleu actualitzar-la ara?"</string>
+    <string name="hms_update_message_new">"Aquest servei requereix la versió més recent de la següent aplicació:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Mobile Services"</string>
+    <string name="no_available_network_prompt_toast">"Cap connexió a Internet. Comproveu la vostra configuració de xarxa."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Voleu cancel·lar la instal·lació?"</string>
+    <string name="third_app_dl_install_failed">"La instal·lació ha fallat."</string>
+    <string name="third_app_dl_sure_cancel_download">"Sí"</string>
+    <string name="upsdk_app_dl_installing">"S\'està baixant HiApp"</string>
+    <string name="upsdk_app_download_info_new">"Instal·lar"</string>
+    <string name="upsdk_app_size">"Mida"</string>
+    <string name="upsdk_app_version">"Versió"</string>
+    <string name="upsdk_cancel">"Cancel·lar"</string>
+    <string name="upsdk_checking_update_prompt">"S\'estan cercant actualitzacions…"</string>
+    <string name="upsdk_choice_update">"Actualització disponible. Baixeu i instal·leu la darrera versió."</string>
+    <string name="upsdk_detail">"Detalls"</string>
+    <string name="upsdk_install">"Instal·leu HiApp per actualitzar. Voleu instal·lar-lo ara?"</string>
+    <string name="upsdk_ota_app_name">"Aplicació"</string>
+    <string name="upsdk_ota_cancel">"Més tard"</string>
+    <string name="upsdk_ota_force_cancel_new">"Sortir"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Actualitzar"</string>
+    <string name="upsdk_ota_title">"Versió nova"</string>
+    <string name="upsdk_update_check_no_new_version">"Ja esteu utilitzant la darrera versió."</string>
+    <string name="upsdk_updating">"S\'està actualitzant"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Habiliteu l\'Inici secundari per a HiGame a l\'Administrador del telèfon o a la Configuració i torneu a provar-ho."</string>
+    <string name="hms_game_login_notice">"Benvingut %1$s"</string>
+</resources>

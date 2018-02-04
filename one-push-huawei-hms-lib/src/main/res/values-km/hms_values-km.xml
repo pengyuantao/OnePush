@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"មិនអាចភ្ជាប់ទៅកាន់ម៉ាស៊ីនមេបាន។ សូមព្យាយាមម្ដងទៀតនៅពេលក្រោយ។"</string>
+    <string name="getting_message_fail_prompt_toast">"មិនអាចទៅយកព័ត៌មានបាន។ សូមព្យាយាមម្ដងទៀតនៅពេលក្រោយ។"</string>
+    <string name="hms_abort">"បញ្ឈប់"</string>
+    <string name="hms_abort_message">"បញ្ឈប់ការទាញយក?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s មិនអាច​ប្រើ​សេវាកម្ម​ទូរស័ព្ទចល័ត Huawei Mobile បានទេ។ សូម​បើក​កម្មវិធី Phone Manager ឬទៅកាន់​ការកំណត់ និង​បើក​ការអនុញ្ញាតិ​ទាំងអស់​សម្រាប់ %2$s (រួម​ទាំង​ការបើក​កម្មវិធីស្វ័យ​ប្រវត្តិ និង​ការបើក​កម្មវិធីបន្ទាប់បន្សំ) រួចព្យាយាមម្ដងទៀត។"</string>
+    <string name="hms_cancel">"បោះបង់"</string>
+    <string name="hms_check_failure">"បានបរាជ័យពិនិត្យមើលក្នុងការធ្វើបច្ចុប្បន្នភាព។"</string>
+    <string name="hms_check_no_update">"អ្នកកំពុងប្រើកំណែចុងក្រោយបង្អស់រួចហើយ។"</string>
+    <string name="hms_checking">"កំពុងពិនិត្យមើលក្នុងការធ្វើបច្ចុប្បន្នភាព…"</string>
+    <string name="hms_confirm">"យល់ព្រម"</string>
+    <string name="hms_download_failure">"បានបរាជ័យទាញយកកញ្ចប់សេវាទូរស័ព្ទចល័ត Huawei។"</string>
+    <string name="hms_download_no_space">"មិនមានលំហទំនេរគ្រប់គ្រាន់។ មិនអាចបញ្ចប់ការទាញយក។"</string>
+    <string name="hms_download_retry">"បានបរាជ័យទាញយក។ ព្យាយាមម្តងទៀត?"</string>
+    <string name="hms_downloading">"កំពុងទាញយកសេវាទូរស័ព្ទចល័ត Huawei | កំពុងដំណើរការ៖ %d%%"</string>
+    <string name="hms_downloading_loading">"កំពុងទាញយក"</string>
+    <string name="hms_downloading_new">"កំពុងទាញយក HMS"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"ដំឡើង"</string>
+    <string name="hms_install_message">"ត្រូវដំឡើងសេវាកម្មទូរស័ព្ទចល័ត Huawei ដើម្បីប្រើលក្ខណៈពិសេសនេះ។ ដំឡើងឬ?"</string>
+    <string name="hms_retry">"ព្យាយាមម្តងទៀត"</string>
+    <string name="hms_update">"ធ្វើបច្ចុប្បន្នភាព"</string>
+    <string name="hms_update_message">"ធ្វើបច្ចុប្បន្នភាពទៅកំណែចុងក្រោយបង្អស់របស់សេវាទូរស័ព្ទចល័ត Huawei ដើម្បីប្រើលក្ខណៈពិសេសនេះ។ ធ្វើបច្ចុប្បន្នភាពឥឡូវនេះ?"</string>
+    <string name="hms_update_message_new">"សេវាកម្ម​នេះ​ទាមទារ​កំណែ​ចុងក្រោយ​បំផុត​នៃ​កម្មវិធី​ដូចខាង​ក្រោម៖\n\n%1$s"</string>
+    <string name="hms_update_title">"សេវាទូរស័ព្ទចល័ត Huawei"</string>
+    <string name="no_available_network_prompt_toast">"មិន​មាន​ការភ្ជាប់អ៊ីនធើណេត។ សូមពិនិត្យមើលការកំណត់បណ្តាញរបស់អ្នក។"</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"លុបចេញការដំឡើងឬ?"</string>
+    <string name="third_app_dl_install_failed">"ការដំឡើងបានបរាជ័យ។"</string>
+    <string name="third_app_dl_sure_cancel_download">"បាទ/ចាស"</string>
+    <string name="upsdk_app_dl_installing">"ការទាញយក HiApp"</string>
+    <string name="upsdk_app_download_info_new">"ដំឡើង"</string>
+    <string name="upsdk_app_size">"ទំហំ"</string>
+    <string name="upsdk_app_version">"កំណែ"</string>
+    <string name="upsdk_cancel">"លុបចេញ"</string>
+    <string name="upsdk_checking_update_prompt">"កំពុងពិនិត្យរកមើល​ការអាប់ដេត…"</string>
+    <string name="upsdk_choice_update">"ការអាប់ដេតអាចរកបាន។ សូមទាញយក ហើយដំឡើងកំណែចុងក្រោយបង្អស់។"</string>
+    <string name="upsdk_detail">"ព័ត៌មានលំអិត"</string>
+    <string name="upsdk_install">"ដំឡើង HiApp ដើម្បីអាប់ដេត។ ដំឡើងឥឡូវនេះ?"</string>
+    <string name="upsdk_ota_app_name">"កម្មវិធី"</string>
+    <string name="upsdk_ota_cancel">"ពេលក្រោយ"</string>
+    <string name="upsdk_ota_force_cancel_new">"ចាកចេញ"</string>
+    <string name="upsdk_ota_notify_updatebtn">"អាប់ដេត"</string>
+    <string name="upsdk_ota_title">"កំណែថ្មី"</string>
+    <string name="upsdk_update_check_no_new_version">"អ្នកកំពុងប្រើកំណែចុងក្រោយបង្អស់រួចហើយ។"</string>
+    <string name="upsdk_updating">"កំពុងអាប់ដេត"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"បើកការ​បើកដំណើរការបន្ទាប់បន្សំ​សម្រាប់ HiGame នៅក្នុង កម្មវិធីគ្រប់គ្រងទូរស័ព្ទ ឬ​ការកំណត់ រួច​ព្យាយាមម្ដងទៀត។"</string>
+    <string name="hms_game_login_notice">"សូមស្វាគមន៍ %1$s"</string>
+</resources>

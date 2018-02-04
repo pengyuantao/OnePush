@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"సర్వర్‌కు కనెక్ట్ చేయడం సాధ్యం కాదు. దయచేసి తర్వాత మళ్లీ ప్రయత్నించండి."</string>
+    <string name="getting_message_fail_prompt_toast">"సమాచారాన్ని తిరిగి పొందడం సాధ్యం కాలేదు. దయచేసి తర్వాత మళ్లీ ప్రయత్నించండి."</string>
+    <string name="hms_abort">"ఆపివేయి"</string>
+    <string name="hms_abort_message">"డౌన్‌లోడ్ చేయడాన్ని ఆపివేయాలా?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s Huawei Mobile Servicesను ఉపయోగించడం సాధ్యం కాదు. దయచేసి ఫోన్ నిర్వాహికిని లాంచ్ చేసి లేదా సెట్టింగ్‌లకు వెళ్లి, %2$s కోసం అన్ని అనుమతులను (స్వీయ లాంచ్ మరియు ద్వితీయ లాంచ్‌లతో సహా) ప్రారంభించి, మళ్లీ ప్రయత్నించండి."</string>
+    <string name="hms_cancel">"రద్దు చేయి"</string>
+    <string name="hms_check_failure">"అప్‌డేట్‌ల కోసం తనిఖీ చేయడం విఫలమైంది."</string>
+    <string name="hms_check_no_update">"మీరు ఇప్పటికే తాజా వెర్షన్‌ను ఉపయోగిస్తున్నారు."</string>
+    <string name="hms_checking">"అప్‌డేట్‌ల కోసం తనిఖీ చేస్తోంది..."</string>
+    <string name="hms_confirm">"సరే"</string>
+    <string name="hms_download_failure">"Huawei Mobile Services ప్యాకేజీని డౌన్‌లోడ్ చేయడం విఫలమైంది."</string>
+    <string name="hms_download_no_space">"తగినంత స్థలం లేదు. డౌన్‌లోడ్ చేయడం పూర్తి కాలేదు."</string>
+    <string name="hms_download_retry">"డౌన్‌లోడ్ చేయడం విఫలమైంది. మళ్లీ ప్రయత్నించాలా?"</string>
+    <string name="hms_downloading">"Huawei Mobile Servicesను డౌన్‌లోడ్ చేయడం\nప్రోగ్రెస్: %d%%"</string>
+    <string name="hms_downloading_loading">"డౌన్‌లోడ్ చేస్తోంది"</string>
+    <string name="hms_downloading_new">"HMSని డౌన్‌లోడ్ చేస్తోంది"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"ఇన్‌స్టాల్ చేయి"</string>
+    <string name="hms_install_message">"ఈ ఫీచర్‌ని ఉపయోగించడానికి Huawei Mobile Servicesను తప్పక ఇన్‌స్టాల్ చేయాలి. ఇన్‌స్టాల్ చేయాలా?"</string>
+    <string name="hms_retry">"మళ్లీ ప్రయత్నించు"</string>
+    <string name="hms_update">"అప్‌డేట్ చేయండి"</string>
+    <string name="hms_update_message">"ఈ ఫీచర్‌ని ఉపయోగించడానికి Huawei Mobile Services తాజా వెర్షన్‌కి అప్‌డేట్ చేయండి. ఇప్పుడే అప్‌డేట్ చేయాలా?"</string>
+    <string name="hms_update_message_new">"ఈ సేవ కోసం కింది ఉన్న అప్లికేషన్ యొక్క తాజా వెర్షన్ అవసరం:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Mobile Services"</string>
+    <string name="no_available_network_prompt_toast">"ఇంటర్నెట్ కనెక్షన్ లేదు. దయచేసి మీ నెట్‌వర్క్ సెట్టింగ్‌లను తనిఖీ చేయండి."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"ఇన్‌స్టాలేషన్‌ని రద్దు చేయాలా?"</string>
+    <string name="third_app_dl_install_failed">"ఇన్‌స్టాలేషన్ విఫలమైంది."</string>
+    <string name="third_app_dl_sure_cancel_download">"అవును"</string>
+    <string name="upsdk_app_dl_installing">"HiAppని డౌన్‌లోడ్ చేస్తోంది"</string>
+    <string name="upsdk_app_download_info_new">"ఇన్‌స్టాల్ చేయి"</string>
+    <string name="upsdk_app_size">"పరిమాణం"</string>
+    <string name="upsdk_app_version">"వెర్షన్"</string>
+    <string name="upsdk_cancel">"రద్దు చేయి"</string>
+    <string name="upsdk_checking_update_prompt">"అప్‌డేట్‌ల కోసం తనిఖీ చేస్తోంది..."</string>
+    <string name="upsdk_choice_update">"అప్‌డేట్ అందుబాటులో ఉంది. దయచేసి తాజా వెర్షన్‌ను డౌన్‌లోడ్ చేసి, ఇన్‌స్టాల్ చేయండి."</string>
+    <string name="upsdk_detail">"వివరాలు"</string>
+    <string name="upsdk_install">"అప్‌డేట్ చేయడానికి HiAppని ఇన్‌స్టాల్ చేయండి. ఇప్పుడే ఇన్‌స్టాల్ చేయాలా?"</string>
+    <string name="upsdk_ota_app_name">"అప్లికేషన్"</string>
+    <string name="upsdk_ota_cancel">"తర్వాత"</string>
+    <string name="upsdk_ota_force_cancel_new">"నిష్క్రమించు"</string>
+    <string name="upsdk_ota_notify_updatebtn">"అప్‌డేట్"</string>
+    <string name="upsdk_ota_title">"కొత్త వెర్షన్"</string>
+    <string name="upsdk_update_check_no_new_version">"మీరు ఇప్పటికే తాజా వెర్షన్‌ను ఉపయోగిస్తున్నారు."</string>
+    <string name="upsdk_updating">"అప్‌డేట్ చేస్తోంది"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"ఫోన్ నిర్వాహకి లేదా సెట్టింగ్‌లలో HiGame కోసం ద్వితీయ లాంచ్‌ని ప్రారంభించి, మళ్లీ ప్రయత్నించండి."</string>
+    <string name="hms_game_login_notice">"స్వాగతం %1$s"</string>
+</resources>

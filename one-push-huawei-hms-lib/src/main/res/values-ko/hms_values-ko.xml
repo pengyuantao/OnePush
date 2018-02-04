@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"서버에 연결할 수 없습니다. 나중에 다시 시도하세요."</string>
+    <string name="getting_message_fail_prompt_toast">"정보를 검색할 수 없습니다. 나중에 다시 시도하세요."</string>
+    <string name="hms_abort">"중지"</string>
+    <string name="hms_abort_message">"다운로드를 중지할까요?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s는(은) Huawei Mobile Service를 사용할 수 없습니다. 장치 관리자를 열거나 설정에서 %2$s(자동 실행 및 2차 실행 포함)에 대한 권한을 켠 후 다시 시도하세요."</string>
+    <string name="hms_cancel">"취소"</string>
+    <string name="hms_check_failure">"업데이트 확인에 실패했습니다."</string>
+    <string name="hms_check_no_update">"이미 최신 버전을 사용하고 있습니다."</string>
+    <string name="hms_checking">"업데이트 확인 중…"</string>
+    <string name="hms_confirm">"확인"</string>
+    <string name="hms_download_failure">"Huawei 모바일 서비스 패키지 다운로드에 실패했습니다."</string>
+    <string name="hms_download_no_space">"빈 공간이 부족합니다. 다운로드를 완료할 수 없습니다."</string>
+    <string name="hms_download_retry">"다운로드에 실패했습니다. 다시 시도할까요?"</string>
+    <string name="hms_downloading">"Huawei 모바일 서비스 다운로드 중 | 진행률: %d%%"</string>
+    <string name="hms_downloading_loading">"다운로드 중"</string>
+    <string name="hms_downloading_new">"HMS 다운로드 중"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"설치"</string>
+    <string name="hms_install_message">"이 기능을 사용하려면 Huawei 모바일 서비스를 설치해야 합니다. 설치할까요?"</string>
+    <string name="hms_retry">"재시도"</string>
+    <string name="hms_update">"업데이트"</string>
+    <string name="hms_update_message">"이 기능을 사용하려면 Huawei 모바일 서비스를 최신 버전으로 업데이트해야 합니다. 지금 업데이트할까요?"</string>
+    <string name="hms_update_message_new">"이 서비스는 다음 앱의 최신 버전이 필요합니다.\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei 모바일 서비스"</string>
+    <string name="no_available_network_prompt_toast">"인터넷이 연결되지 않았습니다. 네트워크 설정을 확인해 주세요."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"설치를 취소할까요?"</string>
+    <string name="third_app_dl_install_failed">"설치에 실패했습니다."</string>
+    <string name="third_app_dl_sure_cancel_download">"예"</string>
+    <string name="upsdk_app_dl_installing">"HiApp 다운로드 중"</string>
+    <string name="upsdk_app_download_info_new">"설치"</string>
+    <string name="upsdk_app_size">"크기"</string>
+    <string name="upsdk_app_version">"버전"</string>
+    <string name="upsdk_cancel">"취소"</string>
+    <string name="upsdk_checking_update_prompt">"업데이트 확인 중…"</string>
+    <string name="upsdk_choice_update">"새로운 업데이트가 있습니다. 최신 버전을 다운로드하여 설치하세요."</string>
+    <string name="upsdk_detail">"상세사항"</string>
+    <string name="upsdk_install">"업데이트하려면 HiApp을 설치하세요. 지금 설치할까요?"</string>
+    <string name="upsdk_ota_app_name">"앱"</string>
+    <string name="upsdk_ota_cancel">"나중에"</string>
+    <string name="upsdk_ota_force_cancel_new">"나가기"</string>
+    <string name="upsdk_ota_notify_updatebtn">"업데이트"</string>
+    <string name="upsdk_ota_title">"새로운 버전"</string>
+    <string name="upsdk_update_check_no_new_version">"이미 최신 버전을 사용하고 계십니다."</string>
+    <string name="upsdk_updating">"업데이트 중"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"휴대폰 관리자 또는 설정에서 HiGame 자동실행을 활성화하고 다시 시도하십시오."</string>
+    <string name="hms_game_login_notice">"%1$s님, 환영합니다."</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Serverga ulanib bo‘lmadi. Keyinroq qayta urining."</string>
+    <string name="getting_message_fail_prompt_toast">"Ma’lumotlar olinmadi. Keyinroq qayta urining."</string>
+    <string name="hms_abort">"To‘xtatish"</string>
+    <string name="hms_abort_message">"Yuklab olish to‘xtatilsinmi?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s Huawei Mobile Services xizmatidan foydalana olmadi. Telefon menejerini ishga tushirib yoki Sozlamalarni ochib, %2$s uchun barcha zaruriy ruxsatlarni bering (jumladan, avtomatik ishga tushish va ikkinchi marta ishga tushish) va qaytadan urining."</string>
+    <string name="hms_cancel">"Bekor qilish"</string>
+    <string name="hms_check_failure">"Yangilov borligi tekshirilmadi."</string>
+    <string name="hms_check_no_update">"Siz eng so‘nggi versiyadan foydalanmoqdasiz."</string>
+    <string name="hms_checking">"Yangilov borligi tekshirmoqda…"</string>
+    <string name="hms_confirm">"OK"</string>
+    <string name="hms_download_failure">"Huawei Mobile Services paketi yuklab olinmadi."</string>
+    <string name="hms_download_no_space">"Bo‘sh joy yetarli emas. Yuklab olish tugallanmadi."</string>
+    <string name="hms_download_retry">"Yuklab olish amalga oshmadi. Qayta urinilsinmi?"</string>
+    <string name="hms_downloading">"Huawei Mobile Services yuklab olinmoqda | rivoj: %d%%"</string>
+    <string name="hms_downloading_loading">"Yuklab olinmoqda"</string>
+    <string name="hms_downloading_new">"HMS yuklab olinmoqda"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"O‘rnatish"</string>
+    <string name="hms_install_message">"Bu funksiyadan foydalanish uchun Huawei Mobile Services o‘rnatilishi lozim. O‘rnatilsinmi?"</string>
+    <string name="hms_retry">"Qaytadan"</string>
+    <string name="hms_update">"Yangilash"</string>
+    <string name="hms_update_message">"Bu funksiyadan foydalanish uchun Huawei Mobile Services yangilanishi zarur. Hozir yangilansinmi?"</string>
+    <string name="hms_update_message_new">"Bu xizmat quyidagi ilovaning eng oxirgi versiyasini talab qiladi:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Mobile Services"</string>
+    <string name="no_available_network_prompt_toast">"Internet aloqasi yo‘q. Tarmoq sozlamalarini tekshiring."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"O‘rnatish bekor qilinsinmi?"</string>
+    <string name="third_app_dl_install_failed">"O‘rnatish amalga oshmadi."</string>
+    <string name="third_app_dl_sure_cancel_download">"Ha"</string>
+    <string name="upsdk_app_dl_installing">"HiApp yuklab olinmoqda"</string>
+    <string name="upsdk_app_download_info_new">"O‘rnatish"</string>
+    <string name="upsdk_app_size">"Hajmi"</string>
+    <string name="upsdk_app_version">"Versiyasi"</string>
+    <string name="upsdk_cancel">"Bekor qilish"</string>
+    <string name="upsdk_checking_update_prompt">"Yangilanish borligi tekshirilmoqda…"</string>
+    <string name="upsdk_choice_update">"Yangilanish chiqdi. Eng oxirgi versiyasini yuklab oling va o‘rnating."</string>
+    <string name="upsdk_detail">"Tafsilotlar"</string>
+    <string name="upsdk_install">"Yangilash uchun HiApp ilovasini o‘rnating. Hozir o‘rnatilsinmi?"</string>
+    <string name="upsdk_ota_app_name">"Ilova"</string>
+    <string name="upsdk_ota_cancel">"Keyinroq"</string>
+    <string name="upsdk_ota_force_cancel_new">"Chiqish"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Yangilash"</string>
+    <string name="upsdk_ota_title">"Yangi versiya"</string>
+    <string name="upsdk_update_check_no_new_version">"Siz eng oxirgi versiyasidan foydalanyapsiz."</string>
+    <string name="upsdk_updating">"Yangilanmoqda"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Telefon menejeri yoki Sozlamalar orqali HiGame ilovasiga qayta ishga tushishiga ruxsat berib, keyin qaytadan urining."</string>
+    <string name="hms_game_login_notice">"Xush kelibsiz, %1$s"</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"ཞབས་ཞུའི་ཡོ་ཆས་སྟེང་སྦྲེལ་མཐུད་མ་ཐུབ་པས། ཏོག་ཙམ་ནས་ཚོད་ལྟ་གནང་རོགས།"</string>
+    <string name="getting_message_fail_prompt_toast">"ཆ་འཕྲིན་བསྐྱར་སོན་མ་ཐུབ། རྗེས་སུ་ཡང་བསྐྱར་འབད་རྩོལ་གནང་རོགས།"</string>
+    <string name="hms_abort">"མཚམས་འཇོག"</string>
+    <string name="hms_abort_message">"ཕབ་ལེན་མཚམས་འཇོག་བྱེད་འདོད་དམ།"</string>
+    <string name="hms_bindfaildlg_message">"%1$s ཡིས་ཧུ་ཝཡེ་ཁ་པར་ཞབས་ཞུ་དག་བེད་སྤྱོད་བྱེད་ཐུབ་ཀྱི་མིན་འདུག ཁ་པར་སྟངས་འཛིན་ཡོ་ཆས་འགོ་འཛུགས་བྱེད་པའམ། ཡང་ན། སྒྲིག་བཀོད་སྟེང་བསྐྱོད། %2$s ཆེད་ཆོག་མཆན་ཆ་ཚང་ནུས་ལྡན་བཟོ་ (རང་འགུལ་འགོ་འཛུགས་དང་འགོ་འཛུགས་ཕལ་པ་འཚུད་པ་ཡིན།) བ་དང་། ཡང་བསྐྱར་འབད་རྩོལ་བྱ།"</string>
+    <string name="hms_cancel">"ཕྱིར་འཐེན།"</string>
+    <string name="hms_check_failure">"གསར་བསྐྱར་ལ་ཞིབ་དཔྱད་ཚད་ལེན་ལེགས་མི་འགྲུབ།"</string>
+    <string name="hms_check_no_update">"ཁྱེད་ཀྱིས་སྔ་ས་ནས་རིམ་པ་གསར་ཤོས་དེ་བེད་སྤྱོད་བྱེད་ཀྱི་འདུག"</string>
+    <string name="hms_checking">"གསར་བསྐྱར་ཡོད་མེད་ཞིབ་བཤེར་བྱེད་བཞིན།"</string>
+    <string name="hms_confirm">"ཆོག"</string>
+    <string name="hms_download_failure">"ཧྭ་ཝེའི་འཕོ་བ་ཞབས་ཞུའི་དོ་བོར་ཕབ་ལེན་ལེགས་མི་འགྲུབ།"</string>
+    <string name="hms_download_no_space">"བེད་སྤྱོད་ཆོག་པའི་བར་སྟོང་མི་འདང་། ཕབ་ལེན་པར་ལེགས་འགྲུབ་བྱེད་མི་ཐུབ།"</string>
+    <string name="hms_download_retry">"ཕབ་ལེན་ལེགས་མི་འགྲུབ། ཡང་བསྐྱར་གྱིས་ཚོད་ལྟ་བྱེད་འདོད་དམ།"</string>
+    <string name="hms_downloading">"གོ་རིམ་ཧྭ་ཝེའི་འཕོ་བ་ཞབས་ཞུ་ལ་ཕབ་ལེན་བྱེད་བཞིན། %d%%"</string>
+    <string name="hms_downloading_loading">"སྣོན་འཇུག་བྱེད་བཞིན་པ།"</string>
+    <string name="hms_downloading_new">"HMS ཕབ་ལེན་བཞིན་པ།"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"སྒྲིག་འཇུག"</string>
+    <string name="hms_install_message">"ཁྱད་ཆོས་འདི་བེད་སྤྱོད་བྱེད་པར་ཧུ་ཝཡེ་ཁ་པར་ཞབས་ཞུ་དག་སྒྲིག་འཇུག་བྱེད་དགོས་པ་ཡིན། སྒྲིག་འཇུག་བྱེད་འདོད་དམ།"</string>
+    <string name="hms_retry">"ཡང་བསྐྱར་བྱེད་རོགས།"</string>
+    <string name="hms_update">"གསར་བསྐྱར།"</string>
+    <string name="hms_update_message">"ཧྭ་ཝེའི་འཕོ་བའི་ཞབས་ཞུ་གསར་ཤོས་ལ་གསར་བསྐྱར་བྱས་ནས་ཁྱད་ཆོས་འདི་སྤྱོད་བྱེད། ད་ལྟར་གསར་བསྐྱར་བྱེད་འདོད་དམ།"</string>
+    <string name="hms_update_message_new">"ཞབས་ཞུ་འདི་ལ་གཤམ་གྱི་ཉེར་སྤྱོད་\n\n%1$s ཡི་རིམ་པ་གསར་ཤོས་དེ་ལྡན་དགོས་འདུག"</string>
+    <string name="hms_update_title">"ཧྭ་ཝེའི་འཕོ་བའི་ཞབས་ཞུ།"</string>
+    <string name="no_available_network_prompt_toast">"དྲ་རྒྱའི་སྦྲེལ་མཐུད་མིན་འདུག ཁྱེད་ཀྱི་དྲ་ལམ་སྒྲིག་བཀོད་དག་ཞིབ་བཤེར་གནང་རོགས།"</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"སྒྲིག་འཇུག་ཕྱིར་འཐེན་བྱེད་དམ།"</string>
+    <string name="third_app_dl_install_failed">"སྒྲིག་འཇུག་མི་ཐུབ།"</string>
+    <string name="third_app_dl_sure_cancel_download">"ཡིན།"</string>
+    <string name="upsdk_app_dl_installing">"HiApp ཕབ་ལེན་བཞིན་པ།"</string>
+    <string name="upsdk_app_download_info_new">"སྒྲིག་འཇུག"</string>
+    <string name="upsdk_app_size">"ཆ་ཚད།"</string>
+    <string name="upsdk_app_version">"རིམ་པ།"</string>
+    <string name="upsdk_cancel">"ཕྱིར་འཐེན།"</string>
+    <string name="upsdk_checking_update_prompt">"གསར་སྒྱུར་དག་ཞིབ་བཤེར་བཞིན་པ།"</string>
+    <string name="upsdk_choice_update">"གསར་སྒྱུར་ཐོབ་རུང་འདུག རིམ་པ་གསར་ཤོས་ཕབ་ལེན་གནང་བ་དང་སྒྲིག་འཇུག་གནང་རོགས།"</string>
+    <string name="upsdk_detail">"ཞིབ་ཕྲ།"</string>
+    <string name="upsdk_install">"གསར་སྒྱུར་བྱེད་པར་ HiApp སྒྲིག་འཇུག་བྱ། ད་ལྟ་སྒྲིག་འཇུག་བྱེད་དམ།"</string>
+    <string name="upsdk_ota_app_name">"ཉེར་སྤྱོད།"</string>
+    <string name="upsdk_ota_cancel">"རྗེས་མ།"</string>
+    <string name="upsdk_ota_force_cancel_new">"ཕྱིར་ཐོན།"</string>
+    <string name="upsdk_ota_notify_updatebtn">"གསར་སྒྱུར།"</string>
+    <string name="upsdk_ota_title">"རིམ་པ་གསར་པ།"</string>
+    <string name="upsdk_update_check_no_new_version">"ཁྱེད་ཀྱིས་སྔ་ས་ནས་རིམ་པ་གསར་ཤོས་དེ་བེད་སྤྱོད་བྱེད་ཀྱི་འདུག"</string>
+    <string name="upsdk_updating">"གསར་སྒྱུར་བཞིན་པ།"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"ཁ་པར་དོ་དམ་ཡོ་ཆས་ཞེས་པའམ་སྒྲིག་འགོད་ཅེས་པ་ཁ་ཕྱེ་བའི་ཚོད་ལྟ་གནང་རོགས། ཧྭ་ཝེའི་ HiGame ཡི་ནང་གི་འབྲེལ་བའི་འཁོར་སྒུལ་ཞེས་པའི་དབང་ཚད་ཁ་ཕྱེ་བ་མ་ཟད་བསྐྱར་དུ་ཚོད་ལྟ་གནང་རོགས།"</string>
+    <string name="hms_game_login_notice">"ཧྭ་ཝེའི་སྤྱོད་མཁན་ %1$s ལ་དགའ་བསུ་ཞུ།"</string>
+</resources>

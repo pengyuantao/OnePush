@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Serverə qoşulmaq mümkün deyil. Az sonra yenidən cəhd edin."</string>
+    <string name="getting_message_fail_prompt_toast">"Məlumatları əldə etmək mümkün deyil. Az sonra yenidən cəhd edin."</string>
+    <string name="hms_abort">"Dayandır"</string>
+    <string name="hms_abort_message">"Yükləmə dayandırılsın?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s Huawei Mobil Xidmətlərindən istifadə edə bilmir. Lütfən Telefon Menecerini işə salın və ya Parametrlərə keçin, %2$s (avtomatik işəsalma və sonrakı işəsalma daxil olmaqla) üçün bütün icazələri aktivləşdirin."</string>
+    <string name="hms_cancel">"Ləğv et"</string>
+    <string name="hms_check_failure">"Yenilənmələri yoxlamaq mümkün olmadı."</string>
+    <string name="hms_check_no_update">"Siz artıq ən son versiyanı istifadə edirsiniz."</string>
+    <string name="hms_checking">"Yeniləmələr yoxlanır…"</string>
+    <string name="hms_confirm">"OK"</string>
+    <string name="hms_download_failure">"Huawei Mobil Xidmətlər paketini yükləmək mümkün olmadı."</string>
+    <string name="hms_download_no_space">"Kifayət qədər boş yer yoxdur. Yükləməni tamamlamaq mümkün deyil."</string>
+    <string name="hms_download_retry">"Yükləmə baş tutmadı. Təkrar cəhd edilsin?"</string>
+    <string name="hms_downloading">"Huawei Mobil Xidmətləri yüklənir | gedişat: %d%%"</string>
+    <string name="hms_downloading_loading">"Endirilir"</string>
+    <string name="hms_downloading_new">"HMS endirilir"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Quraşdırın"</string>
+    <string name="hms_install_message">"Bu funksiyanı istifadə etmək üçün Huawei Mobil Xidmətləri quraşdırılmalıdır. Quraşdırılsın?"</string>
+    <string name="hms_retry">"Təkrar cəhd et"</string>
+    <string name="hms_update">"Yenilə"</string>
+    <string name="hms_update_message">"Bu funksiyanı istifadə etmək üçün Huawei Mobil Xidmətlərinin ən son versiyasına yeniləyin. İndi yenilənsin?"</string>
+    <string name="hms_update_message_new">"Bu xidmət aşağıdakı proqramın ən son versiyasını tələb edir:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Mobil Xidmətləri"</string>
+    <string name="no_available_network_prompt_toast">"İnternet bağlantısı yoxdur. Şəbəkə parametrlərinizi yoxlayın."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Quraşdırma ləğv olunsun?"</string>
+    <string name="third_app_dl_install_failed">"Quraşdırma baş tutmadı."</string>
+    <string name="third_app_dl_sure_cancel_download">"Bəli"</string>
+    <string name="upsdk_app_dl_installing">"HiApp yüklənir"</string>
+    <string name="upsdk_app_download_info_new">"Quraşdır"</string>
+    <string name="upsdk_app_size">"Ölçü"</string>
+    <string name="upsdk_app_version">"Versiya"</string>
+    <string name="upsdk_cancel">"Ləğv et"</string>
+    <string name="upsdk_checking_update_prompt">"Yeniləmələr yoxlanılır…"</string>
+    <string name="upsdk_choice_update">"Yeniləmə mövcuddur. Ən son versiyanı yükləyin və qurun."</string>
+    <string name="upsdk_detail">"Təfərrüatlar"</string>
+    <string name="upsdk_install">"Yeniləmək üçün HiApp-i qurun. İndi qurulsun?"</string>
+    <string name="upsdk_ota_app_name">"Proqram"</string>
+    <string name="upsdk_ota_cancel">"Sonra"</string>
+    <string name="upsdk_ota_force_cancel_new">"Çıxış"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Yenilə"</string>
+    <string name="upsdk_ota_title">"Yeni versiya"</string>
+    <string name="upsdk_update_check_no_new_version">"Siz artıq ən son versiyanı istifadə edirsiniz."</string>
+    <string name="upsdk_updating">"Yenilənir"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Telefon Meneceri və ya Parametrlərdə HiGame üçün Əlavə işəsalmanı aktivləşdirin və yenidən cəhd edin."</string>
+    <string name="hms_game_login_notice">"Xoş gəlmisiniz, %1$s"</string>
+</resources>

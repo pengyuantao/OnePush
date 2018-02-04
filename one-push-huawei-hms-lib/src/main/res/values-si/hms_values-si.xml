@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"සර්වරය වෙත සම්බන්ධ කළ නොහැක. කරුණාකර පසුව නැවත උත්සාහ කරන්න."</string>
+    <string name="getting_message_fail_prompt_toast">"තොරතුරු නැවත ලබා ගත නොහැක. කරුණාකර පසුව නැවත උත්සාහ කරන්න."</string>
+    <string name="hms_abort">"නවත්වන්න"</string>
+    <string name="hms_abort_message">"බාගැනීම නවත්වන්නද?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s ට Huawei ජංගම සේවාවන් භාවිතා කළ නොහැකිය. %2$s සඳහා වූ සියලු අවසරයන් සක්‍රීය කිරීමට කරුණාකර දුරකථන කලමණාකරු දියත් කරන්න නැතහොත් සැකසුම් වෙත ගොස් (ස්වයං-දියත්කිරීම සහ ද්විතීය දියත් කිරීම ඇතුළුව) නැවත උත්සාහ කරන්න."</string>
+    <string name="hms_cancel">"අවලංගු කරන්න"</string>
+    <string name="hms_check_failure">"යාවත් කිරීම් පරීක්ෂා කිරීමට අසමත් විය."</string>
+    <string name="hms_check_no_update">"ඔබ දැනටමත් නවතම අනුවාදය භාවිතා කරමින් සිටී."</string>
+    <string name="hms_checking">"යාවත් කිරීම් පරීක්ෂා කරමින්..."</string>
+    <string name="hms_confirm">"හරි"</string>
+    <string name="hms_download_failure">"Huawei ජංගම සේවා පැකේජ බාගැනීමට අසමත් විය."</string>
+    <string name="hms_download_no_space">"ප්‍රමාණවත් නිදහස් ඉඩ නැත. බාගැනීම සම්පූර්ණ කළ නොහැක."</string>
+    <string name="hms_download_retry">"බාගැනීම අසමත් විය. නැවත උත්සාහ කරන්නද?"</string>
+    <string name="hms_downloading">"Huawei ජංගම සේවා බාගනිමින් | ප්‍රගතිය: %d%%"</string>
+    <string name="hms_downloading_loading">"බාගනිමින්"</string>
+    <string name="hms_downloading_new">"HMS බාගනිමින්"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"ස්ථාපනය කරන්න"</string>
+    <string name="hms_install_message">"මෙම විශේෂාංගය භාවිත කිරීමට Huawei ජංගම සේවාවත් ස්ථාපිත කළ යුතුයි. ස්ථාපනය කරන්න?"</string>
+    <string name="hms_retry">"යළි තැත් කරන්න"</string>
+    <string name="hms_update">"යාවත් කරන්න"</string>
+    <string name="hms_update_message">"මෙම විශේෂාංගය භාවිතා කිරීමට Huawei ජංගම සේවාවල නවතම අනුවාදය යාවත් කරන්න. දැන් යාවත් කරන්නද?"</string>
+    <string name="hms_update_message_new">"මෙම සේවාව හට පහත යෙදුමේ නවතම අනුවාදය අවශ්‍ය කෙරේ:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei ජංගම සේවා"</string>
+    <string name="no_available_network_prompt_toast">"අන්තර්ජාල සම්බන්ධතාවක් නොමැත. කරුණාකර ඔබේ ජාල සැකසුම් පරීක්ෂා කරන්න."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"ස්ථාපනය අවලංගු කරන්න ද?"</string>
+    <string name="third_app_dl_install_failed">"ස්ථාපනය කිරීම අසාර්ථකයි."</string>
+    <string name="third_app_dl_sure_cancel_download">"ඔව්"</string>
+    <string name="upsdk_app_dl_installing">"HiApp යෙදුම බාගැනිමින්"</string>
+    <string name="upsdk_app_download_info_new">"ස්ථාපනය කරන්න"</string>
+    <string name="upsdk_app_size">"ප්‍රමාණය"</string>
+    <string name="upsdk_app_version">"අනුවාදය"</string>
+    <string name="upsdk_cancel">"අවලංගු කරන්න"</string>
+    <string name="upsdk_checking_update_prompt">"යාවත් කිරීම් සඳහා පරීක්ෂා කරමින්…"</string>
+    <string name="upsdk_choice_update">"යාවත් කිරීම ලද හැකිිය. කරුණාකර නවතම අනුවාදය බාගෙන ස්ථාපනය කරන්න."</string>
+    <string name="upsdk_detail">"විස්තර"</string>
+    <string name="upsdk_install">"යාවත් කිරීමට HiApp ස්ථාපනය කරන්න. දැන් ස්ථාපනය කරන්න ද?"</string>
+    <string name="upsdk_ota_app_name">"යෙදුම"</string>
+    <string name="upsdk_ota_cancel">"පසුව"</string>
+    <string name="upsdk_ota_force_cancel_new">"පිටවන්න"</string>
+    <string name="upsdk_ota_notify_updatebtn">"යාවත් කරන්න"</string>
+    <string name="upsdk_ota_title">"නව අනුවාදය"</string>
+    <string name="upsdk_update_check_no_new_version">"ඔබ දැනටමත් නවතම අනුවාදය භාවිතා කරයි."</string>
+    <string name="upsdk_updating">"යාවත් කරමින්"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"දුරකථන කළමනාකරු හෝ සැකසුම් තුළ HiGame සඳහා ද්විතීයික දියත් කිරීම සක්‍රීය කර නැවත උත්සාහ කරන්න."</string>
+    <string name="hms_game_login_notice">"%1$s වෙත සාදරයෙන් පිළිගනිමු"</string>
+</resources>

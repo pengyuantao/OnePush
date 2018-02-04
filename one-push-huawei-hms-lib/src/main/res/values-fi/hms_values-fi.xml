@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Yhteyttä palvelimeen ei voi muodostaa. Yritä myöhemmin uudelleen."</string>
+    <string name="getting_message_fail_prompt_toast">"Tietoja ei voitu noutaa. Yritä myöhemmin uudelleen."</string>
+    <string name="hms_abort">"Lopeta"</string>
+    <string name="hms_abort_message">"Pysäytetäänkö lataus?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s ei voi käyttää Huawei Mobile Services -palveluja. Käynnistä Phone Manager tai mene kohtaan Asetukset, ota käyttöön kaikki luvat palvelulle %2$s (mukaan lukien automaattinen käynnistys ja toissijainen käynnistys) ja yritä uudelleen."</string>
+    <string name="hms_cancel">"Peruuta"</string>
+    <string name="hms_check_failure">"Päivitysten tarkistaminen epäonnistui."</string>
+    <string name="hms_check_no_update">"Käytössä on jo uusin versio."</string>
+    <string name="hms_checking">"Tarkistetaan päivityksiä…"</string>
+    <string name="hms_confirm">"OK"</string>
+    <string name="hms_download_failure">"Huawein mobiilipalvelupaketin lataus epäonnistui."</string>
+    <string name="hms_download_no_space">"Vapaa tila ei riitä. Latausta ei voi suorittaa."</string>
+    <string name="hms_download_retry">"Lataaminen epäonnistui. Yritetäänkö uudelleen?"</string>
+    <string name="hms_downloading">"Huawein mobiilidatapalveluja ladataan | edistyminen: %d%%"</string>
+    <string name="hms_downloading_loading">"Ladataan"</string>
+    <string name="hms_downloading_new">"Ladataan HMS"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Asenna"</string>
+    <string name="hms_install_message">"Huawei-mobiilipalvelut pitää olla asennettuna, jotta tätä ominaisuutta voi käyttää. Asennetaanko?"</string>
+    <string name="hms_retry">"Yritä uudelleen"</string>
+    <string name="hms_update">"Päivitä"</string>
+    <string name="hms_update_message">"Päivitä Huawein mobiilipalvelujen uusimpaan versioon, jotta voit käyttää tätä ominaisuutta. Päivitetäänkö nyt?"</string>
+    <string name="hms_update_message_new">"Tämä palvelu vaatii seuraavan sovelluksen uusimman version:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawein mobiilipalvelut"</string>
+    <string name="no_available_network_prompt_toast">"Ei Internet-yhteyttä. Tarkista verkkoasetukset."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Perutetaanko asennus?"</string>
+    <string name="third_app_dl_install_failed">"Asennus epäonnistui."</string>
+    <string name="third_app_dl_sure_cancel_download">"Kyllä"</string>
+    <string name="upsdk_app_dl_installing">"Ladataan HiApp-sovellusta"</string>
+    <string name="upsdk_app_download_info_new">"Asenna"</string>
+    <string name="upsdk_app_size">"Koko"</string>
+    <string name="upsdk_app_version">"Versio"</string>
+    <string name="upsdk_cancel">"Peruuta"</string>
+    <string name="upsdk_checking_update_prompt">"Tarkistetaan, onko päivityksiä saatavilla…"</string>
+    <string name="upsdk_choice_update">"Päivitys on saatavana. Lataa ja asenna uusin versio."</string>
+    <string name="upsdk_detail">"Tiedot"</string>
+    <string name="upsdk_install">"Päivitä asentamalla HiApp. Asennetaanko nyt?"</string>
+    <string name="upsdk_ota_app_name">"Sovellus"</string>
+    <string name="upsdk_ota_cancel">"Myöhemmin"</string>
+    <string name="upsdk_ota_force_cancel_new">"Poistu"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Päivitä"</string>
+    <string name="upsdk_ota_title">"Uusi versio"</string>
+    <string name="upsdk_update_check_no_new_version">"Käytössä on jo uusin versio."</string>
+    <string name="upsdk_updating">"Päivitetään"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Ota HiGamen toissijainen käynnistys käyttöön Puhelimen hallinnassa tai Asetuksissa ja yritä uudelleen."</string>
+    <string name="hms_game_login_notice">"Tervetuloa %1$s"</string>
+</resources>

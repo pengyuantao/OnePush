@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"La connexion au serveur ne peut pas être établie. Veuillez réessayer ultérieurement."</string>
+    <string name="getting_message_fail_prompt_toast">"Les informations ne peuvent pas être récupérées. Veuillez réessayer ultérieurement."</string>
+    <string name="hms_abort">"Arrêter"</string>
+    <string name="hms_abort_message">"Arrêter le téléchargement ?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s ne peut pas utiliser Huawei Mobile Services. Veuillez accorder à %2$s les autorisations nécessaires (dont le lancement automatique et le lancement secondaire) depuis Gestionnaire téléphone ou les Paramètres."</string>
+    <string name="hms_cancel">"Annuler"</string>
+    <string name="hms_check_failure">"La recherche de mises à jour a échoué."</string>
+    <string name="hms_check_no_update">"Vous utilisez déjà la dernière version."</string>
+    <string name="hms_checking">"Recherche de mises à jour en cours."</string>
+    <string name="hms_confirm">"OK"</string>
+    <string name="hms_download_failure">"Le téléchargement du package Huawei Mobile Services a échoué."</string>
+    <string name="hms_download_no_space">"Espace de stockage insuffisant. Le téléchargement ne peut être fait."</string>
+    <string name="hms_download_retry">"Le téléchargement a échoué. Réessayer ?"</string>
+    <string name="hms_downloading">"Téléchargement de Huawei Mobile Services en cours | terminé : %d %%"</string>
+    <string name="hms_downloading_loading">"Téléchargement en cours"</string>
+    <string name="hms_downloading_new">"Téléchargement de HMS en cours"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Installer"</string>
+    <string name="hms_install_message">"L\'utilisation de cette fonction nécessite que Huawei Mobile Services soit installée. L\'installer ?"</string>
+    <string name="hms_retry">"Réessayer"</string>
+    <string name="hms_update">"Mettre à jour"</string>
+    <string name="hms_update_message">"L\'utilisation de cette fonction nécessite que Huawei Mobile Services soit mis à jour vers sa dernière version. Mettre à jour maintenant ?"</string>
+    <string name="hms_update_message_new">"Ce service nécessite la dernière version de l\'application suivante :\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Mobile Services"</string>
+    <string name="no_available_network_prompt_toast">"Aucune connexion Internet. Veuillez vérifier les paramètres réseau."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"L\'installation va être annulée. Confirmer ?"</string>
+    <string name="third_app_dl_install_failed">"L\'installation a échoué."</string>
+    <string name="third_app_dl_sure_cancel_download">"Confirmer"</string>
+    <string name="upsdk_app_dl_installing">"Téléchargement de HiApp en cours."</string>
+    <string name="upsdk_app_download_info_new">"Installer"</string>
+    <string name="upsdk_app_size">"Taille :"</string>
+    <string name="upsdk_app_version">"Version :"</string>
+    <string name="upsdk_cancel">"Annuler"</string>
+    <string name="upsdk_checking_update_prompt">"Recherche de mises à jour en cours."</string>
+    <string name="upsdk_choice_update">"Mise à jour disponible. Mettre à jour ?"</string>
+    <string name="upsdk_detail">"Détails :"</string>
+    <string name="upsdk_install">"Installer HiApp pour mettre à jour ?"</string>
+    <string name="upsdk_ota_app_name">"Application :"</string>
+    <string name="upsdk_ota_cancel">"Ultérieurement"</string>
+    <string name="upsdk_ota_force_cancel_new">"Quitter"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Mettre à jour"</string>
+    <string name="upsdk_ota_title">"Nouvelle version"</string>
+    <string name="upsdk_update_check_no_new_version">"Vous utilisez déjà la dernière version."</string>
+    <string name="upsdk_updating">"Mise à jour en cours"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Veuillez autoriser le lancement secondaire pour HiGame depuis Gestionnaire téléphone ou depuis les paramètres, puis réessayez."</string>
+    <string name="hms_game_login_notice">"Bienvenue %1$s"</string>
+</resources>

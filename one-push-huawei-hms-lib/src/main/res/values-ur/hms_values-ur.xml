@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"سرور سے مربوط ہونے سے قاصر۔ براہ کرم بعد میں دوبارہ کوشش کریں۔"</string>
+    <string name="getting_message_fail_prompt_toast">"معلومات بازیافت کرنے سے قاصر۔ براہ کرم بعد میں دوبارہ کوشش کریں۔"</string>
+    <string name="hms_abort">"روکیں"</string>
+    <string name="hms_abort_message">"ڈاؤن لوڈ روکیں؟"</string>
+    <string name="hms_bindfaildlg_message">"‎%1$s Huawei موبائل سروسز استعمال کرنے سے قاصر ہے۔ براہ کرم فون مینیجر شروع کریں یا سیٹنگز پر جائیں، ‎%2$s‎ (بشمول آٹو لانچ اور ثانوی لانچ) کیلئے تمام اجازتیں فعال کریں اور دوبارہ کوشش کریں۔"</string>
+    <string name="hms_cancel">"منسوخ کریں"</string>
+    <string name="hms_check_failure">"اپ ڈیٹس کے لیے چیک کرنے سے قاصر۔"</string>
+    <string name="hms_check_no_update">"آپ پہلے سے ہی جدید ترین ورژن استعمال کررہے ہیں۔"</string>
+    <string name="hms_checking">"اپ ڈیٹس چیک ہو رہی ہیں..."</string>
+    <string name="hms_confirm">"اوکے"</string>
+    <string name="hms_download_failure">"Huawei موبائل خدمات کا پیکیج ڈاؤن لوڈ کرنے سے قاصر۔"</string>
+    <string name="hms_download_no_space">"وافر خالی جگہ نہیں۔ ڈاؤن لوڈ مکمل نہیں کی جا سکتی۔"</string>
+    <string name="hms_download_retry">"ڈاؤن لوڈ ناکام ہو گئی۔ دوبارہ کوشش کریں؟"</string>
+    <string name="hms_downloading">"Huawei موبائل خدمات ڈاؤن لوڈ کر رہا ہے | کارکردگی: %d%%"</string>
+    <string name="hms_downloading_loading">"ڈاؤن لوڈ کر رہا ہے"</string>
+    <string name="hms_downloading_new">"HMS ڈاؤن لوڈ ہو رہا ہے"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"انسٹال کریں"</string>
+    <string name="hms_install_message">"یہ فیچر استعمال کرنے کیلئے Huawei موبائل سروسزانسٹال کرنا ضروری ہے۔ انسٹال کریں؟"</string>
+    <string name="hms_retry">"دوبارہ کوشش کریں"</string>
+    <string name="hms_update">"اپ ڈیٹ"</string>
+    <string name="hms_update_message">"یہ خصوصیت استعمال کرنے کے لیے Huawei موبائل خدمات کے تازہ ترین ورژن پر اپ ڈیٹ کریں۔ ابھی اپ ڈیٹ کریں؟"</string>
+    <string name="hms_update_message_new">"اس سروس کو درج ذیل ایپ کا تازہ ترین ورژن مطلوب ہے: ‎\n\n%1$s‎"</string>
+    <string name="hms_update_title">"Huaweiموبائل سروسز"</string>
+    <string name="no_available_network_prompt_toast">"انٹرنیٹ کنکشن نہیں ہے۔ براہ کرم اپنے نیٹ ورک کی ترتیبات چیک کریں۔"</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"انسٹالیشن منسوخ کریں؟"</string>
+    <string name="third_app_dl_install_failed">"انسٹالیشن ناکام۔"</string>
+    <string name="third_app_dl_sure_cancel_download">"ہاں"</string>
+    <string name="upsdk_app_dl_installing">"HiApp ڈاؤن لوڈ کر رہا ہے"</string>
+    <string name="upsdk_app_download_info_new">"انسٹال کریں"</string>
+    <string name="upsdk_app_size">"سائز"</string>
+    <string name="upsdk_app_version">"ورژن"</string>
+    <string name="upsdk_cancel">"منسوخ کریں"</string>
+    <string name="upsdk_checking_update_prompt">"اپ ڈیٹس چیک ہو رہی ہیں..."</string>
+    <string name="upsdk_choice_update">"اپ ڈیٹ دستیاب ہے۔ براہ کرم تازہ ترین ورژن ڈاؤن لوڈ اور انسٹال کریں۔"</string>
+    <string name="upsdk_detail">"تفصیلات"</string>
+    <string name="upsdk_install">"اپ ڈیٹ کرنے کیلئے HiApp انسٹال کریں۔ ابھی انسٹال کریں؟"</string>
+    <string name="upsdk_ota_app_name">"ایپ"</string>
+    <string name="upsdk_ota_cancel">"بعد میں"</string>
+    <string name="upsdk_ota_force_cancel_new">"خارج ہوں"</string>
+    <string name="upsdk_ota_notify_updatebtn">"اپ ڈیٹ کریں"</string>
+    <string name="upsdk_ota_title">"نیا ورژن"</string>
+    <string name="upsdk_update_check_no_new_version">"آپ پہلے سے ہی تازہ ترین ورژن استعمال کر رہے ہیں۔"</string>
+    <string name="upsdk_updating">"اپ ڈیٹ ہو رہا ہے"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"فون مینیجر یا ترتیبات میں HiGame کیلئے ثانوی اجراء کو فعال کریں۔"</string>
+    <string name="hms_game_login_notice">"خوش آمدید ‎%1$s"</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"ወደ አገልጋይ ማገናኘት አልተቻለም። እባክዎ በኋላ ላይ እንደገና ይሞክሩ።"</string>
+    <string name="getting_message_fail_prompt_toast">"መረጃን ሰርስሮ ለማውጣት አልተቻለም። እባክዎ በኋላ ላይ እንደገና ይሞክሩ።"</string>
+    <string name="hms_abort">"አቁም"</string>
+    <string name="hms_abort_message">"ማውረድ ይቁም?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s Huawei Mobile Servicesን ለመጠቀም አይችልም። እባክዎ የስልክ አስተዳዳሪን ያስጀምሩ ወይም ወደ ቅንብሮች ይሂዱ እና ለ %2$s (ራስሰር ማስጀመሪያ እና ሁለተኛ ደረጃ ማስጀመሪያን ጨምሮ) ሁሉንም ፈቃዶች ያንቁ እና እንደገና ይሞክሩ።"</string>
+    <string name="hms_cancel">"ይቅር"</string>
+    <string name="hms_check_failure">"ዝማኔዎች መኖራቸውን መፈተሽ አልተሳካም።"</string>
+    <string name="hms_check_no_update">"በጣም የቅርብ ጊዜውን ስሪት ቀደም ብለው እየተጠቀሙ ነዎት።"</string>
+    <string name="hms_checking">"አዘምኖችን በመመልከት ላይ..."</string>
+    <string name="hms_confirm">"ይሁን"</string>
+    <string name="hms_download_failure">"የ Huawei Mobile Services ጥቅልን ማውረድ አልተቻለም።"</string>
+    <string name="hms_download_no_space">"በቂ ነጻ ባዶ ቦታ የለም። ማውረድ ሊጠናቀቅ አይችልም።"</string>
+    <string name="hms_download_retry">"አዉርድ አልተሳካም። እንደገና ይሞክር?"</string>
+    <string name="hms_downloading">"Huawei Mobile Servicesን በማውረድ ላይ\nግስጋሴ፦ %d%%"</string>
+    <string name="hms_downloading_loading">"በማውረድ ላይ"</string>
+    <string name="hms_downloading_new">"HMSን በማውረድ ላይ"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"ጫን"</string>
+    <string name="hms_install_message">"ይህን ባህሪ ለመጠቀም Huawei Mobile Services መጫን አለበት። ይጫን?"</string>
+    <string name="hms_retry">"ድጋሚ ሞክር"</string>
+    <string name="hms_update">"አዘምን"</string>
+    <string name="hms_update_message">"ይህን ባህሪ ለመጠቀም ወደ የቅርብ ጊዜው Huawei Mobile Services ስሪት ያዘምኑ። አሁን ይዘምን?"</string>
+    <string name="hms_update_message_new">"ይህ አገልግሎት የቅርብ የሆነውን መተግበሪያ ይፈልጋል\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Mobile Services"</string>
+    <string name="no_available_network_prompt_toast">"የበይነ መረብ ግኑኙነት የለም። እባክዎ የእርስዎን የአውታረ መረብ ቅንብሮች ይፈትሹ።"</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"ጭነቱ ይሰረዝ?"</string>
+    <string name="third_app_dl_install_failed">"ጭነት አልተሳካም።"</string>
+    <string name="third_app_dl_sure_cancel_download">"አዎ"</string>
+    <string name="upsdk_app_dl_installing">"HiApp ን ማውረድ"</string>
+    <string name="upsdk_app_download_info_new">"ጫን"</string>
+    <string name="upsdk_app_size">"መጠን"</string>
+    <string name="upsdk_app_version">"ስሪት"</string>
+    <string name="upsdk_cancel">"ይቅር"</string>
+    <string name="upsdk_checking_update_prompt">"አዘምኖችን በመመልከት ላይ..."</string>
+    <string name="upsdk_choice_update">"ዝማኔን ማግኘት ይቻላል። እባክዎ የቅርብ ጊዜውን ስሪት ያውርዱ እና ይጫኑ።"</string>
+    <string name="upsdk_detail">"ዝርዝሮች"</string>
+    <string name="upsdk_install">"ለማዘመን HiApp ን ይጫኑ። አሁን ይጫን?"</string>
+    <string name="upsdk_ota_app_name">"መተግበሪያ"</string>
+    <string name="upsdk_ota_cancel">"ኋላ"</string>
+    <string name="upsdk_ota_force_cancel_new">"ውጣ"</string>
+    <string name="upsdk_ota_notify_updatebtn">"አዘምን"</string>
+    <string name="upsdk_ota_title">"አዲስ ስሪት"</string>
+    <string name="upsdk_update_check_no_new_version">"በጣም የቅርብ ጊዜውን ስሪት ቀደም ብለው እየተጠቀሙ ነዎት።"</string>
+    <string name="upsdk_updating">"ማዘመን"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"በስልክ አቀናባሪ ወይም ቅንጅቶች ውስጥ ለHiGame ሁለተኛ ጀማሪን ስራ ያስጀምሩ እና እንደገና ይሞክሩ።"</string>
+    <string name="hms_game_login_notice">"አንኳን ደህና መጣችሁ %1$s"</string>
+</resources>

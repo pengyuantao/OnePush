@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"सर्व्हरसह कनेक्ट करण्यात अक्षम. कृपया नंतर पुन्हा प्रयत्न करा."</string>
+    <string name="getting_message_fail_prompt_toast">"माहिती पुनर्प्राप्त करता आली नाही. कृपया नंतर पुन्हा प्रयत्न करा."</string>
+    <string name="hms_abort">"थांबवा"</string>
+    <string name="hms_abort_message">"डाउनलोड करणे थांबवायचे?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s Huawei Mobile Services वापरण्यास अक्षम आहे. कृपया फोन व्यवस्थापक लॉन्च करा किंवा सेटिंग्जवर जा, %2$s साठी सर्व परवानग्या सक्षम करा (स्वयं-लॉन्च आणि दुय्यम लॉन्च) आणि पुन्हा प्रयत्न करा."</string>
+    <string name="hms_cancel">"रद्द करा"</string>
+    <string name="hms_check_failure">"अद्यतने तपासण्यात अयशस्वी."</string>
+    <string name="hms_check_no_update">"आपण आधीपासून नवीनतम आवृत्ती वापरत आहात."</string>
+    <string name="hms_checking">"अद्यतनांसाठी तपासत आहे…"</string>
+    <string name="hms_confirm">"ठीक"</string>
+    <string name="hms_download_failure">"Huawei Mobile Services पॅकेज डाउनलोड करण्यात अयशस्वी."</string>
+    <string name="hms_download_no_space">"पुरेशी मोकळी जागा नाही. डाउनलोड पूर्ण होऊ शकत नाही."</string>
+    <string name="hms_download_retry">"डाउनलोड अयशस्वी झाले. पुन्हा प्रयत्न करायचा?"</string>
+    <string name="hms_downloading">"Huawei Mobile Services डाउनलोड करत आहे\nप्रगती: %d%%"</string>
+    <string name="hms_downloading_loading">"डाउनलोड करत आहे"</string>
+    <string name="hms_downloading_new">"HMS डाउनलोड करत आहे"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"स्थापित करा"</string>
+    <string name="hms_install_message">"हे वैशिष्ट्य वापरण्यासाठी Huawei Mobile Services इन्स्टॉल करणे आवश्यक आहे. स्थापित करायची?"</string>
+    <string name="hms_retry">"पुन्हा प्रयत्न करा"</string>
+    <string name="hms_update">"अद्यतनित करा"</string>
+    <string name="hms_update_message">"हे वैशिष्ट्य वापरण्यासाठी Huawei Mobile Services च्या नवीनतम आवृत्तीवर अद्यतनित करा. आता अद्यतनित करायचे?"</string>
+    <string name="hms_update_message_new">"या सेवेला खालील अ‍ॅपच्या नवीनतम आवृत्तीची आवश्यकता आहे:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Mobile Services"</string>
+    <string name="no_available_network_prompt_toast">"कोणतेही इंटरनेट कनेक्शन नाही. कृपया आपल्या नेटवर्क सेटिंग्ज तपासा."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"स्थापना रद्द करायची?"</string>
+    <string name="third_app_dl_install_failed">"स्थापना अयशस्वी."</string>
+    <string name="third_app_dl_sure_cancel_download">"होय"</string>
+    <string name="upsdk_app_dl_installing">"HiApp डाउनलोड करीत आहे"</string>
+    <string name="upsdk_app_download_info_new">"स्थापित करा"</string>
+    <string name="upsdk_app_size">"आकार"</string>
+    <string name="upsdk_app_version">"आवृत्ती"</string>
+    <string name="upsdk_cancel">"रद्द करा"</string>
+    <string name="upsdk_checking_update_prompt">"अद्यतनांसाठी तपासत आहे…"</string>
+    <string name="upsdk_choice_update">"अद्यतन उपलब्ध. कृपया नवीनतम आवृत्ती डाउनलोड आणि स्थापित करा."</string>
+    <string name="upsdk_detail">"तपशील"</string>
+    <string name="upsdk_install">"अद्यतनित करण्‍यासाठी HiApp स्‍थापित करा. आत्ता स्थापन करायचे?"</string>
+    <string name="upsdk_ota_app_name">"अॅप"</string>
+    <string name="upsdk_ota_cancel">"नंतर"</string>
+    <string name="upsdk_ota_force_cancel_new">"निर्गमन करा"</string>
+    <string name="upsdk_ota_notify_updatebtn">"अद्यतनित करा"</string>
+    <string name="upsdk_ota_title">"नवीन आवृत्ती"</string>
+    <string name="upsdk_update_check_no_new_version">"आपण आधीपासून नवीनतम आवृत्ती वापरत आहात."</string>
+    <string name="upsdk_updating">"अद्यतनित करीत आहे"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"फोन व्यवस्थापक किंवा सेटिंग्समध्ये HiGame साठी दुय्यम लॉन्च सक्षम करा आणि पुन्हा प्रयत्न करा."</string>
+    <string name="hms_game_login_notice">"%1$s चे स्वागत आहे"</string>
+</resources>

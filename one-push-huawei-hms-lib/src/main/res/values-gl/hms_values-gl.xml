@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Non se pode conectar co servidor. Ténteo de novo máis tarde."</string>
+    <string name="getting_message_fail_prompt_toast">"Non se pode recuperar a información. Ténteo de novo máis tarde."</string>
+    <string name="hms_abort">"Parar"</string>
+    <string name="hms_abort_message">"Deter a descarga?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s non pode usar Servizos de Huawei Mobile. Inicie o Xestor do teléfono ou vaia a Configuración, active todos os permisos para %2$s (incluíndo o inicio automático e secundario), e ténteo de novo."</string>
+    <string name="hms_cancel">"Cancelar"</string>
+    <string name="hms_check_failure">"Erro ao comprobar actualizacións."</string>
+    <string name="hms_check_no_update">"Xa se está a empregar a última versión."</string>
+    <string name="hms_checking">"Comprobando actualizacións..."</string>
+    <string name="hms_confirm">"Aceptar"</string>
+    <string name="hms_download_failure">"Erro ao descargar o paquete de Servizos de Huawei Mobile."</string>
+    <string name="hms_download_no_space">"Non hai espazo libre suficiente. Non se pode completar a descarga."</string>
+    <string name="hms_download_retry">"Erro ao descargar. Tentar de novo?"</string>
+    <string name="hms_downloading">"Descargando Servizos de Huawei Mobile | progreso: %d%%"</string>
+    <string name="hms_downloading_loading">"Descargando"</string>
+    <string name="hms_downloading_new">"Descargando HMS"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Instalar"</string>
+    <string name="hms_install_message">"É preciso ter instalado Huawei Mobile Services para usar esta función. Instalar?"</string>
+    <string name="hms_retry">"Tentar de novo"</string>
+    <string name="hms_update">"Actualizar"</string>
+    <string name="hms_update_message">"Actualice á última versión de Servizos de Huawei Moble para usar esta función. Actualizar agora?"</string>
+    <string name="hms_update_message_new">"Este servizo require a última versión da seguinte app:\n\n%1$s"</string>
+    <string name="hms_update_title">"Servizos de Huawei Mobile"</string>
+    <string name="no_available_network_prompt_toast">"Sen Internet. Comprobe a súa configuración de rede."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Cancelar a instalación?"</string>
+    <string name="third_app_dl_install_failed">"Erro ao instalar."</string>
+    <string name="third_app_dl_sure_cancel_download">"Si"</string>
+    <string name="upsdk_app_dl_installing">"Descargando HiApp"</string>
+    <string name="upsdk_app_download_info_new">"Instalar"</string>
+    <string name="upsdk_app_size">"Tamaño"</string>
+    <string name="upsdk_app_version">"Versión"</string>
+    <string name="upsdk_cancel">"Cancelar"</string>
+    <string name="upsdk_checking_update_prompt">"Buscando actualizacións..."</string>
+    <string name="upsdk_choice_update">"Actualización dispoñible. Descargue e instale a última versión."</string>
+    <string name="upsdk_detail">"Detalles"</string>
+    <string name="upsdk_install">"Instale HiApp para actualizar. Instalar agora?"</string>
+    <string name="upsdk_ota_app_name">"App"</string>
+    <string name="upsdk_ota_cancel">"Máis tarde"</string>
+    <string name="upsdk_ota_force_cancel_new">"Saír"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Actualizar"</string>
+    <string name="upsdk_ota_title">"Nova versión"</string>
+    <string name="upsdk_update_check_no_new_version">"Xa se está a empregar a última versión."</string>
+    <string name="upsdk_updating">"Actualizando"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Active o Inicio secundario para HiGame no Xestor do teléfono ou en Configuración, e ténteo de novo."</string>
+    <string name="hms_game_login_notice">"Benvido %1$s"</string>
+</resources>

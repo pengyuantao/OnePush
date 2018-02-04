@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Δεν είναι δυνατή η σύνδεση στον διακομιστή. Προσπαθήστε ξανά αργότερα."</string>
+    <string name="getting_message_fail_prompt_toast">"Δεν είναι δυνατή η ανάκτηση πληροφοριών. Προσπαθήστε ξανά αργότερα."</string>
+    <string name="hms_abort">"Διακοπή"</string>
+    <string name="hms_abort_message">"Να διακοπεί η λήψη;"</string>
+    <string name="hms_bindfaildlg_message">"Το %1$s αδυνατεί να χρησιμοποιήσει τις Υπηρεσίες Huawei Mobile. Εκκινήστε το Πρόγραμμα διαχείρισης τηλεφώνου ή μεταβείτε στις Ρυθμίσεις, ενεργοποιήστε όλες τις άδειες για το %2$s (συμπεριλαμβανομένης της αυτόματης εκκίνησης και της δευτερεύουσας εκκίνησης) και προσπαθήστε ξανά."</string>
+    <string name="hms_cancel">"Ακύρωση"</string>
+    <string name="hms_check_failure">"Απέτυχε ο έλεγχος για ενημερώσεις."</string>
+    <string name="hms_check_no_update">"Χρησιμοποιείτε ήδη την τελευταία έκδοση."</string>
+    <string name="hms_checking">"Έλεγχος για ενημερώσεις…"</string>
+    <string name="hms_confirm">"OK"</string>
+    <string name="hms_download_failure">"Η λήψη του πακέτου Υπηρεσιών κινητής τηλεφωνίας Huawei απέτυχε."</string>
+    <string name="hms_download_no_space">"Δεν υπάρχει αρκετός ελεύθερος χώρος. Η λήψη δεν μπορεί να ολοκληρωθεί."</string>
+    <string name="hms_download_retry">"Η λήψη απέτυχε. Επανάληψη;"</string>
+    <string name="hms_downloading">"Λήψη των Υπηρεσιών κινητής τηλεφωνίας Huawei | πρόοδος: %d%%"</string>
+    <string name="hms_downloading_loading">"Λήψη σε εξέλιξη"</string>
+    <string name="hms_downloading_new">"Λήψη υπηρεσιών HMS"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Εγκατάσταση"</string>
+    <string name="hms_install_message">"Πρέπει να εγκατασταθεί το στοιχείο Υπηρεσίες Huawei Mobile για τη χρήση αυτής της λειτουργίας. Να γίνει εγκατάσταση;"</string>
+    <string name="hms_retry">"Επανάληψη"</string>
+    <string name="hms_update">"Ενημέρωση"</string>
+    <string name="hms_update_message">"Για να χρησιμοποιήσετε αυτή τη λειτουργία πρέπει να κάνετε ενημέρωση στην τελευταία έκδοση των Υπηρεσιών κινητής τηλεφωνίας Huawei. Ενημέρωση τώρα;"</string>
+    <string name="hms_update_message_new">"Αυτή η υπηρεσία απαιτεί την τελευταία έκδ. της εφαρμογής:\n\n%1$s"</string>
+    <string name="hms_update_title">"Υπηρεσίες κινητής τηλεφωνίας Huawei"</string>
+    <string name="no_available_network_prompt_toast">"Δεν υπάρχει σύνδεση στο Ίντερνετ. Ελέγξτε τις ρυθμίσεις δικτύου σας."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Ακύρωση της εγκατάστασης;"</string>
+    <string name="third_app_dl_install_failed">"Ανεπιτυχής εγκατάσταση."</string>
+    <string name="third_app_dl_sure_cancel_download">"Ναι"</string>
+    <string name="upsdk_app_dl_installing">"Πραγματοποιείται λήψη του HiApp"</string>
+    <string name="upsdk_app_download_info_new">"Εγκατάσταση"</string>
+    <string name="upsdk_app_size">"Μέγεθος"</string>
+    <string name="upsdk_app_version">"Έκδοση"</string>
+    <string name="upsdk_cancel">"Άκυρο"</string>
+    <string name="upsdk_checking_update_prompt">"Έλεγχος για ενημερώσεις…"</string>
+    <string name="upsdk_choice_update">"Διαθέσιμη ενημέρωση. Πραγματοποιήστε λήψη και εγκατάσταση της τελευταίας έκδοσης."</string>
+    <string name="upsdk_detail">"Λεπτομέρειες"</string>
+    <string name="upsdk_install">"Εγκαταστήστε το HiApp για ενημέρωση. Να γίνει εγκατάσταση τώρα;"</string>
+    <string name="upsdk_ota_app_name">"Εφαρμογή"</string>
+    <string name="upsdk_ota_cancel">"Αργότερα"</string>
+    <string name="upsdk_ota_force_cancel_new">"Έξοδος"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Ενημέρωση"</string>
+    <string name="upsdk_ota_title">"Νέα έκδοση"</string>
+    <string name="upsdk_update_check_no_new_version">"Χρησιμοποιείτε ήδη την τελευταία έκδοση."</string>
+    <string name="upsdk_updating">"Ενημέρωση"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Δραστικοποιήστε την επιλογή «Δευτερεύουσα εκκίνηση» για την εφαρμογή HiGame στην εφαρμογή «Διαχείριση συσκευής» ή στην επιλογή «Ρυθμίσεις» και προσπαθήστε ξανά."</string>
+    <string name="hms_game_login_notice">"Καλώς ορίσατε, %1$s."</string>
+</resources>

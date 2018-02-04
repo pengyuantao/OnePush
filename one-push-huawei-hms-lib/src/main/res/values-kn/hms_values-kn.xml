@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"ಸರ್ವರ್‌ಗೆ ಸಂಪರ್ಕಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ. ದಯವಿಟ್ಟು ನಂತರ ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."</string>
+    <string name="getting_message_fail_prompt_toast">"ಮಾಹಿತಿ ಹಿಂಪಡೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ನಂತರ ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."</string>
+    <string name="hms_abort">"ನಿಲ್ಲಿಸಿ"</string>
+    <string name="hms_abort_message">"ಡೌನ್‌ಲೋಡ್ ನಿಲ್ಲಿಸುವುದೇ?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s Huawei ಮೊಬೈಲ್ ಸೇವೆಗಳನ್ನು ಬಳಸಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ. ಫೋನ್ ಮ್ಯಾನೇಜರ್ ಪ್ರಾರಂಭಿಸಿ ಅಥವಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಗೆ ಹೋಗಿ, %2$s ಗಾಗಿ ಎಲ್ಲ ಅನುಮತಿಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ (ಸ್ವಯಂ ಪ್ರಾರಂಭ ಮತ್ತು ಎರಡನೇ ಪ್ರಾರಂಭ ಸೇರಿದಂತೆ) ಹಾಗೂ ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."</string>
+    <string name="hms_cancel">"ರದ್ದು"</string>
+    <string name="hms_check_failure">"ನವೀಕರಣಗಳಿಗಾಗಿ ಪರಿಶೀಲಿಸಲು ವಿಫಲವಾಗಿದೆ."</string>
+    <string name="hms_check_no_update">"ನೀವು ಈಗಾಗಲೇ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯನ್ನು ಬಳಸುತ್ತಿರುವಿರಿ."</string>
+    <string name="hms_checking">"ನವೀಕರಣಗಳಿಗೆ ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ…"</string>
+    <string name="hms_confirm">"ಸರಿ"</string>
+    <string name="hms_download_failure">"Huawei ಮೊಬೈಲ್ ಸೇವೆಗಳ ಪ್ಯಾಕೇಜ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ."</string>
+    <string name="hms_download_no_space">"ಸಾಕಷ್ಟು ಉಚಿತ ಸ್ಥಳಾವಕಾಶವಿಲ್ಲ. ಡೌನ್‌ಲೋಡ್ ಪೂರ್ಣಗೊಳಿಸಲು ಆಗುತ್ತಿಲ್ಲ."</string>
+    <string name="hms_download_retry">"ಡೌನ್‌ಲೋಡ್‌ ವಿಫಲವಾಗಿದೆ. ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸುವುದೇ?"</string>
+    <string name="hms_downloading">"Huawei ಮೊಬೈಲ್ ಸೇವೆಗಳು ಡೌನ್‌ಲೋಡ್ ಆಗುತ್ತಿವೆ\nಪ್ರಗತಿ: %d%%"</string>
+    <string name="hms_downloading_loading">"ಡೌನ್‌ಲೋಡ್ ಆಗುತ್ತಿದೆ"</string>
+    <string name="hms_downloading_new">"HMS ಡೌನ್‌ಲೋಡ್ ಆಗುತ್ತಿದೆ"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"ಸ್ಥಾಪಿಸಿ"</string>
+    <string name="hms_install_message">"ಈ ವೈಶಿಷ್ಟ್ಯವನ್ನು ಬಳಸಲು Huawei ಮೊಬೈಲ್ ಸೇವವೆಗಳನ್ನು ಸ್ಥಾಪಿಸಿಕೊಳ್ಳಬೇಕು. ಸ್ಥಾಪಿಸುವುದೇ?"</string>
+    <string name="hms_retry">"ಮರುಪ್ರಯತ್ನಿಸಿ"</string>
+    <string name="hms_update">"ನವೀಕರಿಸಿ"</string>
+    <string name="hms_update_message">"ಈ ವೈಶಿಷ್ಟ್ಯವನ್ನು ಬಳಸಲು Huawei ಮೊಬೈಲ್ ಸೇವೆಗಳ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಗೆ ನವೀಕರಿಸಿ. ಇದೀಗ ನವೀಕರಿಸುವುದೇ?"</string>
+    <string name="hms_update_message_new">"ಈ ಸೇವೆಗೆ ಕೆಳಗಿನ ಅಪ್ಲಿಕೇಶನ್‌ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯ ಅಗತ್ಯವಿದೆ:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei ಮೊಬೈಲ್ ಸೇವೆಗಳು"</string>
+    <string name="no_available_network_prompt_toast">"ಇಂಟರ್ನೆಟ್‌ ಸಂಪರ್ಕವಿಲ್ಲ. ದಯವಿಟ್ಟು ನಿಮ್ಮ ನೆಟ್ವರ್ಕ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಪರಿಶೀಲಿಸಿ."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"ಸ್ಥಾಪನೆ ರದ್ದುಗೊಳಿಸುವುದೇ?"</string>
+    <string name="third_app_dl_install_failed">"ಸ್ಥಾಪನೆ ವಿಫಲವಾಗಿದೆ."</string>
+    <string name="third_app_dl_sure_cancel_download">"ಹೌದು"</string>
+    <string name="upsdk_app_dl_installing">"HiApp ಡೌನ್‌ಲೋಡ್ ಆಗುತ್ತಿದೆ"</string>
+    <string name="upsdk_app_download_info_new">"ಸ್ಥಾಪಿಸಿ"</string>
+    <string name="upsdk_app_size">"ಗಾತ್ರ"</string>
+    <string name="upsdk_app_version">"ಆವೃತ್ತಿ"</string>
+    <string name="upsdk_cancel">"ರದ್ದು"</string>
+    <string name="upsdk_checking_update_prompt">"ನವೀಕರಣಗಳಿಗೆ ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ…"</string>
+    <string name="upsdk_choice_update">"ನವೀಕರಣ ಲಭ್ಯವಿದೆ. ದಯವಿಟ್ಟು ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ ಮತ್ತು ಸ್ಥಾಪಿಸಿ."</string>
+    <string name="upsdk_detail">"ವಿವರಗಳು"</string>
+    <string name="upsdk_install">"ನವೀಕರಿಸಲು HiApp ಸ್ಥಾಪಿಸಿ. ಈಗಲೇ ಸ್ಥಾಪಿಸಬಹುದೇ?"</string>
+    <string name="upsdk_ota_app_name">"ಅಪ್ಲಿ"</string>
+    <string name="upsdk_ota_cancel">"ನಂತರ"</string>
+    <string name="upsdk_ota_force_cancel_new">"ನಿರ್ಗಮಿಸಿ"</string>
+    <string name="upsdk_ota_notify_updatebtn">"ನವೀಕರಿಸಿ"</string>
+    <string name="upsdk_ota_title">"ಹೊಸ ಆವೃತ್ತಿ"</string>
+    <string name="upsdk_update_check_no_new_version">"ನೀವು ಈಗಾಗಲೇ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯನ್ನು ಬಳಸುತ್ತಿರುವಿರಿ."</string>
+    <string name="upsdk_updating">"ನವೀಕರಿಸಲಾಗುತ್ತಿದೆ"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"ಫೋನ್ ಮ್ಯಾನೇಜರ್ ಅಥವಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ HiGame ಗಾಗಿ ಸೆಕೆಂಡರಿ ಆರಂಭವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ."</string>
+    <string name="hms_game_login_notice">"ಸುಸ್ವಾಗತ %1$s"</string>
+</resources>

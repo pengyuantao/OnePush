@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/small_window_layout"
+    android:gravity="center"
+    android:layout_width="48dp"
+    android:layout_height="48dp">
+
+    <ImageView 
+        android:id="@+id/half_hide_small_icon"
+        android:src="@drawable/hms_game_buoy_icon_normal"
+        android:layout_width="36dp"
+        android:layout_height="36dp"/>
+         
+    
+    <ImageView 
+        android:id="@+id/small_icon"
+        android:src="@drawable/hms_game_buoy_icon_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

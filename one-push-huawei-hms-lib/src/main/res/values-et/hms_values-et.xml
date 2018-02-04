@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Serveriga ei saa ühendust luua. Proovige hiljem uuesti."</string>
+    <string name="getting_message_fail_prompt_toast">"Andmeid ei saa hankida. Proovige hiljem uuesti."</string>
+    <string name="hms_abort">"Peata"</string>
+    <string name="hms_abort_message">"Peatada allalaadimine?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s ei saa Huawei mobiilsideteenuseid kasutada. Käivitage telefonihaldur või minge menüüsse Sätted, lubage teenuse %2$s kõik õigused (sh automaatkäivitus ja teisene käivitus) ja proovige uuesti."</string>
+    <string name="hms_cancel">"Tühista"</string>
+    <string name="hms_check_failure">"Värskenduste kontrollimine nurjus."</string>
+    <string name="hms_check_no_update">"Kasutate juba uusimat versiooni."</string>
+    <string name="hms_checking">"Värskenduste kontrollimine…"</string>
+    <string name="hms_confirm">"OK"</string>
+    <string name="hms_download_failure">"Huawei mobiiliteenuste paketi allalaadimine nurjus."</string>
+    <string name="hms_download_no_space">"Pole piisavalt vaba ruumi. Allalaadimist ei saa lõpetada."</string>
+    <string name="hms_download_retry">"Allalaadimine nurjus. Kas proovida uuesti?"</string>
+    <string name="hms_downloading">"Huawei mobiiliteenuste allalaadimine | edenemine: %d%%"</string>
+    <string name="hms_downloading_loading">"Allalaadimine"</string>
+    <string name="hms_downloading_new">"HMS-i allalaadimine"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Installi"</string>
+    <string name="hms_install_message">"Selle funktsiooni kasutamiseks peab Huawei mobiiliteenused olema installitud. Installida?"</string>
+    <string name="hms_retry">"Proovi uuesti"</string>
+    <string name="hms_update">"Värskenda"</string>
+    <string name="hms_update_message">"Selle funktsiooni kasutamiseks värskendage Huawei mobiiliteenused uusimale versioonile. Kas värskendada kohe?"</string>
+    <string name="hms_update_message_new">"See teenus vajab järgmise rakenduse uusimat versiooni:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei mobiiliteenused"</string>
+    <string name="no_available_network_prompt_toast">"Interneti-ühendus puudub. Kontrollige võrgusätteid."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Tühistada installimine?"</string>
+    <string name="third_app_dl_install_failed">"Installimine nurjus."</string>
+    <string name="third_app_dl_sure_cancel_download">"Jah"</string>
+    <string name="upsdk_app_dl_installing">"HiAppi allalaadimine"</string>
+    <string name="upsdk_app_download_info_new">"Installi"</string>
+    <string name="upsdk_app_size">"Maht"</string>
+    <string name="upsdk_app_version">"Versioon"</string>
+    <string name="upsdk_cancel">"Tühista"</string>
+    <string name="upsdk_checking_update_prompt">"Värskenduste otsimine…"</string>
+    <string name="upsdk_choice_update">"Saadaval on värskendus. Laadige alla ja installige uusim versioon."</string>
+    <string name="upsdk_detail">"Üksikasjad"</string>
+    <string name="upsdk_install">"Värskendamiseks installige HiApp. Installida kohe?"</string>
+    <string name="upsdk_ota_app_name">"Rakendus"</string>
+    <string name="upsdk_ota_cancel">"Hiljem"</string>
+    <string name="upsdk_ota_force_cancel_new">"Välju"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Värskenda"</string>
+    <string name="upsdk_ota_title">"Uus versioon"</string>
+    <string name="upsdk_update_check_no_new_version">"Kasutate juba uusimat versiooni."</string>
+    <string name="upsdk_updating">"Värskendamine"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Lubage Telefonihalduris või Sätetes HiGame\'i sekundaarne käivitamine ja proovige uuesti."</string>
+    <string name="hms_game_login_notice">"Tere tulemast! %1$s"</string>
+</resources>

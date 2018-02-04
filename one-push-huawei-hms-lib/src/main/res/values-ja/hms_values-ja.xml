@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"サーバーに接続できませんでした。後で再試行してください。"</string>
+    <string name="getting_message_fail_prompt_toast">"情報を取得できません。後で再試行してください。"</string>
+    <string name="hms_abort">"停止"</string>
+    <string name="hms_abort_message">"ダウンロードを停止しますか？"</string>
+    <string name="hms_bindfaildlg_message">"%1$sはHuawei Mobileサービスを使用できません。端末管理を起動するか[設定]から%2$sのすべての権限を有効にし（自動起動と他のアプリによる起動も含む）、再試行してください"</string>
+    <string name="hms_cancel">"キャンセル"</string>
+    <string name="hms_check_failure">"更新の確認に失敗しました"</string>
+    <string name="hms_check_no_update">"ご利用のバージョンはすでに最新です"</string>
+    <string name="hms_checking">"更新を確認中…"</string>
+    <string name="hms_confirm">"OK"</string>
+    <string name="hms_download_failure">"Huaweiモバイルサービスパッケージのダウンロードに失敗しました"</string>
+    <string name="hms_download_no_space">"十分な空き容量がないため、ダウンロードを完了できません"</string>
+    <string name="hms_download_retry">"ダウンロードに失敗しました。再試行しますか？"</string>
+    <string name="hms_downloading">"Huaweiモバイルサービスをダウンロード中 | %d%%完了"</string>
+    <string name="hms_downloading_loading">"ダウンロード中"</string>
+    <string name="hms_downloading_new">"HMSのダウンロード中"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"インストール"</string>
+    <string name="hms_install_message">"この機能を利用するには、Huaweiモバイルサービスをインストールする必要があります。インストールしますか？"</string>
+    <string name="hms_retry">"再試行"</string>
+    <string name="hms_update">"更新"</string>
+    <string name="hms_update_message">"この機能を使用するには、Huaweiモバイルサービスの最新バージョンに更新してください。今すぐ更新しますか？"</string>
+    <string name="hms_update_message_new">"このサービスでは、以下のアプリの最新バージョンが必要になります。\n\n%1$s"</string>
+    <string name="hms_update_title">"Huaweiモバイルサービス"</string>
+    <string name="no_available_network_prompt_toast">"インターネットに接続されていません。ネットワーク設定を確認してください。"</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"インストールを中止しますか？"</string>
+    <string name="third_app_dl_install_failed">"インストールに失敗しました。"</string>
+    <string name="third_app_dl_sure_cancel_download">"はい"</string>
+    <string name="upsdk_app_dl_installing">"HiAppをダウンロード中"</string>
+    <string name="upsdk_app_download_info_new">"インストール"</string>
+    <string name="upsdk_app_size">"サイズ"</string>
+    <string name="upsdk_app_version">"バージョン"</string>
+    <string name="upsdk_cancel">"キャンセル"</string>
+    <string name="upsdk_checking_update_prompt">"更新を確認中…"</string>
+    <string name="upsdk_choice_update">"利用可能な更新があります。最新版をダウンロードしてインストールしてください。"</string>
+    <string name="upsdk_detail">"詳細"</string>
+    <string name="upsdk_install">"HiAppをインストールして更新してください。今すぐインストールしますか？"</string>
+    <string name="upsdk_ota_app_name">"アプリ"</string>
+    <string name="upsdk_ota_cancel">"後で"</string>
+    <string name="upsdk_ota_force_cancel_new">"終了"</string>
+    <string name="upsdk_ota_notify_updatebtn">"更新"</string>
+    <string name="upsdk_ota_title">"新しいバージョン"</string>
+    <string name="upsdk_update_check_no_new_version">"ご利用のバージョンはすでに最新です。"</string>
+    <string name="upsdk_updating">"更新中"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"端末管理または設定でHiGameの連動を有効にして、再試行してください"</string>
+    <string name="hms_game_login_notice">"%1$sへようこそ"</string>
+</resources>

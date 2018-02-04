@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="16dp"
+		android:layout_marginRight="16dp"
+		android:orientation="vertical" >
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:layout_marginTop="16dp">
+
+			<TextView
+				android:id="@+id/third_app_dl_progress_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="26dp"
+				android:textColor="@color/upsdk_black"
+				android:textSize="13sp" />
+
+			<TextView
+				android:id="@+id/third_app_warn_text"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/third_app_dl_progress_text"
+				android:layout_marginRight="8dp"
+				android:text="@string/upsdk_app_dl_installing"
+				android:textColor="@color/upsdk_black"
+				android:textSize="13sp" />
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical"
+			android:layout_marginBottom="16dp">
+
+			<ImageView
+				android:id="@+id/cancel_imageview"
+				android:layout_width="18dp"
+				android:layout_height="18dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:background="@drawable/upsdk_third_download_bg"/>
+
+			<ProgressBar
+				android:id="@+id/third_app_dl_progressbar"
+				style="?android:attr/progressBarStyleHorizontal"
+				android:layout_width="fill_parent"
+				android:layout_toLeftOf="@id/cancel_imageview"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="8dp"
+				android:layout_height="wrap_content" />
+		</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

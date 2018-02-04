@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"無法連線伺服器，請稍後重試"</string>
+    <string name="getting_message_fail_prompt_toast">"無法獲取資訊，請稍後重試"</string>
+    <string name="hms_abort">"停止"</string>
+    <string name="hms_abort_message">"停止下載？"</string>
+    <string name="hms_bindfaildlg_message">"%1$s 無法正常使用華為流動服務。請嘗試開啟「手機總管」或「設定」，開啟%2$s的所有權限（包含「自動啟動」、「第二次啟動」等），並重試。"</string>
+    <string name="hms_cancel">"取消"</string>
+    <string name="hms_check_failure">"檢查更新失敗。"</string>
+    <string name="hms_check_no_update">"您現在使用的已是最新版本。"</string>
+    <string name="hms_checking">"正在檢查更新…"</string>
+    <string name="hms_confirm">"確定"</string>
+    <string name="hms_download_failure">"下載「華為流動服務」程式套件失敗。"</string>
+    <string name="hms_download_no_space">"空間不足，無法完成下載。"</string>
+    <string name="hms_download_retry">"下載失敗，再試一次？"</string>
+    <string name="hms_downloading">"正在下載「華為流動服務」| 進度：%d%%"</string>
+    <string name="hms_downloading_loading">"載入中"</string>
+    <string name="hms_downloading_new">"正在載入華為流動服務"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"安裝"</string>
+    <string name="hms_install_message">"必須安全華為流動服務才可使用此功能。是否安裝？"</string>
+    <string name="hms_retry">"重試"</string>
+    <string name="hms_update">"更新"</string>
+    <string name="hms_update_message">"更新至最新的「華為流動服務」版本即可使用此功能，立即更新？"</string>
+    <string name="hms_update_message_new">"該服務需安裝以下應用程式的最新版本才能使用：\n\n·%1$s"</string>
+    <string name="hms_update_title">"華為流動服務"</string>
+    <string name="no_available_network_prompt_toast">"沒有互聯網連接，請檢查您的網絡設定。"</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"取消安裝？"</string>
+    <string name="third_app_dl_install_failed">"無法安裝"</string>
+    <string name="third_app_dl_sure_cancel_download">"取消安裝"</string>
+    <string name="upsdk_app_dl_installing">"正在下載應用程式中心"</string>
+    <string name="upsdk_app_download_info_new">"安裝"</string>
+    <string name="upsdk_app_size">"大小"</string>
+    <string name="upsdk_app_version">"版本"</string>
+    <string name="upsdk_cancel">"取消"</string>
+    <string name="upsdk_checking_update_prompt">"正在檢查更新，請稍候…"</string>
+    <string name="upsdk_choice_update">"有可用的更新，快去更新。"</string>
+    <string name="upsdk_detail">"詳細資訊"</string>
+    <string name="upsdk_install">"需安裝應用程式中心以進行更新。立即安裝？"</string>
+    <string name="upsdk_ota_app_name">"應用程式"</string>
+    <string name="upsdk_ota_cancel">"稍後"</string>
+    <string name="upsdk_ota_force_cancel_new">"退出應用程式"</string>
+    <string name="upsdk_ota_notify_updatebtn">"立即更新"</string>
+    <string name="upsdk_ota_title">"發現新版本"</string>
+    <string name="upsdk_update_check_no_new_version">"您現在使用的已是最新版本"</string>
+    <string name="upsdk_updating">"更新中"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"請嘗試開啟「手機總管」或「設定」，開啟 HiGame 的「二次啟動」權限，並重試。"</string>
+    <string name="hms_game_login_notice">"歡迎，華為用戶 %1$s"</string>
+</resources>

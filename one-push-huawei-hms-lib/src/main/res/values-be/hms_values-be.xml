@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Немагчыма падлучыцца да серверу. Калі ласка, паспрабуйце пазней."</string>
+    <string name="getting_message_fail_prompt_toast">"Немагчыма атрымаць даныя. Калі ласка, паспрабуйце пазней."</string>
+    <string name="hms_abort">"Спыніць"</string>
+    <string name="hms_abort_message">"Спыніць спампоўку?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s не можа выкарыстоўваць Мабільныя службы Huawei. Запусціце Дыспетчар тэлефона ці перайдзіце ў Налады, уключыце ўсе дазволы для %2$s (уключаючы аўтаматычны і другасны запускі) і паўтарыце спробу."</string>
+    <string name="hms_cancel">"Адмяніць"</string>
+    <string name="hms_check_failure">"Не ўдалося праверыць наяўнасць абнаўленняў."</string>
+    <string name="hms_check_no_update">"Вы ўжо карыстаецеся апошняй версіяй."</string>
+    <string name="hms_checking">"Праверка абнаўленняў…"</string>
+    <string name="hms_confirm">"ОК"</string>
+    <string name="hms_download_failure">"Не атрымалася спампаваць пакет Паслуг Мабільнай Сувязі Huawei."</string>
+    <string name="hms_download_no_space">"Недастаткова свабоднага месца. Немагчыма завяршыць спампоўку."</string>
+    <string name="hms_download_retry">"Памылка падчас спампоўкі. Паўтарыць спробу?"</string>
+    <string name="hms_downloading">"Спампоўка пакета Паслуг Мабільнай Сувязі Huawei | прагрэс: %d%%"</string>
+    <string name="hms_downloading_loading">"Ідзе спампоўка"</string>
+    <string name="hms_downloading_new">"Загрузка HMS"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Усталяваць"</string>
+    <string name="hms_install_message">"Для карыстання гэтай функцыяй неабходна ўсталяваць Мабільныя сэрвісы Huawei. Усталяваць?"</string>
+    <string name="hms_retry">"Паўтарыць"</string>
+    <string name="hms_update">"Абнавіць"</string>
+    <string name="hms_update_message">"Абнавіцеся да апошняй версіі Паслуг Мабільнай Сувязі Huawei, каб выкарыстоўваць гэту функцыю. Абнавіць зараз?"</string>
+    <string name="hms_update_message_new">"Для гэтай паслугі неабходна апошняя версія наступнай праграмы:\n\n%1$s"</string>
+    <string name="hms_update_title">"Паслугі Мабільнай Сувязі Huawei"</string>
+    <string name="no_available_network_prompt_toast">"Інтэрнэт злучэнне адсутнічае. Калі ласка, праверце сеткавыя налады."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Адмяніць устаноўку?"</string>
+    <string name="third_app_dl_install_failed">"Памылка ўсталявання."</string>
+    <string name="third_app_dl_sure_cancel_download">"Так"</string>
+    <string name="upsdk_app_dl_installing">"Загрузка HiApp"</string>
+    <string name="upsdk_app_download_info_new">"Усталяваць"</string>
+    <string name="upsdk_app_size">"Памер"</string>
+    <string name="upsdk_app_version">"Версія"</string>
+    <string name="upsdk_cancel">"Адмена"</string>
+    <string name="upsdk_checking_update_prompt">"Пошук абнаўленняў…"</string>
+    <string name="upsdk_choice_update">"Абнаўленне даступна. Калі ласка, спампуйце і ўсталюйце апошнюю версію."</string>
+    <string name="upsdk_detail">"Дэталі"</string>
+    <string name="upsdk_install">"Усталюйце HiApp, каб абнавіць. Усталяваць зараз?"</string>
+    <string name="upsdk_ota_app_name">"Праграма"</string>
+    <string name="upsdk_ota_cancel">"Пазней"</string>
+    <string name="upsdk_ota_force_cancel_new">"Выхад"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Абнавіць"</string>
+    <string name="upsdk_ota_title">"Новая версія"</string>
+    <string name="upsdk_update_check_no_new_version">"Вы ўжо карыстаецеся апошнюю версію."</string>
+    <string name="upsdk_updating">"Абнаўленне"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Уключыце функцыю другаснага запуску для HiGame праз Дыспетчар або ў наладах і паўтарыце спробу."</string>
+    <string name="hms_game_login_notice">"Вітаем, %1$s"</string>
+</resources>

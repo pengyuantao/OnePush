@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Невъзможно свързване със сървъра. Моля, опитайте отново по-късно."</string>
+    <string name="getting_message_fail_prompt_toast">"Невъзможно извличане на данни. Моля, опитайте отново по-късно."</string>
+    <string name="hms_abort">"Стоп"</string>
+    <string name="hms_abort_message">"Спиране на изтеглянето?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s не може да използва \"Мобилни услуги на Huawei\". Стартирайте \"Мениджър на телефона\" или отидете в \"Настройки\", активирайте всички разрешения за %2$s (включително авто стартиране и вторично стартиране), след което опитайте отново."</string>
+    <string name="hms_cancel">"Отказ"</string>
+    <string name="hms_check_failure">"Неуспешна проверка за актуализации."</string>
+    <string name="hms_check_no_update">"Вече използвате най-новата версия."</string>
+    <string name="hms_checking">"Проверка за актуализации...."</string>
+    <string name="hms_confirm">"ОК"</string>
+    <string name="hms_download_failure">"Неуспешно изтегляне на пакета за Huawei Mobile Services."</string>
+    <string name="hms_download_no_space">"Няма достатъчно свободно пространство. Изтеглянето не може да бъде завършено."</string>
+    <string name="hms_download_retry">"Неуспешно изтегляне. Нов опит?"</string>
+    <string name="hms_downloading">"Изтегляне на Huawei Mobile Services | изпълнение: %d%%"</string>
+    <string name="hms_downloading_loading">"Изтегляне"</string>
+    <string name="hms_downloading_new">"Изтегляне на HMS"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Инсталиране"</string>
+    <string name="hms_install_message">"Трябва да инсталирате Huawei Mobile Services, за да използвате тази функция. Инсталиране?"</string>
+    <string name="hms_retry">"Повторен опит"</string>
+    <string name="hms_update">"Актуализиране"</string>
+    <string name="hms_update_message">"Актуализирайте до най-новата версия на Huawei Mobile Services, за да използвате тази функция. Актуализиране сега?"</string>
+    <string name="hms_update_message_new">"Тази услуга изисква най-новата версия на следното приложение:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Mobile Services"</string>
+    <string name="no_available_network_prompt_toast">"Няма връзка с интернет. Проверете мрежовите настройки."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Отмяна на инсталацията?"</string>
+    <string name="third_app_dl_install_failed">"Неуспешна инсталация."</string>
+    <string name="third_app_dl_sure_cancel_download">"Да"</string>
+    <string name="upsdk_app_dl_installing">"Изтегляне на HiApp"</string>
+    <string name="upsdk_app_download_info_new">"Инсталиране"</string>
+    <string name="upsdk_app_size">"Размер"</string>
+    <string name="upsdk_app_version">"Версия"</string>
+    <string name="upsdk_cancel">"Отказ"</string>
+    <string name="upsdk_checking_update_prompt">"Проверка за актуализации…"</string>
+    <string name="upsdk_choice_update">"Налична е актуализация. Изтеглете и инсталирайте най-новата версия."</string>
+    <string name="upsdk_detail">"Подробности"</string>
+    <string name="upsdk_install">"Инсталирайте HiApp, за да актуализирате. Инсталиране сега?"</string>
+    <string name="upsdk_ota_app_name">"Приложение"</string>
+    <string name="upsdk_ota_cancel">"По-късно"</string>
+    <string name="upsdk_ota_force_cancel_new">"Изход"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Актуализиране"</string>
+    <string name="upsdk_ota_title">"Нова версия"</string>
+    <string name="upsdk_update_check_no_new_version">"Вече използвате най-новата версия."</string>
+    <string name="upsdk_updating">"Актуализиране"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Активирайте вторично стартиране на HiGame в Мениджър на телефона или Настройки и опитате отново."</string>
+    <string name="hms_game_login_notice">"Добре дошли %1$s"</string>
+</resources>

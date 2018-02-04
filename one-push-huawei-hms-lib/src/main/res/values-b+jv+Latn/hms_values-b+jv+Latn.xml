@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Ora bisa nyambung menyang server. Coba maneh mengko."</string>
+    <string name="getting_message_fail_prompt_toast">"Ora bisa njupuk maneh info. Coba maneh mengko."</string>
+    <string name="hms_abort">"Endheg"</string>
+    <string name="hms_abort_message">"Endheg undhuhan?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s ora bisa nggunakake Layanan Seluler Huawei. Luncurake Atur Telpon utawa bukak Setelan kanggo ngaktifake kabeh izin kanggo %2$s (kalebu luncur otomatis lan luncur sekunder), banjur coba maneh."</string>
+    <string name="hms_cancel">"Wurung"</string>
+    <string name="hms_check_failure">"Gagal mriksa panganyaran."</string>
+    <string name="hms_check_no_update">"Wis nggunakake versi paling anyar."</string>
+    <string name="hms_checking">"Mriksa panganyaran..."</string>
+    <string name="hms_confirm">"OK"</string>
+    <string name="hms_download_failure">"Gagal ngundhuh paket Layanan Seluler Huawei."</string>
+    <string name="hms_download_no_space">"Spasi bebas ora cukup. Undhuhan ora bisa rampung."</string>
+    <string name="hms_download_retry">"Undhuh gagal. Coba maneh?"</string>
+    <string name="hms_downloading">"Ngundhuh Layanan Seluler Huawei | progres: %d%%"</string>
+    <string name="hms_downloading_loading">"Ngundhuh"</string>
+    <string name="hms_downloading_new">"Ngundhuh HMS"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Instal"</string>
+    <string name="hms_install_message">"Layanan Seluler Huawei kudu diinstal nggo nggunakake fitur iki. Instal?"</string>
+    <string name="hms_retry">"Coba maneh"</string>
+    <string name="hms_update">"Anyarake"</string>
+    <string name="hms_update_message">"Anyarake dadi Layanan Seluler Huawei versi paling anyar kanggo nggunakake fitur iki. Anyarake saiki?"</string>
+    <string name="hms_update_message_new">"Layanan iki mbutuhake versi paling anyar apl ing ngisor iki.\n\n%1$s"</string>
+    <string name="hms_update_title">"Layanan Seluler Huawei"</string>
+    <string name="no_available_network_prompt_toast">"Raana samb internet. Priksa setelan jaringan."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Wurung inst?"</string>
+    <string name="third_app_dl_install_failed">"Instalasi gagal."</string>
+    <string name="third_app_dl_sure_cancel_download">"Ya"</string>
+    <string name="upsdk_app_dl_installing">"Ngundhuh HiApp"</string>
+    <string name="upsdk_app_download_info_new">"Instal"</string>
+    <string name="upsdk_app_size">"Ukrn"</string>
+    <string name="upsdk_app_version">"Vers"</string>
+    <string name="upsdk_cancel">"Wurung"</string>
+    <string name="upsdk_checking_update_prompt">"Mriksa panganyaran..."</string>
+    <string name="upsdk_choice_update">"Panganyaran sumadhiya. Undhuh &amp; instal versi anyar."</string>
+    <string name="upsdk_detail">"Rincian"</string>
+    <string name="upsdk_install">"Instal HiApp kanggo nganyarake. Instal saiki?"</string>
+    <string name="upsdk_ota_app_name">"Apl"</string>
+    <string name="upsdk_ota_cancel">"Mengko"</string>
+    <string name="upsdk_ota_force_cancel_new">"Metu"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Anyarake"</string>
+    <string name="upsdk_ota_title">"Versi anyar"</string>
+    <string name="upsdk_update_check_no_new_version">"Wis nggunakake versi paling anyar."</string>
+    <string name="upsdk_updating">"Nganyarke"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Aktifake Luncur sekunder kanggo HiGame ing Atur Telpon utawa Setelan lan coba maneh."</string>
+    <string name="hms_game_login_notice">"Sugeng rawuh %1$s"</string>
+</resources>

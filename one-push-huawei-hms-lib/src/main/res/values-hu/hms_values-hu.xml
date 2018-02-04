@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Nem lehet csatlakozni a szerverhez. Próbálja újra később."</string>
+    <string name="getting_message_fail_prompt_toast">"Információ lekérése sikertelen. Próbálja újra később."</string>
+    <string name="hms_abort">"Leállítás"</string>
+    <string name="hms_abort_message">"Leállítja a letöltést?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s nem tudja használni a Huawei Mobile Services-t. Indítsa el a Telefonkezelőt, vagy lépjen a Beállításokba és engedélyezze a(z) %2$s összes jogosultságát (beleértve az automatikus indítást és másodlagos indítást), majd próbálja újra."</string>
+    <string name="hms_cancel">"Mégse"</string>
+    <string name="hms_check_failure">"Frissítések keresése sikertelen."</string>
+    <string name="hms_check_no_update">"Már a legfrissebb verziót használja."</string>
+    <string name="hms_checking">"Frissítések keresése..."</string>
+    <string name="hms_confirm">"OK"</string>
+    <string name="hms_download_failure">"A Huawei Mobile Services csomag letöltése sikertelen."</string>
+    <string name="hms_download_no_space">"Nincs elég tárhely. A letöltés nem fejezhető be."</string>
+    <string name="hms_download_retry">"Letöltés sikertelen. Újrapróbálja?"</string>
+    <string name="hms_downloading">"Huawei Mobile Services letöltése | állapot: %d%%"</string>
+    <string name="hms_downloading_loading">"Letöltés"</string>
+    <string name="hms_downloading_new">"HMS letöltése"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Telepítés"</string>
+    <string name="hms_install_message">"A Huawei Mobile Services telepítve kell legyen a funkció használatához. Telepíti?"</string>
+    <string name="hms_retry">"Újra"</string>
+    <string name="hms_update">"Frissítés"</string>
+    <string name="hms_update_message">"A funkció használatához frissítsen a Huawei Mobile Services legfrissebb verzióra. Frissíti most?"</string>
+    <string name="hms_update_message_new">"A szolgáltatásnak szüksége van az alábbi alkalmazás legfrissebb verziójára:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Mobile Services"</string>
+    <string name="no_available_network_prompt_toast">"Nincs internetkapcsolat. Ellenőrizze a hálózati beállításait."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Megszakítja a telepítést?"</string>
+    <string name="third_app_dl_install_failed">"Telepítés sikertelen."</string>
+    <string name="third_app_dl_sure_cancel_download">"Igen"</string>
+    <string name="upsdk_app_dl_installing">"HiApp letöltése"</string>
+    <string name="upsdk_app_download_info_new">"Telepítés"</string>
+    <string name="upsdk_app_size">"Méret"</string>
+    <string name="upsdk_app_version">"Verzió"</string>
+    <string name="upsdk_cancel">"Mégse"</string>
+    <string name="upsdk_checking_update_prompt">"Frissítések keresése..."</string>
+    <string name="upsdk_choice_update">"Frissítés érhető el. Töltse le, és telepítse a legfrissebb verziót."</string>
+    <string name="upsdk_detail">"Részletek"</string>
+    <string name="upsdk_install">"Telepítse a HiApp-ot a frissítéshez. Telepíti most?"</string>
+    <string name="upsdk_ota_app_name">"Alkalmazás"</string>
+    <string name="upsdk_ota_cancel">"Később"</string>
+    <string name="upsdk_ota_force_cancel_new">"Kilépés"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Frissítés"</string>
+    <string name="upsdk_ota_title">"Új verzió"</string>
+    <string name="upsdk_update_check_no_new_version">"Már a legfrissebb verziót használja."</string>
+    <string name="upsdk_updating">"Frissítés"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Engedélyezze a másodlagos indítást a HiGame számára a Telefonkezelő vagy beállítások alatt, és próbálja újra."</string>
+    <string name="hms_game_login_notice">"Üdvözöljük, %1$s"</string>
+</resources>

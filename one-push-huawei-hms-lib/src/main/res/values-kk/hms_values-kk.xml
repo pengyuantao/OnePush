@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Серверге қосылу мүмкін емес. Әрекетті кейінірек қайталаңыз."</string>
+    <string name="getting_message_fail_prompt_toast">"Ақпаратты шығарып алу мүмкін емес. Әрекетті кейінірек қайталаңыз."</string>
+    <string name="hms_abort">"Тоқтату"</string>
+    <string name="hms_abort_message">"Жүктеп алуды тоқтату керек пе?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s Huawei Mobile Services пайдалана алмайды. Phone Manager қолданбасын іске қосыңыз немесе «Параметрлер» тармағына өтіңіз, %2$s рұқсаттарының барлығын (соның ішінде автоматты түрде іске қосуды және қосымша іске қосуды) қосыңыз және әрекетті қайталаңыз."</string>
+    <string name="hms_cancel">"Бас тарту"</string>
+    <string name="hms_check_failure">"Жаңартулар тексерілмеді."</string>
+    <string name="hms_check_no_update">"Ең соңғы нұсқасын бұрыннан пайдаланудасыз."</string>
+    <string name="hms_checking">"Жаңартулар тексерілуде…"</string>
+    <string name="hms_confirm">"OK"</string>
+    <string name="hms_download_failure">"Huawei Mobile Services бумасы жүктеп алынбады."</string>
+    <string name="hms_download_no_space">"Бос орын жеткіліксіз. Жүктеп алуды аяқтау мүмкін емес."</string>
+    <string name="hms_download_retry">"Жүктеп алынбады. Әрекетті қайталау керек пе?"</string>
+    <string name="hms_downloading">"Huawei Mobile Services жүктеп алынуда | орындалу барысы: %d%%"</string>
+    <string name="hms_downloading_loading">"Жүктелуде"</string>
+    <string name="hms_downloading_new">"HMS жүктелуде"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Орнату"</string>
+    <string name="hms_install_message">"Осы мүмкіндікті пайдалану үшін Huawei Ұялы қызметтерін орнату керек. Орнатылсын ба?"</string>
+    <string name="hms_retry">"Қайталау"</string>
+    <string name="hms_update">"Жаңарту"</string>
+    <string name="hms_update_message">"Бұл мүмкіндікті пайдалану үшін Huawei Mobile Services бумасының соңғы нұсқасына дейін жаңартыңыз. Қазір жаңарту керек пе?"</string>
+    <string name="hms_update_message_new">"Бұл қызмет келесі қолданбаның соңғы нұсқасын қажет етеді:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Mobile Services"</string>
+    <string name="no_available_network_prompt_toast">"Интернет байланысы жоқ. Желі параметрлерін тексеріңіз."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Орнатудан бас тарту керек пе?"</string>
+    <string name="third_app_dl_install_failed">"Орнату сәтсіз аяқталды."</string>
+    <string name="third_app_dl_sure_cancel_download">"Иә"</string>
+    <string name="upsdk_app_dl_installing">"HiApp жүктелуде"</string>
+    <string name="upsdk_app_download_info_new">"Орнату"</string>
+    <string name="upsdk_app_size">"Өлшемі"</string>
+    <string name="upsdk_app_version">"Нұсқа"</string>
+    <string name="upsdk_cancel">"Бас тарту"</string>
+    <string name="upsdk_checking_update_prompt">"Жаңартулар бар-жоғы тексерілуде…"</string>
+    <string name="upsdk_choice_update">"Жаңарту қолжетімді. Соңғы нұсқаны жүктеп, орнатыңыз."</string>
+    <string name="upsdk_detail">"Мәліметтер"</string>
+    <string name="upsdk_install">"Жаңарту үшін HiApp қолданбасын орнатыңыз. Қазір орнату керек пе?"</string>
+    <string name="upsdk_ota_app_name">"Қолданба"</string>
+    <string name="upsdk_ota_cancel">"Кейінірек"</string>
+    <string name="upsdk_ota_force_cancel_new">"Шығу"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Жаңарту"</string>
+    <string name="upsdk_ota_title">"Жаңа нұсқа"</string>
+    <string name="upsdk_update_check_no_new_version">"Қазір соңғы нұсқаны пайдаланып жатырсыз."</string>
+    <string name="upsdk_updating">"Жаңартылуда"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Телефон реттеушісі немесе Параметрлер ішінде HiGame үшін Қосалқы іске қосу мүмкіндігін қосып, әрекетті қайталаңыз."</string>
+    <string name="hms_game_login_notice">"%1$s, қош келдіңіз"</string>
+</resources>

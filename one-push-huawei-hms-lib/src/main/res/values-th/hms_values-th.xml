@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"ไม่สามารถเชื่อมต่อเซิร์ฟเวอร์ได้ โปรดลองใหม่อีกครั้งภายหลัง"</string>
+    <string name="getting_message_fail_prompt_toast">"ไม่สามารถรับข้อมูลได้ โปรดลองใหม่อีกครั้งภายหลัง"</string>
+    <string name="hms_abort">"หยุด"</string>
+    <string name="hms_abort_message">"หยุดการดาวน์โหลดหรือไม่"</string>
+    <string name="hms_bindfaildlg_message">"%1$s ไม่สามารถใช้การบริการโทรศัพท์มือถือ Huawei ได้ โปรดเปิดการใช้งานตัวจัดการโทรศัพท์หรือไปที่การตั้งค่า เปิดใช้งานการอนุญาตทั้งหมดสำหรับ %2$s (รวมทั้งเปิดใช้งานโดยอัตโนมัติและเปิดใช้งานรอง) และลองอีกครั้ง"</string>
+    <string name="hms_cancel">"ยกเลิก"</string>
+    <string name="hms_check_failure">"ตรวจสอบการอัปเดตไม่สำเร็จ"</string>
+    <string name="hms_check_no_update">"คุณกำลังใช้เวอร์ชันล่าสุด"</string>
+    <string name="hms_checking">"กำลังตรวจสอบการอัปเดต..."</string>
+    <string name="hms_confirm">"ตกลง"</string>
+    <string name="hms_download_failure">"ดาวน์โหลดแพคเกจบริการมือถือ Huawei ไม่สำเร็จ"</string>
+    <string name="hms_download_no_space">"พื้นที่ว่างไม่เพียงพอ ไม่สามารถดาวน์โหลดได้อย่างสมบูรณ์"</string>
+    <string name="hms_download_retry">"ดาวน์โหลดไม่สำเร็จ ลองอีกครั้งหรือไม่"</string>
+    <string name="hms_downloading">"กำลังดาวน์โหลดบริการมือถือ Huawei | ความคืบหน้า: %d%%"</string>
+    <string name="hms_downloading_loading">"กำลังดาวน์โหลด"</string>
+    <string name="hms_downloading_new">"กำลังดาวน์โหลด HMS"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"ติดตั้ง"</string>
+    <string name="hms_install_message">"การบริการมือถือ Huawei จะต้องถูกติดตั้งเพื่อใช้ฟีเจอร์นี้ ติดตั้งหรือไม่"</string>
+    <string name="hms_retry">"ลองใหม่"</string>
+    <string name="hms_update">"อัปเดต"</string>
+    <string name="hms_update_message">"อัปเดตบริการมือถือ Huawei เป็นเวอร์ชันล่าสุด เพื่อใช้ฟีเจอร์นี้ อัปเดตตอนนี้หรือไม่"</string>
+    <string name="hms_update_message_new">"บริการนี้ต้องใช้เวอร์ชันล่าสุดของแอปต่อไปนี้:\n\n%1$s"</string>
+    <string name="hms_update_title">"บริการมือถือ Huawei"</string>
+    <string name="no_available_network_prompt_toast">"ไม่มีการเชื่อมต่ออินเทอร์เน็ต โปรดตรวจสอบการตั้งค่าเครือข่ายของคุณ"</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"ยกเลิกการติดตั้งหรือไม่"</string>
+    <string name="third_app_dl_install_failed">"การติดตั้งล้มเหลว"</string>
+    <string name="third_app_dl_sure_cancel_download">"ใช่"</string>
+    <string name="upsdk_app_dl_installing">"กำลังดาวน์โหลด HiApp"</string>
+    <string name="upsdk_app_download_info_new">"ติดตั้ง"</string>
+    <string name="upsdk_app_size">"ขนาด"</string>
+    <string name="upsdk_app_version">"เวอร์ชัน"</string>
+    <string name="upsdk_cancel">"ยกเลิก"</string>
+    <string name="upsdk_checking_update_prompt">"กำลังตรวจสอบการอัปเดต..."</string>
+    <string name="upsdk_choice_update">"การอัปเดตพร้อมใช้งาน โปรดดาวน์โหลดและติดตั้งเวอร์ชันล่าสุด"</string>
+    <string name="upsdk_detail">"รายละเอียด"</string>
+    <string name="upsdk_install">"ติดตั้ง HiApp เพื่ออัปเดต ติดตั้งตอนนี้หรือไม่"</string>
+    <string name="upsdk_ota_app_name">"แอป"</string>
+    <string name="upsdk_ota_cancel">"ภายหลัง"</string>
+    <string name="upsdk_ota_force_cancel_new">"ออก"</string>
+    <string name="upsdk_ota_notify_updatebtn">"อัปเดต"</string>
+    <string name="upsdk_ota_title">"เวอร์ชันใหม่"</string>
+    <string name="upsdk_update_check_no_new_version">"คุณกำลังใช้เวอร์ชันล่าสุดอยู่แล้ว"</string>
+    <string name="upsdk_updating">"กำลังอัปเดต"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"เปิดใช้การเปิดใช้งานรองสำหรับ HiGame ในตัวจัดการโทรศัพท์หรือการตั้งค่าและลองอีกครั้ง"</string>
+    <string name="hms_game_login_notice">"ยินดีต้อนรับ %1$s"</string>
+</resources>

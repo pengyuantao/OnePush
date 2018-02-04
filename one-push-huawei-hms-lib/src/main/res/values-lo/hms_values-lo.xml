@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"ບໍ່ສາມາດເຊື່ອມຕໍ່ກັບເຊີບ​ເວີໄດ້. ກະລຸນາລອງໃໝ່ອີກພາຍຫຼັງ."</string>
+    <string name="getting_message_fail_prompt_toast">"ບໍ່ສາມາດດຶງຂໍ້ມູນໄດ້. ກະລຸນາລອງໃໝ່ອີກພາຍຫຼັງ."</string>
+    <string name="hms_abort">"ຢຸດ"</string>
+    <string name="hms_abort_message">"ຢຸດ​ການດາວ​ໂຫຼດ​ບໍ?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s ບໍ່​ສາ​ມາດ​ໃຊ້​ບໍ​ລິ​ການ​ມື​ຖື Huawei ໄດ້. ກະ​ລຸ​ນາ​ເປີດ​ນຳ​ໃຊ້​ຕົວ​ຈັດ​ການ​ໂທ​ລະ​ສັບ ຫຼື ໄປ​ທີ່​ການ​ຕັ້ງ​ຄ່າ, ເປີດ​ໃຊ້​ງານ​ການ​ອະ​ນຸ​ຍາດ​ທັງ​ໝົດ​ສຳ​ລັບ %2$s (ລວມ​ທັງ​ການ​ເປີດ​ນຳ​ໃຊ້​ອັດ​ຕະ​ໂນ​ມັດ ແລະ ການ​ເປີດ​ນຳ​ໃຊ້​ສຳ​ຮອງ), ແລະ ລອງ​ໃໝ່​ອີກ."</string>
+    <string name="hms_cancel">"ຍົກ​ເລີກ​"</string>
+    <string name="hms_check_failure">"ຊອກ​ຫາ​ການ​ອັບ​ເດດ​ບໍ່​ສຳ​ເລັດ."</string>
+    <string name="hms_check_no_update">"ທ່ານ​ກຳ​ລັງ​ໃຊ້​ເວີ​ຊັນ​ຫຼ້າ​ສຸດ​ຢູ່​ແລ້ວ."</string>
+    <string name="hms_checking">"ກຳ​ລັງ​ກວດ​ຫາ​ການ​ອັບ​ເດດ..."</string>
+    <string name="hms_confirm">"ຕົກ​ລົງ"</string>
+    <string name="hms_download_failure">"ດາວ​ໂຫຼດ​ແພັກ​ເກດ​ການ​ບໍ​ລິ​ການ Huawei Mobile ບໍ່​ສຳ​ເລັດ."</string>
+    <string name="hms_download_no_space">"ບໍ່​ມີ​ພື້ນ​ທີ່​ຫວ່າງພຽງ​ພໍ. ບໍ່​ສາ​ມາດ​ດາວ​ໂຫຼດ​ສຳ​ເລັດ​ໄດ້."</string>
+    <string name="hms_download_retry">"ດາວ​ໂຫຼດ​ບໍ່​ສຳ​ເລັດ. ລອງໃໝ່ອີກບໍ?"</string>
+    <string name="hms_downloading">"ກຳ​ລັງ​ດາວ​ໂຫຼດການ​ບໍ​ລິ​ການ Huawei Mobile | ຄື​ບ​ໜ້າ: %d%%"</string>
+    <string name="hms_downloading_loading">"​ກຳລັງ​ດາວ​ໂຫຼດ"</string>
+    <string name="hms_downloading_new">"ກຳ​ລັງດາວໂຫຼດ HMS"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"​ຕິດ​ຕັ້ງ"</string>
+    <string name="hms_install_message">"ຈະ​ຕ້ອງ​ຕິດ​ຕັ້ງ​ການ​ບໍ​ລິ​ການ Huawei Mobile ເພື່ອ​ໃຊ້​ຟີ​ເຈີ​ນີ້. ​ຕິດ​ຕັ້ງບໍ?"</string>
+    <string name="hms_retry">"ລອງໃໝ່ອີກ"</string>
+    <string name="hms_update">"ອັບເດດ"</string>
+    <string name="hms_update_message">"ອັບ​ເດດ​ເປັນການ​ບໍ​ລິ​ການ Huawei Mobile ​ເວີ​ຊັນ​ຫຼ້າ​ສຸດ ເພື່ອ​ໃຊ້​ຟີ​ເຈີ​ນີ້. ອັບ​ເດດ​ດຽວ​ນີ້​ບໍ?"</string>
+    <string name="hms_update_message_new">"ການບໍລິການນີ້ຕ້ອງການລຸ້ນຫຼ້າສຸດຂອງແອັບຕໍ່ໄປນີ້:\n\n\%1$s"</string>
+    <string name="hms_update_title">"ການ​ບໍ​ລິ​ການ Huawei Mobile"</string>
+    <string name="no_available_network_prompt_toast">"ບໍ່​ມີ​ການ​ເຊື່ອມ​ຕໍ່​ອິນ​ເຕີ​ເນັດ. ກະ​ລຸ​ນາ​ກວດ​ເບິ່ງ​ການຕັ້ງ​ຄ່າ​ເຄືອ​ຂ່າຍຂອງ​ທ່ານ."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"ຍົກ​ເລີກ​ການ​ຕິດ​ຕັ້ງ​ບໍ?"</string>
+    <string name="third_app_dl_install_failed">"ການຕິດຕັ້ງຫຼົ້ມ​ເຫຼວ."</string>
+    <string name="third_app_dl_sure_cancel_download">"​ແມ່ນແລ້ວ"</string>
+    <string name="upsdk_app_dl_installing">"ກຳ​ລັງດາວ​ໂຫຼດ HiApp"</string>
+    <string name="upsdk_app_download_info_new">"​ຕິດ​ຕັ້ງ"</string>
+    <string name="upsdk_app_size">"ຂະໜາດ"</string>
+    <string name="upsdk_app_version">"​ເວີ​ຊັນ"</string>
+    <string name="upsdk_cancel">"​ຍົກ​ເລີກ"</string>
+    <string name="upsdk_checking_update_prompt">"ກຳ​ລັງ​ກວດ​ຫາ​ການ​ອັບ​ເດດ..."</string>
+    <string name="upsdk_choice_update">"ມີການອັບເດດຢູ່. ກະ​ລຸ​ນາ​ດາວ​ໂຫຼດ ແລະ ຕິດ​ຕັ້ງ​ເວີ​ຊັນ​ຫຼ້າ​ສຸດ."</string>
+    <string name="upsdk_detail">"ລາຍລະອຽດ"</string>
+    <string name="upsdk_install">"ຕິດ​ຕັ້ງ HiApp ເພື່​​ອ​ອັບ​ເດດ. ຕິດ​ຕັ້ງ​ດຽວ​ນີ້ບໍ?"</string>
+    <string name="upsdk_ota_app_name">"ແອັບ"</string>
+    <string name="upsdk_ota_cancel">"ພາຍຫຼັງ"</string>
+    <string name="upsdk_ota_force_cancel_new">"ອອກ"</string>
+    <string name="upsdk_ota_notify_updatebtn">"ອັບເດດ"</string>
+    <string name="upsdk_ota_title">"ເວີ​ຊັນ​ໃໝ່"</string>
+    <string name="upsdk_update_check_no_new_version">"ທ່ານ​ກຳ​ລັງ​ໃຊ້​ເວີ​ຊັນ​ຫຼ້າ​ສຸດ​ຢູ່​ແລ້ວ."</string>
+    <string name="upsdk_updating">"ກຳລັງອັບເດດ"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"​ເປີດ​ໃຊ້​ງານ​ການ​ເປີດ​ນຳ​ໃຊ້ສຳຮອງ​ສຳລັບ HiGame ​ໃນຕົວ​ຈັດ​ການ​ໂທ​ລະ​ສັບ ຫຼື ການຕັ້ງຄ່າ ​ແລ້ວ​ລອງ​ອີກ​ຄັ້ງ."</string>
+    <string name="hms_game_login_notice">"ຍິນ​ດີ​ຕ້ອນ​ຮັບ %1$s"</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"சேவையகத்துடன் இணைக்க முடியவில்லை. பின்னர் மீண்டும் முயலவும்."</string>
+    <string name="getting_message_fail_prompt_toast">"தகவலை மீட்டெடுக்க இயலவில்லை. பின்னர் மீண்டும் முயலவும்."</string>
+    <string name="hms_abort">"நிறுத்து"</string>
+    <string name="hms_abort_message">"பதிவிறக்குவதை நிறுத்தவா?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s-ஆல் Huawei Huawei Mobile Services-ஐப் பயன்படுத்த இயலவில்லை. ஃபோன் நிர்வாகியைத் தொடங்கி அல்லது அமைப்புகளுக்குச் சென்று, %2$s-க்கான (தன்னியக்கத் தொடக்கம் மற்றும் இரண்டாம் நிலைத் தொடக்கம் உள்ளிட்ட) அனைத்து அனுமதிகளையும் செயல்படுத்திவிட்டு, மீண்டும் முயலவும்."</string>
+    <string name="hms_cancel">"ரத்து"</string>
+    <string name="hms_check_failure">"புதுப்பிப்புகள் உள்ளதா என்று பார்ப்பதில் தோல்வியுற்றது."</string>
+    <string name="hms_check_no_update">"ஏற்கனவே சமீபத்திய பதிப்பைப் பயன்படுத்துகிறீர்கள்."</string>
+    <string name="hms_checking">"புதுப்பிப்புகள் உள்ளனவா எனச் சரிபார்க்கிறது…"</string>
+    <string name="hms_confirm">"சரி"</string>
+    <string name="hms_download_failure">"Huawei Mobile Services தொகுப்பைப் பதிவிறக்க முடியவில்லை."</string>
+    <string name="hms_download_no_space">"போதுமான அளவு காலி இடம் இல்லை. பதிவிறக்கம் நிறைவடையவில்லை."</string>
+    <string name="hms_download_retry">"பதிவிறக்கம் தோல்வி. மீண்டும் முயற்சிக்கவா?"</string>
+    <string name="hms_downloading">"Huawei Mobile Services பதிவிறங்குகிறது\nசெயல்நிலை: %d%%"</string>
+    <string name="hms_downloading_loading">"பதிவிறக்குகிறது"</string>
+    <string name="hms_downloading_new">"HMS-ஐப் பதிவிறக்குகிறது"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"நிறுவு"</string>
+    <string name="hms_install_message">"இந்த அம்சத்தைப் பயன்படுத்துவதற்கு Huawei Mobile Services-ஐ நிறுவவேண்டும். நிறுவவா?"</string>
+    <string name="hms_retry">"மீண்டும் முயலவும்"</string>
+    <string name="hms_update">"புதுப்பி"</string>
+    <string name="hms_update_message">"இந்த அம்சத்தைப் பயன்படுத்துவதற்கு Huawei Mobile Services-இன் சமீபத்திய பதிப்புக்கு புதுப்பிக்கவும். இப்போதே புதுப்பிக்கவா?"</string>
+    <string name="hms_update_message_new">"இந்தச் சேவை பின்வரும் செயலியின் சமீபத்திய பதிப்புக்குத் தேவைப்படுகிறது:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Mobile Services"</string>
+    <string name="no_available_network_prompt_toast">"இணைய இணைப்பு இல்லை. உங்கள் பிணைய அமைப்புகளைச் சரிபார்க்கவும்."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"நிறுவலை ரத்துசெய்யவா?"</string>
+    <string name="third_app_dl_install_failed">"நிறுவல் தோல்வி."</string>
+    <string name="third_app_dl_sure_cancel_download">"ஆம்"</string>
+    <string name="upsdk_app_dl_installing">"HiApp-ஐப் பதிவிறக்குகிறது"</string>
+    <string name="upsdk_app_download_info_new">"நிறுவு"</string>
+    <string name="upsdk_app_size">"அளவு"</string>
+    <string name="upsdk_app_version">"பதிப்பு"</string>
+    <string name="upsdk_cancel">"ரத்து"</string>
+    <string name="upsdk_checking_update_prompt">"புதுப்பிப்புகள் உள்ளனவா எனச் சரிபார்க்கிறது…"</string>
+    <string name="upsdk_choice_update">"புதுப்பித்தல் கிடைக்கிறது. சமீபத்திய பதிப்பைப் பதிவிறக்கி நிறுவவும்."</string>
+    <string name="upsdk_detail">"விவரங்கள்"</string>
+    <string name="upsdk_install">"புதுப்பிப்பதற்கு HiApp-ஐ நிறுவவும். இப்போதே நிறுவவா?"</string>
+    <string name="upsdk_ota_app_name">"செயலி"</string>
+    <string name="upsdk_ota_cancel">"பின்னர்"</string>
+    <string name="upsdk_ota_force_cancel_new">"வெளியேறு"</string>
+    <string name="upsdk_ota_notify_updatebtn">"புதுப்பி"</string>
+    <string name="upsdk_ota_title">"புதிய பதிப்பு"</string>
+    <string name="upsdk_update_check_no_new_version">"ஏற்கனவே சமீபத்திய பதிப்பைப் பயன்படுத்துகிறீர்கள்."</string>
+    <string name="upsdk_updating">"புதுப்பிக்கிறது"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"ஃபோன் நிர்வாகி அல்லது அமைப்புகளில் HiGame-க்கான இரண்டாம் வெளியீட்டு தொடக்கத்தைச் செயல்படுத்தி, மீண்டும் முயற்சிக்கவும்."</string>
+    <string name="hms_game_login_notice">"வணக்கம் %1$s"</string>
+</resources>

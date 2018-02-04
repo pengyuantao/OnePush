@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Verbinden mit dem Server nicht möglich. Versuchen Sie es später erneut."</string>
+    <string name="getting_message_fail_prompt_toast">"Abrufen von Informationen nicht möglich. Versuchen Sie es später erneut."</string>
+    <string name="hms_abort">"Anhalten"</string>
+    <string name="hms_abort_message">"Download anhalten?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s kann Huawei-Mobildienste nicht nutzen. Öffnen Sie den Telefonmanager oder gehen Sie zu Einstellungen, um sämtliche Berechtigungen für %2$s zu aktivieren (auch Auto-Start und sekundärer Start) und es anschließend erneut zu versuchen."</string>
+    <string name="hms_cancel">"Abbrechen"</string>
+    <string name="hms_check_failure">"Fehler bei der Suche nach Aktualisierungen."</string>
+    <string name="hms_check_no_update">"Sie verwenden bereits die neueste Version."</string>
+    <string name="hms_checking">"Aktualisierungen werden gesucht …"</string>
+    <string name="hms_confirm">"OK"</string>
+    <string name="hms_download_failure">"Fehler beim Herunterladen des Pakets für Huawei-Mobildienste."</string>
+    <string name="hms_download_no_space">"Nicht genügend freier Speicherplatz. Download kann nicht abgeschlossen werden."</string>
+    <string name="hms_download_retry">"Download fehlgeschlagen. Erneut versuchen?"</string>
+    <string name="hms_downloading">"Huawei-Mobildienste werden heruntergeladen | Fortschritt: %d %%"</string>
+    <string name="hms_downloading_loading">"Herunterladen"</string>
+    <string name="hms_downloading_new">"HMS herunterladen ..."</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Installieren"</string>
+    <string name="hms_install_message">"Huawei-Mobildienste müssen installiert sein, um diese Funktion zu nutzen. Installieren?"</string>
+    <string name="hms_retry">"Wiederholen"</string>
+    <string name="hms_update">"Aktualisieren"</string>
+    <string name="hms_update_message">"Aktualisieren Sie auf die neueste Version der Huawei-Mobildienste, um diese Funktion verwenden zu können. Jetzt aktualisieren?"</string>
+    <string name="hms_update_message_new">"Dieser Dienst benötigt die neueste Version der folgenden App:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei-Mobildienste"</string>
+    <string name="no_available_network_prompt_toast">"Keine Internetverbindung. Prüfen Sie Ihre Netzwerkeinstellungen."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Installation abbrechen?"</string>
+    <string name="third_app_dl_install_failed">"Installieren fehlgeschlagen"</string>
+    <string name="third_app_dl_sure_cancel_download">"Ja"</string>
+    <string name="upsdk_app_dl_installing">"HiApp herunterladen"</string>
+    <string name="upsdk_app_download_info_new">"Installieren"</string>
+    <string name="upsdk_app_size">"Größe"</string>
+    <string name="upsdk_app_version">"Version"</string>
+    <string name="upsdk_cancel">"Abbrechen"</string>
+    <string name="upsdk_checking_update_prompt">"Nach Updates suchen ..."</string>
+    <string name="upsdk_choice_update">"Aktualisierung verfügbar. Laden und installieren Sie die neuste Version."</string>
+    <string name="upsdk_detail">"Details"</string>
+    <string name="upsdk_install">"Zum Aktualisieren HiApp installieren. Jetzt installieren?"</string>
+    <string name="upsdk_ota_app_name">"App"</string>
+    <string name="upsdk_ota_cancel">"Später"</string>
+    <string name="upsdk_ota_force_cancel_new">"Beenden"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Aktualisieren"</string>
+    <string name="upsdk_ota_title">"Neue Version"</string>
+    <string name="upsdk_update_check_no_new_version">"Sie verwenden bereits die neuste Version."</string>
+    <string name="upsdk_updating">"Aktualisieren ..."</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Aktivieren Sie Sekundärer Start für HiGame im Telefonmanager oder in den Einstellungen und versuchen Sie es erneut."</string>
+    <string name="hms_game_login_notice">"Willkommen %1$s"</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"غير قادر على الاتصال بالخادم، يُرجى إعادة المحاولة لاحقًا"</string>
+    <string name="getting_message_fail_prompt_toast">"غير قادر على الحصول على المعلومات، يُرجى إعادة المحاولة لاحقًا"</string>
+    <string name="hms_abort">"إيقاف"</string>
+    <string name="hms_abort_message">"هل تريد إيقاف التنزيل؟"</string>
+    <string name="hms_bindfaildlg_message">"\"%1$s\" غير قادر على استخدام خدمات هواوي للجوال. يُرجى تشغيل مدير الهاتف أو الذهاب إلى الإعدادات، وتمكين جميع أذونات %2$s (بما في ذلك التشغيل التلقائي، والتشغيل الثانوي)، وإعادة المحاولة."</string>
+    <string name="hms_cancel">"إلغاء"</string>
+    <string name="hms_check_failure">"تعذر التحقق من وجود تحديثات."</string>
+    <string name="hms_check_no_update">"أنت الآن تستخدم أحدث إصدار بالفعل."</string>
+    <string name="hms_checking">"جارِ التحقق من وجود تحديثات..."</string>
+    <string name="hms_confirm">"حسنًا"</string>
+    <string name="hms_download_failure">"تعذر تنزيل حزمة خدمات هواوي للجوال."</string>
+    <string name="hms_download_no_space">"لا يمكن استكمال التنزيل لعدم وجود مساحة تخزينية كافية."</string>
+    <string name="hms_download_retry">"تعذر التنزيل. هل تريد المحاولة مجددًا؟"</string>
+    <string name="hms_downloading">"جاري تنزيل خدمات هواوي للجوال | مستوى التقدم: %d%%"</string>
+    <string name="hms_downloading_loading">"قيد التنزيل..."</string>
+    <string name="hms_downloading_new">"جاري تنزيل خدمات هواوي للجوال"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"تثبيت"</string>
+    <string name="hms_install_message">"يجب تثبيت خدمات هواوي للجوال لاستخدام هذه الخاصية. هل تريد تثبيتها؟"</string>
+    <string name="hms_retry">"إعادة المحاولة"</string>
+    <string name="hms_update">"تحديث"</string>
+    <string name="hms_update_message">"قم بتحديث خدمات هواوي للجوال إلى أحدث إصدار متوفر لكي تتمكن من استخدام هذه الخاصية. هل تريد التحديث الآن؟"</string>
+    <string name="hms_update_message_new">"هذه الخدمة تحتاج إلى وجود أحدث إصدار للتطبيق التالي:\n\n%1$s"</string>
+    <string name="hms_update_title">"خدمات هواوي للجوال"</string>
+    <string name="no_available_network_prompt_toast">"لا يوجد اتصال إنترنت لديك، يُرجى التحقق من إعدادات الشبكة"</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"هل تريد إلغاء التثبيت؟"</string>
+    <string name="third_app_dl_install_failed">"تعذر التثبيت"</string>
+    <string name="third_app_dl_sure_cancel_download">"نعم"</string>
+    <string name="upsdk_app_dl_installing">"جاري تنزيل متجر التطبيقات HiApp"</string>
+    <string name="upsdk_app_download_info_new">"تثبيت"</string>
+    <string name="upsdk_app_size">"الحجم:"</string>
+    <string name="upsdk_app_version">"الإصدار:"</string>
+    <string name="upsdk_cancel">"إلغاء"</string>
+    <string name="upsdk_checking_update_prompt">"جارِ التحقق من وجود تحديثات..."</string>
+    <string name="upsdk_choice_update">"هناك تحديث متوفر، يُرجى تنزيل وتثبيت أحدث إصدار."</string>
+    <string name="upsdk_detail">"التفاصيل"</string>
+    <string name="upsdk_install">"يُرجى تثبيت متجر التطبيقات HiApp لتتمكن من تحديثه، هل تريد تثبيته الآن؟"</string>
+    <string name="upsdk_ota_app_name">"اسم التطبيق"</string>
+    <string name="upsdk_ota_cancel">"لاحقًا"</string>
+    <string name="upsdk_ota_force_cancel_new">"خروج"</string>
+    <string name="upsdk_ota_notify_updatebtn">"تحديث"</string>
+    <string name="upsdk_ota_title">"إصدار جديد"</string>
+    <string name="upsdk_update_check_no_new_version">"أنت الآن تستخدم أحدث إصدار بالفعل"</string>
+    <string name="upsdk_updating">"جارِ التحديث"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"قم بتمكين التشغيل الثانوي لتطبيق HiGame من مدير الهاتف أو الإعدادات وأعد المحاولة"</string>
+    <string name="hms_game_login_notice">"مرحبًا \"%1$s\""</string>
+</resources>

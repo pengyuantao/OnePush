@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Nedá sa pripojiť k serveru. Skúste to znova neskôr."</string>
+    <string name="getting_message_fail_prompt_toast">"Nedajú sa získať informácie. Skúste to znova neskôr."</string>
+    <string name="hms_abort">"Zastaviť"</string>
+    <string name="hms_abort_message">"Zastaviť preberanie?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s nemôže používať Mobilné služby Huawei. Spustite aplikáciu Správca telefónu alebo prejdite do časti Nastavenia, udeľte všetky povolenia pre %2$s (vrátane automatického spustenia a sekundárneho spustenia) a skúste to znova."</string>
+    <string name="hms_cancel">"Zrušiť"</string>
+    <string name="hms_check_failure">"Vyhľadanie aktualizácií sa nepodarilo."</string>
+    <string name="hms_check_no_update">"Už používate najnovšiu verziu."</string>
+    <string name="hms_checking">"Kontrolujú sa aktualizácie…"</string>
+    <string name="hms_confirm">"OK"</string>
+    <string name="hms_download_failure">"Balík Mobilné služby Huawei sa nepodarilo prevziať."</string>
+    <string name="hms_download_no_space">"Nedostatok voľného miesta. Preberanie nemožno dokončiť."</string>
+    <string name="hms_download_retry">"Preberanie zlyhalo. Skúsiť to znova?"</string>
+    <string name="hms_downloading">"Preberanie balíka Mobilné služby Huawei | priebeh: %d%%"</string>
+    <string name="hms_downloading_loading">"Preberá sa"</string>
+    <string name="hms_downloading_new">"Sťahovanie HMS"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Inštalovať"</string>
+    <string name="hms_install_message">"Ak chcete používať túto funkciu, musíte mať nainštalovanú aplikáciu Mobilné služby Huawei. Inštalovať?"</string>
+    <string name="hms_retry">"Skúsiť znova"</string>
+    <string name="hms_update">"Aktualizovať"</string>
+    <string name="hms_update_message">"Ak chcete používať túto funkciu, aktualizujte Mobilné služby Huawei na najnovšiu verziu. Aktualizovať teraz?"</string>
+    <string name="hms_update_message_new">"Táto služba vyžaduje najnovšiu verziu nasledovnej aplikácie:\n\n%1$s"</string>
+    <string name="hms_update_title">"Mobilné služby Huawei"</string>
+    <string name="no_available_network_prompt_toast">"Žiadne internetové pripojenie. Skontrolujte systémové nastavenia."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Zrušiť inštaláciu?"</string>
+    <string name="third_app_dl_install_failed">"Inštalácia zlyhala."</string>
+    <string name="third_app_dl_sure_cancel_download">"Áno"</string>
+    <string name="upsdk_app_dl_installing">"Preberanie HiApp"</string>
+    <string name="upsdk_app_download_info_new">"Inštalovať"</string>
+    <string name="upsdk_app_size">"Veľkosť"</string>
+    <string name="upsdk_app_version">"Verzia"</string>
+    <string name="upsdk_cancel">"Zrušiť"</string>
+    <string name="upsdk_checking_update_prompt">"Kontrolujú sa aktualizácie…"</string>
+    <string name="upsdk_choice_update">"K dispozícii je aktualizácia. Prevezmite a nainštalujte si najnovšiu verziu."</string>
+    <string name="upsdk_detail">"Podrobnosti"</string>
+    <string name="upsdk_install">"Aktualizáciu vykonáte inštaláciou aplikácie HiApp. Inštalovať teraz?"</string>
+    <string name="upsdk_ota_app_name">"Aplikácia"</string>
+    <string name="upsdk_ota_cancel">"Neskôr"</string>
+    <string name="upsdk_ota_force_cancel_new">"Ukončiť"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Aktualizovať"</string>
+    <string name="upsdk_ota_title">"Nová verzia"</string>
+    <string name="upsdk_update_check_no_new_version">"Už používate najnovšiu verziu."</string>
+    <string name="upsdk_updating">"Aktualizuje sa"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"V Správcovi telefónu alebo nastaveniach zapnite druhotné spustenie pre HiGame a skúste znova."</string>
+    <string name="hms_game_login_notice">"Vitajte %1$s"</string>
+</resources>

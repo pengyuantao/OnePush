@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Nevar izveidot savienojumu ar serveri. Vēlāk mēģiniet vēlreiz."</string>
+    <string name="getting_message_fail_prompt_toast">"Nevar izgūt inform. Vēlāk mēģ. vēlr."</string>
+    <string name="hms_abort">"Apturēt"</string>
+    <string name="hms_abort_message">"Vai apturēt lejupielādi?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s nevar lietot Huawei mobilos pakalpojumus. Aktivizējiet tālruņa pārvaldnieku vai atveriet sadaļu Iestatījumi, iespējojiet visas atļaujas saistībā ar %2$s (tostarp automātisko palaišanu un sekundāro palaišanu) un mēģiniet vēlreiz."</string>
+    <string name="hms_cancel">"Atcelt"</string>
+    <string name="hms_check_failure">"Neizdevās pārbaudīt, vai nav atjauninājumu."</string>
+    <string name="hms_check_no_update">"Jūs jau lietojat jaunāko versiju."</string>
+    <string name="hms_checking">"Meklē atjauninājumus…"</string>
+    <string name="hms_confirm">"Labi"</string>
+    <string name="hms_download_failure">"Neizdevās lejupielādēt Huawei Mobile Services pakotni."</string>
+    <string name="hms_download_no_space">"Nepietiek brīvas vietas. Lejupielādi nevar pabeigt."</string>
+    <string name="hms_download_retry">"Lejupielāde neizdevās. Vai mēģināt vēlreiz?"</string>
+    <string name="hms_downloading">"Notiek Huawei Mobile Services lejupielādēšana | norise: %d%%"</string>
+    <string name="hms_downloading_loading">"Notiek lejupielāde"</string>
+    <string name="hms_downloading_new">"HMS lejupielāde"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Instalēt"</string>
+    <string name="hms_install_message">"Lai lietotu šo funkciju, ir jābūt instalētam pakalpojumam Huawei Mobile Services. Vai instalēt?"</string>
+    <string name="hms_retry">"Mēģināt vēlreiz"</string>
+    <string name="hms_update">"Atjaunināt"</string>
+    <string name="hms_update_message">"Lai lietotu šo funkciju, atjauniniet uz Huawei Mobile Services jaunāko versiju. Vai atjaunināt tūlīt?"</string>
+    <string name="hms_update_message_new">"Šim pak. nepieciešama šīs lietotnes jaunākā versija:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Mobile Services"</string>
+    <string name="no_available_network_prompt_toast">"Nav intern. sav. Pārb. tīkla iestatījumus."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Vai atcelt instal.?"</string>
+    <string name="third_app_dl_install_failed">"Instalēšana neizdevās."</string>
+    <string name="third_app_dl_sure_cancel_download">"Jā"</string>
+    <string name="upsdk_app_dl_installing">"HiApp lejupielāde"</string>
+    <string name="upsdk_app_download_info_new">"Instalēt"</string>
+    <string name="upsdk_app_size">"Liel."</string>
+    <string name="upsdk_app_version">"Vers."</string>
+    <string name="upsdk_cancel">"Atcelt"</string>
+    <string name="upsdk_checking_update_prompt">"Meklēt atjauninājumus…"</string>
+    <string name="upsdk_choice_update">"Ir pieejams atjaunin. Lejupiel. un inst. jaunāko versiju."</string>
+    <string name="upsdk_detail">"Detaliz."</string>
+    <string name="upsdk_install">"Lai atjauninātu, inst. HiApp. Vai inst. tūlīt?"</string>
+    <string name="upsdk_ota_app_name">"Lietotne"</string>
+    <string name="upsdk_ota_cancel">"Vēlāk"</string>
+    <string name="upsdk_ota_force_cancel_new">"Iziet"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Atjaunināt"</string>
+    <string name="upsdk_ota_title">"Jauna versija"</string>
+    <string name="upsdk_update_check_no_new_version">"Jūs jau lietojat jaunāko versiju."</string>
+    <string name="upsdk_updating">"Atjaunināšana"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Iespējojiet HiGame otrreizēju palaišanu lietotnē Tālruņa pārvaldnieks vai sadaļā Iestatījumi un mēģiniet vēlreiz."</string>
+    <string name="hms_game_login_notice">"Laipni lūdzam %1$s"</string>
+</resources>

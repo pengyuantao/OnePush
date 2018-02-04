@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_server_fail_prompt_toast">"Sunucuya bağlanamadı. Lütfen daha sonra tekrar deneyin."</string>
+    <string name="getting_message_fail_prompt_toast">"Bilgiler alınamıyor. Lütfen daha sonra tekrar deneyin."</string>
+    <string name="hms_abort">"Durdur"</string>
+    <string name="hms_abort_message">"İndirme durdurulsun mu?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s Huawei Mobil Hizmetleri\’ni kullanamıyor. Lütfen Telefon Yöneticisi\’ni başlatın veya Ayarlar\’a gidin, %2$s için tüm izinleri (otomatik başlatma ve ikincil başlatma dahil) etkinleştirin ve tekrar deneyin."</string>
+    <string name="hms_cancel">"İptal"</string>
+    <string name="hms_check_failure">"Güncelleme kontrolü gerçekleştirilemedi."</string>
+    <string name="hms_check_no_update">"Şu anda zaten en son sürümü kullanıyorsunuz."</string>
+    <string name="hms_checking">"Güncellemeler kontrol ediliyor..."</string>
+    <string name="hms_confirm">"Tamam"</string>
+    <string name="hms_download_failure">"Huawei Mobil Hizmetleri paketi indirilemedi."</string>
+    <string name="hms_download_no_space">"Yeterli boş alan yok. İndirme işlemi tamamlanamıyor."</string>
+    <string name="hms_download_retry">"İndirme başarısız. Tekrar denensin mi?"</string>
+    <string name="hms_downloading">"Huawei Mobil Hizmetleri indiriliyor | ilerleme: %d%%"</string>
+    <string name="hms_downloading_loading">"İndiriliyor"</string>
+    <string name="hms_downloading_new">"HMS indiriliyor"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Yükle"</string>
+    <string name="hms_install_message">"Bu özelliği kullanmak için Huawei Mobil Hizmetleri yüklü olmalıdır. Yüklensin mi?"</string>
+    <string name="hms_retry">"Tekrar dene"</string>
+    <string name="hms_update">"Güncelle"</string>
+    <string name="hms_update_message">"Bu özelliği kullanmak için Huawei Mobil Hizmetlerini son sürümüne güncelleyin. Şimdi güncellensin mi?"</string>
+    <string name="hms_update_message_new">"Bu hizmet için şu uygulamanın son sürümü gerekmektedir:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Mobil Hizmetleri"</string>
+    <string name="no_available_network_prompt_toast">"İnternet bağlantısı yok. Lütfen ağ ayarlarınızı kontrol edin."</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Yükleme iptal edilsin mi?"</string>
+    <string name="third_app_dl_install_failed">"Yüklenemedi."</string>
+    <string name="third_app_dl_sure_cancel_download">"Evet"</string>
+    <string name="upsdk_app_dl_installing">"HiApp indiriliyor"</string>
+    <string name="upsdk_app_download_info_new">"Yükle"</string>
+    <string name="upsdk_app_size">"Boyut"</string>
+    <string name="upsdk_app_version">"Sürüm"</string>
+    <string name="upsdk_cancel">"İptal"</string>
+    <string name="upsdk_checking_update_prompt">"Güncellemeler denetleniyor…"</string>
+    <string name="upsdk_choice_update">"Güncelleme mevcut. Lütfen en son sürümü indirin ve yükleyin."</string>
+    <string name="upsdk_detail">"Ayrıntılar"</string>
+    <string name="upsdk_install">"Güncellemek için HiApp\'i yükleyin. Şimdi yüklensin mi?"</string>
+    <string name="upsdk_ota_app_name">"Uygulama"</string>
+    <string name="upsdk_ota_cancel">"Sonra"</string>
+    <string name="upsdk_ota_force_cancel_new">"Çıkış"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Güncelle"</string>
+    <string name="upsdk_ota_title">"Yeni sürüm"</string>
+    <string name="upsdk_update_check_no_new_version">"Zaten en son sürümü kullanıyorsunuz."</string>
+    <string name="upsdk_updating">"Güncelleniyor"</string>
+
+
+
+    <string name="hms_game_floatwindow_click_fail_toast" priority="translator">"Telefon Yöneticisi veya Ayarlar bölümünde HiGame için İkincil başlatmayı etkinleştirin ve tekrar deneyin."</string>
+    <string name="hms_game_login_notice">"Hoş geldin %1$s"</string>
+</resources>
