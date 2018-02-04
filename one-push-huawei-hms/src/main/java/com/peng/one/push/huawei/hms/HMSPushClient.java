@@ -88,16 +88,15 @@ public class HMSPushClient implements IPushClient {
 
   @Override
   public void unRegister() {
-    //        huaweiApiClient.disconnect();
     final String token = OnePushCache.getToken(context);
     if (!TextUtils.isEmpty(token)) {
       new Thread() {
         @Override
         public void run() {
-          super.run();
           HuaweiPush.HuaweiPushApi.deleteToken(huaweiApiClient, token);
           HuaweiPush.HuaweiPushApi.enableReceiveNormalMsg(huaweiApiClient, false);
           HuaweiPush.HuaweiPushApi.enableReceiveNotifyMsg(huaweiApiClient, false);
+          huaweiApiClient.disconnect();
         }
       }.start();
     }
