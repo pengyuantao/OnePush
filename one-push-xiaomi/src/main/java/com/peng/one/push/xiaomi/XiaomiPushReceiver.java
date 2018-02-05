@@ -151,7 +151,7 @@ public class XiaomiPushReceiver extends PushMessageReceiver {
         List<String> arguments = message.getCommandArguments();
         String cmdArg1 = ((arguments != null && arguments.size() > 0) ? arguments.get(0) : null);
         OneRepeater.transmitCommandResult(context,OnePush.TYPE_REGISTER,
-                MiPushClient.COMMAND_REGISTER.equals(command)?OnePush.RESULT_OK:OnePush.RESULT_ERROR,
+                MiPushClient.COMMAND_REGISTER.equals(command)&&message.getResultCode()==ErrorCode.SUCCESS?OnePush.RESULT_OK:OnePush.RESULT_ERROR,
                 cmdArg1,null,message.getReason());
         //保存这个token
         OnePushCache.putToken(context, cmdArg1);
