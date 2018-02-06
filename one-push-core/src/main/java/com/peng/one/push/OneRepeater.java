@@ -3,12 +3,15 @@ package com.peng.one.push;
 import android.content.Context;
 import android.os.Parcelable;
 
+import com.peng.one.push.core.IHookTransmitListener;
 import com.peng.one.push.entity.OnePushCommand;
 import com.peng.one.push.entity.OnePushMsg;
 import com.peng.one.push.log.OneLog;
 import com.peng.one.push.receiver.OnePushAction;
 import com.peng.one.push.receiver.TransmitDataManager;
 
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -20,6 +23,8 @@ import java.util.Map;
 public class OneRepeater {
 
     private static final String TAG = "OneRepeater";
+
+    private static List<IHookTransmitListener> sIHookTransmitListenerList = new LinkedList<>();
 
     /**
      * Repeater instructions operating results
@@ -45,6 +50,7 @@ public class OneRepeater {
             , String extraMsg, String error){
         transmit(context, OnePushAction.RECEIVE_COMMAND_RESULT
                 , new OnePushCommand(type, resultCode, token, extraMsg, error));
+        publishTransmitCommandResult(type, resultCode, token, extraMsg, error);
     }
 
     /**
@@ -98,5 +104,23 @@ public class OneRepeater {
         TransmitDataManager.sendPushData(context, action, data);
     }
 
+    private static void publishTransmitCommandResult(int type, int resultCode,String token,
+                                              String extraMsg, String error){
+        if (!sIHookTransmitListenerList.isEmpty()) {
+            for (IHookTransmitListener iHookTransmitListener : sIHookTransmitListenerList) {
+                iHookTransmitListener.transmitCommandResult(type, resultCode, token, extraMsg, error);
+            }
+        }
+    }
 
+    public static void attachHookTransmitListener(IHookTransmitListener iHookTransmitListener) {
+        if (iHookTransmitListener == null) {
+            return;
+        }
+        sIHookTransmitListenerList.add(iHookTransmitListener);
+    }
+
+    public static void detachHookTransmitListener(IHookTransmitListener iHookTransmitListener) {
+        sIHookTransmitListenerList.remove(iHookTransmitListener);
+    }
 }

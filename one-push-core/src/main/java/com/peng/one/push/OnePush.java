@@ -5,6 +5,7 @@ import android.app.Application;
 import com.peng.one.push.core.OnOnePushRegisterListener;
 import com.peng.one.push.core.OnePushCode;
 import com.peng.one.push.core.OnePushContext;
+import com.peng.one.push.core.SmartRegister;
 import com.peng.one.push.log.OneLog;
 
 /**
@@ -21,6 +22,17 @@ public class OnePush implements OnePushCode{
      */
     public static void init(Application application, OnOnePushRegisterListener listener){
         OnePushContext.getInstance().init(application, listener);
+    }
+
+    /**
+     * smart register
+     * @param application
+     * @param targetPlatformCode
+     * @param backupPlatformCode
+     * @param registerErrorTimes
+     */
+    public static void init(Application application, int targetPlatformCode, int backupPlatformCode, int registerErrorTimes) {
+        SmartRegister.getInstance().init(application, targetPlatformCode, backupPlatformCode, registerErrorTimes);
     }
 
     /**

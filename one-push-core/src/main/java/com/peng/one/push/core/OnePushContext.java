@@ -6,8 +6,10 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 
 import com.peng.one.push.log.OneLog;
+import com.peng.one.push.utils.MetaDataUtils;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -23,8 +25,7 @@ import java.util.Set;
 public class OnePushContext {
 
     private static final String TAG = "OnePushContext";
-    //the meta-data header
-    private static final String META_DATA_PUSH_HEADER = "OnePush_";
+
     //the meta_data split symbol
     public static final String METE_DATA_SPLIT_SYMBOL = "_";
 
@@ -35,7 +36,7 @@ public class OnePushContext {
     private String mPlatformName;
 
     //all support push platform map
-    private LinkedHashMap<String, String> mAllSupportPushPlatformMap = new LinkedHashMap<>();
+    private HashMap<String, String> mAllSupportPushPlatformMap;
 
     /**
      * Using the simple interest
@@ -51,30 +52,10 @@ public class OnePushContext {
     }
 
     public void init(Application application, OnOnePushRegisterListener listener) {
-        Context context = application.getApplicationContext();
-        try {
-            //find all support push platform
-            Bundle metaData = context.getPackageManager().getApplicationInfo(context.getPackageName(), PackageManager.GET_META_DATA).metaData;
-            if (metaData != null) {
-                Set<String> allKeys = metaData.keySet();
-                if (allKeys != null && !allKeys.isEmpty()) {
-                    Iterator<String> iterator = allKeys.iterator();
-                    while (iterator.hasNext()) {
-                        String key = iterator.next();
-                        if (key.startsWith(META_DATA_PUSH_HEADER)) {
-                            mAllSupportPushPlatformMap.put(key, metaData.getString(key));
-                        }
-                    }
-                }
-            }
-        } catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
-        }
-
+        mAllSupportPushPlatformMap = MetaDataUtils.getOnePushMetaData(application);
         if (mAllSupportPushPlatformMap.isEmpty()) {
             throw new IllegalArgumentException("have none push platform,check AndroidManifest.xml is have meta-data name is start with OnePush_");
         }
-
         //choose custom push platform
         Iterator<Map.Entry<String, String>> iterator = mAllSupportPushPlatformMap.entrySet().iterator();
         while (iterator.hasNext()) {
@@ -114,8 +95,6 @@ public class OnePushContext {
                 e.printStackTrace();
             }
         }
-        //clear cache client
-        mAllSupportPushPlatformMap.clear();
         if (mIPushClient == null) {
             throw new IllegalStateException("onRegisterPush must at least one of them returns to true");
         }
