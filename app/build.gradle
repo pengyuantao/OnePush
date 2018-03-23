@@ -14,7 +14,7 @@ android {
   defaultConfig {
     //由于com.peng.one.push包名在魅族推送平台被OnePush其他使用者占用，现在修改为com.peng.one.push1
     applicationId "com.peng.one.push1"
-    minSdkVersion 14
+    minSdkVersion 16
     targetSdkVersion 25
     versionCode 1
     versionName "1.0"
@@ -79,7 +79,7 @@ dependencies {
   compile 'com.peng.library:one-push-core:1.2.3'
   compile 'com.peng.library:one-push-getui:1.2.1'
 //  compile 'com.peng.library:one-push-huawei:1.2.1'
-  compile 'com.peng.library:one-push-huawei-hms:1.2.3'
+//  compile 'com.peng.library:one-push-huawei-hms:1.2.3'
   compile 'com.peng.library:one-push-xiaomi:1.2.3'
   compile 'com.peng.library:one-push-meizu:1.2.3'
   compile 'com.peng.library:one-push-jpush:1.2.3'
@@ -98,6 +98,8 @@ dependencies {
 //      compile project(':one-push-getui')
 //      compile project(':one-push-meizu')
 //      compile project(':one-push-jpush')
+
+  compile project(':one-push-huawei-hmsagents')
 }
 
 /* 别名: onepush
