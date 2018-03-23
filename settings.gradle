@@ -1,3 +1,3 @@
-include ':app', ':one-push-core', ':one-push-xiaomi', ':one-push-huawei', ':one-push-umeng', ':one-push-huawei-hms-lib',
-    ':one-push-jpush',
-    ':one-push-umeng-utdid4all', ':one-push-getui', ':one-push-meizu', ':one-push-huawei-hms'
+include ':app', ':one-push-core', ':one-push-xiaomi', ':one-push-huawei', ':one-push-umeng', ':one-push-huawei-hms-lib', ':one-push-huawei-hmsagents',
+        ':one-push-jpush',
+        ':one-push-umeng-utdid4all', ':one-push-getui', ':one-push-meizu', ':one-push-huawei-hms', ':hmsagents'

@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.2.4"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    provided 'com.peng.library:one-push-core:1.2.1'
+    compile 'com.huawei.android.hms:push:2.6.0.301'
+}
+
+apply plugin: 'com.novoda.bintray-release'
+//设置所有工程编码为UTF-8编码，防止出现编码GBK的不可映射字符
+allprojects {
+    tasks.withType(Javadoc) {
+        options {
+            encoding "UTF-8"
+            charSet 'UTF-8'
+            links "http://docs.oracle.com/javase/7/docs/api"
+        }
+    }
+}
+
+publish {
+    userOrg = 'pengyuantao'
+    groupId = 'com.peng.library'
+    artifactId = 'one-push-huawei-hmsagents'
+    publishVersion = android.defaultConfig.versionName
+    desc = 'Oh hi, this is a nice description for a project, right?'
+    website = 'https://github.com/novoda/bintray-release'
+}
