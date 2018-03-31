@@ -99,9 +99,13 @@
         android:value="com.peng.one.push.jpush.JPushClient"/>
 
     <!--如果引入了one-push-huawei-hms库-->
+    <!--<meta-data-->
+        <!--android:name="OnePush_HMSPush_107"-->
+        <!--android:value="com.peng.one.push.huawei.hms.HMSPushClient"/>-->
+
     <meta-data
-        android:name="OnePush_HMSPush_107"
-        android:value="com.peng.one.push.huawei.hms.HMSPushClient"/>
+        android:name="OnePush_HMSPush_108"
+        android:value="com.peng.one.push.huawei.hmsagents.HMSPushClient"/>
 
     <activity
         android:name="com.peng.one.push1.MainActivity"
