@@ -1,3 +1,6 @@
+## 目前OnePush在Android8.0上不兼容的问题，OnePush暂时不进行维护了，建议大家使用友盟的聚合推送，上面已经有各大厂商的推送。
+
+
 ## 消息推送用OnePush，就够了！
 
 |模块|one-push-core|one-push-huawei|one-push-xiaomi|one-push-meizu|one-push-huawei-hms|
