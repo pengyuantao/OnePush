@@ -13,7 +13,7 @@ android {
 
   defaultConfig {
     //由于com.peng.one.push包名在魅族推送平台被OnePush其他使用者占用，现在修改为com.peng.one.push1
-    applicationId "com.peng.one.push1"
+    applicationId "com.mixpush.demo"
     minSdkVersion 16
     targetSdkVersion 25
     versionCode 1

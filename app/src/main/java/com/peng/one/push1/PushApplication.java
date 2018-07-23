@@ -6,8 +6,8 @@ import android.content.Context;
 import android.os.Process;
 import android.util.Log;
 
-import com.peng.one.push1.BuildConfig;
 import com.peng.one.push.OnePush;
+
 import java.util.List;
 
 /**
@@ -35,7 +35,7 @@ public class PushApplication extends Application {
                 } else if(RomUtils.isFlymeRom()){
                     result = platformCode == 103;
                 } else {
-                    result= platformCode == 106;
+                    result= platformCode == 105;
                 }
                 Log.i(TAG, "Register-> code: "+platformCode+" name: "+platformName+" result: "+result);
                 return result;

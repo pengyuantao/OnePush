@@ -33,13 +33,13 @@
     <!--个推推送静态注册-->
     <meta-data
         android:name="PUSH_APPID"
-        android:value="edX56uUoQ7ASr4ru4c3rVA"/>
+        android:value="SjLrkd2uHE8FMIzhCcpNM9"/>
     <meta-data
         android:name="PUSH_APPKEY"
-        android:value="Crl1UEA5Fd8tooEDmS5aA3"/>
+        android:value="18yy50piaC9Sb3BCM6pkE4"/>
     <meta-data
         android:name="PUSH_APPSECRET"
-        android:value="D9hcD0r6Ec5ANGSLY92XP3"/>
+        android:value="iX8FKkKEls8OS3tcr31Co7"/>
 
     <!--魅族推送静态注册-->
     <meta-data
@@ -56,12 +56,12 @@
         android:value="developer"/>
     <meta-data
         android:name="JPUSH_APPKEY"
-        android:value="41bb9f84d2158a7be9de3b47"/>
+        android:value="ad82cb333cafb6108c7744f9"/>
 
     <!--华为HMS推送静态注册-->
     <meta-data
         android:name="com.huawei.hms.client.appid"
-        android:value="100099491"/>
+        android:value="100352131"/>
 
     <!--华为老版本推送不需要静态注册-->
 
