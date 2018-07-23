@@ -11,6 +11,12 @@ android {
     versionName "1.2.3"
 
     testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    manifestPlaceholders = [
+            JPUSH_PKGNAME: "xxx",
+            JPUSH_APPKEY : "xxx", //JPush上注册的包名对应的appkey.
+            JPUSH_CHANNEL: "xxx", //暂时填写默认值即可.
+    ]
   }
   buildTypes {
     release {
@@ -31,8 +37,11 @@ dependencies {
   androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
     exclude group: 'com.android.support', module: 'support-annotations'
   })
-  compile 'com.android.support:appcompat-v7:25.3.1'
   testCompile 'junit:junit:4.12'
+
+  compile 'cn.jiguang.sdk:jpush:3.1.3'  // 此处以JPush 3.1.5 版本为例。
+  compile 'cn.jiguang.sdk:jcore:1.2.1'  // 此处以JCore 1.2.2 版本为例。
+
   provided 'com.peng.library:one-push-core:1.2.3'
 //  provided project(':one-push-core')
 }
